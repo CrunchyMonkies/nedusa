@@ -49,10 +49,10 @@
   "scripts": {
     "build:plugin": "medusa plugin:build",
     "dev": "medusa plugin:develop",
-    "prepare": "cross-env NODE_ENV=production yarn run build:plugin",
     "link:watch": "medusa plugin:publish && medusa plugin:develop",
-    "test": "../../../node_modules/.bin/jest --bail --forceExit --testPathPattern=src",
-    "watch": "medusa plugin:develop"
+    "test": "jest --bail --forceExit --testPathPattern=src",
+    "watch": "medusa plugin:develop",
+    "build:prod": "cross-env NODE_ENV=production pnpm run build:plugin"
   },
   "devDependencies": {
     "@medusajs/admin-sdk": "2.21.1",
@@ -115,6 +115,5 @@
   },
   "engines": {
     "node": ">=20"
-  },
-  "packageManager": "yarn@3.2.1"
+  }
 }

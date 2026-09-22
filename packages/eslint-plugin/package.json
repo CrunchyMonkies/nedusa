@@ -18,9 +18,9 @@
     "./configs/strict": "./dist/configs/strict.js"
   },
   "scripts": {
-    "build": "yarn run -T rimraf dist && yarn run -T tsc --build",
-    "watch": "yarn run -T tsc --build --watch",
-    "test": "../../node_modules/.bin/jest --silent=false --bail --forceExit --testPathPattern=src"
+    "build": "rimraf dist && tsc --build",
+    "watch": "tsc --build --watch",
+    "test": "jest --silent=false --bail --forceExit --testPathPattern=src"
   },
   "engines": {
     "node": ">=20.0.0"

@@ -24,10 +24,10 @@
     "package.json"
   ],
   "scripts": {
-    "build": "yarn run -T tsup",
-    "watch": "yarn run -T tsup --watch",
-    "test": "../../../node_modules/.bin/vitest --run",
-    "test:watch": "../../../node_modules/.bin/vitest"
+    "build": "tsup",
+    "watch": "tsup --watch",
+    "test": "vitest --run",
+    "test:watch": "vitest"
   },
   "devDependencies": {
     "vite": "^7.3.6"
@@ -45,7 +45,6 @@
     "outdent": "^0.8.0",
     "picocolors": "^1.1.0"
   },
-  "packageManager": "yarn@3.2.1",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   }

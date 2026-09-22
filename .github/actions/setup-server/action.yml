@@ -22,7 +22,9 @@ runs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.node-version }}
-        cache: "yarn"
+        # No `cache:` here. setup-node's pnpm cache mode requires pnpm to already be on
+        # PATH, but pnpm is installed by ./.github/actions/cache-deps in the next step.
+        # That action caches the pnpm store itself, which is the part worth caching.
 
     - name: Install dependencies
       uses: ./.github/actions/cache-deps

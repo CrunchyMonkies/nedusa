@@ -45,11 +45,11 @@
   "llmsFull": "https://docs.medusajs.com/llms-full.txt",
   "mcpServer": "https://docs.medusajs.com/mcp",
   "scripts": {
-    "watch": "yarn run -T tsc --build --watch",
-    "build": "yarn run -T rimraf dist && yarn run -T tsc --build",
+    "watch": "tsc --build --watch",
+    "build": "rimraf dist && tsc --build",
     "serve": "node dist/app.js",
-    "test": "../../node_modules/.bin/jest --bail --forceExit --testPathIgnorePatterns='/integration-tests/' --testPathPattern=src",
-    "test:integration": "../../node_modules/.bin/jest --passWithNoTests --forceExit --testPathPattern=\"src/.*/integration-tests/__tests__/.*\\.ts\""
+    "test": "jest --bail --forceExit --testPathIgnorePatterns='/integration-tests/' --testPathPattern=src",
+    "test:integration": "jest --passWithNoTests --forceExit --testPathPattern=\"src/.*/integration-tests/__tests__/.*\\.ts\""
   },
   "devDependencies": {
     "@medusajs/framework": "2.21.1"

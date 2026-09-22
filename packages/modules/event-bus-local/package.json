@@ -29,10 +29,10 @@
     "@medusajs/framework": "2.21.1"
   },
   "scripts": {
-    "watch": "yarn run -T tsc --build --watch",
-    "build": "yarn run -T rimraf dist && yarn run -T tsc --build",
-    "test": "../../../node_modules/.bin/jest --passWithNoTests --testPathPattern=src",
-    "test:integration": "../../../node_modules/.bin/jest --passWithNoTests --no-cache --bail --detectOpenHandles --forceExit --logHeapUsage --testPathPattern=\"integration-tests/__tests__/.*\\.spec\\.ts\""
+    "watch": "tsc --build --watch",
+    "build": "rimraf dist && tsc --build",
+    "test": "jest --passWithNoTests --testPathPattern=src",
+    "test:integration": "jest --passWithNoTests --no-cache --bail --detectOpenHandles --forceExit --logHeapUsage --testPathPattern=\"integration-tests/__tests__/.*\\.spec\\.ts\""
   },
   "peerDependencies": {
     "@medusajs/framework": "2.21.1"

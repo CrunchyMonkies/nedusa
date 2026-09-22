@@ -5,6 +5,9 @@ const pkgs = glob
   .map((p) => p.replace(__dirname, `<rootDir>/integration-tests`))
 
 module.exports = {
+  // Capped for the swapless dev VM: see define_jest_config.js and
+  // docs/porting/06-pnpm-conventions.md. Override with JEST_MAX_WORKERS.
+  maxWorkers: process.env.JEST_MAX_WORKERS || 4,
   testEnvironment: `node`,
   testTimeout: 10000,
   rootDir: `../`,

@@ -16,9 +16,9 @@
   "license": "MIT",
   "scripts": {
     "ci": "node scripts/build-openapi.js",
-    "preview:admin": "yarn medusa-oas docs --src-file ../../../../www/apps/api-reference/specs/admin/openapi.yaml --preview",
-    "preview:store": "yarn medusa-oas docs --src-file ../../../../www/apps/api-reference/specs/store/openapi.yaml --preview",
-    "test": "../../../../node_modules/.bin/jest --passWithNoTests"
+    "preview:admin": "pnpm run medusa-oas docs --src-file ../../../../www/apps/api-reference/specs/admin/openapi.yaml --preview",
+    "preview:store": "pnpm run medusa-oas docs --src-file ../../../../www/apps/api-reference/specs/store/openapi.yaml --preview",
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "@medusajs/medusa-oas-cli": "2.21.1",

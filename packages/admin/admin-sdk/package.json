@@ -19,11 +19,10 @@
     "package.json"
   ],
   "scripts": {
-    "build": "yarn run -T tsup"
+    "build": "tsup"
   },
   "dependencies": {
     "@medusajs/admin-shared": "2.21.1",
     "zod": "4.2.0"
-  },
-  "packageManager": "yarn@3.2.1"
+  }
 }

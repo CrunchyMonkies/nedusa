@@ -1,11 +1,17 @@
 #!/bin/bash
 
-# Get array of workspaces
-# convert NDJSON stream to an array of arrays, divided by chunk size
-# The reason we do a conditional here is that github actions thinks that there is
-# a secret present with the output of this and therefore refuses to share data between jobs
+# Split the workspace list into CHUNKS and run `test` for one chunk.
+#
+# Ported from yarn: `yarn workspaces list --json` streams NDJSON (one object per line),
+# which the old pipeline consumed with `jq -j '[inputs | .name]'`. pnpm's equivalent
+# emits a single JSON ARRAY, so the `inputs` idiom no longer applies and the whole
+# three-stage jq chain collapses into one filter.
+#
+# The conditional is kept from upstream: GitHub Actions otherwise believes a secret is
+# present in this output and refuses to pass it between jobs.
 if [ -z "${CHUNKS}" ]; then
-  export CHUNKS=$(yarn workspaces list --json | jq -j '[inputs | .name]' | jq -r | jq -cM '[_nwise(length / 2 | ceil)]')
+  export CHUNKS=$(pnpm ls -r --depth -1 --json \
+    | jq -cM '[.[] | select(.name != null) | .name] | [_nwise((length / 2) | ceil)]')
 fi
 
 # get the workspaces of the current CHUNK environment
@@ -21,6 +27,6 @@ for workspace in $(echo "$workspaces" | jq -r '.[]'); do
   filters+=" --filter=${workspace}"
 done
 
-command="yarn run test $filters $@"
+command="pnpm run test $filters $@"
 # Run the test in the selected chunk
 eval "$command"

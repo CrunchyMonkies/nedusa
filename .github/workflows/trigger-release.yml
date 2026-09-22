@@ -206,7 +206,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: "yarn"
 
       - name: Ensure npm 11.5.1+ for OIDC
         run: npm install -g npm@11.5.1

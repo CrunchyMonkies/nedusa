@@ -15,9 +15,9 @@
     "node": ">=20"
   },
   "scripts": {
-    "build": "yarn run -T rimraf dist && yarn run -T tsc --build",
-    "watch": "yarn run -T tsc --build --watch",
-    "test": "../../node_modules/.bin/jest --passWithNoTests src"
+    "build": "rimraf dist && tsc --build",
+    "watch": "tsc --build --watch",
+    "test": "jest --passWithNoTests src"
   },
   "files": [
     "dist",

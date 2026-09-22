@@ -37,20 +37,23 @@ jobs:
       - name: Ensure npm 11.5.1+ for OIDC
         run: npm install -g npm@11.5.1
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Install Dependencies
-        run: yarn
+        run: pnpm install --frozen-lockfile
 
       - name: Build packages
-        run: yarn build
+        run: pnpm build
       - name: Create Release Pull Request or Publish packages
         id: changesets
         uses: changesets/action@v1
         with:
-          version: yarn version
+          version: pnpm run version
           commit: "Chore: Release"
           title: "Chore: Release"
           createGithubReleases: false
-          publish: yarn changeset publish
+          publish: pnpm changeset publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

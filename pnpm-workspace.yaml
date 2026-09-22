@@ -1,0 +1,127 @@
+# nedusa workspace definition
+# Ported from upstream Medusa's package.json "workspaces.packages" (yarn berry 3.2.1).
+#
+# Deliberate differences from upstream:
+#   - "packages/framework/*" and "packages/generated/*" dropped: both globs are DEAD
+#     upstream (no such directories exist).
+#   - "integration-tests/**/*" replaced by explicit entries. The upstream glob happened
+#     to exclude integration-tests/package.json (an orphan, not a workspace, carrying
+#     bogus deps like "@medusajs/medusa": "^1.20.10"). Listing the two real suites
+#     explicitly keeps that exclusion intentional rather than accidental.
+#   - "www" remains a separate nested workspace root, as upstream has it.
+packages:
+  - "packages/medusa"
+  - "packages/medusa-test-utils"
+  - "packages/modules/*"
+  - "packages/modules/providers/*"
+  - "packages/plugins/*"
+  - "packages/core/*"
+  - "packages/cli/*"
+  - "packages/cli/oas/*"
+  - "packages/*"
+  - "packages/admin/*"
+  - "packages/design-system/*"
+  - "integration-tests/http"
+  - "integration-tests/modules"
+
+# Dependencies permitted to run lifecycle scripts during install. pnpm blocks these by
+# default since v10.
+#
+# VERSION GOTCHA: pnpm 10 spelled this `onlyBuiltDependencies` (a LIST). pnpm 11 renamed
+# it to `allowBuilds` (a MAP of name -> bool) and silently drops the old key, so a v10-era
+# allowlist looks correct but has no effect and every install still reports
+# ERR_PNPM_IGNORED_BUILDS. Written here by `pnpm approve-builds --all`.
+#
+# None of these are load-bearing: esbuild and @swc/core ship prebuilt native bindings as
+# optional deps and were verified working with their scripts blocked. Approved to keep
+# installs quiet and deterministic.
+allowBuilds:
+  '@swc/core': true
+  core-js: true
+  esbuild: true
+  msgpackr-extract: true
+  msw: true
+  protobufjs: true
+
+# --- pnpm settings (pnpm >=10 reads these from here, not .npmrc) -------------
+#
+# CRITICAL: upstream pins 285 internal deps as exact versions ("2.21.1") rather than
+# "workspace:*". pnpm >=10 defaults linkWorkspacePackages to false, which would make
+# every one of those resolve from the npm REGISTRY instead of the local workspace --
+# silently building the fork against published upstream Medusa. Non-negotiable.
+linkWorkspacePackages: true
+
+# Upstream runs yarn with `nodeLinker: node-modules` (flat, hoisted). A large amount of
+# tooling depends on that layout: 136 relative "../../node_modules/.bin/<bin>" script
+# invocations, and 8 packages that call binaries they never declared (rollup, cross-env,
+# nodemon, eslint, prettier, ts-node). Starting hoisted keeps the fork behaviourally
+# identical to upstream; tightening to the isolated linker is a separate, later change.
+nodeLinker: hoisted
+
+
+# --- ported from upstream package.json "resolutions" --------------------------
+#
+# Two yarn-only syntaxes were rewritten:
+#   - nested-path keys "a/b" become pnpm's "a>b". Left as-is they are SILENT no-ops.
+#   - descriptor-qualified keys ("pkg@range") carry over unchanged.
+overrides:
+  "@redocly/cli>react": "^17.0.1"
+  "@redocly/cli>react-dom": "^17.0.1"
+  "@rushstack/node-core-library>ajv": "^8.18.0"
+  lodash: "^4.18.1"
+  pg: "8.16.3"
+  "@types/react": "^18.3.2"
+  "@types/react-dom": "^18.2.25"
+  semver: "^7.5.2"
+  axios: "^1.13.1"
+  esbuild: "^0.27.7"
+  on-headers: "^1.1.0"
+  postcss: "^8.5.10"
+  validator: "^13.15.20"
+  "@opentelemetry/core": "^2.7.0"
+  vite: "^7.3.6"
+
+  # --- drift pins: NOT from upstream's resolutions ----------------------------
+  # There is no yarn.lock -> pnpm-lock.yaml conversion, so the fork re-resolves every
+  # transitive dependency. These are pinned to the versions upstream's yarn.lock actually
+  # resolved, because the drift broke things. See docs/porting/06-pnpm-conventions.md §12.
+  #
+  # msw: fresh resolution gave 2.15.0, which pulls rettime 0.11.11 (pure ESM). Jest's
+  # transformIgnorePatterns in define_jest_config.js only lets `until-async` and `msw`
+  # through, so rettime is left untransformed and @medusajs/js-sdk's suite dies with
+  # "Jest encountered an unexpected token". Verified against a yarn baseline of upstream
+  # v2.21.1: js-sdk passes 32/32 there, so this is drift, not a pre-existing failure.
+  msw: "2.12.4"
+
+  # @ariakit/react: upstream 0.4.20, fresh resolution 0.4.40. Medusa's Combobox is built
+  # on Ariakit; 0.4.40 drops a keystroke, so `user.type(input, "App")` lands as "Ap" and
+  # the dashboard's combobox spec fails 3 of 4. Bisected by pinning each candidate in turn
+  # against a yarn baseline of upstream (which passes 4/4): user-event, jsdom and vitest
+  # were each ruled out before this one was confirmed. Pinning it alone restores 4/4.
+  "@ariakit/react": "0.4.20"
+
+# --- ported from upstream's yarn `patch:` resolutions -------------------------
+#
+# yarn keyed these by RANGE ("@changesets/get-github-info@^0.5.2"). pnpm accepts an
+# exact version OR a bare package name; we use the BARE NAME deliberately.
+#
+# Exact versions were tried first and immediately broke: upstream's yarn.lock pinned
+# @changesets/assemble-release-plan at 6.0.9, but a fresh resolution of
+# @changesets/cli@^2.26.0 lands on 2.31.1, which requires ^6.0.10 -- so the patch went
+# unused and pnpm aborted the install (ERR_PNPM_UNUSED_PATCH). Since this fork re-resolves
+# from scratch on every upstream import, version-keyed patches would break on any
+# transitive patch-level bump. A bare key applies to whatever version resolves, and if the
+# patch ever stops applying, pnpm fails loudly -- which is the behaviour we want.
+#
+# The patch bodies are plain git diffs and carry over from yarn byte-for-byte.
+#
+# Both patches do the same job upstream wanted: stop changesets major-bumping a package
+# merely because a peerDependency moved, and cap the commit list sent to the GitHub
+# GraphQL API. Paired with .changeset/config.json's
+# ___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH.onlyUpdatePeerDependentsWhenOutOfRange
+#
+# NOT ported: .yarn/patches/changesets.patch -- a dead predecessor, referenced by
+# neither package.json nor yarn.lock.
+patchedDependencies:
+  "@changesets/get-github-info": patches/@changesets__get-github-info.patch
+  "@changesets/assemble-release-plan": patches/@changesets__assemble-release-plan.patch

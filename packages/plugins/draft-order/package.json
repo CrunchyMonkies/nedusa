@@ -38,9 +38,9 @@
   "scripts": {
     "build:plugin": "medusa plugin:build",
     "dev": "medusa plugin:develop",
-    "prepare": "cross-env NODE_ENV=production yarn run build:plugin",
     "link:watch": "medusa plugin:publish && medusa plugin:develop",
-    "watch": "medusa plugin:develop"
+    "watch": "medusa plugin:develop",
+    "build:prod": "cross-env NODE_ENV=production pnpm run build:plugin"
   },
   "dependencies": {
     "@ariakit/react": "^0.4.15",
@@ -111,6 +111,5 @@
   },
   "engines": {
     "node": ">=20"
-  },
-  "packageManager": "yarn@3.2.1"
+  }
 }

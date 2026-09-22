@@ -34,5 +34,12 @@ export default defineConfig(({ mode }) => {
     server: {
       open: true,
     },
+    test: {
+      // Capped for the swapless dev VM (32GB, swap=0). vitest otherwise starts one
+      // worker per core (32 here) and turbo runs several packages at once, which
+      // OOM-kills the whole WSL VM rather than a single process.
+      // See docs/porting/06-pnpm-conventions.md.
+      poolOptions: { threads: { maxThreads: 4 }, forks: { maxForks: 4 } },
+    },
   }
 })

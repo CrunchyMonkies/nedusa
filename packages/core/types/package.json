@@ -30,8 +30,8 @@
   "author": "Medusa",
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
-    "build": "yarn run -T rimraf dist && yarn run -T tsc --build",
-    "watch": "yarn run -T tsc --build --watch",
+    "build": "rimraf dist && tsc --build",
+    "watch": "tsc --build --watch",
     "test": "exit 0"
   },
   "dependencies": {
