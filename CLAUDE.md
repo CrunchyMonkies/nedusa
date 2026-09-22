@@ -1,6 +1,14 @@
-# Medusa Core
+# nedusa
 
-Open-source commerce platform. TypeScript monorepo with 30+ modular commerce packages.
+A hard fork of [Medusa](https://github.com/medusajs/medusa) being ported onto **NestJS**
+(base framework), **Temporal** (workflow engine) and **pnpm workspaces**.
+
+**Before changing anything, read [`docs/porting/00-overview.md`](docs/porting/00-overview.md).**
+In particular: upstream's HTTP contract is frozen as our specification, and mechanical
+changes to vendored source belong in `tools/codemods/`, never as hand edits — upstream
+ships every 2-3 weeks and hand edits are re-applied forever.
+
+Vendor baseline: see [`.upstream-version`](.upstream-version).
 
 > When working on the API reference documentation (`www/apps/api-reference`), read [`www/apps/api-reference/CLAUDE.md`](www/apps/api-reference/CLAUDE.md) for its path structure and the OAS → public docs flow.
 
@@ -42,42 +50,46 @@ Open-source commerce platform. TypeScript monorepo with 30+ modular commerce pac
 
 ### 2. Build System & Commands
 
-**Package Manager**: Yarn 3.2.1 with node-modules linker
+**Package Manager**: pnpm 11 with the hoisted node linker (upstream uses Yarn 3.2.1).
+See [`docs/porting/06-pnpm-conventions.md`](docs/porting/06-pnpm-conventions.md) before
+touching dependencies, scripts or CI -- several upstream idioms do not carry over.
 
 **Essential Commands:**
 
 ```bash
 # Install dependencies
-yarn install
-# Build all packages
-yarn build
+pnpm install
+# Build all packages (turbo 2)
+pnpm build
 # Build specific package
-yarn workspace @medusajs/medusa build
+pnpm --filter @medusajs/medusa build
 # Watch mode (in package directory)
-yarn watch
+pnpm watch
 ```
 
 **Testing Commands:**
 
 ```bash
 # All unit tests
-yarn test
+pnpm test
 # Package integration tests
-yarn test:integration:packages
-# HTTP integration tests
-yarn test:integration:http
-# API integration tests
-yarn test:integration:api
-# Module integration tests
-yarn test:integration:modules
+pnpm test:integration:packages
+# HTTP integration tests  (121 specs -- the conformance harness against upstream)
+pnpm test:integration:http
+# Module integration tests (86 specs)
+pnpm test:integration:modules
 ```
+
+The integration suites are upstream's, carried across unchanged. They are the primary
+measure of whether the port is still correct -- report pass-rate, not "tests pass".
+They need a real PostgreSQL (and Redis for the redis-backed suites).
 
 **Migrations:**
 
 Whenever you create, modify, or delete a data model file inside a module (under `packages/modules`), generate the migration by running the module package's migration script from within that package — NEVER write migration files by hand:
 
 ```bash
-cd packages/modules/<module> && yarn migration:create
+cd packages/modules/<module> && pnpm migration:create
 ```
 
 NEVER edit the migration file by hand. If new changes land in the model, re run the script.
@@ -87,7 +99,7 @@ NEVER edit the migration file by hand. If new changes land in the model, re run 
 After adding or removing keys in `packages/admin/dashboard/src/i18n/translations/en.json`, regenerate the JSON schema that validates all translation files:
 
 ```bash
-cd packages/admin/dashboard && yarn i18n:schema
+cd packages/admin/dashboard && pnpm i18n:schema
 ```
 
 Skipping this leaves `Property <key> is not allowed` warnings on `en.json`, since `translations/$schema.json` is generated from `en.json` and lists every key in both `properties` and `required`. Commit the regenerated `$schema.json` with the translation change.
