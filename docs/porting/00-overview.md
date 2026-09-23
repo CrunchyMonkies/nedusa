@@ -70,12 +70,25 @@ under pnpm, so that later breakage is attributable to the port rather than the t
 | CI ported (root workflows) | done; `www/`-facing workflows still on yarn |
 | Scope rename `@medusajs/*` → `@nedusa/*` | **not done — deliberately deferred to its own change** |
 
-The scope rename is Phase 0's last step and was held back on purpose: it touches all 82
-manifests plus every import, and doing it in the same change as the toolchain migration
-would invalidate the build and test evidence above.
+**Phase 1 (Nest substrate) — started.**
 
-Phases 1-6 (Nest substrate, Temporal, API layer, modules, admin/CLI/docs, de-shimming)
-have not started. The plan is in `~/.claude/plans/`.
+| | Status |
+| --- | --- |
+| `apps/server` boots on NestJS 12 and serves `/health` | done |
+| ESM ↔ CommonJS boundary proven in both directions | done — see [ADR-012](adr/ADR-012-nestjs-12-esm.md) |
+| `@nedusa/nest-config`, `-database`, `-modules-runtime` | not started |
+| `bootstrap-app.ts` ported (the conformance harness) | not started — path de-risked |
+| Process-global statics (Hazard 3) | not started |
+| `ContainerCompat`, HTTP primitives, Express 5 port | not started |
+
+NestJS 12 turned out to be **ESM-only** while Medusa is CommonJS throughout, which the
+plan did not anticipate. Both directions across that boundary were probed against the real
+built packages before anything was built on top: named imports from Medusa's CJS barrels
+resolve (8/8 packages, 1,409 exports from `core-flows`), and CommonJS can reach the ESM
+app via `await import()` — which is what the conformance harness needs.
+
+Phases 2-6 (Temporal, API layer, modules, admin/CLI/docs, de-shimming) have not started.
+The plan is in `~/.claude/plans/`.
 
 ## Reading order
 

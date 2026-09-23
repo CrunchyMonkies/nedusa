@@ -10,6 +10,7 @@
 #     explicitly keeps that exclusion intentional rather than accidental.
 #   - "www" remains a separate nested workspace root, as upstream has it.
 packages:
+  - "apps/*"
   - "packages/medusa"
   - "packages/medusa-test-utils"
   - "packages/modules/*"

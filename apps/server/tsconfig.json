@@ -1,0 +1,10 @@
+{
+  "extends": "../../_tsconfig.base.json",
+  "compilerOptions": {
+    // NestJS 12 is ESM-only. package.json declares "type": "module", and Node16
+    // resolution then treats these files as ESM -- which is what makes relative imports
+    // require an explicit .js extension below.
+    "module": "Node16",
+    "moduleResolution": "Node16"
+  }
+}
