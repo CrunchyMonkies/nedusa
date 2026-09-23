@@ -1,6 +1,6 @@
-import { IOrderModuleService } from "@medusajs/framework/types"
-import { Module, Modules } from "@medusajs/framework/utils"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
+import { IOrderModuleService } from "@nedusa/framework/types"
+import { Module, Modules } from "@nedusa/framework/utils"
+import { moduleIntegrationTestRunner } from "@nedusa/test-utils"
 import { OrderModuleService } from "@services"
 
 moduleIntegrationTestRunner<IOrderModuleService>({

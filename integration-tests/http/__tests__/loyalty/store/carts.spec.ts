@@ -1,6 +1,6 @@
-import { addGiftCardToCartWorkflow } from "@medusajs/loyalty-plugin/workflows"
-import { MedusaError, Modules, ProductStatus } from "@medusajs/framework/utils"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { addGiftCardToCartWorkflow } from "@nedusa/loyalty-plugin/workflows"
+import { MedusaError, Modules, ProductStatus } from "@nedusa/framework/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import {
   adminHeaders,
   createAdminUser,

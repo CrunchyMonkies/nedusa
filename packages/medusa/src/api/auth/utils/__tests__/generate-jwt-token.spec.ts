@@ -1,9 +1,9 @@
-import { FeatureFlag } from "@medusajs/framework/utils"
+import { FeatureFlag } from "@nedusa/framework/utils"
 import jwt from "jsonwebtoken"
 import { generateJwtTokenForAuthIdentity } from "../generate-jwt-token"
 
-jest.mock("@medusajs/framework/utils", () => ({
-  ...jest.requireActual("@medusajs/framework/utils"),
+jest.mock("@nedusa/framework/utils", () => ({
+  ...jest.requireActual("@nedusa/framework/utils"),
   FeatureFlag: {
     isFeatureEnabled: jest.fn().mockReturnValue(false),
   },

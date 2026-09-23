@@ -3,7 +3,7 @@ import {
   FindParams,
   OperatorMap,
   PaginatedResponse,
-} from "@medusajs/framework/types";
+} from "@nedusa/framework/types";
 import {
   ModuleAccountTransaction,
   ModuleCreateAccountTransaction,

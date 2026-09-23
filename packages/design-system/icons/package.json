@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/icons",
+  "name": "@nedusa/icons",
   "version": "2.21.1",
   "description": "Medusa UI React icon library",
   "author": "Kasper Kristensen <kasper@medusajs.com>",
@@ -31,7 +31,7 @@
     "generate": "rimraf ./src/components && toolbox icons -o './src/components'"
   },
   "devDependencies": {
-    "@medusajs/toolbox": "2.21.1",
+    "@nedusa/toolbox": "2.21.1",
     "react": "^18.3.1"
   },
   "peerDependencies": {

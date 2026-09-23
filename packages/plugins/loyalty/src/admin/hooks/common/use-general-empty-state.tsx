@@ -1,4 +1,4 @@
-import { DataTableEmptyStateProps } from "@medusajs/ui";
+import { DataTableEmptyStateProps } from "@nedusa/ui";
 import { useMemo } from "react";
 
 export const useGeneralEmptyState = (): DataTableEmptyStateProps => {

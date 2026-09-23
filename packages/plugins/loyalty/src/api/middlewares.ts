@@ -1,6 +1,6 @@
-import { defineMiddlewares } from "@medusajs/framework";
-import { allowFields } from "@medusajs/framework/http";
-import { MiddlewareRoute } from "@medusajs/medusa";
+import { defineMiddlewares } from "@nedusa/framework";
+import { allowFields } from "@nedusa/framework/http";
+import { MiddlewareRoute } from "@nedusa/medusa";
 import { adminGiftCardMiddlewares } from "./admin/gift-cards/middlewares";
 import { adminStoreCreditAccountMiddlewares } from "./admin/store-credit-accounts/middlewares";
 import { storeCartMiddlewares } from "./store/carts/middlewares";

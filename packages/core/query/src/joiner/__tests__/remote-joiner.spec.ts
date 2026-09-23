@@ -1,5 +1,5 @@
-import { IModuleService, MedusaContainer } from "@medusajs/types"
-import { lowerCaseFirst, toPascalCase } from "@medusajs/utils"
+import { IModuleService, MedusaContainer } from "@nedusa/types"
+import { lowerCaseFirst, toPascalCase } from "@nedusa/utils"
 import { IRemoteDataFetcher, RemoteExpandProperty, RemoteJoiner } from ".."
 import {
   createFulfillmentLocationCatalog,

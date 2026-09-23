@@ -1,10 +1,10 @@
 import {
   deleteLineItemsWorkflowId,
   updateLineItemInCartWorkflowId,
-} from "@medusajs/core-flows"
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
-import { AdditionalData, HttpTypes } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+} from "@nedusa/core-flows"
+import { MedusaRequest, MedusaResponse } from "@nedusa/framework/http"
+import { AdditionalData, HttpTypes } from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
 import { refetchCart } from "../../../helpers"
 
 export const POST = async (

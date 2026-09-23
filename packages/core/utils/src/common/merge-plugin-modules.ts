@@ -2,7 +2,7 @@ import type {
   PluginDetails,
   ConfigModule,
   InputConfigModules,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import { transformModules } from "./define-config"
 
 /**
@@ -15,7 +15,7 @@ export function mergePluginModules(
   /**
    * Root directory of the Medusa application. The modules exposed by a plugin
    * are referenced by a bare specifier, so they have to be resolved from the
-   * application and not from wherever `@medusajs/utils` was hoisted to.
+   * application and not from wherever `@nedusa/utils` was hoisted to.
    */
   rootDirectory: string = process.cwd()
 ) {

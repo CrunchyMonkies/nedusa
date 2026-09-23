@@ -1,5 +1,5 @@
-import { Component } from "@medusajs/icons"
-import { clx, Tooltip } from "@medusajs/ui"
+import { Component } from "@nedusa/icons"
+import { clx, Tooltip } from "@nedusa/ui"
 import { useTranslation } from "react-i18next"
 
 import { getVariantInventory, VariantInventory } from "./get-variant-inventory"

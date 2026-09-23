@@ -2,14 +2,14 @@ import {
   OrderChangeDTO,
   OrderDTO,
   OrderWorkflow,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   WorkflowData,
   WorkflowResponse,
   createStep,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { useRemoteQueryStep } from "../../../common"
 import { createOrderChangeStep, createReturnsStep } from "../../steps"
 import { throwIfOrderIsCancelled } from "../../utils/order-validation"

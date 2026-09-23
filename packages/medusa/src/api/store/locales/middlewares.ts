@@ -1,4 +1,4 @@
-import { MiddlewareRoute } from "@medusajs/framework/http"
+import { MiddlewareRoute } from "@nedusa/framework/http"
 
 export const storeLocalesRoutesMiddlewares: MiddlewareRoute[] = [
   {

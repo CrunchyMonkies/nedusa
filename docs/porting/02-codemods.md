@@ -36,6 +36,45 @@ to `PATH`, so a root devDependency's binary resolves inside any workspace packag
 was verified empirically against pnpm 11.23.0 before the transform was written, rather
 than assumed — see [06-pnpm-conventions.md](06-pnpm-conventions.md) §8.
 
+### `scope-rename`
+
+Renames `@medusajs` → `@nedusa`. Applied to 11,367 occurrences across 4,591 files on the
+v2.21.1 import.
+
+It is a **textual** rename, not an AST import rewrite, and the matching rule is narrower
+than it first appears:
+
+```js
+const SCOPE_RE = /@medusajs(?![.\-\w])/g
+```
+
+The negative lookahead is load-bearing. `.` protects email addresses and documentation
+domains — `kasper@medusajs.com` appears as the `author` in 7 manifests and must not be
+touched — and `-` protects the `@medusajs-bot` account referenced in CI.
+
+Everything *else* following the scope is in play, which matters more than it looks. An
+earlier version matched the literal `"@medusajs/"` and silently missed three shapes:
+
+| Missed shape | Where | Consequence |
+| --- | --- | --- |
+| `"@medusajs"` bare | `eslint-plugin/src/constants.ts` `PLUGIN_NAMESPACE` | every lint rule name stayed on the old scope; caught by tests |
+| `/^@medusajs\/[^/]+/` escaped slash in a RegExp | `import-from-framework-not-internal/rule.ts` | **silent** — the rule simply stopped matching the fork's own packages |
+| `@medusajs\/ui` in a CI regex | `notify-upcoming-release-items.yml` | **silent** — release filtering breaks |
+
+The two silent cases are the reason this codemod is textual. An import-specifier rewrite
+would not have seen any of them, and nothing would have failed.
+
+Package names also appear as **runtime module-resolution strings**:
+`packages/core/utils/src/modules-sdk/definition.ts` alone carries 36
+(`"@medusajs/medusa/analytics"` and friends). Missing those breaks module loading at
+runtime rather than at compile time.
+
+Excluded from the rename: `www/` (a separate workspace, still on yarn, mostly prose —
+renamed in Phase 5), `docs/porting/` and `CHANGELOG.md` (they discuss upstream by name).
+
+It also exports `normalise()`, which reverses the rename for the upstream differ. See
+[adr/ADR-011-scope-rename.md](adr/ADR-011-scope-rename.md) for the merge cost.
+
 ### `link-workspaces-at-root`
 
 Ensures every workspace package is listed in the root `package.json` `devDependencies` as

@@ -1,3 +1,3 @@
-import { formatException as originalFormatException } from "@medusajs/framework/http"
+import { formatException as originalFormatException } from "@nedusa/framework/http"
 
 export const formatException = originalFormatException

@@ -2,7 +2,7 @@ import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { deletePropertyLabelsStep } from "../steps"
 
 export interface DeletePropertyLabelsWorkflowInput {

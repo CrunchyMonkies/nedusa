@@ -1,6 +1,6 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { RemoteQueryFunction, SearchTypes } from "@medusajs/types"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { RemoteQueryFunction, SearchTypes } from "@nedusa/types"
+import { ContainerRegistrationKeys, Modules } from "@nedusa/utils"
 import {
   adminHeaders,
   createAdminUser,

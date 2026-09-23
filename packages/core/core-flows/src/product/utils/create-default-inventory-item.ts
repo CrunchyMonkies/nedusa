@@ -1,4 +1,4 @@
-import { InventoryTypes } from "@medusajs/framework/types"
+import { InventoryTypes } from "@nedusa/framework/types"
 
 /**
  * The variant fields that are carried over to its default inventory item.

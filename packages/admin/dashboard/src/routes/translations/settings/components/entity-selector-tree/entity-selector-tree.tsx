@@ -1,5 +1,5 @@
-import { TriangleRightMini } from "@medusajs/icons"
-import { Checkbox, clx, Divider, Text } from "@medusajs/ui"
+import { TriangleRightMini } from "@nedusa/icons"
+import { Checkbox, clx, Divider, Text } from "@nedusa/ui"
 import React, { useImperativeHandle, useMemo, useState, useEffect } from "react"
 
 export type EntityField = {

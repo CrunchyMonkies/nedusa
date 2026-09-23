@@ -1,5 +1,5 @@
-import { SearchTypes } from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+import { SearchTypes } from "@nedusa/framework/types"
+import { MedusaError } from "@nedusa/framework/utils"
 import type { Filter } from "./api-types"
 import { IndexPlan, PlannedField } from "./plan"
 

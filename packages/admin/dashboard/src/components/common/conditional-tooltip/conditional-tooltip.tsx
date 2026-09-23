@@ -1,4 +1,4 @@
-import { Tooltip } from "@medusajs/ui"
+import { Tooltip } from "@nedusa/ui"
 import { ComponentPropsWithoutRef, PropsWithChildren } from "react"
 
 type ConditionalTooltipProps = PropsWithChildren<

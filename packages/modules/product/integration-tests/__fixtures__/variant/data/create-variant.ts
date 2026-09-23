@@ -1,4 +1,4 @@
-import { ProductTypes } from "@medusajs/framework/types"
+import { ProductTypes } from "@nedusa/framework/types"
 import faker from "faker"
 
 export const buildProductVariantOnlyData = ({

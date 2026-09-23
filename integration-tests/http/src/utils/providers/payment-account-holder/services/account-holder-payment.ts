@@ -27,13 +27,13 @@ import {
   UpdatePaymentInput,
   UpdatePaymentOutput,
   WebhookActionResult,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   AbstractPaymentProvider,
   MedusaError,
   PaymentActions,
   PaymentSessionStatus,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 /**
  * Test payment provider used to exercise the account-holder flow in

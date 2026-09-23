@@ -5,7 +5,7 @@ import {
   BigNumberInput,
   InferEntityType,
   PromotionDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 
 import { Promotion } from "@models"
 

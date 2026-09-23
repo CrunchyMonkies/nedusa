@@ -2,8 +2,8 @@ import {
   OrderChangeDTO,
   OrderDTO,
   PromotionDTO,
-} from "@medusajs/framework/types"
-import { ChangeActionType } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { ChangeActionType } from "@nedusa/framework/utils"
 import {
   createHook,
   createWorkflow,
@@ -11,7 +11,7 @@ import {
   when,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import {
   getActionsToComputeFromPromotionsStep,
   prepareAdjustmentsFromPromotionActionsStep,

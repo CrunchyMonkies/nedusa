@@ -4,7 +4,7 @@ import {
   IMessageAggregator,
   Message,
   MessageAggregatorFormat,
-} from "@medusajs/types"
+} from "@nedusa/types"
 
 import { composeMessage } from "./build-event-messages"
 

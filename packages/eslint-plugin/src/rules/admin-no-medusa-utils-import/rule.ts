@@ -9,9 +9,9 @@ type MessageIds = "nodeOnlyImportInAdmin"
  * build (or ships server-only code to the client).
  */
 const FORBIDDEN_ADMIN_IMPORTS = new Set([
-  "@medusajs/framework/utils",
-  "@medusajs/framework/http",
-  "@medusajs/framework/workflows-sdk",
+  "@nedusa/framework/utils",
+  "@nedusa/framework/http",
+  "@nedusa/framework/workflows-sdk",
 ])
 
 function check(
@@ -41,7 +41,7 @@ export const rule = createRule<[], MessageIds>({
     type: "problem",
     docs: {
       description:
-        "Don't import Node-only framework modules (`@medusajs/framework/utils`, `@medusajs/framework/http`, `@medusajs/framework/workflows-sdk`) in admin code — they break the browser bundle.",
+        "Don't import Node-only framework modules (`@nedusa/framework/utils`, `@nedusa/framework/http`, `@nedusa/framework/workflows-sdk`) in admin code — they break the browser bundle.",
     },
     messages: {
       nodeOnlyImportInAdmin:

@@ -2,17 +2,17 @@ import {
   OrderChangeDTO,
   OrderDTO,
   OrderPreviewDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   OrderChangeStatus,
   OrderEditWorkflowEvents,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   WorkflowResponse,
   createStep,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { emitEventStep, useQueryGraphStep } from "../../../common"
 import { acquireLockStep, releaseLockStep } from "../../../locking"
 import { previewOrderChangeStep } from "../../steps"

@@ -1,5 +1,5 @@
-import { MedusaError, Modules } from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+import { MedusaError, Modules } from "@nedusa/framework/utils"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
 
 /**
  * @ignore

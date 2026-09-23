@@ -1,4 +1,4 @@
-import { defineSearchIndex, search } from "@medusajs/utils"
+import { defineSearchIndex, search } from "@nedusa/utils"
 
 // The file name matters: "-index.ts" must not be mistaken for a barrel file
 // and skipped.

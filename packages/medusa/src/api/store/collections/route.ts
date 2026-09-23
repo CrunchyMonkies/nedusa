@@ -1,10 +1,10 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
+} from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
 
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils"
 import { publishedProductsContext } from "../utils/published-products-context"
 
 export const GET = async (

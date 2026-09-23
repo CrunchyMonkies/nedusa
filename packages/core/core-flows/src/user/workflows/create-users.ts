@@ -1,11 +1,11 @@
-import type { UserDTO, UserWorkflow } from "@medusajs/framework/types"
-import { UserWorkflowEvents } from "@medusajs/framework/utils"
+import type { UserDTO, UserWorkflow } from "@nedusa/framework/types"
+import { UserWorkflowEvents } from "@nedusa/framework/utils"
 import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { createRemoteLinkStep } from "../../common/steps/create-remote-links"
 import { emitEventStep } from "../../common/steps/emit-event"
 import { validateRolesExistStep } from "../../invite/steps/validate-roles-exist"

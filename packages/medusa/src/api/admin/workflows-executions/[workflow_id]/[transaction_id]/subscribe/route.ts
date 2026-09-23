@@ -1,10 +1,10 @@
-import { IWorkflowEngineService } from "@medusajs/framework/types"
+import { IWorkflowEngineService } from "@nedusa/framework/types"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 
-import { Modules } from "@medusajs/framework/utils"
+import { Modules } from "@nedusa/framework/utils"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest,

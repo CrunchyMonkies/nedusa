@@ -8,7 +8,7 @@ ruleTester.run("no-nested-when-in-workflow", rule, {
     // A single top-level `when().then()` in the workflow constructor is fine.
     {
       code: `
-        import { createWorkflow, when } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow, when } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", (input) => {
           return when({ input }, (data) => data.input.foo).then(() => {
             return input
@@ -19,7 +19,7 @@ ruleTester.run("no-nested-when-in-workflow", rule, {
     // Sibling (non-nested) `when().then()` calls in the constructor are fine.
     {
       code: `
-        import { createWorkflow, when, createStep } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow, when, createStep } from "@nedusa/framework/workflows-sdk"
         const stepA = createStep("a", () => {})
         const stepB = createStep("b", () => {})
         createWorkflow("my-workflow", (input) => {
@@ -43,7 +43,7 @@ ruleTester.run("no-nested-when-in-workflow", rule, {
     // `when(...)` outside any when-then callback (e.g. in a plain helper).
     {
       code: `
-        import { createWorkflow, when } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow, when } from "@nedusa/framework/workflows-sdk"
         function helper(input) {
           return when(input, () => true)
         }
@@ -56,7 +56,7 @@ ruleTester.run("no-nested-when-in-workflow", rule, {
     // directly inside an outer `when().then()` callback.
     {
       code: `
-        import { createWorkflow, when, WorkflowResponse } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow, when, WorkflowResponse } from "@nedusa/framework/workflows-sdk"
         createWorkflow("demo", function (input) {
           const outer = when({ input }, (d) => d.input.items.length > 0).then(() => {
             const inner = when({ input }, (d) => d.input.flag).then(() => someStep(input))
@@ -72,7 +72,7 @@ ruleTester.run("no-nested-when-in-workflow", rule, {
     // resolves before the outer one does.
     {
       code: `
-        import { createWorkflow, when } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow, when } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", (input) => {
           when({ input }, (d) => d.input.foo).then(() => {
             when({ input }, (d) => d.input.bar).then(() => stepA())
@@ -89,7 +89,7 @@ ruleTester.run("no-nested-when-in-workflow", rule, {
     // function boundary sits between the inner call and the outer callback.
     {
       code: `
-        import { createWorkflow, when } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow, when } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", (input) => {
           when({ input }, (d) => d.input.foo).then(() => {
             if (input.flag) {
@@ -103,7 +103,7 @@ ruleTester.run("no-nested-when-in-workflow", rule, {
     // Aliased `when` import is tracked too.
     {
       code: `
-        import { createWorkflow, when as w } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow, when as w } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", (input) => {
           w({ input }, (d) => d.input.foo).then(() => {
             w({ input }, (d) => d.input.bar).then(() => stepA())
@@ -116,7 +116,7 @@ ruleTester.run("no-nested-when-in-workflow", rule, {
     // nested inside a `when().then()` callback.
     {
       code: `
-        import { createWorkflow, when } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow, when } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", (input) => {
           when({ input }, (d) => d.input.a).then(() => {
             when({ input }, (d) => d.input.b).then(() => {

@@ -1,15 +1,15 @@
 import {
   deleteShippingOptionTypesWorkflow,
   updateShippingOptionTypesWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 
 import { refetchShippingOptionType } from "../helpers"
-import { HttpTypes } from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+import { HttpTypes } from "@nedusa/framework/types"
+import { MedusaError } from "@nedusa/framework/utils"
 
 /**
  * @since 2.10.0

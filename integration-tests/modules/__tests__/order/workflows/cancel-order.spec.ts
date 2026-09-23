@@ -2,8 +2,8 @@ import {
   cancelOrderFulfillmentWorkflow,
   cancelOrderWorkflow,
   createOrderFulfillmentWorkflow,
-} from "@medusajs/core-flows"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@nedusa/core-flows"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import {
   IOrderModuleService,
   InventoryItemDTO,
@@ -12,12 +12,12 @@ import {
   RegionDTO,
   ShippingOptionDTO,
   StockLocationDTO,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import {
   ContainerRegistrationKeys,
   Modules,
   remoteQueryObjectFromString,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import { createOrderFixture, prepareDataFixtures } from "./__fixtures__"
 
 jest.setTimeout(500000)

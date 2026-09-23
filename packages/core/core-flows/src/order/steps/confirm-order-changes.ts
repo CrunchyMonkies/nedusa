@@ -1,6 +1,6 @@
-import type { OrderChangeDTO } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+import type { OrderChangeDTO } from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
 
 /**
  * The input for the confirm order changes step.

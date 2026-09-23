@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/eslint-plugin",
+  "name": "@nedusa/eslint-plugin",
   "version": "2.21.1",
   "description": "Official ESLint plugin for Medusa projects. Enforces Medusa's framework conventions across API routes, modules, workflows, subscribers, jobs, admin extensions, and module links.",
   "repository": {

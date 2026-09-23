@@ -1,13 +1,13 @@
-import type { ProjectConfigOptions } from "@medusajs/framework/types"
+import type { ProjectConfigOptions } from "@nedusa/framework/types"
 import {
   AuthWorkflowEvents,
   generateJwtToken,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   createWorkflow,
   transform,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { emitEventStep } from "../../common"
 import { createPasswordResetTokenStep } from "../steps"
 

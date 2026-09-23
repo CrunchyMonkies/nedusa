@@ -3,12 +3,12 @@ import {
   IEventBusModuleService,
   INotificationModuleService,
   Logger,
-} from "@medusajs/types"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/utils"
+} from "@nedusa/types"
+import { ContainerRegistrationKeys, Modules } from "@nedusa/utils"
 import {
   TestEventUtils,
   medusaIntegrationTestRunner,
-} from "@medusajs/test-utils"
+} from "@nedusa/test-utils"
 
 jest.setTimeout(50000)
 

@@ -1,4 +1,4 @@
-import { QueryContextType, SearchTypes } from "@medusajs/types"
+import { QueryContextType, SearchTypes } from "@nedusa/types"
 
 /**
  * `seed` and `consume` implementations backed by `query.graph`.

@@ -1,4 +1,4 @@
-import { InferSearchObjectValue, SearchPropertyMetadata, SearchSchema } from "@medusajs/types"
+import { InferSearchObjectValue, SearchPropertyMetadata, SearchSchema } from "@nedusa/types"
 import { ScalarSearchProperty } from "./base"
 
 export class ObjectProperty<

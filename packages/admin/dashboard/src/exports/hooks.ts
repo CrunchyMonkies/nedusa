@@ -1,5 +1,5 @@
 /**
- * Public hook exports for `@medusajs/dashboard/hooks`.
+ * Public hook exports for `@nedusa/dashboard/hooks`.
  */
 
 export {

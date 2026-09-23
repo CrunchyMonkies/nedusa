@@ -3,7 +3,7 @@ import {
   createWorkflow,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { deleteSearchIndexStep } from "../steps/delete-search-index"
 import { validateSearchIndexesExistStep } from "../steps/validate-search-indexes-exist"
 

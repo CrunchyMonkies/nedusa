@@ -1,11 +1,11 @@
-import type { ProductTypes } from "@medusajs/framework/types"
-import { ProductOptionValueWorkflowEvents } from "@medusajs/framework/utils"
+import type { ProductTypes } from "@nedusa/framework/types"
+import { ProductOptionValueWorkflowEvents } from "@nedusa/framework/utils"
 import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { emitEventStep } from "../../common/steps/emit-event"
 import { updateProductOptionValuesStep } from "../steps"
 

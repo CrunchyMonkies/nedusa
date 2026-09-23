@@ -1,7 +1,7 @@
-import { ICustomerModuleService } from "@medusajs/framework/types"
-import { Module, Modules } from "@medusajs/framework/utils"
+import { ICustomerModuleService } from "@nedusa/framework/types"
+import { Module, Modules } from "@nedusa/framework/utils"
 import { CustomerModuleService } from "@services"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
+import { moduleIntegrationTestRunner } from "@nedusa/test-utils"
 
 jest.setTimeout(30000)
 

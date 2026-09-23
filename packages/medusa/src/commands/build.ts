@@ -1,5 +1,5 @@
-import { Compiler } from "@medusajs/framework/build-tools"
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+import { Compiler } from "@nedusa/framework/build-tools"
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils"
 import { initializeContainer } from "../loaders"
 import { generateTypes } from "./utils/generate-types"
 import { runLintStep } from "./utils/lint-project"
@@ -51,7 +51,7 @@ export default async function build({
     promises.push(compiler.buildAppBackend(tsConfig))
   }
 
-  const bundler = await import("@medusajs/admin-bundler")
+  const bundler = await import("@nedusa/admin-bundler")
   promises.push(compiler.buildAppFrontend(adminOnly, tsConfig, bundler))
   const responses = await Promise.all(promises)
 

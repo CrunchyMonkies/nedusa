@@ -1,4 +1,4 @@
-import { ConfigModule } from "@medusajs/framework/types"
+import { ConfigModule } from "@nedusa/framework/types"
 
 /**
  * Returns the list of auth provider IDs allowed for the given actor type, as

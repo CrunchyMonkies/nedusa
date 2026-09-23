@@ -1,13 +1,13 @@
 import {
   IPromotionModuleService,
   UpdatePromotionDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   Modules,
   convertItemResponseToUpdateRequest,
   getSelectsAndRelationsFromObjectArray,
-} from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/utils"
+import { StepResponse, createStep } from "@nedusa/framework/workflows-sdk"
 
 export const updatePromotionsStepId = "update-promotions"
 /**

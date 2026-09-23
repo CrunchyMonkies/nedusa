@@ -4,7 +4,7 @@ import {
   createWorkflow,
   transform,
   when,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { deleteAuthIdentityStep, setAuthAppMetadataStep } from "../../auth"
 import { useQueryGraphStep } from "../../common"
 import { deleteUsersWorkflow } from "./delete-users"

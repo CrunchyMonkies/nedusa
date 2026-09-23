@@ -1,5 +1,5 @@
-import { FetchError } from "@medusajs/js-sdk"
-import { CreateOrderCreditLineDTO, HttpTypes } from "@medusajs/types"
+import { FetchError } from "@nedusa/js-sdk"
+import { CreateOrderCreditLineDTO, HttpTypes } from "@nedusa/types"
 import {
   QueryKey,
   useMutation,

@@ -1,5 +1,5 @@
-import { JobLoader } from "@medusajs/framework/jobs"
-import { Logger, MedusaContainer } from "@medusajs/framework/types"
+import { JobLoader } from "@nedusa/framework/jobs"
+import { Logger, MedusaContainer } from "@nedusa/framework/types"
 import { ModuleCacheManager } from "../module-cache-manager"
 import { ResourceRegistry } from "../resource-registry"
 import { CONFIG, DevServerGlobals, FileChangeAction } from "../types"

@@ -4,7 +4,7 @@ import {
   transform,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import {
   useQueryGraphStep,
   useRemoteQueryStep,
@@ -15,12 +15,12 @@ import { cartFieldsForPricingContext } from "../utils/fields"
 import {
   AdditionalData,
   ListShippingOptionsForCartWorkflowInput,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   deduplicate,
   filterObjectByKeys,
   isDefined,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   pricingContextResult,
   shippingOptionsContextResult,
@@ -81,8 +81,8 @@ export const listShippingOptionsForCartWorkflowId =
  * You can consume the `setPricingContext` hook to add the `location_id` context to the prices calculation:
  *
  * ```ts
- * import { listShippingOptionsForCartWorkflow } from "@medusajs/medusa/core-flows";
- * import { StepResponse } from "@medusajs/workflows-sdk";
+ * import { listShippingOptionsForCartWorkflow } from "@nedusa/medusa/core-flows";
+ * import { StepResponse } from "@nedusa/workflows-sdk";
  *
  * listShippingOptionsForCartWorkflow.hooks.setPricingContext((
  *   { cart, fulfillmentSetIds, additional_data }, { container }
@@ -106,8 +106,8 @@ export const listShippingOptionsForCartWorkflowId =
  * For example, you can consume the hook to add the customer Id to the context:
  *
  * ```ts
- * import { listShippingOptionsForCartWithPricingWorkflow } from "@medusajs/medusa/core-flows"
- * import { StepResponse } from "@medusajs/workflows-sdk"
+ * import { listShippingOptionsForCartWithPricingWorkflow } from "@nedusa/medusa/core-flows"
+ * import { StepResponse } from "@nedusa/workflows-sdk"
  *
  * listShippingOptionsForCartWithPricingWorkflow.hooks.setShippingOptionsContext(
  *   async ({ cart }, { container }) => {

@@ -1,16 +1,16 @@
 import {
   CreateShippingProfileDTO,
   IFulfillmentModuleService,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   MockEventBusService,
   moduleIntegrationTestRunner,
-} from "@medusajs/test-utils"
+} from "@nedusa/test-utils"
 import {
   buildExpectedEventMessageShape,
   generateCreateShippingOptionsData,
 } from "../../__fixtures__"
-import { FulfillmentEvents, Modules } from "@medusajs/framework/utils"
+import { FulfillmentEvents, Modules } from "@nedusa/framework/utils"
 import { resolve } from "path"
 import { FulfillmentProviderService } from "@services"
 import { FulfillmentProviderServiceFixtures } from "../../__fixtures__/providers"

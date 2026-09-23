@@ -4,8 +4,8 @@ import {
   RegisterOrderChangeDTO,
   UpdateOrderDTO,
   UpsertOrderAddressDTO,
-} from "@medusajs/framework/types"
-import { Modules, OrderWorkflowEvents } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { Modules, OrderWorkflowEvents } from "@nedusa/framework/utils"
 import {
   createStep,
   createWorkflow,
@@ -15,7 +15,7 @@ import {
   when,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { emitEventStep, useRemoteQueryStep } from "../../common"
 import { acquireLockStep, releaseLockStep } from "../../locking"
 import {

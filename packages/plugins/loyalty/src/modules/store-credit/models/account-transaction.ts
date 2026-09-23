@@ -1,4 +1,4 @@
-import { model } from "@medusajs/framework/utils";
+import { model } from "@nedusa/framework/utils";
 import { TransactionType } from "../../../types";
 import storeCreditAccount from "./store-credit-account";
 

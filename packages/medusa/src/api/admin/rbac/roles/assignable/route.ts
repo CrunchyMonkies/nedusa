@@ -1,9 +1,9 @@
-import { getAssignableRolesWorkflow } from "@medusajs/core-flows"
+import { getAssignableRolesWorkflow } from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { defineFileConfig, FeatureFlag } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { defineFileConfig, FeatureFlag } from "@nedusa/framework/utils"
 
 import RbacFeatureFlag from "../../../../../feature-flags/rbac"
 import { AdminGetRbacRolesParamsType } from "../validators"

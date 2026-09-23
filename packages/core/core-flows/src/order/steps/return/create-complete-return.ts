@@ -1,9 +1,9 @@
 import {
   CreateOrderReturnDTO,
   IOrderModuleService,
-} from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
+import { StepResponse, createStep } from "@nedusa/framework/workflows-sdk"
 
 export const createCompleteReturnStepId = "create-complete-return"
 /**

@@ -1,4 +1,4 @@
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@nedusa/types"
 import { TFunction } from "i18next"
 import { castNumber } from "../../../lib/cast-number"
 import { jsonResponse } from "../../../lib/json-response"

@@ -170,9 +170,9 @@ jobs:
           node --input-type=module << 'EOF'
           import { readdirSync, readFileSync, appendFileSync } from "fs"
 
-          // Every `@medusajs/*` package except `@medusajs/ui` is in the
+          // Every `@nedusa/*` package except `@nedusa/ui` is in the
           // changesets `fixed` group, so the monorepo releases under a single
-          // version — `@medusajs/medusa` is representative of it.
+          // version — `@nedusa/medusa` is representative of it.
           const current = JSON.parse(
             readFileSync("packages/medusa/package.json", "utf8")
           ).version
@@ -182,7 +182,7 @@ jobs:
           )
           const isMinor = pending.some((file) => {
             const content = readFileSync(`.changeset/${file}`, "utf8")
-            return /^\s*"(?!@medusajs\/ui")[^"]+":\s*(minor|major)\s*$/m.test(content)
+            return /^\s*"(?!@nedusa\/ui")[^"]+":\s*(minor|major)\s*$/m.test(content)
           })
 
           const [major, minor, patch] = current.split(".").map(Number)

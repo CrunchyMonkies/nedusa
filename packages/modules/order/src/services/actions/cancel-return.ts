@@ -3,12 +3,12 @@ import {
   CreateOrderChangeActionDTO,
   OrderTypes,
   ReturnDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ChangeActionType,
   promiseAll,
   ReturnStatus,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 async function createOrderChange(
   service,

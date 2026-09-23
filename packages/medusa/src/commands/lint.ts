@@ -1,4 +1,4 @@
-import { logger } from "@medusajs/framework/logger"
+import { logger } from "@nedusa/framework/logger"
 import { lintProject, LintOutcome } from "./utils/lint-project"
 
 export default async function lint({
@@ -36,7 +36,7 @@ export default async function lint({
 
   if (outcome.status === "no-config") {
     logger.error(
-      "No eslint.config.js found. Add one that extends `@medusajs/eslint-plugin` to lint this project."
+      "No eslint.config.js found. Add one that extends `@nedusa/eslint-plugin` to lint this project."
     )
     process.exit(1)
   }

@@ -1,14 +1,14 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
 import {
   clearLayoutConfigurationWorkflow,
   setLayoutConfigurationWorkflow,
-} from "@medusajs/core-flows"
-import { ISettingsModuleService } from "@medusajs/framework/types"
+} from "@nedusa/core-flows"
+import { ISettingsModuleService } from "@nedusa/framework/types"
 
 const getConfigurations = async (
   settingsService: ISettingsModuleService,

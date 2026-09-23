@@ -1,17 +1,17 @@
 import {
   InferEntityType,
   IProductModuleService,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   CommonEvents,
   composeMessage,
   Modules,
   ProductEvents,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   MockEventBusService,
   moduleIntegrationTestRunner,
-} from "@medusajs/test-utils"
+} from "@nedusa/test-utils"
 import { ProductOption } from "../../../src/models"
 import { buildProductAndRelationsData } from "../../__fixtures__/product"
 

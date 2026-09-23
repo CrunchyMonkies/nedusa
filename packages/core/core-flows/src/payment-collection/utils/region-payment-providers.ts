@@ -1,5 +1,5 @@
-import type { MedusaContainer } from "@medusajs/framework/types"
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+import type { MedusaContainer } from "@nedusa/framework/types"
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils"
 
 /**
  * Retrieves the IDs of the payment providers that are enabled in a region.

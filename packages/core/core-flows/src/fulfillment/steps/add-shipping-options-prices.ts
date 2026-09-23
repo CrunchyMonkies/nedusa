@@ -4,9 +4,9 @@ import {
   IPricingModuleService,
   IRegionModuleService,
   PriceRule,
-} from "@medusajs/framework/types"
-import { isString, Modules } from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/types"
+import { isString, Modules } from "@nedusa/framework/utils"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
 
 /**
  * The data to create price sets for a currency code.

@@ -1,4 +1,4 @@
-import { model } from "@medusajs/framework/utils"
+import { model } from "@nedusa/framework/utils"
 
 export const User = model
   .define("user", {

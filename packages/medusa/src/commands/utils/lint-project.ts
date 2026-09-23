@@ -1,4 +1,4 @@
-import { Logger } from "@medusajs/framework/types"
+import { Logger } from "@nedusa/framework/types"
 import fs from "node:fs"
 import path from "node:path"
 
@@ -28,7 +28,7 @@ export type LintOutcome =
 /**
  * Resolve the `eslint` module from the consumer's project rather than from the
  * CLI's own dependencies. `eslint` is a peer dependency of
- * `@medusajs/eslint-plugin`, so it is installed in the user's project and is
+ * `@nedusa/eslint-plugin`, so it is installed in the user's project and is
  * not bundled with Medusa. Returns `null` when it cannot be found.
  */
 function loadEslintModule(cwd: string): any | null {
@@ -123,7 +123,7 @@ export async function lintProject(opts: {
  * common flow; the only difference between the two callers is `failOnError`:
  *
  * - `--lint false`            → skipped silently (debug log). On `build` and
- *   `develop`, linting is off by default unless `@medusajs/eslint-plugin` is
+ *   `develop`, linting is off by default unless `@nedusa/eslint-plugin` is
  *   installed in the project.
  * - no `eslint.config.js`     → skipped with an info log; caller continues.
  * - `eslint` not installed    → skipped with a warn log; caller continues.

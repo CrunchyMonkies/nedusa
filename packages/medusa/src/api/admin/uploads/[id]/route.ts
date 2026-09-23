@@ -1,14 +1,14 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { deleteFilesWorkflow } from "@medusajs/core-flows"
-import { HttpTypes } from "@medusajs/framework/types"
+} from "@nedusa/framework/http"
+import { deleteFilesWorkflow } from "@nedusa/core-flows"
+import { HttpTypes } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   MedusaError,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<HttpTypes.AdminGetUploadParams>,

@@ -1,16 +1,16 @@
 import {
   removeAddItemClaimActionWorkflow,
   updateClaimAddItemWorkflow,
-} from "@medusajs/core-flows"
-import { HttpTypes } from "@medusajs/framework/types"
+} from "@nedusa/core-flows"
+import { HttpTypes } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 
 export const POST = async (
   req: AuthenticatedMedusaRequest<

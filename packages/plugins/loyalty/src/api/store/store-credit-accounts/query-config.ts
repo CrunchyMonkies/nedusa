@@ -1,4 +1,4 @@
-import { buildAllowedFields } from "@medusajs/medusa/api/store/utils/allowed-fields";
+import { buildAllowedFields } from "@nedusa/medusa/api/store/utils/allowed-fields";
 
 export const storeCreditAccountFields = [
   "id",

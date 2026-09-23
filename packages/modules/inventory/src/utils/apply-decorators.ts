@@ -3,8 +3,8 @@ import {
   isDefined,
   MathBN,
   toMikroORMEntity,
-} from "@medusajs/framework/utils"
-import { Formula, OnInit } from "@medusajs/framework/mikro-orm/core"
+} from "@nedusa/framework/utils"
+import { Formula, OnInit } from "@nedusa/framework/mikro-orm/core"
 
 import InventoryItem from "../models/inventory-item"
 import InventoryLevel from "../models/inventory-level"

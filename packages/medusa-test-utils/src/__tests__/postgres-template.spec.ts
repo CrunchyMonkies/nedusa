@@ -2,7 +2,7 @@ const mockConnect = jest.fn()
 const mockQuery = jest.fn()
 const mockEnd = jest.fn()
 
-jest.mock("@medusajs/framework/pg", () => ({
+jest.mock("@nedusa/framework/pg", () => ({
   Client: jest.fn(() => ({
     connect: mockConnect,
     query: mockQuery,
@@ -11,7 +11,7 @@ jest.mock("@medusajs/framework/pg", () => ({
   })),
 }))
 
-import { Client } from "@medusajs/framework/pg"
+import { Client } from "@nedusa/framework/pg"
 import {
   createDatabase,
   dropDatabase,

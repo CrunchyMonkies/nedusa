@@ -1,4 +1,4 @@
-import { CreatePriceSetDTO } from "@medusajs/framework/types"
+import { CreatePriceSetDTO } from "@nedusa/framework/types"
 
 export const defaultPriceSetsData = [
   {

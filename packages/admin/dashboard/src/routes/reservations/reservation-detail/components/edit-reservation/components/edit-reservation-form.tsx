@@ -1,5 +1,5 @@
-import { HttpTypes } from "@medusajs/types"
-import { Button, Select, Text, Textarea, toast } from "@medusajs/ui"
+import { HttpTypes } from "@nedusa/types"
+import { Button, Select, Text, Textarea, toast } from "@nedusa/ui"
 import * as zod from "zod"
 import { RouteDrawer, useRouteModal } from "../../../../../../components/modals"
 

@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/modules-sdk",
+  "name": "@nedusa/modules-sdk",
   "version": "2.21.1",
   "description": "SDK for medusa modules",
   "main": "dist/index.js",
@@ -34,11 +34,11 @@
     "watch": "tsc --build --watch"
   },
   "devDependencies": {
-    "@medusajs/types": "2.21.1"
+    "@nedusa/types": "2.21.1"
   },
   "dependencies": {
-    "@medusajs/deps": "2.21.1",
-    "@medusajs/query": "2.21.1",
-    "@medusajs/utils": "2.21.1"
+    "@nedusa/deps": "2.21.1",
+    "@nedusa/query": "2.21.1",
+    "@nedusa/utils": "2.21.1"
   }
 }

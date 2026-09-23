@@ -10,7 +10,7 @@ import {
   ModulesSdkTypes,
   PromotionDTO,
   PromotionTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ApplicationMethodAllocation,
   ApplicationMethodTargetType,
@@ -32,8 +32,8 @@ import {
   PromotionType,
   toMikroORMEntity,
   transformPropertiesToBigNumber,
-} from "@medusajs/framework/utils"
-import { SqlEntityManager } from "@medusajs/framework/mikro-orm/postgresql"
+} from "@nedusa/framework/utils"
+import { SqlEntityManager } from "@nedusa/framework/mikro-orm/postgresql"
 import {
   ApplicationMethod,
   Campaign,

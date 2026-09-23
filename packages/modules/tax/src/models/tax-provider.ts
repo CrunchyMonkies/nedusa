@@ -1,4 +1,4 @@
-import { model } from "@medusajs/framework/utils"
+import { model } from "@nedusa/framework/utils"
 import { TaxRegion } from "@models"
 
 const TaxProvider = model.define("TaxProvider", {

@@ -1,13 +1,13 @@
 import {
   BigNumberInput,
   ConfirmVariantInventoryWorkflowInputDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   BigNumber,
   MathBN,
   MedusaError,
   deepFlatMap,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 /**
  * The order fields required to confirm inventory availability.

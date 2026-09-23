@@ -1,8 +1,8 @@
 import {
   validateAndTransformBody,
   validateAndTransformQuery,
-} from "@medusajs/framework"
-import { MiddlewareRoute } from "@medusajs/framework/http"
+} from "@nedusa/framework"
+import { MiddlewareRoute } from "@nedusa/framework/http"
 import * as QueryConfig from "./query-config"
 import {
   AdminCreateViewConfiguration,

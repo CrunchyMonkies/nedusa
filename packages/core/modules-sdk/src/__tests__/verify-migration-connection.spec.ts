@@ -1,4 +1,4 @@
-import { MedusaError } from "@medusajs/utils"
+import { MedusaError } from "@nedusa/utils"
 import { verifyMigrationConnection } from "../medusa-app"
 
 describe("verifyMigrationConnection", () => {

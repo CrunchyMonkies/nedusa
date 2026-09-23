@@ -1,9 +1,9 @@
-import { SearchTypes } from "@medusajs/framework/types"
+import { SearchTypes } from "@nedusa/framework/types"
 import {
   MedusaError,
   readDocumentPath,
   setDocumentPath,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import type { AttributeSchema, AttributeSchemaConfig, Row } from "./api-types"
 import type {
   MedusaSearchFieldOptions,

@@ -1,4 +1,4 @@
-import { defineJoinerConfig, Modules } from "@medusajs/framework/utils"
+import { defineJoinerConfig, Modules } from "@nedusa/framework/utils"
 import {
   Fulfillment,
   FulfillmentProvider,

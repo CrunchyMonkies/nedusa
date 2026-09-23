@@ -1,8 +1,8 @@
 import {
   MiddlewareRoute,
   validateAndTransformBody,
-} from "@medusajs/framework/http"
-import { PolicyOperation } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { PolicyOperation } from "@nedusa/framework/utils"
 import { Entities } from "./query-config"
 import {
   AdminPostOrderEditsAddItemsReqSchema,

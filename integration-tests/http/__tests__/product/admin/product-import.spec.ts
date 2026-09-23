@@ -1,11 +1,11 @@
 import { csv2json, json2csv } from "json-2-csv"
-import { batchProductsWorkflow } from "@medusajs/core-flows"
+import { batchProductsWorkflow } from "@nedusa/core-flows"
 import {
   medusaIntegrationTestRunner,
   TestEventUtils,
-} from "@medusajs/test-utils"
-import { IEventBusModuleService } from "@medusajs/types"
-import { CommonEvents, Modules } from "@medusajs/utils"
+} from "@nedusa/test-utils"
+import { IEventBusModuleService } from "@nedusa/types"
+import { CommonEvents, Modules } from "@nedusa/utils"
 import FormData from "form-data"
 import fs from "fs/promises"
 import path from "path"

@@ -1,5 +1,5 @@
-import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { ContainerRegistrationKeys, Modules } from "@nedusa/framework/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import {
   adminHeaders,
   createAdminUser,

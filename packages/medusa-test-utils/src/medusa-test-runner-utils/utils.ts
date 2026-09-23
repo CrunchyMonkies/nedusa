@@ -1,4 +1,4 @@
-import { isObject } from "@medusajs/framework/utils"
+import { isObject } from "@nedusa/framework/utils"
 
 export function applyEnvVarsToProcess(env?: Record<any, any>) {
   const previousEnvVars = new Map<string, string | undefined>()

@@ -1,6 +1,6 @@
 import "./types"
 
-import { Module, Modules } from "@medusajs/framework/utils"
+import { Module, Modules } from "@nedusa/framework/utils"
 import { SearchModuleService } from "@services"
 import providersLoader from "./loaders/providers"
 

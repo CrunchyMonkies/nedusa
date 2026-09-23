@@ -1,4 +1,4 @@
-import { FlagSettings, Logger } from "@medusajs/types"
+import { FlagSettings, Logger } from "@nedusa/types"
 import {
   isDefined,
   isObject,

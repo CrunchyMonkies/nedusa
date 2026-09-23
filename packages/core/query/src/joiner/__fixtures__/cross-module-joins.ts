@@ -1,4 +1,4 @@
-import { ModuleJoinerConfig } from "@medusajs/types"
+import { ModuleJoinerConfig } from "@nedusa/types"
 
 /**
  * Minimal product / pricing / sales channel setup connected through link

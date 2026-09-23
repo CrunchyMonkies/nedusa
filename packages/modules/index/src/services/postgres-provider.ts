@@ -6,7 +6,7 @@ import {
   QueryGraphFunction,
   RemoteQueryFunction,
   Subscriber,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   MikroOrmBaseRepository as BaseRepository,
   CommonEvents,
@@ -19,12 +19,12 @@ import {
   Modules,
   toMikroORMEntity,
   unflattenObjectKeys,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   EntityManager,
   EntityRepository,
   SqlEntityManager,
-} from "@medusajs/framework/mikro-orm/postgresql"
+} from "@nedusa/framework/mikro-orm/postgresql"
 import { IndexData, IndexRelation } from "@models"
 import { createPartitions, QueryBuilder } from "../utils"
 import { flattenObjectKeys } from "../utils/flatten-object-keys"

@@ -1,4 +1,4 @@
-import { MedusaError } from "@medusajs/framework/utils"
+import { MedusaError } from "@nedusa/framework/utils"
 import { Issuer } from "openid-client"
 import { OidcEngine } from "../../src/engine/engine"
 import { OidcEngineOptions } from "../../src/engine/types"

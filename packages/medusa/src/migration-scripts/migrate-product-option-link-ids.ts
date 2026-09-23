@@ -1,10 +1,10 @@
-import { MedusaModule } from "@medusajs/framework/modules-sdk"
-import { ExecArgs, Logger } from "@medusajs/framework/types"
+import { MedusaModule } from "@nedusa/framework/modules-sdk"
+import { ExecArgs, Logger } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   Modules,
   generateEntityId,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 const BATCH_SIZE = 1000
 

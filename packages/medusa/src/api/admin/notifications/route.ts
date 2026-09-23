@@ -2,8 +2,8 @@ import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
   refetchEntities,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
+} from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<HttpTypes.AdminNotificationListParams>,

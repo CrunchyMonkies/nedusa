@@ -1,4 +1,4 @@
-import { OrchestrationUtils } from "@medusajs/utils"
+import { OrchestrationUtils } from "@nedusa/utils"
 import { WorkflowData, WorkflowDataProperties } from "../type"
 
 /**

@@ -1,10 +1,10 @@
-import type { IPaymentModuleService, Logger } from "@medusajs/framework/types"
+import type { IPaymentModuleService, Logger } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   Modules,
   promiseAll,
-} from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/utils"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
 
 /**
  * The data to cancel payments.

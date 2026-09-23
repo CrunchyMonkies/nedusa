@@ -1,11 +1,11 @@
-import { Lifetime, asFunction, asValue } from "@medusajs/framework/awilix"
-import { moduleProviderLoader } from "@medusajs/framework/modules-sdk"
-import { LoaderOptions, ModulesSdkTypes } from "@medusajs/framework/types"
+import { Lifetime, asFunction, asValue } from "@nedusa/framework/awilix"
+import { moduleProviderLoader } from "@nedusa/framework/modules-sdk"
+import { LoaderOptions, ModulesSdkTypes } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   lowerCaseFirst,
   promiseAll,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { NotificationProvider } from "@models"
 import { NotificationProviderService } from "@services"
 import {

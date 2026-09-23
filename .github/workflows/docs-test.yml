@@ -420,7 +420,7 @@ jobs:
       # www consumes the plugin via `link:../packages/eslint-plugin`, and its
       # `dist` isn't committed, so it must be built before the content lint.
       - name: Build ESLint plugin
-        run: yarn workspace @medusajs/eslint-plugin build
+        run: yarn workspace @nedusa/eslint-plugin build
 
       - name: Install dependencies
         working-directory: www

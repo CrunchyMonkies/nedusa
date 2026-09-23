@@ -1,4 +1,4 @@
-import { StoreTypes } from "@medusajs/framework/types"
+import { StoreTypes } from "@nedusa/framework/types"
 
 export const createStoreFixture: StoreTypes.CreateStoreDTO = {
   name: "Test store",

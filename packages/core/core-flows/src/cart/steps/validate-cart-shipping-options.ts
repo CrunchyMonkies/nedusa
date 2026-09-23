@@ -1,13 +1,13 @@
 import type {
   CartDTO,
   IFulfillmentModuleService,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   arrayDifference,
   MedusaError,
   Modules,
-} from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/utils"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
 
 /**
  * The details of the cart and its shipping options context.

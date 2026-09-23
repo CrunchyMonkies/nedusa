@@ -1,5 +1,5 @@
-import ProductModule from "@medusajs/medusa/product"
-import { defineLink } from "@medusajs/utils"
+import ProductModule from "@nedusa/medusa/product"
+import { defineLink } from "@nedusa/utils"
 import BrandModule from "../modules/brand"
 
 const link =

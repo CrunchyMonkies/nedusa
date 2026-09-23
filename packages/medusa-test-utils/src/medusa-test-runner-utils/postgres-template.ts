@@ -1,4 +1,4 @@
-import { Client } from "@medusajs/framework/pg"
+import { Client } from "@nedusa/framework/pg"
 
 const DB_HOST = process.env.DB_HOST ?? "localhost"
 const DB_USERNAME = process.env.DB_USERNAME ?? "postgres"

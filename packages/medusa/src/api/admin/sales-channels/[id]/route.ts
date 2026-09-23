@@ -1,14 +1,14 @@
 import {
   deleteSalesChannelsWorkflow,
   updateSalesChannelsWorkflow,
-} from "@medusajs/core-flows"
-import { MedusaError } from "@medusajs/framework/utils"
+} from "@nedusa/core-flows"
+import { MedusaError } from "@nedusa/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import { refetchSalesChannel } from "../helpers"
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@nedusa/framework/types"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<HttpTypes.AdminGetSalesChannelParams>,

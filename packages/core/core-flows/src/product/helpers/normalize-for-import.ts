@@ -1,6 +1,6 @@
-import type { ProductTypes } from "@medusajs/framework/types"
-import type { HttpTypes, RegionTypes } from "@medusajs/framework/types"
-import { MedusaError, lowerCaseFirst, normalizeCurrencyCode } from "@medusajs/framework/utils"
+import type { ProductTypes } from "@nedusa/framework/types"
+import type { HttpTypes, RegionTypes } from "@nedusa/framework/types"
+import { MedusaError, lowerCaseFirst, normalizeCurrencyCode } from "@nedusa/framework/utils"
 
 /**
  * Normalizes raw CSV product data into standardized AdminCreateProduct DTOs.

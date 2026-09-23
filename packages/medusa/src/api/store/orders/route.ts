@@ -1,9 +1,9 @@
-import { getOrdersListWorkflow } from "@medusajs/core-flows"
+import { getOrdersListWorkflow } from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes, OrderDTO } from "@medusajs/framework/types"
+} from "@nedusa/framework/http"
+import { HttpTypes, OrderDTO } from "@nedusa/framework/types"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<HttpTypes.StoreOrderFilters>,

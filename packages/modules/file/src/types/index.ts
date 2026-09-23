@@ -1,7 +1,7 @@
 import {
   ModuleProviderExports,
   ModuleServiceInitializeOptions,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 
 export const FileProviderIdentifierRegistrationName =
   "file_providers_identifier"
@@ -28,9 +28,9 @@ export type FileModuleOptions = Partial<ModuleServiceInitializeOptions> & {
   }
 }
 
-declare module "@medusajs/types" {
+declare module "@nedusa/types" {
   interface ModuleOptions {
-    "@medusajs/file": FileModuleOptions
-    "@medusajs/medusa/file": FileModuleOptions
+    "@nedusa/file": FileModuleOptions
+    "@nedusa/medusa/file": FileModuleOptions
   }
 }

@@ -1,4 +1,4 @@
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@nedusa/types"
 import { describe, expect, it } from "vitest"
 
 import { calculateRequiredFields } from "../field-utils"

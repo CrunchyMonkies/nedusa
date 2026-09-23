@@ -63,7 +63,7 @@ under pnpm, so that later breakage is attributable to the port rather than the t
 | --- | --- |
 | Vendor baseline imported (`vendor/upstream` @ v2.21.1) | done |
 | pnpm workspace, 85 projects discovered | done |
-| Zero `@medusajs/*` resolved from the npm registry | verified |
+| Zero `@nedusa/*` resolved from the npm registry | verified |
 | `pnpm build` | **83/83 tasks green** |
 | `pnpm test` | **74/74 tasks green** (both earlier failures were transitive version drift; `msw` and `@ariakit/react` pinned to upstream's versions) |
 | Test-runner concurrency capped | done — unbounded fan-out OOM-killed the dev VM |

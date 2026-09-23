@@ -1,23 +1,23 @@
 import {
   createOrderWorkflow,
   getOrdersListWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import {
   AdditionalData,
   CreateOrderDTO,
   HttpTypes,
   OrderDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   OrderStatus,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { refetchOrder } from "./helpers"
 
 export const GET = async (

@@ -3,8 +3,8 @@ import {
   FulfillmentSetDTO,
   ShippingOptionDTO,
   StockLocationDTO,
-} from "@medusajs/framework/types"
-import { ShippingOptionPriceType } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { ShippingOptionPriceType } from "@nedusa/framework/utils"
 import {
   Hook,
   createHook,
@@ -13,7 +13,7 @@ import {
   when,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { useQueryGraphStep } from "../../common"
 import { calculateShippingOptionsPricesStep } from "../../fulfillment/steps"
 import {

@@ -1,6 +1,6 @@
-import { getAssignablePoliciesWorkflow } from "@medusajs/core-flows"
-import { Modules } from "@medusajs/framework/utils"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { getAssignablePoliciesWorkflow } from "@nedusa/core-flows"
+import { Modules } from "@nedusa/framework/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import {
   adminHeaders,
   createAdminUser,

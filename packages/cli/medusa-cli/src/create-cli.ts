@@ -1,4 +1,4 @@
-import { setTelemetryEnabled } from "@medusajs/telemetry"
+import { setTelemetryEnabled } from "@nedusa/telemetry"
 import { sync as existsSync } from "fs-exists-cached"
 import path from "path"
 import resolveCwd from "resolve-cwd"
@@ -22,12 +22,12 @@ const handlerP =
   }
 
 /**
- * Whether `@medusajs/eslint-plugin` is installed in the consumer project.
+ * Whether `@nedusa/eslint-plugin` is installed in the consumer project.
  * Linting is enabled by default on `build` and `develop` only when this is true.
  */
 function isMedusaEslintPluginInstalled(cwd: string): boolean {
   try {
-    require.resolve("@medusajs/eslint-plugin", { paths: [cwd] })
+    require.resolve("@nedusa/eslint-plugin", { paths: [cwd] })
     return true
   } catch {
     return false
@@ -45,7 +45,7 @@ function addLintOptions(builder, commandLabel: string, directory: string) {
   return builder
     .option("lint", {
       type: "boolean",
-      describe: `Run the Medusa linter before ${commandLabel}. Enabled by default when @medusajs/eslint-plugin is installed. Use --no-lint to skip linting.`,
+      describe: `Run the Medusa linter before ${commandLabel}. Enabled by default when @nedusa/eslint-plugin is installed. Use --no-lint to skip linting.`,
       default: lintByDefault,
     })
     .option("fix", {
@@ -78,7 +78,7 @@ function buildLocalCommands(cli, isLocalProject) {
     }
 
     try {
-      const cmdPath = resolveCwd.silent(`@medusajs/medusa/commands/${command}`)!
+      const cmdPath = resolveCwd.silent(`@nedusa/medusa/commands/${command}`)!
       return require(cmdPath).default
     } catch (err) {
       console.error(err)
@@ -733,14 +733,14 @@ function isLocalMedusaProject() {
     const { dependencies, devDependencies } = require(path.resolve(
       `./package.json`
     ))
-    // Draft order plugin can't have @medusajs/medusa as dependency,
-    // so we also check for @medusajs/cli
+    // Draft order plugin can't have @nedusa/medusa as dependency,
+    // so we also check for @nedusa/cli
     inMedusaProject = !!(
       (dependencies &&
-        (dependencies["@medusajs/medusa"] || dependencies["@medusajs/cli"])) ||
+        (dependencies["@nedusa/medusa"] || dependencies["@nedusa/cli"])) ||
       (devDependencies &&
-        (devDependencies["@medusajs/medusa"] ||
-          devDependencies["@medusajs/cli"]))
+        (devDependencies["@nedusa/medusa"] ||
+          devDependencies["@nedusa/cli"]))
     )
   } catch (err) {
     // ignore
@@ -758,7 +758,7 @@ function getVersionInfo() {
       medusaVersion = require(path.join(
         process.cwd(),
         `node_modules`,
-        `@medusajs/medusa`,
+        `@nedusa/medusa`,
         `package.json`
       )).version
     } catch (e) {

@@ -1,11 +1,11 @@
-import { MedusaResponse } from "@medusajs/framework/http"
-import { HttpTypes, QueryContextType } from "@medusajs/framework/types"
+import { MedusaResponse } from "@nedusa/framework/http"
+import { HttpTypes, QueryContextType } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   FeatureFlag,
   isPresent,
   QueryContext,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import IndexEngineFeatureFlag from "../../../feature-flags/index-engine"
 import {
   prepareInventoryQuantityFields,

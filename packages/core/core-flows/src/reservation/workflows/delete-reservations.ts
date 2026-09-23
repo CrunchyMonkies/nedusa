@@ -2,8 +2,8 @@ import {
   WorkflowData,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
-import { ReservationItemWorkflowEvents } from "@medusajs/framework/utils"
+} from "@nedusa/framework/workflows-sdk"
+import { ReservationItemWorkflowEvents } from "@nedusa/framework/utils"
 
 import { emitEventStep } from "../../common"
 import { deleteReservationsStep } from "../steps"

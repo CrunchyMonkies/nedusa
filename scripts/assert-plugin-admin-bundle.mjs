@@ -1,6 +1,6 @@
 /**
  * Asserts that a plugin's admin extension bundle — produced by `medusa
- * plugin:build`, i.e. @medusajs/admin-bundler's Vite `build.lib` path — is
+ * plugin:build`, i.e. @nedusa/admin-bundler's Vite `build.lib` path — is
  * shaped correctly.
  *
  * `build:plugin` already runs in CI as part of the root `yarn build`, but a
@@ -43,8 +43,8 @@ const MUST_BE_EXTERNAL = [
   "react/jsx-runtime",
   "react-router-dom",
   "@tanstack/react-query",
-  "@medusajs/ui",
-  "@medusajs/js-sdk",
+  "@nedusa/ui",
+  "@nedusa/js-sdk",
 ]
 
 /** The module kinds admin-vite-plugin's generated plugin entry must export. */

@@ -1,4 +1,4 @@
-import { ModuleProvider, Modules } from "@medusajs/framework/utils"
+import { ModuleProvider, Modules } from "@nedusa/framework/utils"
 import { LocalAnalyticsService } from "./services/local-analytics"
 
 const services = [LocalAnalyticsService]

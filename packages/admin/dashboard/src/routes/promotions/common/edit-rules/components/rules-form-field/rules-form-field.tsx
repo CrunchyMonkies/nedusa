@@ -1,6 +1,6 @@
-import { XMarkMini } from "@medusajs/icons"
-import { AdminPromotion, HttpTypes } from "@medusajs/types"
-import { Badge, Button, Heading, IconButton, Select, Text } from "@medusajs/ui"
+import { XMarkMini } from "@nedusa/icons"
+import { AdminPromotion, HttpTypes } from "@nedusa/types"
+import { Badge, Button, Heading, IconButton, Select, Text } from "@nedusa/ui"
 import { forwardRef, Fragment, useEffect, useRef } from "react"
 import {
   Control,

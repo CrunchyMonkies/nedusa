@@ -1,13 +1,13 @@
-import { createShippingProfilesWorkflow } from "@medusajs/core-flows"
-import { HttpTypes } from "@medusajs/framework/types"
+import { createShippingProfilesWorkflow } from "@nedusa/core-flows"
+import { HttpTypes } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import { refetchShippingProfile } from "./helpers"
 
 export const POST = async (

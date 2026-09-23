@@ -1,4 +1,4 @@
-import { model } from "@medusajs/framework/utils"
+import { model } from "@nedusa/framework/utils"
 import { SearchSyncStatus } from "../utils"
 import { SearchIndexVersion } from "./search-index-version"
 

@@ -24,8 +24,8 @@ import {
   ThumbnailBadge,
   Trash,
   XMark,
-} from "@medusajs/icons";
-import { IconButton, Text } from "@medusajs/ui";
+} from "@nedusa/icons";
+import { IconButton, Text } from "@nedusa/ui";
 import { useState } from "react";
 import { useFieldArray, UseFormReturn } from "react-hook-form";
 import { ActionMenu } from "../../../../../components/action-menu";

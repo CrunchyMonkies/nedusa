@@ -1,9 +1,9 @@
 import {
   TestEventUtils,
   medusaIntegrationTestRunner,
-} from "@medusajs/test-utils"
-import { IEventBusModuleService } from "@medusajs/types"
-import { CommonEvents, Modules } from "@medusajs/utils"
+} from "@nedusa/test-utils"
+import { IEventBusModuleService } from "@nedusa/types"
+import { CommonEvents, Modules } from "@nedusa/utils"
 import fs from "fs/promises"
 import { csv2json } from "json-2-csv"
 import os from "os"

@@ -1,5 +1,5 @@
-import { Buildings, XCircle } from "@medusajs/icons"
-import { AdminOrder, AdminOrderLineItem } from "@medusajs/types"
+import { Buildings, XCircle } from "@nedusa/icons"
+import { AdminOrder, AdminOrderLineItem } from "@nedusa/types"
 import {
   Button,
   Container,
@@ -13,7 +13,7 @@ import {
   Tooltip,
   toast,
   usePrompt,
-} from "@medusajs/ui"
+} from "@nedusa/ui"
 import { format } from "date-fns"
 import { useState } from "react"
 import { useTranslation } from "react-i18next"

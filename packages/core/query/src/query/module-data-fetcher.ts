@@ -2,8 +2,8 @@ import {
   JoinerArgument,
   JoinerRelationship,
   LoadedModule,
-} from "@medusajs/types"
-import { isPresent, toPascalCase } from "@medusajs/utils"
+} from "@nedusa/types"
+import { isPresent, toPascalCase } from "@nedusa/utils"
 import {
   IRemoteDataFetcher,
   RemoteExpandProperty,

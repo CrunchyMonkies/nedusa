@@ -1,9 +1,9 @@
-import { MedusaContainer } from "@medusajs/framework/types"
+import { MedusaContainer } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   MedusaError,
-} from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/utils"
+import { StepResponse, createStep } from "@nedusa/framework/workflows-sdk"
 
 /**
  * The details of the region to find.

@@ -1,19 +1,19 @@
-import type { SchedulerOptions } from "@medusajs/orchestration"
-import { MedusaContainer } from "@medusajs/types"
+import type { SchedulerOptions } from "@nedusa/orchestration"
+import { MedusaContainer } from "@nedusa/types"
 import {
   dynamicImport,
   isFileSkipped,
   isObject,
   MedusaError,
   registerDevServerResource,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import {
   createStep,
   createWorkflow,
   StepResponse,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/workflows-sdk"
+} from "@nedusa/workflows-sdk"
 import { ResourceLoader } from "../utils/resource-loader"
 import {
   ScheduledJobContext,

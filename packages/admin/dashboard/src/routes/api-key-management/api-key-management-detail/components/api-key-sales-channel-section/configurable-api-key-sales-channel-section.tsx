@@ -1,6 +1,6 @@
-import { PencilSquare, Trash } from "@medusajs/icons"
-import { AdminApiKeyResponse, HttpTypes } from "@medusajs/types"
-import { DataTableCommand, toast, usePrompt } from "@medusajs/ui"
+import { PencilSquare, Trash } from "@nedusa/icons"
+import { AdminApiKeyResponse, HttpTypes } from "@nedusa/types"
+import { DataTableCommand, toast, usePrompt } from "@nedusa/ui"
 import { useMemo } from "react"
 import { useTranslation } from "react-i18next"
 

@@ -1,8 +1,8 @@
 import {
   createFindParams,
   createOperatorMap,
-} from "@medusajs/medusa/api/utils/validators";
-import { z } from "@medusajs/framework/zod";
+} from "@nedusa/medusa/api/utils/validators";
+import { z } from "@nedusa/framework/zod";
 import { GiftCardStatus } from "../../../types";
 
 export type AdminGetGiftCardsParamsType = z.infer<

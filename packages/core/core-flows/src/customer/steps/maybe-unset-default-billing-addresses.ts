@@ -3,9 +3,9 @@ import {
   FilterableCustomerAddressProps,
   ICustomerModuleService,
   UpdateCustomerAddressDTO,
-} from "@medusajs/framework/types"
-import { Modules, isDefined, MedusaError } from "@medusajs/framework/utils"
-import { createStep } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/types"
+import { Modules, isDefined, MedusaError } from "@nedusa/framework/utils"
+import { createStep } from "@nedusa/framework/workflows-sdk"
 import { unsetForCreate, unsetForUpdate } from "./utils"
 
 /**
@@ -72,7 +72,7 @@ export const maybeUnsetDefaultBillingAddressesStep = createStep(
     )
 
     if (isDefined(data.create)) {
-      // eslint-disable-next-line @medusajs/step-must-return-step-response
+      // eslint-disable-next-line @nedusa/step-must-return-step-response
       return unsetForCreate(
         data.create,
         customerModuleService,
@@ -81,7 +81,7 @@ export const maybeUnsetDefaultBillingAddressesStep = createStep(
     }
 
     if (isDefined(data.update)) {
-      // eslint-disable-next-line @medusajs/step-must-return-step-response
+      // eslint-disable-next-line @nedusa/step-must-return-step-response
       return unsetForUpdate(
         data.update,
         customerModuleService,

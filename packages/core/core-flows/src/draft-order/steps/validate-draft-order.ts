@@ -1,6 +1,6 @@
-import { MedusaError, OrderStatus } from "@medusajs/framework/utils"
-import { createStep } from "@medusajs/framework/workflows-sdk"
-import type { OrderDTO } from "@medusajs/framework/types"
+import { MedusaError, OrderStatus } from "@nedusa/framework/utils"
+import { createStep } from "@nedusa/framework/workflows-sdk"
+import type { OrderDTO } from "@nedusa/framework/types"
 
 /**
  * The details of the draft order to validate.

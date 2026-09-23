@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/file-local",
+  "name": "@nedusa/file-local",
   "version": "2.21.1",
   "description": "Local filesystem file storage for Medusa",
   "main": "dist/index.js",
@@ -29,10 +29,10 @@
     "watch": "tsc --watch"
   },
   "devDependencies": {
-    "@medusajs/framework": "2.21.1"
+    "@nedusa/framework": "2.21.1"
   },
   "peerDependencies": {
-    "@medusajs/framework": "2.21.1"
+    "@nedusa/framework": "2.21.1"
   },
   "keywords": [
     "medusa-plugin",

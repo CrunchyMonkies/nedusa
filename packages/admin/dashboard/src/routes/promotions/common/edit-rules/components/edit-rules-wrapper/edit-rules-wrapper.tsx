@@ -3,7 +3,7 @@ import {
   AdminPromotionRule,
   CreatePromotionRuleDTO,
   PromotionRuleOperatorValues,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import { useRouteModal } from "../../../../../../components/modals"
 import {
   usePromotionAddRules,

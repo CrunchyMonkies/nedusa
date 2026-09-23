@@ -1,4 +1,4 @@
-import { PluginDetails } from "@medusajs/types"
+import { PluginDetails } from "@nedusa/types"
 import path from "path"
 import { FileSystem } from "../../common/file-system"
 import { generateAugmentationRefs } from "../generate-augmentation-refs"
@@ -188,12 +188,12 @@ describe("generateAugmentationRefs", () => {
 
   it("normalizes a core module registered through its bare package name to the canonical medusa subpath", async () => {
     await fs.create(
-      `node_modules/@medusajs/medusa/rbac.js`,
+      `node_modules/@nedusa/medusa/rbac.js`,
       "module.exports = {}"
     )
-    await fs.create(`node_modules/@medusajs/medusa/rbac.d.ts`, "export {}")
-    await fs.createJson(`node_modules/@medusajs/medusa/package.json`, {
-      name: "@medusajs/medusa",
+    await fs.create(`node_modules/@nedusa/medusa/rbac.d.ts`, "export {}")
+    await fs.createJson(`node_modules/@nedusa/medusa/package.json`, {
+      name: "@nedusa/medusa",
       exports: {
         "./rbac": "./rbac.js",
         "./event-bus-redis": "./event-bus-redis.js",
@@ -207,28 +207,28 @@ describe("generateAugmentationRefs", () => {
         rbac: {
           __definition: {
             key: "rbac",
-            resolvePath: "@medusajs/rbac",
+            resolvePath: "@nedusa/rbac",
           },
         } as any,
       },
     })
 
     const content = await fs.contents(".medusa/types/augmentation-refs.d.ts")
-    expect(content).toContain('/// <reference types="@medusajs/medusa/rbac" />')
-    expect(content).not.toContain('"@medusajs/rbac"')
+    expect(content).toContain('/// <reference types="@nedusa/medusa/rbac" />')
+    expect(content).not.toContain('"@nedusa/rbac"')
   })
 
-  it("keeps a core module's @medusajs/medusa subpath resolve path as is", async () => {
+  it("keeps a core module's @nedusa/medusa subpath resolve path as is", async () => {
     await fs.create(
-      `node_modules/@medusajs/medusa/event-bus-redis.js`,
+      `node_modules/@nedusa/medusa/event-bus-redis.js`,
       "module.exports = {}"
     )
     await fs.create(
-      `node_modules/@medusajs/medusa/event-bus-redis.d.ts`,
+      `node_modules/@nedusa/medusa/event-bus-redis.d.ts`,
       "export {}"
     )
-    await fs.createJson(`node_modules/@medusajs/medusa/package.json`, {
-      name: "@medusajs/medusa",
+    await fs.createJson(`node_modules/@nedusa/medusa/package.json`, {
+      name: "@nedusa/medusa",
       exports: {
         "./rbac": "./rbac.js",
         "./event-bus-redis": "./event-bus-redis.js",
@@ -242,7 +242,7 @@ describe("generateAugmentationRefs", () => {
         event_bus: {
           __definition: {
             key: "event_bus",
-            resolvePath: "@medusajs/medusa/event-bus-redis",
+            resolvePath: "@nedusa/medusa/event-bus-redis",
           },
         } as any,
       },
@@ -250,7 +250,7 @@ describe("generateAugmentationRefs", () => {
 
     const content = await fs.contents(".medusa/types/augmentation-refs.d.ts")
     expect(content).toContain(
-      '/// <reference types="@medusajs/medusa/event-bus-redis" />'
+      '/// <reference types="@nedusa/medusa/event-bus-redis" />'
     )
   })
 

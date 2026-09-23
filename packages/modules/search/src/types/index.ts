@@ -4,7 +4,7 @@ import {
   ModuleServiceInitializeOptions,
   ModulesSdkTypes,
   SearchTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 
 export const SearchProviderIdentifiersRegistrationName =
   "search_providers_identifier"
@@ -60,10 +60,10 @@ export type SearchModuleOptions = Partial<ModuleServiceInitializeOptions> & {
   }
 }
 
-declare module "@medusajs/types" {
+declare module "@nedusa/types" {
   interface ModuleOptions {
-    "@medusajs/search": SearchModuleOptions
-    "@medusajs/medusa/search": SearchModuleOptions
+    "@nedusa/search": SearchModuleOptions
+    "@nedusa/medusa/search": SearchModuleOptions
   }
 }
 

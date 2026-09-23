@@ -1,10 +1,10 @@
-import { isPresent } from "@medusajs/framework/utils"
+import { isPresent } from "@nedusa/framework/utils"
 import {
   createStep,
   createWorkflow,
   StepResponse,
-} from "@medusajs/framework/workflows-sdk"
-import { when } from "@medusajs/framework/workflows-sdk/composer"
+} from "@nedusa/framework/workflows-sdk"
+import { when } from "@nedusa/framework/workflows-sdk/composer"
 
 const step_1 = createStep(
   "step_1",

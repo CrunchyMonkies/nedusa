@@ -1,9 +1,9 @@
-import { createOrderEditShippingMethodWorkflow } from "@medusajs/core-flows"
-import { HttpTypes } from "@medusajs/framework/types"
+import { createOrderEditShippingMethodWorkflow } from "@nedusa/core-flows"
+import { HttpTypes } from "@nedusa/framework/types"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import { AdminPostOrderEditsShippingReqSchemaType } from "../../validators"
 
 export const POST = async (

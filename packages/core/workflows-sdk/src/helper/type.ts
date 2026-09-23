@@ -3,8 +3,8 @@ import {
   DistributedTransactionType,
   LocalWorkflow,
   TransactionStepError,
-} from "@medusajs/orchestration"
-import { Context, LoadedModule, MedusaContainer } from "@medusajs/types"
+} from "@nedusa/orchestration"
+import { Context, LoadedModule, MedusaContainer } from "@nedusa/types"
 
 type BaseFlowRunOptions = {
   context?: Context

@@ -2,12 +2,12 @@ import {
   LocalWorkflow,
   WorkflowManager,
   WorkflowScheduler,
-} from "@medusajs/orchestration"
+} from "@nedusa/orchestration"
 import {
   ContainerRegistrationKeys,
   createMedusaContainer,
   MedusaContextType,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import { asValue } from "../../deps/awilix"
 import { join } from "path"
 import { ulid } from "ulid"

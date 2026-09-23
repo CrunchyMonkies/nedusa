@@ -1,5 +1,5 @@
 
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import {
   adminHeaders,
   createAdminUser,

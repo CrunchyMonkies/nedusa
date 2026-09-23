@@ -4,7 +4,7 @@ import {
   SearchFieldKind,
   SearchPropertyMetadata,
   SearchPropertyType,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import { BaseSchemaProperty } from "../../../schema"
 
 /**

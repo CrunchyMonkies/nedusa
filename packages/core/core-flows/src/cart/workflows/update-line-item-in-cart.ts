@@ -4,7 +4,7 @@ import {
   CustomerDTO,
   RegionDTO,
   UpdateLineItemInCartWorkflowInputDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   CartWorkflowEvents,
   deduplicate,
@@ -14,7 +14,7 @@ import {
   MedusaError,
   PriceListType,
   QueryContext,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   createHook,
   createStep,
@@ -25,7 +25,7 @@ import {
   when,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { useQueryGraphStep } from "../../common"
 import { emitEventStep } from "../../common/steps/emit-event"
 import { deleteLineItemsWorkflow } from "../../line-item"
@@ -189,8 +189,8 @@ export const updateLineItemInCartWorkflowId = "update-line-item-in-cart"
  * You can consume the `setPricingContext` hook to add the `location_id` context to the prices calculation:
  *
  * ```ts
- * import { addToCartWorkflow } from "@medusajs/medusa/core-flows";
- * import { StepResponse } from "@medusajs/workflows-sdk";
+ * import { addToCartWorkflow } from "@nedusa/medusa/core-flows";
+ * import { StepResponse } from "@nedusa/workflows-sdk";
  *
  * addToCartWorkflow.hooks.setPricingContext((
  *   { cart, variantIds, items, additional_data }, { container }

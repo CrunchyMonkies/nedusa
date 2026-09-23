@@ -13,11 +13,11 @@ vi.mock("react-i18next", () => ({
   }),
 }))
 
-vi.mock("@medusajs/icons", () => ({
+vi.mock("@nedusa/icons", () => ({
   XMarkMini: () => <svg />,
 }))
 
-vi.mock("@medusajs/ui", () => ({
+vi.mock("@nedusa/ui", () => ({
   Button: ({ children, ...props }: React.ComponentProps<"button">) => (
     <button {...props}>{children}</button>
   ),

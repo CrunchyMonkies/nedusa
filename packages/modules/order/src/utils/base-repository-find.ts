@@ -1,11 +1,11 @@
-import { LoadStrategy, raw } from "@medusajs/framework/mikro-orm/core"
-import { Constructor, Context, DAL } from "@medusajs/framework/types"
+import { LoadStrategy, raw } from "@nedusa/framework/mikro-orm/core"
+import { Constructor, Context, DAL } from "@nedusa/framework/types"
 import {
   augmentFindOptionsWithCrossModuleJoins,
   MikroOrmBaseRepository,
   pruneFindOptionsAgainstMetadata,
   toMikroORMEntity,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   Order,
   OrderClaim,

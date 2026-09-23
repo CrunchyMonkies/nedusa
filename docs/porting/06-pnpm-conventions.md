@@ -22,7 +22,7 @@ your changes have no effect, and nothing errors.
 Guard it in CI:
 
 ```bash
-grep -cE "^  '?@medusajs/" pnpm-lock.yaml     # MUST be 0
+grep -cE "^  '?@nedusa/" pnpm-lock.yaml     # MUST be 0
 ```
 
 A non-zero count means a workspace package is being fetched from the registry.
@@ -45,10 +45,10 @@ every implicit dependency to be declared — worth doing, not worth bundling.
 Yarn links *all* workspace packages into the root `node_modules`, so a package can import
 a sibling it never declared and Node's upward resolution finds it. Upstream leans on this
 hard: **24 of 85 packages import a workspace sibling absent from their `package.json`**,
-most commonly `@medusajs/types` (13 packages).
+most commonly `@nedusa/types` (13 packages).
 
-Those declarations cannot simply be added. Several are **cyclic** — `@medusajs/types`
-imports `@medusajs/framework`, which imports `@medusajs/types` — and are type-only, so
+Those declarations cannot simply be added. Several are **cyclic** — `@nedusa/types`
+imports `@nedusa/framework`, which imports `@nedusa/types` — and are type-only, so
 declaring them would inject real cycles into turbo's build graph for no benefit.
 
 `hoistWorkspacePackages: true` does **not** solve this: it hoists into a hidden directory,
@@ -56,7 +56,7 @@ not the root.
 
 The fix is to list every workspace package in the root `package.json` `devDependencies`
 as `workspace:*`. That reproduces yarn's flat linking exactly. It is why the root manifest
-has ~81 `@medusajs/*` devDependencies that nothing at the root actually imports.
+has ~81 `@nedusa/*` devDependencies that nothing at the root actually imports.
 
 > Regenerate after adding or removing a workspace:
 > `node tools/codemods/link-workspaces-at-root`
@@ -118,7 +118,7 @@ Left in yarn syntax these are **silent no-ops** — no error, no effect.
 
 Turbo **1.13.4 cannot parse pnpm's v9 lockfile**. It does not fail; it silently builds an
 *empty* dependency graph, runs all 79 build tasks in parallel, and every package that
-depends on another fails with `TS2307: Cannot find module '@medusajs/framework/...'`
+depends on another fails with `TS2307: Cannot find module '@nedusa/framework/...'`
 because its dependency has not been built yet.
 
 Diagnose with:
@@ -235,7 +235,7 @@ mattered, and each cost real time to find:
 | Package | Upstream | Fresh pnpm | Symptom | Action |
 | --- | --- | --- | --- | --- |
 | `@changesets/assemble-release-plan` | 6.0.9 | 6.0.10 | `ERR_PNPM_UNUSED_PATCH`, install aborts | patch key changed to a bare name (§5) |
-| `msw` (and `rettime` beneath it) | 2.12.4 / 0.7.0 | 2.15.0 / 0.11.11 | `@medusajs/js-sdk` suite dies on an ESM parse error | **pinned `msw` to 2.12.4** |
+| `msw` (and `rettime` beneath it) | 2.12.4 / 0.7.0 | 2.15.0 / 0.11.11 | `@nedusa/js-sdk` suite dies on an ESM parse error | **pinned `msw` to 2.12.4** |
 | `@ariakit/react` | 0.4.20 | 0.4.40 | dashboard combobox spec fails 3 of 4: `user.type(input,"App")` lands as `"Ap"` | **pinned to 0.4.20** |
 
 ### How to diagnose one

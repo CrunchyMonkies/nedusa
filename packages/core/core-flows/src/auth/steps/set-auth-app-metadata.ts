@@ -1,7 +1,7 @@
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
 
-import type { IAuthModuleService } from "@medusajs/framework/types"
-import { isDefined, Modules } from "@medusajs/framework/utils"
+import type { IAuthModuleService } from "@nedusa/framework/types"
+import { isDefined, Modules } from "@nedusa/framework/utils"
 
 export type SetAuthAppMetadataStepInput = {
   authIdentityId: string

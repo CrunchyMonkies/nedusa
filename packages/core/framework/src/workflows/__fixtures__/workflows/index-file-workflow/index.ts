@@ -2,7 +2,7 @@ import {
   createStep,
   createWorkflow,
   WorkflowResponse,
-} from "@medusajs/workflows-sdk"
+} from "@nedusa/workflows-sdk"
 
 export const indexFileWorkflowId = "index-file-workflow"
 

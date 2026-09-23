@@ -1,11 +1,11 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { AdminShippingOption } from "@medusajs/types"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { AdminShippingOption } from "@nedusa/types"
 import {
   ApiKeyType,
   ModuleRegistrationName,
   Modules,
   ProductStatus,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import {
   adminHeaders,
   createAdminUser,
@@ -19,11 +19,11 @@ import {
   updateOrderChangeActionsWorkflow,
   updateOrderChangesWorkflow,
   updateOrderShippingMethodsStep,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 import {
   createWorkflow,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 
 jest.setTimeout(300000)
 

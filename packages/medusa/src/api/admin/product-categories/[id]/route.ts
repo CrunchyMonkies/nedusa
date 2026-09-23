@@ -1,17 +1,17 @@
 import {
   deleteProductCategoriesWorkflow,
   updateProductCategoriesWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 import {
   AdminProductCategoryResponse,
   HttpTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
   refetchEntities,
-} from "@medusajs/framework/http"
-import { MedusaError } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { MedusaError } from "@nedusa/framework/utils"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<

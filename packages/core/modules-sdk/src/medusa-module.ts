@@ -12,7 +12,7 @@ import {
   ModuleResolution,
   ModuleServiceInitializeOptions,
   SearchTypes,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import {
   ContainerRegistrationKeys,
   createMedusaContainer,
@@ -21,8 +21,8 @@ import {
   promiseAll,
   simpleHash,
   stringifyCircular,
-} from "@medusajs/utils"
-import { asValue } from "@medusajs/deps/awilix"
+} from "@nedusa/utils"
+import { asValue } from "@nedusa/deps/awilix"
 import { EOL } from "os"
 import {
   moduleLoader,

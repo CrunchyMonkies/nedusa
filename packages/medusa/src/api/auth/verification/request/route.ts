@@ -1,8 +1,8 @@
-import { requestVerificationWorkflow } from "@medusajs/core-flows"
+import { requestVerificationWorkflow } from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import { VerificationRequestType } from "../../validators"
 
 /**

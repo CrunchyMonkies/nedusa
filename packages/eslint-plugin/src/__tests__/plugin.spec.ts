@@ -1,8 +1,8 @@
 import plugin from "../index"
 
-describe("@medusajs/eslint-plugin", () => {
+describe("@nedusa/eslint-plugin", () => {
   it("exposes a meta block with the plugin name", () => {
-    expect(plugin.meta).toEqual({ name: "@medusajs/eslint-plugin" })
+    expect(plugin.meta).toEqual({ name: "@nedusa/eslint-plugin" })
   })
 
   it("registers the no-async-workflow-constructor rule", () => {
@@ -25,7 +25,7 @@ describe("@medusajs/eslint-plugin", () => {
 
     const pluginBlock = modules.find((block) => block.plugins && !block.files)
     expect(pluginBlock).toBeDefined()
-    expect((pluginBlock!.plugins as Record<string, unknown>)["@medusajs"]).toBe(
+    expect((pluginBlock!.plugins as Record<string, unknown>)["@nedusa"]).toBe(
       plugin
     )
 
@@ -37,10 +37,10 @@ describe("@medusajs/eslint-plugin", () => {
         .filter((block) => block.rules)
         .map((block) => block.rules as Record<string, unknown>)
     )
-    expect(allRules).toHaveProperty("@medusajs/service-methods-must-be-async")
-    expect(allRules).toHaveProperty("@medusajs/module-name-snake-case")
+    expect(allRules).toHaveProperty("@nedusa/service-methods-must-be-async")
+    expect(allRules).toHaveProperty("@nedusa/module-name-snake-case")
     expect(allRules).toHaveProperty(
-      "@medusajs/data-model-table-name-snake-case"
+      "@nedusa/data-model-table-name-snake-case"
     )
 
     // Module-definition rule is scoped to the entry file, not the broad block.
@@ -48,7 +48,7 @@ describe("@medusajs/eslint-plugin", () => {
       (block) =>
         block.rules &&
         (block.rules as Record<string, unknown>)[
-          "@medusajs/module-name-snake-case"
+          "@nedusa/module-name-snake-case"
         ]
     )
     expect(moduleDefBlock!.files).toContain("src/index.{ts,js}")
@@ -58,7 +58,7 @@ describe("@medusajs/eslint-plugin", () => {
       (block) =>
         block.rules &&
         (block.rules as Record<string, unknown>)[
-          "@medusajs/primary-key-required"
+          "@nedusa/primary-key-required"
         ]
     )
     expect(modelsBlock!.files).toContain("**/models/**/*.{ts,js}")
@@ -75,12 +75,12 @@ describe("@medusajs/eslint-plugin", () => {
 
     // The plugin is registered in a `files`-less global block so that EVERY
     // linted file (including `.js` files matched by rule blocks) can resolve
-    // `@medusajs/*` rule references — it is intentionally not scoped to TS.
+    // `@nedusa/*` rule references — it is intentionally not scoped to TS.
     const pluginBlock = recommended.find(
       (block) => block.plugins && !block.files
     )
     expect(pluginBlock).toBeDefined()
-    expect((pluginBlock!.plugins as Record<string, unknown>)["@medusajs"]).toBe(
+    expect((pluginBlock!.plugins as Record<string, unknown>)["@nedusa"]).toBe(
       plugin
     )
 

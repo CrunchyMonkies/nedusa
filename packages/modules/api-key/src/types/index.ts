@@ -4,7 +4,7 @@ import {
   Logger,
   RevokeApiKeyDTO,
   UpdateApiKeyDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 
 export type InitializeModuleInjectableDependencies = {
   logger?: Logger

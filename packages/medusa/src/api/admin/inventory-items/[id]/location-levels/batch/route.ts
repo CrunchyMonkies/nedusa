@@ -1,6 +1,6 @@
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
-import { batchInventoryItemLevelsWorkflow } from "@medusajs/core-flows"
-import { HttpTypes } from "@medusajs/types"
+import { MedusaRequest, MedusaResponse } from "@nedusa/framework/http"
+import { batchInventoryItemLevelsWorkflow } from "@nedusa/core-flows"
+import { HttpTypes } from "@nedusa/types"
 
 export const POST = async (
   req: MedusaRequest<HttpTypes.AdminBatchInventoryItemLocationLevels>,

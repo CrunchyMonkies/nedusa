@@ -1,6 +1,6 @@
-import { MathBN, MedusaError } from "@medusajs/framework/utils";
-import { useQueryGraphStep } from "@medusajs/medusa/core-flows";
-import { createStep, createWorkflow, transform } from "@medusajs/framework/workflows-sdk";
+import { MathBN, MedusaError } from "@nedusa/framework/utils";
+import { useQueryGraphStep } from "@nedusa/medusa/core-flows";
+import { createStep, createWorkflow, transform } from "@nedusa/framework/workflows-sdk";
 
 import { ModuleDebitStoreCreditAccount } from "../../../types/store-credit";
 import { debitAccountStep } from "../steps/debit-account";

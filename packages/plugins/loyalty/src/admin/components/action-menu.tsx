@@ -1,5 +1,5 @@
-import { EllipsisHorizontal } from "@medusajs/icons";
-import { DropdownMenu, IconButton, clx } from "@medusajs/ui";
+import { EllipsisHorizontal } from "@nedusa/icons";
+import { DropdownMenu, IconButton, clx } from "@nedusa/ui";
 import { Link } from "react-router-dom";
 
 export type Action = {

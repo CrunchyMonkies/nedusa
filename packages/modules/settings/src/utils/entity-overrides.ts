@@ -1,7 +1,7 @@
 import { FieldFilterRules } from "./filter-rules"
 import { ComputedColumnDefinition } from "./computed-columns"
 import { RenderMode } from "./render-mode-mapper"
-import { deduplicate } from "@medusajs/framework/utils"
+import { deduplicate } from "@nedusa/framework/utils"
 
 /**
  * Override configuration for an entity.

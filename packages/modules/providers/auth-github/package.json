@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/auth-github",
+  "name": "@nedusa/auth-github",
   "version": "2.21.1",
   "description": "Github OAuth authentication provider for Medusa",
   "main": "dist/index.js",
@@ -29,10 +29,10 @@
     "watch": "tsc --watch"
   },
   "devDependencies": {
-    "@medusajs/framework": "2.21.1"
+    "@nedusa/framework": "2.21.1"
   },
   "peerDependencies": {
-    "@medusajs/framework": "2.21.1"
+    "@nedusa/framework": "2.21.1"
   },
   "keywords": [
     "medusa-provider",

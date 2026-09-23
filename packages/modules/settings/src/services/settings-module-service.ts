@@ -6,7 +6,7 @@ import {
   InternalModuleDeclaration,
   ModulesSdkTypes,
   SettingsTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   EmitEvents,
   InjectManager,
@@ -14,8 +14,8 @@ import {
   MedusaContext,
   MedusaError,
   MedusaService,
-} from "@medusajs/framework/utils"
-import { MedusaModule } from "@medusajs/framework/modules-sdk"
+} from "@nedusa/framework/utils"
+import { MedusaModule } from "@nedusa/framework/modules-sdk"
 import {
   ViewConfiguration,
   UserPreference,

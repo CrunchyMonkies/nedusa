@@ -1,10 +1,10 @@
-import { createOrderCreditLinesWorkflow } from "@medusajs/core-flows"
+import { createOrderCreditLinesWorkflow } from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils"
 
 export const POST = async (
   req: AuthenticatedMedusaRequest<

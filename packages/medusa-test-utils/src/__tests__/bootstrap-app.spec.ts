@@ -21,18 +21,18 @@ jest.mock("express", () => jest.fn(() => mockApp))
 
 jest.mock("get-port", () => jest.fn().mockResolvedValue(4000))
 
-jest.mock("@medusajs/framework/logger", () => ({
+jest.mock("@nedusa/framework/logger", () => ({
   logger: { error: jest.fn() },
 }))
 
-jest.mock("@medusajs/framework/utils", () => ({
-  ...jest.requireActual("@medusajs/framework/utils"),
+jest.mock("@nedusa/framework/utils", () => ({
+  ...jest.requireActual("@nedusa/framework/utils"),
   GracefulShutdownServer: { create: jest.fn(() => mockGracefulServer) },
   promiseAll: (promises: Promise<any>[]) => Promise.all(promises),
 }))
 
 jest.mock(
-  "@medusajs/medusa/loaders/index",
+  "@nedusa/medusa/loaders/index",
   () => ({
     default: (...args: any[]) => loadersMock(...args),
   }),

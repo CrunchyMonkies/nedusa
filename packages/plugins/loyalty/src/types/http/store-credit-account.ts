@@ -5,7 +5,7 @@ import {
   OperatorMap,
   PaginatedResponse,
   StoreCustomer,
-} from "@medusajs/framework/types";
+} from "@nedusa/framework/types";
 import { ModuleStoreCreditAccount } from "../store-credit";
 
 export interface AdminGetStoreCreditAccountsParams

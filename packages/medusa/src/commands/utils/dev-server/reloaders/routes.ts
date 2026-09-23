@@ -1,5 +1,5 @@
-import { ApiLoader } from "@medusajs/framework"
-import { Logger } from "@medusajs/framework/types"
+import { ApiLoader } from "@nedusa/framework"
+import { Logger } from "@nedusa/framework/types"
 import { CONFIG, FileChangeAction } from "../types"
 import { ModuleCacheManager } from "../module-cache-manager"
 import { BaseReloader } from "./base"

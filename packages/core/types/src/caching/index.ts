@@ -381,8 +381,8 @@ export interface ICachingModuleService extends IModuleService {
  * #### Example
  *
  * ```ts
- * import { ICachingProviderService } from "@medusajs/framework/types"
- * import { Logger } from "@medusajs/framework/types"
+ * import { ICachingProviderService } from "@nedusa/framework/types"
+ * import { Logger } from "@nedusa/framework/types"
  *
  * type InjectedDependencies = {
  *   logger: Logger

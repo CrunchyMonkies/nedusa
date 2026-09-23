@@ -1,15 +1,15 @@
 import type {
   AdditionalData,
   CreateCustomerDTO,
-} from "@medusajs/framework/types"
-import { CustomerWorkflowEvents } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { CustomerWorkflowEvents } from "@nedusa/framework/utils"
 import {
   WorkflowData,
   WorkflowResponse,
   createHook,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { emitEventStep } from "../../common/steps/emit-event"
 import { createCustomersStep } from "../steps"
 

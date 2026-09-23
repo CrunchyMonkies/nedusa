@@ -1,4 +1,4 @@
-import { Tooltip, clx } from "@medusajs/ui"
+import { Tooltip, clx } from "@nedusa/ui"
 import { useRef, useState } from "react"
 
 interface TruncatedTextProps {

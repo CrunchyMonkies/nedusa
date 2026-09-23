@@ -2,7 +2,7 @@ import { isAbsolute } from "path"
 
 /**
  * Resolves a module identifier relative to the Medusa project directory
- * instead of relative to the directory `@medusajs/utils` itself happens to
+ * instead of relative to the directory `@nedusa/utils` itself happens to
  * be installed in.
  *
  * @param id - a bare specifier, subpath specifier, or absolute path
@@ -32,7 +32,7 @@ export function resolveFromProject(
 
     /**
      * Fall back to the default resolution algorithm so anything reachable from
-     * `@medusajs/utils` itself (for example when Medusa is executed from
+     * `@nedusa/utils` itself (for example when Medusa is executed from
      * outside the project directory) keeps resolving.
      */
     return id

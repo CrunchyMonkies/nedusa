@@ -1,6 +1,6 @@
 import { createHash } from "crypto"
-import { Logger, SearchTypes } from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+import { Logger, SearchTypes } from "@nedusa/framework/types"
+import { MedusaError } from "@nedusa/framework/utils"
 
 export type PostgresSearchEngine = "native" | "lakebase"
 

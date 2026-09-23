@@ -1,4 +1,4 @@
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@nedusa/types"
 
 import { retrieveActiveStore, storeQueryKeys } from "../../../hooks/api/store"
 import { queryClient } from "../../../lib/query-client"

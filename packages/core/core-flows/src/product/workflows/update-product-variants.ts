@@ -2,8 +2,8 @@ import {
   AdditionalData,
   PricingTypes,
   ProductTypes,
-} from "@medusajs/framework/types"
-import { ProductVariantWorkflowEvents } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { ProductVariantWorkflowEvents } from "@nedusa/framework/utils"
 import {
   WorkflowData,
   WorkflowResponse,
@@ -11,7 +11,7 @@ import {
   createWorkflow,
   parallelize,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { emitEventStep } from "../../common"
 import { updatePriceSetsStep } from "../../pricing"
 import {

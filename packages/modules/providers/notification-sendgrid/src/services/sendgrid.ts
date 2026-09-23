@@ -2,11 +2,11 @@ import {
   Logger,
   NotificationTypes,
   SendgridNotificationServiceOptions,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   AbstractNotificationProviderService,
   MedusaError,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import sendgrid from "@sendgrid/mail"
 
 type InjectedDependencies = {

@@ -1,4 +1,4 @@
-import { MedusaError, TransactionStepState } from "@medusajs/utils"
+import { MedusaError, TransactionStepState } from "@nedusa/utils"
 import {
   DistributedTransactionType,
   TransactionPayload,

@@ -1,6 +1,6 @@
-import OidcAuthProvider from "@medusajs/auth-oidc"
+import OidcAuthProvider from "@nedusa/auth-oidc"
 
-export * from "@medusajs/auth-oidc"
+export * from "@nedusa/auth-oidc"
 
 export default OidcAuthProvider
-export const discoveryPath = require.resolve("@medusajs/auth-oidc")
+export const discoveryPath = require.resolve("@nedusa/auth-oidc")

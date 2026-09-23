@@ -1,11 +1,11 @@
-import { batchTranslationsWorkflow } from "@medusajs/core-flows"
-import { AuthenticatedMedusaRequest, MedusaResponse } from "@medusajs/framework"
+import { batchTranslationsWorkflow } from "@nedusa/core-flows"
+import { AuthenticatedMedusaRequest, MedusaResponse } from "@nedusa/framework"
 import {
   ContainerRegistrationKeys,
   defineFileConfig,
   FeatureFlag,
-} from "@medusajs/framework/utils"
-import { BatchMethodRequest, HttpTypes } from "@medusajs/types"
+} from "@nedusa/framework/utils"
+import { BatchMethodRequest, HttpTypes } from "@nedusa/types"
 import TranslationFeatureFlag from "../../../../feature-flags/translation"
 import { defaultAdminTranslationFields } from "../query-config"
 

@@ -1,4 +1,4 @@
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@nedusa/types"
 import { useTranslation } from "react-i18next"
 
 import { ConfigurableDataTable } from "../../../../../components/table/configurable-data-table"

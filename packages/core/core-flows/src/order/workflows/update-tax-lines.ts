@@ -2,7 +2,7 @@ import type {
   ItemTaxLineDTO,
   OrderWorkflowDTO,
   ShippingTaxLineDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   createHook,
   createWorkflow,
@@ -10,7 +10,7 @@ import {
   when,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { useQueryGraphStep } from "../../common"
 import { getItemTaxLinesStep } from "../../tax/steps/get-item-tax-lines"
 import { setOrderTaxLinesForItemsStep } from "../steps"

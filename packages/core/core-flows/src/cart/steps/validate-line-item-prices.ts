@@ -1,5 +1,5 @@
-import { MedusaError, isPresent } from "@medusajs/framework/utils"
-import { createStep } from "@medusajs/framework/workflows-sdk"
+import { MedusaError, isPresent } from "@nedusa/framework/utils"
+import { createStep } from "@nedusa/framework/workflows-sdk"
 
 /**
  * The details of the line items to validate.

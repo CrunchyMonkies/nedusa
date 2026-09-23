@@ -2,7 +2,7 @@ import {
   ProductsQueryContextKey,
   PublishedProductsContextKey,
   QueryContext,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 /**
  * Query context that asks the Product module to resolve published products

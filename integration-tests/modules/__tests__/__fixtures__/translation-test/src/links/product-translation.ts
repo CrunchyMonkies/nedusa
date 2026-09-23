@@ -1,5 +1,5 @@
-import { defineLink } from "@medusajs/framework/utils"
-import ProductModule from "@medusajs/medusa/product"
+import { defineLink } from "@nedusa/framework/utils"
+import ProductModule from "@nedusa/medusa/product"
 import Translation from "../modules/translation"
 
 export default defineLink(

@@ -1,6 +1,6 @@
-/* eslint-disable @medusajs/widget-must-have-default-export */
-/* eslint-disable @medusajs/widget-must-export-config */
-import { HttpTypes } from "@medusajs/types";
+/* eslint-disable @nedusa/widget-must-have-default-export */
+/* eslint-disable @nedusa/widget-must-export-config */
+import { HttpTypes } from "@nedusa/types";
 import { useQueryParams } from "../../hooks/common/use-query-params";
 
 type UseGiftCardProductsTableQueryProps = {

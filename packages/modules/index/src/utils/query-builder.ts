@@ -1,11 +1,11 @@
-import { IndexTypes } from "@medusajs/framework/types"
+import { IndexTypes } from "@nedusa/framework/types"
 import {
   isDefined,
   isObject,
   isString,
   unflattenObjectKeys,
-} from "@medusajs/framework/utils"
-import { Knex } from "@medusajs/framework/mikro-orm/knex"
+} from "@nedusa/framework/utils"
+import { Knex } from "@nedusa/framework/mikro-orm/knex"
 import { OrderBy, QueryFormat, QueryOptions, Select } from "@types"
 import { getPivotTableName, normalizeTableName } from "./normalze-table-name"
 

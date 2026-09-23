@@ -6,7 +6,7 @@ import {
   OrderCreditLineDTO,
   OrderShippingMethodAdjustmentDTO,
   OrderShippingMethodTaxLineDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 
 export type VirtualOrder = {
   id: string

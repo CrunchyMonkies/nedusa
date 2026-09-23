@@ -1,5 +1,5 @@
-import { ModuleJoinerConfig } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+import { ModuleJoinerConfig } from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
 
 export const OrderSalesChannel: ModuleJoinerConfig = {
   isLink: true,

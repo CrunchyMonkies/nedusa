@@ -1,6 +1,6 @@
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
-import { IProductModuleService } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
+import { IProductModuleService } from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
 
 export const addImagesToVariantStepId = "add-images-to-variant"
 

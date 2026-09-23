@@ -1,12 +1,12 @@
 import {
   AdminFulfillmentProviderOption,
   HttpTypes,
-} from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest,

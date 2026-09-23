@@ -1,4 +1,4 @@
-import { ModuleProvider, Modules } from "@medusajs/framework/utils"
+import { ModuleProvider, Modules } from "@nedusa/framework/utils"
 import { OidcAuthService } from "./services/oidc"
 
 const services = [OidcAuthService]

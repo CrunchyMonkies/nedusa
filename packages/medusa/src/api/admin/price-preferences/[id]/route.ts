@@ -1,14 +1,14 @@
 import {
   deletePricePreferencesWorkflow,
   updatePricePreferencesWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@nedusa/framework/types"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
   refetchEntity,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<HttpTypes.AdminGetPricePreferenceParams>,

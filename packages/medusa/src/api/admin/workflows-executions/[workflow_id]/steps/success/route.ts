@@ -2,14 +2,14 @@ import {
   isDefined,
   Modules,
   TransactionHandlerType,
-} from "@medusajs/framework/utils"
-import { StepResponse } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/utils"
+import { StepResponse } from "@nedusa/framework/workflows-sdk"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 
-import { HttpTypes, IWorkflowEngineService } from "@medusajs/framework/types"
+import { HttpTypes, IWorkflowEngineService } from "@nedusa/framework/types"
 
 export const POST = async (
   req: AuthenticatedMedusaRequest<HttpTypes.AdminCreateWorkflowsAsyncResponse>,

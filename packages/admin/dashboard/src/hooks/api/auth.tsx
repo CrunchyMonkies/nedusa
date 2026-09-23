@@ -2,8 +2,8 @@ import {
   AuthLoginResponse,
   AuthRegisterResponse,
   FetchError,
-} from "@medusajs/js-sdk"
-import { HttpTypes } from "@medusajs/types"
+} from "@nedusa/js-sdk"
+import { HttpTypes } from "@nedusa/types"
 import {
   UseMutationOptions,
   UseQueryOptions,

@@ -1,4 +1,4 @@
-import { Text } from "@medusajs/ui"
+import { Text } from "@nedusa/ui"
 import { ReactNode } from "react"
 
 export interface ListicleProps {

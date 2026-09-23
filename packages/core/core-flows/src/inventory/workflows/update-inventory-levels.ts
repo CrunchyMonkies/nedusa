@@ -1,14 +1,14 @@
 import type {
   InventoryLevelDTO,
   InventoryTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
-import { InventoryLevelWorkflowEvents } from "@medusajs/framework/utils"
+} from "@nedusa/framework/workflows-sdk"
+import { InventoryLevelWorkflowEvents } from "@nedusa/framework/utils"
 
 import { emitEventStep } from "../../common"
 import { updateInventoryLevelsStep } from "../steps/update-inventory-levels"

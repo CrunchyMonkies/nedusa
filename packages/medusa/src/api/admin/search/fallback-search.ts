@@ -1,9 +1,9 @@
-import { HttpTypes, MedusaContainer } from "@medusajs/framework/types"
+import { HttpTypes, MedusaContainer } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   MedusaError,
   promiseAll,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   ADMIN_SEARCH_ENTITY_MAP,
   AdminSearchEntityConfig,

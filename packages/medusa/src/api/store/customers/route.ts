@@ -1,11 +1,11 @@
-import { MedusaError } from "@medusajs/framework/utils"
+import { MedusaError } from "@nedusa/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 
-import { createCustomerAccountWorkflow } from "@medusajs/core-flows"
-import { HttpTypes } from "@medusajs/framework/types"
+import { createCustomerAccountWorkflow } from "@nedusa/core-flows"
+import { HttpTypes } from "@nedusa/framework/types"
 import { refetchCustomer } from "./helpers"
 
 export const POST = async (

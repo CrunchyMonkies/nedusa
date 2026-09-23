@@ -11,13 +11,13 @@ import {
   listShippingOptionsForCartWorkflow,
   orderEditAddNewItemWorkflow,
   processPaymentWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 import {
   createStep,
   createWorkflow,
   WorkflowData,
-} from "@medusajs/framework/workflows-sdk"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@nedusa/framework/workflows-sdk"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import {
   ICartModuleService,
   ICustomerModuleService,
@@ -31,14 +31,14 @@ import {
   ISalesChannelModuleService,
   IStockLocationService,
   Message,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import {
   ContainerRegistrationKeys,
   Modules,
   PaymentCollectionStatus,
   ProductStatus,
   remoteQueryObjectFromString,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import {
   adminHeaders,
   createAdminUser,

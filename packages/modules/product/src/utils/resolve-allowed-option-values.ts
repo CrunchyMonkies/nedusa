@@ -1,4 +1,4 @@
-import { MedusaError } from "@medusajs/framework/utils"
+import { MedusaError } from "@nedusa/framework/utils"
 
 export function resolveAllowedOptionValues<T>({
   optionTitle,

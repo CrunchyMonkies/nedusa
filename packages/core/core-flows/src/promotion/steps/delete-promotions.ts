@@ -1,6 +1,6 @@
-import type { IPromotionModuleService } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+import type { IPromotionModuleService } from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
+import { StepResponse, createStep } from "@nedusa/framework/workflows-sdk"
 
 /**
  * The IDs of the promotions to delete.

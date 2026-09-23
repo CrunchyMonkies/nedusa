@@ -1,8 +1,8 @@
-import { updateTaxRegionsStep, useQueryGraphStep } from "@medusajs/core-flows"
-import { MedusaModule } from "@medusajs/framework/modules-sdk"
-import { ExecArgs } from "@medusajs/framework/types"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
-import { createWorkflow, transform, WorkflowResponse } from "@medusajs/framework/workflows-sdk"
+import { updateTaxRegionsStep, useQueryGraphStep } from "@nedusa/core-flows"
+import { MedusaModule } from "@nedusa/framework/modules-sdk"
+import { ExecArgs } from "@nedusa/framework/types"
+import { ContainerRegistrationKeys, Modules } from "@nedusa/framework/utils"
+import { createWorkflow, transform, WorkflowResponse } from "@nedusa/framework/workflows-sdk"
 
 const assignSystemProviderToTaxRegionsWorkflow = createWorkflow(
   "assign-system-provider-to-tax-regions",

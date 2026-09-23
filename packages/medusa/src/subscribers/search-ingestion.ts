@@ -1,5 +1,5 @@
-import { MedusaModule } from "@medusajs/framework/modules-sdk"
-import { Modules } from "@medusajs/framework/utils"
+import { MedusaModule } from "@nedusa/framework/modules-sdk"
+import { Modules } from "@nedusa/framework/utils"
 import { SubscriberArgs, SubscriberConfig } from "../types/subscribers"
 
 export default async function searchIngestionHandler({

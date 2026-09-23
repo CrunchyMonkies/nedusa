@@ -1,4 +1,4 @@
-import { MedusaError } from "@medusajs/framework/utils"
+import { MedusaError } from "@nedusa/framework/utils"
 import {
   WorkflowData,
   WorkflowResponse,
@@ -7,7 +7,7 @@ import {
   StepResponse,
   when,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { deleteAuthIdentityStep, setAuthAppMetadataStep } from "../../auth"
 import { useQueryGraphStep } from "../../common"
 import { deleteCustomersWorkflow } from "./delete-customers"

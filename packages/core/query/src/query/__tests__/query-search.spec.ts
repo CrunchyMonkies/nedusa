@@ -1,4 +1,4 @@
-import { MedusaContainer } from "@medusajs/types"
+import { MedusaContainer } from "@nedusa/types"
 import { Query } from "../query"
 
 // `title` lives on the index; `description` and `variants.sku` do not, so they

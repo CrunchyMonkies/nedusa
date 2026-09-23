@@ -3,8 +3,8 @@ import {
   getTotalVariantAvailability,
   getVariantAvailability,
   MedusaError,
-} from "@medusajs/framework/utils"
-import { MedusaRequest, MedusaStoreRequest } from "@medusajs/framework/http"
+} from "@nedusa/framework/utils"
+import { MedusaRequest, MedusaStoreRequest } from "@nedusa/framework/http"
 import { transformAndValidateSalesChannelIds } from "./filter-by-valid-sales-channels"
 
 const inventoryQuantityRequiredFields = ["id", "manage_inventory"]

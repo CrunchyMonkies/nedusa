@@ -1,14 +1,14 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import { AdminCreateViewConfigurationType } from "./validators"
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   MedusaError,
-} from "@medusajs/framework/utils"
-import { createViewConfigurationWorkflow } from "@medusajs/core-flows"
+} from "@nedusa/framework/utils"
+import { createViewConfigurationWorkflow } from "@nedusa/core-flows"
 
 /**
  * @since 2.10.3

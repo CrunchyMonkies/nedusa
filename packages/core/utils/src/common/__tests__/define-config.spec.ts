@@ -56,7 +56,7 @@ describe("defineConfig", function () {
         "logger": undefined,
         "modules": {
           "api_key": {
-            "resolve": "@medusajs/medusa/api-key",
+            "resolve": "@nedusa/medusa/api-key",
           },
           "auth": {
             "options": {
@@ -66,54 +66,54 @@ describe("defineConfig", function () {
               "providers": [
                 {
                   "id": "emailpass",
-                  "resolve": "@medusajs/medusa/auth-emailpass",
+                  "resolve": "@nedusa/medusa/auth-emailpass",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/auth",
+            "resolve": "@nedusa/medusa/auth",
           },
           "cache": {
-            "resolve": "@medusajs/medusa/cache-inmemory",
+            "resolve": "@nedusa/medusa/cache-inmemory",
           },
           "cart": {
-            "resolve": "@medusajs/medusa/cart",
+            "resolve": "@nedusa/medusa/cart",
           },
           "currency": {
-            "resolve": "@medusajs/medusa/currency",
+            "resolve": "@nedusa/medusa/currency",
           },
           "customer": {
-            "resolve": "@medusajs/medusa/customer",
+            "resolve": "@nedusa/medusa/customer",
           },
           "event_bus": {
-            "resolve": "@medusajs/medusa/event-bus-local",
+            "resolve": "@nedusa/medusa/event-bus-local",
           },
           "file": {
             "options": {
               "providers": [
                 {
                   "id": "local",
-                  "resolve": "@medusajs/medusa/file-local",
+                  "resolve": "@nedusa/medusa/file-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/file",
+            "resolve": "@nedusa/medusa/file",
           },
           "fulfillment": {
             "options": {
               "providers": [
                 {
                   "id": "manual",
-                  "resolve": "@medusajs/medusa/fulfillment-manual",
+                  "resolve": "@nedusa/medusa/fulfillment-manual",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/fulfillment",
+            "resolve": "@nedusa/medusa/fulfillment",
           },
           "inventory": {
-            "resolve": "@medusajs/medusa/inventory",
+            "resolve": "@nedusa/medusa/inventory",
           },
           "locking": {
-            "resolve": "@medusajs/medusa/locking",
+            "resolve": "@nedusa/medusa/locking",
           },
           "notification": {
             "options": {
@@ -126,36 +126,36 @@ describe("defineConfig", function () {
                     ],
                     "name": "Local Notification Provider",
                   },
-                  "resolve": "@medusajs/medusa/notification-local",
+                  "resolve": "@nedusa/medusa/notification-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/notification",
+            "resolve": "@nedusa/medusa/notification",
           },
           "order": {
-            "resolve": "@medusajs/medusa/order",
+            "resolve": "@nedusa/medusa/order",
           },
           "payment": {
-            "resolve": "@medusajs/medusa/payment",
+            "resolve": "@nedusa/medusa/payment",
           },
           "pricing": {
-            "resolve": "@medusajs/medusa/pricing",
+            "resolve": "@nedusa/medusa/pricing",
           },
           "product": {
-            "resolve": "@medusajs/medusa/product",
+            "resolve": "@nedusa/medusa/product",
           },
           "promotion": {
-            "resolve": "@medusajs/medusa/promotion",
+            "resolve": "@nedusa/medusa/promotion",
           },
           "rbac": {
             "disable": true,
-            "resolve": "@medusajs/medusa/rbac",
+            "resolve": "@nedusa/medusa/rbac",
           },
           "region": {
-            "resolve": "@medusajs/medusa/region",
+            "resolve": "@nedusa/medusa/region",
           },
           "sales_channel": {
-            "resolve": "@medusajs/medusa/sales-channel",
+            "resolve": "@nedusa/medusa/sales-channel",
           },
           "search": {
             "options": {
@@ -165,27 +165,27 @@ describe("defineConfig", function () {
                   "options": {
                     "engine": "native",
                   },
-                  "resolve": "@medusajs/medusa/search-postgres",
+                  "resolve": "@nedusa/medusa/search-postgres",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/search",
+            "resolve": "@nedusa/medusa/search",
           },
           "settings": {
-            "resolve": "@medusajs/medusa/settings",
+            "resolve": "@nedusa/medusa/settings",
           },
           "stock_location": {
-            "resolve": "@medusajs/medusa/stock-location",
+            "resolve": "@nedusa/medusa/stock-location",
           },
           "store": {
-            "resolve": "@medusajs/medusa/store",
+            "resolve": "@nedusa/medusa/store",
           },
           "tax": {
-            "resolve": "@medusajs/medusa/tax",
+            "resolve": "@nedusa/medusa/tax",
           },
           "translation": {
             "disable": true,
-            "resolve": "@medusajs/medusa/translation",
+            "resolve": "@nedusa/medusa/translation",
           },
           "user": {
             "options": {
@@ -194,16 +194,16 @@ describe("defineConfig", function () {
               "jwt_secret": "supersecret",
               "jwt_verify_options": undefined,
             },
-            "resolve": "@medusajs/medusa/user",
+            "resolve": "@nedusa/medusa/user",
           },
           "workflows": {
-            "resolve": "@medusajs/medusa/workflow-engine-inmemory",
+            "resolve": "@nedusa/medusa/workflow-engine-inmemory",
           },
         },
         "plugins": [
           {
             "options": {},
-            "resolve": "@medusajs/draft-order",
+            "resolve": "@nedusa/draft-order",
           },
         ],
         "projectConfig": {
@@ -267,11 +267,11 @@ describe("defineConfig", function () {
       config = defineConfig({
         modules: [
           {
-            resolve: "@medusajs/medusa/auth",
+            resolve: "@nedusa/medusa/auth",
             options: {
               providers: [
                 {
-                  resolve: "@medusajs/medusa/auth-emailpass",
+                  resolve: "@nedusa/medusa/auth-emailpass",
                   id: "emailpass",
                   options: {
                     require_verification: true,
@@ -294,7 +294,7 @@ describe("defineConfig", function () {
           },
           providers: [
             {
-              resolve: "@medusajs/medusa/auth-emailpass",
+              resolve: "@nedusa/medusa/auth-emailpass",
               id: "emailpass",
               options: {
                 require_verification: true,
@@ -318,7 +318,7 @@ describe("defineConfig", function () {
             options: {
               providers: [
                 {
-                  resolve: "@medusajs/medusa/auth-emailpass",
+                  resolve: "@nedusa/medusa/auth-emailpass",
                   id: "emailpass",
                   options: {
                     require_verification: true,
@@ -341,7 +341,7 @@ describe("defineConfig", function () {
           },
           providers: [
             {
-              resolve: "@medusajs/medusa/auth-emailpass",
+              resolve: "@nedusa/medusa/auth-emailpass",
               id: "emailpass",
               options: {
                 require_verification: true,
@@ -362,7 +362,7 @@ describe("defineConfig", function () {
       config = defineConfig({
         modules: [
           {
-            resolve: "@medusajs/medusa/auth",
+            resolve: "@nedusa/medusa/auth",
             options: {
               mfa: {
                 encryption_key: "custom-mfa-key",
@@ -411,7 +411,7 @@ describe("defineConfig", function () {
             "resolve": "./modules/github",
           },
           "api_key": {
-            "resolve": "@medusajs/medusa/api-key",
+            "resolve": "@nedusa/medusa/api-key",
           },
           "auth": {
             "options": {
@@ -421,54 +421,54 @@ describe("defineConfig", function () {
               "providers": [
                 {
                   "id": "emailpass",
-                  "resolve": "@medusajs/medusa/auth-emailpass",
+                  "resolve": "@nedusa/medusa/auth-emailpass",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/auth",
+            "resolve": "@nedusa/medusa/auth",
           },
           "cache": {
-            "resolve": "@medusajs/medusa/cache-inmemory",
+            "resolve": "@nedusa/medusa/cache-inmemory",
           },
           "cart": {
-            "resolve": "@medusajs/medusa/cart",
+            "resolve": "@nedusa/medusa/cart",
           },
           "currency": {
-            "resolve": "@medusajs/medusa/currency",
+            "resolve": "@nedusa/medusa/currency",
           },
           "customer": {
-            "resolve": "@medusajs/medusa/customer",
+            "resolve": "@nedusa/medusa/customer",
           },
           "event_bus": {
-            "resolve": "@medusajs/medusa/event-bus-local",
+            "resolve": "@nedusa/medusa/event-bus-local",
           },
           "file": {
             "options": {
               "providers": [
                 {
                   "id": "local",
-                  "resolve": "@medusajs/medusa/file-local",
+                  "resolve": "@nedusa/medusa/file-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/file",
+            "resolve": "@nedusa/medusa/file",
           },
           "fulfillment": {
             "options": {
               "providers": [
                 {
                   "id": "manual",
-                  "resolve": "@medusajs/medusa/fulfillment-manual",
+                  "resolve": "@nedusa/medusa/fulfillment-manual",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/fulfillment",
+            "resolve": "@nedusa/medusa/fulfillment",
           },
           "inventory": {
-            "resolve": "@medusajs/medusa/inventory",
+            "resolve": "@nedusa/medusa/inventory",
           },
           "locking": {
-            "resolve": "@medusajs/medusa/locking",
+            "resolve": "@nedusa/medusa/locking",
           },
           "notification": {
             "options": {
@@ -481,36 +481,36 @@ describe("defineConfig", function () {
                     ],
                     "name": "Local Notification Provider",
                   },
-                  "resolve": "@medusajs/medusa/notification-local",
+                  "resolve": "@nedusa/medusa/notification-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/notification",
+            "resolve": "@nedusa/medusa/notification",
           },
           "order": {
-            "resolve": "@medusajs/medusa/order",
+            "resolve": "@nedusa/medusa/order",
           },
           "payment": {
-            "resolve": "@medusajs/medusa/payment",
+            "resolve": "@nedusa/medusa/payment",
           },
           "pricing": {
-            "resolve": "@medusajs/medusa/pricing",
+            "resolve": "@nedusa/medusa/pricing",
           },
           "product": {
-            "resolve": "@medusajs/medusa/product",
+            "resolve": "@nedusa/medusa/product",
           },
           "promotion": {
-            "resolve": "@medusajs/medusa/promotion",
+            "resolve": "@nedusa/medusa/promotion",
           },
           "rbac": {
             "disable": true,
-            "resolve": "@medusajs/medusa/rbac",
+            "resolve": "@nedusa/medusa/rbac",
           },
           "region": {
-            "resolve": "@medusajs/medusa/region",
+            "resolve": "@nedusa/medusa/region",
           },
           "sales_channel": {
-            "resolve": "@medusajs/medusa/sales-channel",
+            "resolve": "@nedusa/medusa/sales-channel",
           },
           "search": {
             "options": {
@@ -520,27 +520,27 @@ describe("defineConfig", function () {
                   "options": {
                     "engine": "native",
                   },
-                  "resolve": "@medusajs/medusa/search-postgres",
+                  "resolve": "@nedusa/medusa/search-postgres",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/search",
+            "resolve": "@nedusa/medusa/search",
           },
           "settings": {
-            "resolve": "@medusajs/medusa/settings",
+            "resolve": "@nedusa/medusa/settings",
           },
           "stock_location": {
-            "resolve": "@medusajs/medusa/stock-location",
+            "resolve": "@nedusa/medusa/stock-location",
           },
           "store": {
-            "resolve": "@medusajs/medusa/store",
+            "resolve": "@nedusa/medusa/store",
           },
           "tax": {
-            "resolve": "@medusajs/medusa/tax",
+            "resolve": "@nedusa/medusa/tax",
           },
           "translation": {
             "disable": true,
-            "resolve": "@medusajs/medusa/translation",
+            "resolve": "@nedusa/medusa/translation",
           },
           "user": {
             "options": {
@@ -549,16 +549,16 @@ describe("defineConfig", function () {
               "jwt_secret": "supersecret",
               "jwt_verify_options": undefined,
             },
-            "resolve": "@medusajs/medusa/user",
+            "resolve": "@nedusa/medusa/user",
           },
           "workflows": {
-            "resolve": "@medusajs/medusa/workflow-engine-inmemory",
+            "resolve": "@nedusa/medusa/workflow-engine-inmemory",
           },
         },
         "plugins": [
           {
             "options": {},
-            "resolve": "@medusajs/draft-order",
+            "resolve": "@nedusa/draft-order",
           },
         ],
         "projectConfig": {
@@ -620,7 +620,7 @@ describe("defineConfig", function () {
             "resolve": "<fixtures>/define-config/github/index.ts",
           },
           "api_key": {
-            "resolve": "@medusajs/medusa/api-key",
+            "resolve": "@nedusa/medusa/api-key",
           },
           "auth": {
             "options": {
@@ -630,54 +630,54 @@ describe("defineConfig", function () {
               "providers": [
                 {
                   "id": "emailpass",
-                  "resolve": "@medusajs/medusa/auth-emailpass",
+                  "resolve": "@nedusa/medusa/auth-emailpass",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/auth",
+            "resolve": "@nedusa/medusa/auth",
           },
           "cache": {
-            "resolve": "@medusajs/medusa/cache-inmemory",
+            "resolve": "@nedusa/medusa/cache-inmemory",
           },
           "cart": {
-            "resolve": "@medusajs/medusa/cart",
+            "resolve": "@nedusa/medusa/cart",
           },
           "currency": {
-            "resolve": "@medusajs/medusa/currency",
+            "resolve": "@nedusa/medusa/currency",
           },
           "customer": {
-            "resolve": "@medusajs/medusa/customer",
+            "resolve": "@nedusa/medusa/customer",
           },
           "event_bus": {
-            "resolve": "@medusajs/medusa/event-bus-local",
+            "resolve": "@nedusa/medusa/event-bus-local",
           },
           "file": {
             "options": {
               "providers": [
                 {
                   "id": "local",
-                  "resolve": "@medusajs/medusa/file-local",
+                  "resolve": "@nedusa/medusa/file-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/file",
+            "resolve": "@nedusa/medusa/file",
           },
           "fulfillment": {
             "options": {
               "providers": [
                 {
                   "id": "manual",
-                  "resolve": "@medusajs/medusa/fulfillment-manual",
+                  "resolve": "@nedusa/medusa/fulfillment-manual",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/fulfillment",
+            "resolve": "@nedusa/medusa/fulfillment",
           },
           "inventory": {
-            "resolve": "@medusajs/medusa/inventory",
+            "resolve": "@nedusa/medusa/inventory",
           },
           "locking": {
-            "resolve": "@medusajs/medusa/locking",
+            "resolve": "@nedusa/medusa/locking",
           },
           "notification": {
             "options": {
@@ -690,36 +690,36 @@ describe("defineConfig", function () {
                     ],
                     "name": "Local Notification Provider",
                   },
-                  "resolve": "@medusajs/medusa/notification-local",
+                  "resolve": "@nedusa/medusa/notification-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/notification",
+            "resolve": "@nedusa/medusa/notification",
           },
           "order": {
-            "resolve": "@medusajs/medusa/order",
+            "resolve": "@nedusa/medusa/order",
           },
           "payment": {
-            "resolve": "@medusajs/medusa/payment",
+            "resolve": "@nedusa/medusa/payment",
           },
           "pricing": {
-            "resolve": "@medusajs/medusa/pricing",
+            "resolve": "@nedusa/medusa/pricing",
           },
           "product": {
-            "resolve": "@medusajs/medusa/product",
+            "resolve": "@nedusa/medusa/product",
           },
           "promotion": {
-            "resolve": "@medusajs/medusa/promotion",
+            "resolve": "@nedusa/medusa/promotion",
           },
           "rbac": {
             "disable": true,
-            "resolve": "@medusajs/medusa/rbac",
+            "resolve": "@nedusa/medusa/rbac",
           },
           "region": {
-            "resolve": "@medusajs/medusa/region",
+            "resolve": "@nedusa/medusa/region",
           },
           "sales_channel": {
-            "resolve": "@medusajs/medusa/sales-channel",
+            "resolve": "@nedusa/medusa/sales-channel",
           },
           "search": {
             "options": {
@@ -729,27 +729,27 @@ describe("defineConfig", function () {
                   "options": {
                     "engine": "native",
                   },
-                  "resolve": "@medusajs/medusa/search-postgres",
+                  "resolve": "@nedusa/medusa/search-postgres",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/search",
+            "resolve": "@nedusa/medusa/search",
           },
           "settings": {
-            "resolve": "@medusajs/medusa/settings",
+            "resolve": "@nedusa/medusa/settings",
           },
           "stock_location": {
-            "resolve": "@medusajs/medusa/stock-location",
+            "resolve": "@nedusa/medusa/stock-location",
           },
           "store": {
-            "resolve": "@medusajs/medusa/store",
+            "resolve": "@nedusa/medusa/store",
           },
           "tax": {
-            "resolve": "@medusajs/medusa/tax",
+            "resolve": "@nedusa/medusa/tax",
           },
           "translation": {
             "disable": true,
-            "resolve": "@medusajs/medusa/translation",
+            "resolve": "@nedusa/medusa/translation",
           },
           "user": {
             "options": {
@@ -758,16 +758,16 @@ describe("defineConfig", function () {
               "jwt_secret": "supersecret",
               "jwt_verify_options": undefined,
             },
-            "resolve": "@medusajs/medusa/user",
+            "resolve": "@nedusa/medusa/user",
           },
           "workflows": {
-            "resolve": "@medusajs/medusa/workflow-engine-inmemory",
+            "resolve": "@nedusa/medusa/workflow-engine-inmemory",
           },
         },
         "plugins": [
           {
             "options": {},
-            "resolve": "@medusajs/draft-order",
+            "resolve": "@nedusa/draft-order",
           },
         ],
         "projectConfig": {
@@ -830,7 +830,7 @@ describe("defineConfig", function () {
             "resolve": "<fixtures>/define-config/github/index.ts",
           },
           "api_key": {
-            "resolve": "@medusajs/medusa/api-key",
+            "resolve": "@nedusa/medusa/api-key",
           },
           "auth": {
             "options": {
@@ -840,54 +840,54 @@ describe("defineConfig", function () {
               "providers": [
                 {
                   "id": "emailpass",
-                  "resolve": "@medusajs/medusa/auth-emailpass",
+                  "resolve": "@nedusa/medusa/auth-emailpass",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/auth",
+            "resolve": "@nedusa/medusa/auth",
           },
           "cache": {
-            "resolve": "@medusajs/medusa/cache-inmemory",
+            "resolve": "@nedusa/medusa/cache-inmemory",
           },
           "cart": {
-            "resolve": "@medusajs/medusa/cart",
+            "resolve": "@nedusa/medusa/cart",
           },
           "currency": {
-            "resolve": "@medusajs/medusa/currency",
+            "resolve": "@nedusa/medusa/currency",
           },
           "customer": {
-            "resolve": "@medusajs/medusa/customer",
+            "resolve": "@nedusa/medusa/customer",
           },
           "event_bus": {
-            "resolve": "@medusajs/medusa/event-bus-local",
+            "resolve": "@nedusa/medusa/event-bus-local",
           },
           "file": {
             "options": {
               "providers": [
                 {
                   "id": "local",
-                  "resolve": "@medusajs/medusa/file-local",
+                  "resolve": "@nedusa/medusa/file-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/file",
+            "resolve": "@nedusa/medusa/file",
           },
           "fulfillment": {
             "options": {
               "providers": [
                 {
                   "id": "manual",
-                  "resolve": "@medusajs/medusa/fulfillment-manual",
+                  "resolve": "@nedusa/medusa/fulfillment-manual",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/fulfillment",
+            "resolve": "@nedusa/medusa/fulfillment",
           },
           "inventory": {
-            "resolve": "@medusajs/medusa/inventory",
+            "resolve": "@nedusa/medusa/inventory",
           },
           "locking": {
-            "resolve": "@medusajs/medusa/locking",
+            "resolve": "@nedusa/medusa/locking",
           },
           "notification": {
             "options": {
@@ -900,36 +900,36 @@ describe("defineConfig", function () {
                     ],
                     "name": "Local Notification Provider",
                   },
-                  "resolve": "@medusajs/medusa/notification-local",
+                  "resolve": "@nedusa/medusa/notification-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/notification",
+            "resolve": "@nedusa/medusa/notification",
           },
           "order": {
-            "resolve": "@medusajs/medusa/order",
+            "resolve": "@nedusa/medusa/order",
           },
           "payment": {
-            "resolve": "@medusajs/medusa/payment",
+            "resolve": "@nedusa/medusa/payment",
           },
           "pricing": {
-            "resolve": "@medusajs/medusa/pricing",
+            "resolve": "@nedusa/medusa/pricing",
           },
           "product": {
-            "resolve": "@medusajs/medusa/product",
+            "resolve": "@nedusa/medusa/product",
           },
           "promotion": {
-            "resolve": "@medusajs/medusa/promotion",
+            "resolve": "@nedusa/medusa/promotion",
           },
           "rbac": {
             "disable": true,
-            "resolve": "@medusajs/medusa/rbac",
+            "resolve": "@nedusa/medusa/rbac",
           },
           "region": {
-            "resolve": "@medusajs/medusa/region",
+            "resolve": "@nedusa/medusa/region",
           },
           "sales_channel": {
-            "resolve": "@medusajs/medusa/sales-channel",
+            "resolve": "@nedusa/medusa/sales-channel",
           },
           "search": {
             "options": {
@@ -939,27 +939,27 @@ describe("defineConfig", function () {
                   "options": {
                     "engine": "native",
                   },
-                  "resolve": "@medusajs/medusa/search-postgres",
+                  "resolve": "@nedusa/medusa/search-postgres",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/search",
+            "resolve": "@nedusa/medusa/search",
           },
           "settings": {
-            "resolve": "@medusajs/medusa/settings",
+            "resolve": "@nedusa/medusa/settings",
           },
           "stock_location": {
-            "resolve": "@medusajs/medusa/stock-location",
+            "resolve": "@nedusa/medusa/stock-location",
           },
           "store": {
-            "resolve": "@medusajs/medusa/store",
+            "resolve": "@nedusa/medusa/store",
           },
           "tax": {
-            "resolve": "@medusajs/medusa/tax",
+            "resolve": "@nedusa/medusa/tax",
           },
           "translation": {
             "disable": true,
-            "resolve": "@medusajs/medusa/translation",
+            "resolve": "@nedusa/medusa/translation",
           },
           "user": {
             "options": {
@@ -968,16 +968,16 @@ describe("defineConfig", function () {
               "jwt_secret": "supersecret",
               "jwt_verify_options": undefined,
             },
-            "resolve": "@medusajs/medusa/user",
+            "resolve": "@nedusa/medusa/user",
           },
           "workflows": {
-            "resolve": "@medusajs/medusa/workflow-engine-inmemory",
+            "resolve": "@nedusa/medusa/workflow-engine-inmemory",
           },
         },
         "plugins": [
           {
             "options": {},
-            "resolve": "@medusajs/draft-order",
+            "resolve": "@nedusa/draft-order",
           },
         ],
         "projectConfig": {
@@ -1030,7 +1030,7 @@ describe("defineConfig", function () {
         "logger": undefined,
         "modules": {
           "api_key": {
-            "resolve": "@medusajs/medusa/api-key",
+            "resolve": "@nedusa/medusa/api-key",
           },
           "auth": {
             "options": {
@@ -1040,54 +1040,54 @@ describe("defineConfig", function () {
               "providers": [
                 {
                   "id": "emailpass",
-                  "resolve": "@medusajs/medusa/auth-emailpass",
+                  "resolve": "@nedusa/medusa/auth-emailpass",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/auth",
+            "resolve": "@nedusa/medusa/auth",
           },
           "cache": {
-            "resolve": "@medusajs/medusa/cache-inmemory",
+            "resolve": "@nedusa/medusa/cache-inmemory",
           },
           "cart": {
-            "resolve": "@medusajs/medusa/cart",
+            "resolve": "@nedusa/medusa/cart",
           },
           "currency": {
-            "resolve": "@medusajs/medusa/currency",
+            "resolve": "@nedusa/medusa/currency",
           },
           "customer": {
-            "resolve": "@medusajs/medusa/customer",
+            "resolve": "@nedusa/medusa/customer",
           },
           "event_bus": {
-            "resolve": "@medusajs/medusa/event-bus-local",
+            "resolve": "@nedusa/medusa/event-bus-local",
           },
           "file": {
             "options": {
               "providers": [
                 {
                   "id": "local",
-                  "resolve": "@medusajs/medusa/file-local",
+                  "resolve": "@nedusa/medusa/file-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/file",
+            "resolve": "@nedusa/medusa/file",
           },
           "fulfillment": {
             "options": {
               "providers": [
                 {
                   "id": "manual",
-                  "resolve": "@medusajs/medusa/fulfillment-manual",
+                  "resolve": "@nedusa/medusa/fulfillment-manual",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/fulfillment",
+            "resolve": "@nedusa/medusa/fulfillment",
           },
           "inventory": {
-            "resolve": "@medusajs/medusa/inventory",
+            "resolve": "@nedusa/medusa/inventory",
           },
           "locking": {
-            "resolve": "@medusajs/medusa/locking",
+            "resolve": "@nedusa/medusa/locking",
           },
           "notification": {
             "options": {
@@ -1100,36 +1100,36 @@ describe("defineConfig", function () {
                     ],
                     "name": "Local Notification Provider",
                   },
-                  "resolve": "@medusajs/medusa/notification-local",
+                  "resolve": "@nedusa/medusa/notification-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/notification",
+            "resolve": "@nedusa/medusa/notification",
           },
           "order": {
-            "resolve": "@medusajs/medusa/order",
+            "resolve": "@nedusa/medusa/order",
           },
           "payment": {
-            "resolve": "@medusajs/medusa/payment",
+            "resolve": "@nedusa/medusa/payment",
           },
           "pricing": {
-            "resolve": "@medusajs/medusa/pricing",
+            "resolve": "@nedusa/medusa/pricing",
           },
           "product": {
-            "resolve": "@medusajs/medusa/product",
+            "resolve": "@nedusa/medusa/product",
           },
           "promotion": {
-            "resolve": "@medusajs/medusa/promotion",
+            "resolve": "@nedusa/medusa/promotion",
           },
           "rbac": {
             "disable": true,
-            "resolve": "@medusajs/medusa/rbac",
+            "resolve": "@nedusa/medusa/rbac",
           },
           "region": {
-            "resolve": "@medusajs/medusa/region",
+            "resolve": "@nedusa/medusa/region",
           },
           "sales_channel": {
-            "resolve": "@medusajs/medusa/sales-channel",
+            "resolve": "@nedusa/medusa/sales-channel",
           },
           "search": {
             "options": {
@@ -1139,27 +1139,27 @@ describe("defineConfig", function () {
                   "options": {
                     "engine": "native",
                   },
-                  "resolve": "@medusajs/medusa/search-postgres",
+                  "resolve": "@nedusa/medusa/search-postgres",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/search",
+            "resolve": "@nedusa/medusa/search",
           },
           "settings": {
-            "resolve": "@medusajs/medusa/settings",
+            "resolve": "@nedusa/medusa/settings",
           },
           "stock_location": {
-            "resolve": "@medusajs/medusa/stock-location",
+            "resolve": "@nedusa/medusa/stock-location",
           },
           "store": {
-            "resolve": "@medusajs/medusa/store",
+            "resolve": "@nedusa/medusa/store",
           },
           "tax": {
-            "resolve": "@medusajs/medusa/tax",
+            "resolve": "@nedusa/medusa/tax",
           },
           "translation": {
             "disable": true,
-            "resolve": "@medusajs/medusa/translation",
+            "resolve": "@nedusa/medusa/translation",
           },
           "user": {
             "options": {
@@ -1168,16 +1168,16 @@ describe("defineConfig", function () {
               "jwt_secret": "supersecret",
               "jwt_verify_options": undefined,
             },
-            "resolve": "@medusajs/medusa/user",
+            "resolve": "@nedusa/medusa/user",
           },
           "workflows": {
-            "resolve": "@medusajs/medusa/workflow-engine-inmemory",
+            "resolve": "@nedusa/medusa/workflow-engine-inmemory",
           },
         },
         "plugins": [
           {
             "options": {},
-            "resolve": "@medusajs/draft-order",
+            "resolve": "@nedusa/draft-order",
           },
         ],
         "projectConfig": {
@@ -1233,7 +1233,7 @@ describe("defineConfig", function () {
         "logger": undefined,
         "modules": {
           "api_key": {
-            "resolve": "@medusajs/medusa/api-key",
+            "resolve": "@nedusa/medusa/api-key",
           },
           "auth": {
             "options": {
@@ -1243,54 +1243,54 @@ describe("defineConfig", function () {
               "providers": [
                 {
                   "id": "emailpass",
-                  "resolve": "@medusajs/medusa/auth-emailpass",
+                  "resolve": "@nedusa/medusa/auth-emailpass",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/auth",
+            "resolve": "@nedusa/medusa/auth",
           },
           "cache": {
-            "resolve": "@medusajs/medusa/cache-inmemory",
+            "resolve": "@nedusa/medusa/cache-inmemory",
           },
           "cart": {
             "disable": true,
           },
           "currency": {
-            "resolve": "@medusajs/medusa/currency",
+            "resolve": "@nedusa/medusa/currency",
           },
           "customer": {
-            "resolve": "@medusajs/medusa/customer",
+            "resolve": "@nedusa/medusa/customer",
           },
           "event_bus": {
-            "resolve": "@medusajs/medusa/event-bus-local",
+            "resolve": "@nedusa/medusa/event-bus-local",
           },
           "file": {
             "options": {
               "providers": [
                 {
                   "id": "local",
-                  "resolve": "@medusajs/medusa/file-local",
+                  "resolve": "@nedusa/medusa/file-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/file",
+            "resolve": "@nedusa/medusa/file",
           },
           "fulfillment": {
             "options": {
               "providers": [
                 {
                   "id": "manual",
-                  "resolve": "@medusajs/medusa/fulfillment-manual",
+                  "resolve": "@nedusa/medusa/fulfillment-manual",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/fulfillment",
+            "resolve": "@nedusa/medusa/fulfillment",
           },
           "inventory": {
-            "resolve": "@medusajs/medusa/inventory",
+            "resolve": "@nedusa/medusa/inventory",
           },
           "locking": {
-            "resolve": "@medusajs/medusa/locking",
+            "resolve": "@nedusa/medusa/locking",
           },
           "notification": {
             "options": {
@@ -1303,36 +1303,36 @@ describe("defineConfig", function () {
                     ],
                     "name": "Local Notification Provider",
                   },
-                  "resolve": "@medusajs/medusa/notification-local",
+                  "resolve": "@nedusa/medusa/notification-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/notification",
+            "resolve": "@nedusa/medusa/notification",
           },
           "order": {
-            "resolve": "@medusajs/medusa/order",
+            "resolve": "@nedusa/medusa/order",
           },
           "payment": {
-            "resolve": "@medusajs/medusa/payment",
+            "resolve": "@nedusa/medusa/payment",
           },
           "pricing": {
-            "resolve": "@medusajs/medusa/pricing",
+            "resolve": "@nedusa/medusa/pricing",
           },
           "product": {
-            "resolve": "@medusajs/medusa/product",
+            "resolve": "@nedusa/medusa/product",
           },
           "promotion": {
-            "resolve": "@medusajs/medusa/promotion",
+            "resolve": "@nedusa/medusa/promotion",
           },
           "rbac": {
             "disable": true,
-            "resolve": "@medusajs/medusa/rbac",
+            "resolve": "@nedusa/medusa/rbac",
           },
           "region": {
-            "resolve": "@medusajs/medusa/region",
+            "resolve": "@nedusa/medusa/region",
           },
           "sales_channel": {
-            "resolve": "@medusajs/medusa/sales-channel",
+            "resolve": "@nedusa/medusa/sales-channel",
           },
           "search": {
             "options": {
@@ -1342,27 +1342,27 @@ describe("defineConfig", function () {
                   "options": {
                     "engine": "native",
                   },
-                  "resolve": "@medusajs/medusa/search-postgres",
+                  "resolve": "@nedusa/medusa/search-postgres",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/search",
+            "resolve": "@nedusa/medusa/search",
           },
           "settings": {
-            "resolve": "@medusajs/medusa/settings",
+            "resolve": "@nedusa/medusa/settings",
           },
           "stock_location": {
-            "resolve": "@medusajs/medusa/stock-location",
+            "resolve": "@nedusa/medusa/stock-location",
           },
           "store": {
-            "resolve": "@medusajs/medusa/store",
+            "resolve": "@nedusa/medusa/store",
           },
           "tax": {
-            "resolve": "@medusajs/medusa/tax",
+            "resolve": "@nedusa/medusa/tax",
           },
           "translation": {
             "disable": true,
-            "resolve": "@medusajs/medusa/translation",
+            "resolve": "@nedusa/medusa/translation",
           },
           "user": {
             "options": {
@@ -1371,16 +1371,16 @@ describe("defineConfig", function () {
               "jwt_secret": "supersecret",
               "jwt_verify_options": undefined,
             },
-            "resolve": "@medusajs/medusa/user",
+            "resolve": "@nedusa/medusa/user",
           },
           "workflows": {
-            "resolve": "@medusajs/medusa/workflow-engine-inmemory",
+            "resolve": "@nedusa/medusa/workflow-engine-inmemory",
           },
         },
         "plugins": [
           {
             "options": {},
-            "resolve": "@medusajs/draft-order",
+            "resolve": "@nedusa/draft-order",
           },
         ],
         "projectConfig": {
@@ -1439,7 +1439,7 @@ describe("defineConfig", function () {
         "logger": undefined,
         "modules": {
           "api_key": {
-            "resolve": "@medusajs/medusa/api-key",
+            "resolve": "@nedusa/medusa/api-key",
           },
           "auth": {
             "options": {
@@ -1449,17 +1449,17 @@ describe("defineConfig", function () {
               "providers": [
                 {
                   "id": "emailpass",
-                  "resolve": "@medusajs/medusa/auth-emailpass",
+                  "resolve": "@nedusa/medusa/auth-emailpass",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/auth",
+            "resolve": "@nedusa/medusa/auth",
           },
           "cache": {
             "options": {
               "redisUrl": "redis://localhost:6379",
             },
-            "resolve": "@medusajs/medusa/cache-redis",
+            "resolve": "@nedusa/medusa/cache-redis",
           },
           "caching": {
             "options": {
@@ -1470,20 +1470,20 @@ describe("defineConfig", function () {
                   "options": {
                     "redisUrl": "redis://localhost:6379",
                   },
-                  "resolve": "@medusajs/medusa/caching-redis",
+                  "resolve": "@nedusa/medusa/caching-redis",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/caching",
+            "resolve": "@nedusa/medusa/caching",
           },
           "cart": {
-            "resolve": "@medusajs/medusa/cart",
+            "resolve": "@nedusa/medusa/cart",
           },
           "currency": {
-            "resolve": "@medusajs/medusa/currency",
+            "resolve": "@nedusa/medusa/currency",
           },
           "customer": {
-            "resolve": "@medusajs/medusa/customer",
+            "resolve": "@nedusa/medusa/customer",
           },
           "event_bus": {
             "options": {
@@ -1492,7 +1492,7 @@ describe("defineConfig", function () {
                 "concurrency": 1,
               },
             },
-            "resolve": "@medusajs/medusa/event-bus-redis",
+            "resolve": "@nedusa/medusa/event-bus-redis",
           },
           "file": {
             "options": {
@@ -1507,25 +1507,25 @@ describe("defineConfig", function () {
                     "prefix": "test",
                     "region": "us-east-1",
                   },
-                  "resolve": "@medusajs/medusa/file-s3",
+                  "resolve": "@nedusa/medusa/file-s3",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/file",
+            "resolve": "@nedusa/medusa/file",
           },
           "fulfillment": {
             "options": {
               "providers": [
                 {
                   "id": "manual",
-                  "resolve": "@medusajs/medusa/fulfillment-manual",
+                  "resolve": "@nedusa/medusa/fulfillment-manual",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/fulfillment",
+            "resolve": "@nedusa/medusa/fulfillment",
           },
           "inventory": {
-            "resolve": "@medusajs/medusa/inventory",
+            "resolve": "@nedusa/medusa/inventory",
           },
           "locking": {
             "options": {
@@ -1536,11 +1536,11 @@ describe("defineConfig", function () {
                   "options": {
                     "redisUrl": "redis://localhost:6379",
                   },
-                  "resolve": "@medusajs/medusa/locking-redis",
+                  "resolve": "@nedusa/medusa/locking-redis",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/locking",
+            "resolve": "@nedusa/medusa/locking",
           },
           "notification": {
             "options": {
@@ -1553,36 +1553,36 @@ describe("defineConfig", function () {
                     ],
                     "name": "Local Notification Provider",
                   },
-                  "resolve": "@medusajs/medusa/notification-local",
+                  "resolve": "@nedusa/medusa/notification-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/notification",
+            "resolve": "@nedusa/medusa/notification",
           },
           "order": {
-            "resolve": "@medusajs/medusa/order",
+            "resolve": "@nedusa/medusa/order",
           },
           "payment": {
-            "resolve": "@medusajs/medusa/payment",
+            "resolve": "@nedusa/medusa/payment",
           },
           "pricing": {
-            "resolve": "@medusajs/medusa/pricing",
+            "resolve": "@nedusa/medusa/pricing",
           },
           "product": {
-            "resolve": "@medusajs/medusa/product",
+            "resolve": "@nedusa/medusa/product",
           },
           "promotion": {
-            "resolve": "@medusajs/medusa/promotion",
+            "resolve": "@nedusa/medusa/promotion",
           },
           "rbac": {
             "disable": true,
-            "resolve": "@medusajs/medusa/rbac",
+            "resolve": "@nedusa/medusa/rbac",
           },
           "region": {
-            "resolve": "@medusajs/medusa/region",
+            "resolve": "@nedusa/medusa/region",
           },
           "sales_channel": {
-            "resolve": "@medusajs/medusa/sales-channel",
+            "resolve": "@nedusa/medusa/sales-channel",
           },
           "search": {
             "options": {
@@ -1592,27 +1592,27 @@ describe("defineConfig", function () {
                   "options": {
                     "engine": "lakebase",
                   },
-                  "resolve": "@medusajs/medusa/search-postgres",
+                  "resolve": "@nedusa/medusa/search-postgres",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/search",
+            "resolve": "@nedusa/medusa/search",
           },
           "settings": {
-            "resolve": "@medusajs/medusa/settings",
+            "resolve": "@nedusa/medusa/settings",
           },
           "stock_location": {
-            "resolve": "@medusajs/medusa/stock-location",
+            "resolve": "@nedusa/medusa/stock-location",
           },
           "store": {
-            "resolve": "@medusajs/medusa/store",
+            "resolve": "@nedusa/medusa/store",
           },
           "tax": {
-            "resolve": "@medusajs/medusa/tax",
+            "resolve": "@nedusa/medusa/tax",
           },
           "translation": {
             "disable": true,
-            "resolve": "@medusajs/medusa/translation",
+            "resolve": "@nedusa/medusa/translation",
           },
           "user": {
             "options": {
@@ -1621,7 +1621,7 @@ describe("defineConfig", function () {
               "jwt_secret": "supersecret",
               "jwt_verify_options": undefined,
             },
-            "resolve": "@medusajs/medusa/user",
+            "resolve": "@nedusa/medusa/user",
           },
           "workflows": {
             "options": {
@@ -1629,13 +1629,13 @@ describe("defineConfig", function () {
                 "url": "redis://localhost:6379",
               },
             },
-            "resolve": "@medusajs/medusa/workflow-engine-redis",
+            "resolve": "@nedusa/medusa/workflow-engine-redis",
           },
         },
         "plugins": [
           {
             "options": {},
-            "resolve": "@medusajs/draft-order",
+            "resolve": "@nedusa/draft-order",
           },
         ],
         "projectConfig": {
@@ -1695,7 +1695,7 @@ describe("defineConfig", function () {
         "logger": undefined,
         "modules": {
           "api_key": {
-            "resolve": "@medusajs/medusa/api-key",
+            "resolve": "@nedusa/medusa/api-key",
           },
           "auth": {
             "options": {
@@ -1705,26 +1705,26 @@ describe("defineConfig", function () {
               "providers": [
                 {
                   "id": "emailpass",
-                  "resolve": "@medusajs/medusa/auth-emailpass",
+                  "resolve": "@nedusa/medusa/auth-emailpass",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/auth",
+            "resolve": "@nedusa/medusa/auth",
           },
           "cache": {
-            "resolve": "@medusajs/medusa/cache-inmemory",
+            "resolve": "@nedusa/medusa/cache-inmemory",
           },
           "cart": {
-            "resolve": "@medusajs/medusa/cart",
+            "resolve": "@nedusa/medusa/cart",
           },
           "currency": {
-            "resolve": "@medusajs/medusa/currency",
+            "resolve": "@nedusa/medusa/currency",
           },
           "customer": {
-            "resolve": "@medusajs/medusa/customer",
+            "resolve": "@nedusa/medusa/customer",
           },
           "event_bus": {
-            "resolve": "@medusajs/medusa/event-bus-local",
+            "resolve": "@nedusa/medusa/event-bus-local",
           },
           "file": {
             "options": {
@@ -1739,28 +1739,28 @@ describe("defineConfig", function () {
                     "prefix": "test",
                     "region": "us-east-1",
                   },
-                  "resolve": "@medusajs/medusa/file-s3",
+                  "resolve": "@nedusa/medusa/file-s3",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/file",
+            "resolve": "@nedusa/medusa/file",
           },
           "fulfillment": {
             "options": {
               "providers": [
                 {
                   "id": "manual",
-                  "resolve": "@medusajs/medusa/fulfillment-manual",
+                  "resolve": "@nedusa/medusa/fulfillment-manual",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/fulfillment",
+            "resolve": "@nedusa/medusa/fulfillment",
           },
           "inventory": {
-            "resolve": "@medusajs/medusa/inventory",
+            "resolve": "@nedusa/medusa/inventory",
           },
           "locking": {
-            "resolve": "@medusajs/medusa/locking",
+            "resolve": "@nedusa/medusa/locking",
           },
           "notification": {
             "options": {
@@ -1773,36 +1773,36 @@ describe("defineConfig", function () {
                     ],
                     "name": "Local Notification Provider",
                   },
-                  "resolve": "@medusajs/medusa/notification-local",
+                  "resolve": "@nedusa/medusa/notification-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/notification",
+            "resolve": "@nedusa/medusa/notification",
           },
           "order": {
-            "resolve": "@medusajs/medusa/order",
+            "resolve": "@nedusa/medusa/order",
           },
           "payment": {
-            "resolve": "@medusajs/medusa/payment",
+            "resolve": "@nedusa/medusa/payment",
           },
           "pricing": {
-            "resolve": "@medusajs/medusa/pricing",
+            "resolve": "@nedusa/medusa/pricing",
           },
           "product": {
-            "resolve": "@medusajs/medusa/product",
+            "resolve": "@nedusa/medusa/product",
           },
           "promotion": {
-            "resolve": "@medusajs/medusa/promotion",
+            "resolve": "@nedusa/medusa/promotion",
           },
           "rbac": {
             "disable": true,
-            "resolve": "@medusajs/medusa/rbac",
+            "resolve": "@nedusa/medusa/rbac",
           },
           "region": {
-            "resolve": "@medusajs/medusa/region",
+            "resolve": "@nedusa/medusa/region",
           },
           "sales_channel": {
-            "resolve": "@medusajs/medusa/sales-channel",
+            "resolve": "@nedusa/medusa/sales-channel",
           },
           "search": {
             "options": {
@@ -1812,27 +1812,27 @@ describe("defineConfig", function () {
                   "options": {
                     "engine": "lakebase",
                   },
-                  "resolve": "@medusajs/medusa/search-postgres",
+                  "resolve": "@nedusa/medusa/search-postgres",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/search",
+            "resolve": "@nedusa/medusa/search",
           },
           "settings": {
-            "resolve": "@medusajs/medusa/settings",
+            "resolve": "@nedusa/medusa/settings",
           },
           "stock_location": {
-            "resolve": "@medusajs/medusa/stock-location",
+            "resolve": "@nedusa/medusa/stock-location",
           },
           "store": {
-            "resolve": "@medusajs/medusa/store",
+            "resolve": "@nedusa/medusa/store",
           },
           "tax": {
-            "resolve": "@medusajs/medusa/tax",
+            "resolve": "@nedusa/medusa/tax",
           },
           "translation": {
             "disable": true,
-            "resolve": "@medusajs/medusa/translation",
+            "resolve": "@nedusa/medusa/translation",
           },
           "user": {
             "options": {
@@ -1841,16 +1841,16 @@ describe("defineConfig", function () {
               "jwt_secret": "supersecret",
               "jwt_verify_options": undefined,
             },
-            "resolve": "@medusajs/medusa/user",
+            "resolve": "@nedusa/medusa/user",
           },
           "workflows": {
-            "resolve": "@medusajs/medusa/workflow-engine-inmemory",
+            "resolve": "@nedusa/medusa/workflow-engine-inmemory",
           },
         },
         "plugins": [
           {
             "options": {},
-            "resolve": "@medusajs/draft-order",
+            "resolve": "@nedusa/draft-order",
           },
         ],
         "projectConfig": {
@@ -1911,7 +1911,7 @@ describe("defineConfig", function () {
         "logger": undefined,
         "modules": {
           "api_key": {
-            "resolve": "@medusajs/medusa/api-key",
+            "resolve": "@nedusa/medusa/api-key",
           },
           "auth": {
             "options": {
@@ -1921,17 +1921,17 @@ describe("defineConfig", function () {
               "providers": [
                 {
                   "id": "emailpass",
-                  "resolve": "@medusajs/medusa/auth-emailpass",
+                  "resolve": "@nedusa/medusa/auth-emailpass",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/auth",
+            "resolve": "@nedusa/medusa/auth",
           },
           "cache": {
             "options": {
               "redisUrl": "redis://localhost:6379",
             },
-            "resolve": "@medusajs/medusa/cache-redis",
+            "resolve": "@nedusa/medusa/cache-redis",
           },
           "caching": {
             "options": {
@@ -1942,20 +1942,20 @@ describe("defineConfig", function () {
                   "options": {
                     "redisUrl": "redis://localhost:6379",
                   },
-                  "resolve": "@medusajs/medusa/caching-redis",
+                  "resolve": "@nedusa/medusa/caching-redis",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/caching",
+            "resolve": "@nedusa/medusa/caching",
           },
           "cart": {
-            "resolve": "@medusajs/medusa/cart",
+            "resolve": "@nedusa/medusa/cart",
           },
           "currency": {
-            "resolve": "@medusajs/medusa/currency",
+            "resolve": "@nedusa/medusa/currency",
           },
           "customer": {
-            "resolve": "@medusajs/medusa/customer",
+            "resolve": "@nedusa/medusa/customer",
           },
           "event_bus": {
             "options": {
@@ -1964,7 +1964,7 @@ describe("defineConfig", function () {
                 "concurrency": 1,
               },
             },
-            "resolve": "@medusajs/medusa/event-bus-redis",
+            "resolve": "@nedusa/medusa/event-bus-redis",
           },
           "file": {
             "options": {
@@ -1979,25 +1979,25 @@ describe("defineConfig", function () {
                     "prefix": "test",
                     "region": "us-east-1",
                   },
-                  "resolve": "@medusajs/medusa/file-s3",
+                  "resolve": "@nedusa/medusa/file-s3",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/file",
+            "resolve": "@nedusa/medusa/file",
           },
           "fulfillment": {
             "options": {
               "providers": [
                 {
                   "id": "manual",
-                  "resolve": "@medusajs/medusa/fulfillment-manual",
+                  "resolve": "@nedusa/medusa/fulfillment-manual",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/fulfillment",
+            "resolve": "@nedusa/medusa/fulfillment",
           },
           "inventory": {
-            "resolve": "@medusajs/medusa/inventory",
+            "resolve": "@nedusa/medusa/inventory",
           },
           "locking": {
             "options": {
@@ -2008,11 +2008,11 @@ describe("defineConfig", function () {
                   "options": {
                     "redisUrl": "redis://localhost:6379",
                   },
-                  "resolve": "@medusajs/medusa/locking-redis",
+                  "resolve": "@nedusa/medusa/locking-redis",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/locking",
+            "resolve": "@nedusa/medusa/locking",
           },
           "notification": {
             "options": {
@@ -2025,36 +2025,36 @@ describe("defineConfig", function () {
                     ],
                     "name": "Local Notification Provider",
                   },
-                  "resolve": "@medusajs/medusa/notification-local",
+                  "resolve": "@nedusa/medusa/notification-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/notification",
+            "resolve": "@nedusa/medusa/notification",
           },
           "order": {
-            "resolve": "@medusajs/medusa/order",
+            "resolve": "@nedusa/medusa/order",
           },
           "payment": {
-            "resolve": "@medusajs/medusa/payment",
+            "resolve": "@nedusa/medusa/payment",
           },
           "pricing": {
-            "resolve": "@medusajs/medusa/pricing",
+            "resolve": "@nedusa/medusa/pricing",
           },
           "product": {
-            "resolve": "@medusajs/medusa/product",
+            "resolve": "@nedusa/medusa/product",
           },
           "promotion": {
-            "resolve": "@medusajs/medusa/promotion",
+            "resolve": "@nedusa/medusa/promotion",
           },
           "rbac": {
             "disable": true,
-            "resolve": "@medusajs/medusa/rbac",
+            "resolve": "@nedusa/medusa/rbac",
           },
           "region": {
-            "resolve": "@medusajs/medusa/region",
+            "resolve": "@nedusa/medusa/region",
           },
           "sales_channel": {
-            "resolve": "@medusajs/medusa/sales-channel",
+            "resolve": "@nedusa/medusa/sales-channel",
           },
           "search": {
             "options": {
@@ -2064,27 +2064,27 @@ describe("defineConfig", function () {
                   "options": {
                     "engine": "lakebase",
                   },
-                  "resolve": "@medusajs/medusa/search-postgres",
+                  "resolve": "@nedusa/medusa/search-postgres",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/search",
+            "resolve": "@nedusa/medusa/search",
           },
           "settings": {
-            "resolve": "@medusajs/medusa/settings",
+            "resolve": "@nedusa/medusa/settings",
           },
           "stock_location": {
-            "resolve": "@medusajs/medusa/stock-location",
+            "resolve": "@nedusa/medusa/stock-location",
           },
           "store": {
-            "resolve": "@medusajs/medusa/store",
+            "resolve": "@nedusa/medusa/store",
           },
           "tax": {
-            "resolve": "@medusajs/medusa/tax",
+            "resolve": "@nedusa/medusa/tax",
           },
           "translation": {
             "disable": true,
-            "resolve": "@medusajs/medusa/translation",
+            "resolve": "@nedusa/medusa/translation",
           },
           "user": {
             "options": {
@@ -2093,7 +2093,7 @@ describe("defineConfig", function () {
               "jwt_secret": "supersecret",
               "jwt_verify_options": undefined,
             },
-            "resolve": "@medusajs/medusa/user",
+            "resolve": "@nedusa/medusa/user",
           },
           "workflows": {
             "options": {
@@ -2101,13 +2101,13 @@ describe("defineConfig", function () {
                 "url": "redis://localhost:6379",
               },
             },
-            "resolve": "@medusajs/medusa/workflow-engine-redis",
+            "resolve": "@nedusa/medusa/workflow-engine-redis",
           },
         },
         "plugins": [
           {
             "options": {},
-            "resolve": "@medusajs/draft-order",
+            "resolve": "@nedusa/draft-order",
           },
         ],
         "projectConfig": {
@@ -2184,7 +2184,7 @@ describe("defineConfig", function () {
         "logger": undefined,
         "modules": {
           "api_key": {
-            "resolve": "@medusajs/medusa/api-key",
+            "resolve": "@nedusa/medusa/api-key",
           },
           "auth": {
             "options": {
@@ -2194,17 +2194,17 @@ describe("defineConfig", function () {
               "providers": [
                 {
                   "id": "emailpass",
-                  "resolve": "@medusajs/medusa/auth-emailpass",
+                  "resolve": "@nedusa/medusa/auth-emailpass",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/auth",
+            "resolve": "@nedusa/medusa/auth",
           },
           "cache": {
             "options": {
               "redisUrl": "redis://localhost:6379",
             },
-            "resolve": "@medusajs/medusa/cache-redis",
+            "resolve": "@nedusa/medusa/cache-redis",
           },
           "caching": {
             "options": {
@@ -2215,20 +2215,20 @@ describe("defineConfig", function () {
                   "options": {
                     "redisUrl": "redis://localhost:6379",
                   },
-                  "resolve": "@medusajs/medusa/caching-redis",
+                  "resolve": "@nedusa/medusa/caching-redis",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/caching",
+            "resolve": "@nedusa/medusa/caching",
           },
           "cart": {
-            "resolve": "@medusajs/medusa/cart",
+            "resolve": "@nedusa/medusa/cart",
           },
           "currency": {
-            "resolve": "@medusajs/medusa/currency",
+            "resolve": "@nedusa/medusa/currency",
           },
           "customer": {
-            "resolve": "@medusajs/medusa/customer",
+            "resolve": "@nedusa/medusa/customer",
           },
           "event_bus": {
             "options": {
@@ -2237,7 +2237,7 @@ describe("defineConfig", function () {
                 "concurrency": 1,
               },
             },
-            "resolve": "@medusajs/medusa/event-bus-redis",
+            "resolve": "@nedusa/medusa/event-bus-redis",
           },
           "file": {
             "options": {
@@ -2252,25 +2252,25 @@ describe("defineConfig", function () {
                     "prefix": "test",
                     "region": "us-east-1",
                   },
-                  "resolve": "@medusajs/medusa/file-s3",
+                  "resolve": "@nedusa/medusa/file-s3",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/file",
+            "resolve": "@nedusa/medusa/file",
           },
           "fulfillment": {
             "options": {
               "providers": [
                 {
                   "id": "manual",
-                  "resolve": "@medusajs/medusa/fulfillment-manual",
+                  "resolve": "@nedusa/medusa/fulfillment-manual",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/fulfillment",
+            "resolve": "@nedusa/medusa/fulfillment",
           },
           "inventory": {
-            "resolve": "@medusajs/medusa/inventory",
+            "resolve": "@nedusa/medusa/inventory",
           },
           "locking": {
             "options": {
@@ -2281,11 +2281,11 @@ describe("defineConfig", function () {
                   "options": {
                     "redisUrl": "redis://localhost:6379",
                   },
-                  "resolve": "@medusajs/medusa/locking-redis",
+                  "resolve": "@nedusa/medusa/locking-redis",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/locking",
+            "resolve": "@nedusa/medusa/locking",
           },
           "notification": {
             "options": {
@@ -2298,36 +2298,36 @@ describe("defineConfig", function () {
                     ],
                     "name": "Local Notification Provider",
                   },
-                  "resolve": "@medusajs/medusa/notification-local",
+                  "resolve": "@nedusa/medusa/notification-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/notification",
+            "resolve": "@nedusa/medusa/notification",
           },
           "order": {
-            "resolve": "@medusajs/medusa/order",
+            "resolve": "@nedusa/medusa/order",
           },
           "payment": {
-            "resolve": "@medusajs/medusa/payment",
+            "resolve": "@nedusa/medusa/payment",
           },
           "pricing": {
-            "resolve": "@medusajs/medusa/pricing",
+            "resolve": "@nedusa/medusa/pricing",
           },
           "product": {
-            "resolve": "@medusajs/medusa/product",
+            "resolve": "@nedusa/medusa/product",
           },
           "promotion": {
-            "resolve": "@medusajs/medusa/promotion",
+            "resolve": "@nedusa/medusa/promotion",
           },
           "rbac": {
             "disable": true,
-            "resolve": "@medusajs/medusa/rbac",
+            "resolve": "@nedusa/medusa/rbac",
           },
           "region": {
-            "resolve": "@medusajs/medusa/region",
+            "resolve": "@nedusa/medusa/region",
           },
           "sales_channel": {
-            "resolve": "@medusajs/medusa/sales-channel",
+            "resolve": "@nedusa/medusa/sales-channel",
           },
           "search": {
             "options": {
@@ -2337,27 +2337,27 @@ describe("defineConfig", function () {
                   "options": {
                     "engine": "lakebase",
                   },
-                  "resolve": "@medusajs/medusa/search-postgres",
+                  "resolve": "@nedusa/medusa/search-postgres",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/search",
+            "resolve": "@nedusa/medusa/search",
           },
           "settings": {
-            "resolve": "@medusajs/medusa/settings",
+            "resolve": "@nedusa/medusa/settings",
           },
           "stock_location": {
-            "resolve": "@medusajs/medusa/stock-location",
+            "resolve": "@nedusa/medusa/stock-location",
           },
           "store": {
-            "resolve": "@medusajs/medusa/store",
+            "resolve": "@nedusa/medusa/store",
           },
           "tax": {
-            "resolve": "@medusajs/medusa/tax",
+            "resolve": "@nedusa/medusa/tax",
           },
           "translation": {
             "disable": true,
-            "resolve": "@medusajs/medusa/translation",
+            "resolve": "@nedusa/medusa/translation",
           },
           "user": {
             "options": {
@@ -2366,7 +2366,7 @@ describe("defineConfig", function () {
               "jwt_secret": "supersecret",
               "jwt_verify_options": undefined,
             },
-            "resolve": "@medusajs/medusa/user",
+            "resolve": "@nedusa/medusa/user",
           },
           "workflows": {
             "options": {
@@ -2374,13 +2374,13 @@ describe("defineConfig", function () {
                 "url": "redis://localhost:6379",
               },
             },
-            "resolve": "@medusajs/medusa/workflow-engine-redis",
+            "resolve": "@nedusa/medusa/workflow-engine-redis",
           },
         },
         "plugins": [
           {
             "options": {},
-            "resolve": "@medusajs/draft-order",
+            "resolve": "@nedusa/draft-order",
           },
         ],
         "projectConfig": {
@@ -2427,34 +2427,34 @@ describe("defineConfig", function () {
   it("should include default plugins", function () {
     const config = defineConfig()
     expect(config.plugins).toEqual([
-      { resolve: "@medusajs/draft-order", options: {} },
+      { resolve: "@nedusa/draft-order", options: {} },
     ])
   })
 
   it("should append custom plugins to defaults", function () {
     const config = defineConfig({
       plugins: [
-        { resolve: "@medusajs/custom-plugin", options: { key: "value" } },
+        { resolve: "@nedusa/custom-plugin", options: { key: "value" } },
       ],
     })
     expect(config.plugins).toEqual([
-      { resolve: "@medusajs/draft-order", options: {} },
-      { resolve: "@medusajs/custom-plugin", options: { key: "value" } },
+      { resolve: "@nedusa/draft-order", options: {} },
+      { resolve: "@nedusa/custom-plugin", options: { key: "value" } },
     ])
   })
 
   it("should handle multiple custom plugins", function () {
     const config = defineConfig({
       plugins: [
-        { resolve: "@medusajs/plugin-one", options: { setting: "a" } },
-        { resolve: "@medusajs/plugin-two", options: { setting: "b" } },
+        { resolve: "@nedusa/plugin-one", options: { setting: "a" } },
+        { resolve: "@nedusa/plugin-two", options: { setting: "b" } },
         { resolve: "./local-plugin", options: {} },
       ],
     })
     expect(config.plugins).toEqual([
-      { resolve: "@medusajs/draft-order", options: {} },
-      { resolve: "@medusajs/plugin-one", options: { setting: "a" } },
-      { resolve: "@medusajs/plugin-two", options: { setting: "b" } },
+      { resolve: "@nedusa/draft-order", options: {} },
+      { resolve: "@nedusa/plugin-one", options: { setting: "a" } },
+      { resolve: "@nedusa/plugin-two", options: { setting: "b" } },
       { resolve: "./local-plugin", options: {} },
     ])
   })
@@ -2462,11 +2462,11 @@ describe("defineConfig", function () {
   it("should merge plugins", function () {
     const config = defineConfig({
       plugins: [
-        { resolve: "@medusajs/draft-order", options: { setting: "a" } },
+        { resolve: "@nedusa/draft-order", options: { setting: "a" } },
       ],
     })
     expect(config.plugins).toEqual([
-      { resolve: "@medusajs/draft-order", options: { setting: "a" } },
+      { resolve: "@nedusa/draft-order", options: { setting: "a" } },
     ])
   })
 
@@ -2476,15 +2476,15 @@ describe("defineConfig", function () {
 
     const config = defineConfig({
       plugins: [
-        { resolve: "@medusajs/cloud-plugin", options: { cloud: true } },
+        { resolve: "@nedusa/cloud-plugin", options: { cloud: true } },
       ],
     })
 
     process.env = { ...originalEnv }
 
     expect(config.plugins).toEqual([
-      { resolve: "@medusajs/draft-order", options: {} },
-      { resolve: "@medusajs/cloud-plugin", options: { cloud: true } },
+      { resolve: "@nedusa/draft-order", options: {} },
+      { resolve: "@nedusa/cloud-plugin", options: { cloud: true } },
     ])
   })
 
@@ -2493,7 +2493,7 @@ describe("defineConfig", function () {
       plugins: [],
     })
     expect(config.plugins).toEqual([
-      { resolve: "@medusajs/draft-order", options: {} },
+      { resolve: "@nedusa/draft-order", options: {} },
     ])
   })
 
@@ -2502,7 +2502,7 @@ describe("defineConfig", function () {
       modules: {},
     })
     expect(config.plugins).toEqual([
-      { resolve: "@medusajs/draft-order", options: {} },
+      { resolve: "@nedusa/draft-order", options: {} },
     ])
   })
 
@@ -2536,7 +2536,7 @@ describe("defineConfig", function () {
         "logger": undefined,
         "modules": {
           "api_key": {
-            "resolve": "@medusajs/medusa/api-key",
+            "resolve": "@nedusa/medusa/api-key",
           },
           "auth": {
             "options": {
@@ -2546,54 +2546,54 @@ describe("defineConfig", function () {
               "providers": [
                 {
                   "id": "emailpass",
-                  "resolve": "@medusajs/medusa/auth-emailpass",
+                  "resolve": "@nedusa/medusa/auth-emailpass",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/auth",
+            "resolve": "@nedusa/medusa/auth",
           },
           "cache": {
-            "resolve": "@medusajs/medusa/cache-inmemory",
+            "resolve": "@nedusa/medusa/cache-inmemory",
           },
           "cart": {
-            "resolve": "@medusajs/medusa/cart",
+            "resolve": "@nedusa/medusa/cart",
           },
           "currency": {
-            "resolve": "@medusajs/medusa/currency",
+            "resolve": "@nedusa/medusa/currency",
           },
           "customer": {
-            "resolve": "@medusajs/medusa/customer",
+            "resolve": "@nedusa/medusa/customer",
           },
           "event_bus": {
-            "resolve": "@medusajs/medusa/event-bus-local",
+            "resolve": "@nedusa/medusa/event-bus-local",
           },
           "file": {
             "options": {
               "providers": [
                 {
                   "id": "local",
-                  "resolve": "@medusajs/medusa/file-local",
+                  "resolve": "@nedusa/medusa/file-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/file",
+            "resolve": "@nedusa/medusa/file",
           },
           "fulfillment": {
             "options": {
               "providers": [
                 {
                   "id": "manual",
-                  "resolve": "@medusajs/medusa/fulfillment-manual",
+                  "resolve": "@nedusa/medusa/fulfillment-manual",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/fulfillment",
+            "resolve": "@nedusa/medusa/fulfillment",
           },
           "inventory": {
-            "resolve": "@medusajs/medusa/inventory",
+            "resolve": "@nedusa/medusa/inventory",
           },
           "locking": {
-            "resolve": "@medusajs/medusa/locking",
+            "resolve": "@nedusa/medusa/locking",
           },
           "notification": {
             "options": {
@@ -2606,36 +2606,36 @@ describe("defineConfig", function () {
                     ],
                     "name": "Local Notification Provider",
                   },
-                  "resolve": "@medusajs/medusa/notification-local",
+                  "resolve": "@nedusa/medusa/notification-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/notification",
+            "resolve": "@nedusa/medusa/notification",
           },
           "order": {
-            "resolve": "@medusajs/medusa/order",
+            "resolve": "@nedusa/medusa/order",
           },
           "payment": {
-            "resolve": "@medusajs/medusa/payment",
+            "resolve": "@nedusa/medusa/payment",
           },
           "pricing": {
-            "resolve": "@medusajs/medusa/pricing",
+            "resolve": "@nedusa/medusa/pricing",
           },
           "product": {
-            "resolve": "@medusajs/medusa/product",
+            "resolve": "@nedusa/medusa/product",
           },
           "promotion": {
-            "resolve": "@medusajs/medusa/promotion",
+            "resolve": "@nedusa/medusa/promotion",
           },
           "rbac": {
             "disable": true,
-            "resolve": "@medusajs/medusa/rbac",
+            "resolve": "@nedusa/medusa/rbac",
           },
           "region": {
-            "resolve": "@medusajs/medusa/region",
+            "resolve": "@nedusa/medusa/region",
           },
           "sales_channel": {
-            "resolve": "@medusajs/medusa/sales-channel",
+            "resolve": "@nedusa/medusa/sales-channel",
           },
           "search": {
             "options": {
@@ -2645,27 +2645,27 @@ describe("defineConfig", function () {
                   "options": {
                     "engine": "native",
                   },
-                  "resolve": "@medusajs/medusa/search-postgres",
+                  "resolve": "@nedusa/medusa/search-postgres",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/search",
+            "resolve": "@nedusa/medusa/search",
           },
           "settings": {
-            "resolve": "@medusajs/medusa/settings",
+            "resolve": "@nedusa/medusa/settings",
           },
           "stock_location": {
-            "resolve": "@medusajs/medusa/stock-location",
+            "resolve": "@nedusa/medusa/stock-location",
           },
           "store": {
-            "resolve": "@medusajs/medusa/store",
+            "resolve": "@nedusa/medusa/store",
           },
           "tax": {
-            "resolve": "@medusajs/medusa/tax",
+            "resolve": "@nedusa/medusa/tax",
           },
           "translation": {
             "disable": true,
-            "resolve": "@medusajs/medusa/translation",
+            "resolve": "@nedusa/medusa/translation",
           },
           "user": {
             "options": {
@@ -2674,16 +2674,16 @@ describe("defineConfig", function () {
               "jwt_secret": "supersecret",
               "jwt_verify_options": undefined,
             },
-            "resolve": "@medusajs/medusa/user",
+            "resolve": "@nedusa/medusa/user",
           },
           "workflows": {
-            "resolve": "@medusajs/medusa/workflow-engine-inmemory",
+            "resolve": "@nedusa/medusa/workflow-engine-inmemory",
           },
         },
         "plugins": [
           {
             "options": {},
-            "resolve": "@medusajs/draft-order",
+            "resolve": "@nedusa/draft-order",
           },
         ],
         "projectConfig": {
@@ -2751,7 +2751,7 @@ describe("defineConfig", function () {
         "logger": undefined,
         "modules": {
           "api_key": {
-            "resolve": "@medusajs/medusa/api-key",
+            "resolve": "@nedusa/medusa/api-key",
           },
           "auth": {
             "options": {
@@ -2772,54 +2772,54 @@ describe("defineConfig", function () {
               "providers": [
                 {
                   "id": "emailpass",
-                  "resolve": "@medusajs/medusa/auth-emailpass",
+                  "resolve": "@nedusa/medusa/auth-emailpass",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/auth",
+            "resolve": "@nedusa/medusa/auth",
           },
           "cache": {
-            "resolve": "@medusajs/medusa/cache-inmemory",
+            "resolve": "@nedusa/medusa/cache-inmemory",
           },
           "cart": {
-            "resolve": "@medusajs/medusa/cart",
+            "resolve": "@nedusa/medusa/cart",
           },
           "currency": {
-            "resolve": "@medusajs/medusa/currency",
+            "resolve": "@nedusa/medusa/currency",
           },
           "customer": {
-            "resolve": "@medusajs/medusa/customer",
+            "resolve": "@nedusa/medusa/customer",
           },
           "event_bus": {
-            "resolve": "@medusajs/medusa/event-bus-local",
+            "resolve": "@nedusa/medusa/event-bus-local",
           },
           "file": {
             "options": {
               "providers": [
                 {
                   "id": "local",
-                  "resolve": "@medusajs/medusa/file-local",
+                  "resolve": "@nedusa/medusa/file-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/file",
+            "resolve": "@nedusa/medusa/file",
           },
           "fulfillment": {
             "options": {
               "providers": [
                 {
                   "id": "manual",
-                  "resolve": "@medusajs/medusa/fulfillment-manual",
+                  "resolve": "@nedusa/medusa/fulfillment-manual",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/fulfillment",
+            "resolve": "@nedusa/medusa/fulfillment",
           },
           "inventory": {
-            "resolve": "@medusajs/medusa/inventory",
+            "resolve": "@nedusa/medusa/inventory",
           },
           "locking": {
-            "resolve": "@medusajs/medusa/locking",
+            "resolve": "@nedusa/medusa/locking",
           },
           "notification": {
             "options": {
@@ -2838,14 +2838,14 @@ describe("defineConfig", function () {
                     ],
                     "name": "Local Notification Provider",
                   },
-                  "resolve": "@medusajs/medusa/notification-local",
+                  "resolve": "@nedusa/medusa/notification-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/notification",
+            "resolve": "@nedusa/medusa/notification",
           },
           "order": {
-            "resolve": "@medusajs/medusa/order",
+            "resolve": "@nedusa/medusa/order",
           },
           "payment": {
             "options": {
@@ -2857,26 +2857,26 @@ describe("defineConfig", function () {
                 "webhook_secret": "test-webhook-secret",
               },
             },
-            "resolve": "@medusajs/medusa/payment",
+            "resolve": "@nedusa/medusa/payment",
           },
           "pricing": {
-            "resolve": "@medusajs/medusa/pricing",
+            "resolve": "@nedusa/medusa/pricing",
           },
           "product": {
-            "resolve": "@medusajs/medusa/product",
+            "resolve": "@nedusa/medusa/product",
           },
           "promotion": {
-            "resolve": "@medusajs/medusa/promotion",
+            "resolve": "@nedusa/medusa/promotion",
           },
           "rbac": {
             "disable": true,
-            "resolve": "@medusajs/medusa/rbac",
+            "resolve": "@nedusa/medusa/rbac",
           },
           "region": {
-            "resolve": "@medusajs/medusa/region",
+            "resolve": "@nedusa/medusa/region",
           },
           "sales_channel": {
-            "resolve": "@medusajs/medusa/sales-channel",
+            "resolve": "@nedusa/medusa/sales-channel",
           },
           "search": {
             "options": {
@@ -2891,27 +2891,27 @@ describe("defineConfig", function () {
                   "options": {
                     "engine": "native",
                   },
-                  "resolve": "@medusajs/medusa/search-postgres",
+                  "resolve": "@nedusa/medusa/search-postgres",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/search",
+            "resolve": "@nedusa/medusa/search",
           },
           "settings": {
-            "resolve": "@medusajs/medusa/settings",
+            "resolve": "@nedusa/medusa/settings",
           },
           "stock_location": {
-            "resolve": "@medusajs/medusa/stock-location",
+            "resolve": "@nedusa/medusa/stock-location",
           },
           "store": {
-            "resolve": "@medusajs/medusa/store",
+            "resolve": "@nedusa/medusa/store",
           },
           "tax": {
-            "resolve": "@medusajs/medusa/tax",
+            "resolve": "@nedusa/medusa/tax",
           },
           "translation": {
             "disable": true,
-            "resolve": "@medusajs/medusa/translation",
+            "resolve": "@nedusa/medusa/translation",
           },
           "user": {
             "options": {
@@ -2920,16 +2920,16 @@ describe("defineConfig", function () {
               "jwt_secret": "supersecret",
               "jwt_verify_options": undefined,
             },
-            "resolve": "@medusajs/medusa/user",
+            "resolve": "@nedusa/medusa/user",
           },
           "workflows": {
-            "resolve": "@medusajs/medusa/workflow-engine-inmemory",
+            "resolve": "@nedusa/medusa/workflow-engine-inmemory",
           },
         },
         "plugins": [
           {
             "options": {},
-            "resolve": "@medusajs/draft-order",
+            "resolve": "@nedusa/draft-order",
           },
         ],
         "projectConfig": {
@@ -3003,7 +3003,7 @@ describe("defineConfig", function () {
         "logger": undefined,
         "modules": {
           "api_key": {
-            "resolve": "@medusajs/medusa/api-key",
+            "resolve": "@nedusa/medusa/api-key",
           },
           "auth": {
             "options": {
@@ -3024,54 +3024,54 @@ describe("defineConfig", function () {
               "providers": [
                 {
                   "id": "emailpass",
-                  "resolve": "@medusajs/medusa/auth-emailpass",
+                  "resolve": "@nedusa/medusa/auth-emailpass",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/auth",
+            "resolve": "@nedusa/medusa/auth",
           },
           "cache": {
-            "resolve": "@medusajs/medusa/cache-inmemory",
+            "resolve": "@nedusa/medusa/cache-inmemory",
           },
           "cart": {
-            "resolve": "@medusajs/medusa/cart",
+            "resolve": "@nedusa/medusa/cart",
           },
           "currency": {
-            "resolve": "@medusajs/medusa/currency",
+            "resolve": "@nedusa/medusa/currency",
           },
           "customer": {
-            "resolve": "@medusajs/medusa/customer",
+            "resolve": "@nedusa/medusa/customer",
           },
           "event_bus": {
-            "resolve": "@medusajs/medusa/event-bus-local",
+            "resolve": "@nedusa/medusa/event-bus-local",
           },
           "file": {
             "options": {
               "providers": [
                 {
                   "id": "local",
-                  "resolve": "@medusajs/medusa/file-local",
+                  "resolve": "@nedusa/medusa/file-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/file",
+            "resolve": "@nedusa/medusa/file",
           },
           "fulfillment": {
             "options": {
               "providers": [
                 {
                   "id": "manual",
-                  "resolve": "@medusajs/medusa/fulfillment-manual",
+                  "resolve": "@nedusa/medusa/fulfillment-manual",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/fulfillment",
+            "resolve": "@nedusa/medusa/fulfillment",
           },
           "inventory": {
-            "resolve": "@medusajs/medusa/inventory",
+            "resolve": "@nedusa/medusa/inventory",
           },
           "locking": {
-            "resolve": "@medusajs/medusa/locking",
+            "resolve": "@nedusa/medusa/locking",
           },
           "notification": {
             "options": {
@@ -3090,14 +3090,14 @@ describe("defineConfig", function () {
                     ],
                     "name": "Local Notification Provider",
                   },
-                  "resolve": "@medusajs/medusa/notification-local",
+                  "resolve": "@nedusa/medusa/notification-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/notification",
+            "resolve": "@nedusa/medusa/notification",
           },
           "order": {
-            "resolve": "@medusajs/medusa/order",
+            "resolve": "@nedusa/medusa/order",
           },
           "payment": {
             "options": {
@@ -3109,26 +3109,26 @@ describe("defineConfig", function () {
                 "webhook_secret": "test-webhook-secret",
               },
             },
-            "resolve": "@medusajs/medusa/payment",
+            "resolve": "@nedusa/medusa/payment",
           },
           "pricing": {
-            "resolve": "@medusajs/medusa/pricing",
+            "resolve": "@nedusa/medusa/pricing",
           },
           "product": {
-            "resolve": "@medusajs/medusa/product",
+            "resolve": "@nedusa/medusa/product",
           },
           "promotion": {
-            "resolve": "@medusajs/medusa/promotion",
+            "resolve": "@nedusa/medusa/promotion",
           },
           "rbac": {
             "disable": true,
-            "resolve": "@medusajs/medusa/rbac",
+            "resolve": "@nedusa/medusa/rbac",
           },
           "region": {
-            "resolve": "@medusajs/medusa/region",
+            "resolve": "@nedusa/medusa/region",
           },
           "sales_channel": {
-            "resolve": "@medusajs/medusa/sales-channel",
+            "resolve": "@nedusa/medusa/sales-channel",
           },
           "search": {
             "options": {
@@ -3143,27 +3143,27 @@ describe("defineConfig", function () {
                   "options": {
                     "engine": "native",
                   },
-                  "resolve": "@medusajs/medusa/search-postgres",
+                  "resolve": "@nedusa/medusa/search-postgres",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/search",
+            "resolve": "@nedusa/medusa/search",
           },
           "settings": {
-            "resolve": "@medusajs/medusa/settings",
+            "resolve": "@nedusa/medusa/settings",
           },
           "stock_location": {
-            "resolve": "@medusajs/medusa/stock-location",
+            "resolve": "@nedusa/medusa/stock-location",
           },
           "store": {
-            "resolve": "@medusajs/medusa/store",
+            "resolve": "@nedusa/medusa/store",
           },
           "tax": {
-            "resolve": "@medusajs/medusa/tax",
+            "resolve": "@nedusa/medusa/tax",
           },
           "translation": {
             "disable": true,
-            "resolve": "@medusajs/medusa/translation",
+            "resolve": "@nedusa/medusa/translation",
           },
           "user": {
             "options": {
@@ -3172,16 +3172,16 @@ describe("defineConfig", function () {
               "jwt_secret": "supersecret",
               "jwt_verify_options": undefined,
             },
-            "resolve": "@medusajs/medusa/user",
+            "resolve": "@nedusa/medusa/user",
           },
           "workflows": {
-            "resolve": "@medusajs/medusa/workflow-engine-inmemory",
+            "resolve": "@nedusa/medusa/workflow-engine-inmemory",
           },
         },
         "plugins": [
           {
             "options": {},
-            "resolve": "@medusajs/draft-order",
+            "resolve": "@nedusa/draft-order",
           },
         ],
         "projectConfig": {
@@ -3264,7 +3264,7 @@ describe("defineConfig", function () {
         "logger": undefined,
         "modules": {
           "api_key": {
-            "resolve": "@medusajs/medusa/api-key",
+            "resolve": "@nedusa/medusa/api-key",
           },
           "auth": {
             "options": {
@@ -3285,54 +3285,54 @@ describe("defineConfig", function () {
               "providers": [
                 {
                   "id": "emailpass",
-                  "resolve": "@medusajs/medusa/auth-emailpass",
+                  "resolve": "@nedusa/medusa/auth-emailpass",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/auth",
+            "resolve": "@nedusa/medusa/auth",
           },
           "cache": {
-            "resolve": "@medusajs/medusa/cache-inmemory",
+            "resolve": "@nedusa/medusa/cache-inmemory",
           },
           "cart": {
-            "resolve": "@medusajs/medusa/cart",
+            "resolve": "@nedusa/medusa/cart",
           },
           "currency": {
-            "resolve": "@medusajs/medusa/currency",
+            "resolve": "@nedusa/medusa/currency",
           },
           "customer": {
-            "resolve": "@medusajs/medusa/customer",
+            "resolve": "@nedusa/medusa/customer",
           },
           "event_bus": {
-            "resolve": "@medusajs/medusa/event-bus-local",
+            "resolve": "@nedusa/medusa/event-bus-local",
           },
           "file": {
             "options": {
               "providers": [
                 {
                   "id": "local",
-                  "resolve": "@medusajs/medusa/file-local",
+                  "resolve": "@nedusa/medusa/file-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/file",
+            "resolve": "@nedusa/medusa/file",
           },
           "fulfillment": {
             "options": {
               "providers": [
                 {
                   "id": "manual",
-                  "resolve": "@medusajs/medusa/fulfillment-manual",
+                  "resolve": "@nedusa/medusa/fulfillment-manual",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/fulfillment",
+            "resolve": "@nedusa/medusa/fulfillment",
           },
           "inventory": {
-            "resolve": "@medusajs/medusa/inventory",
+            "resolve": "@nedusa/medusa/inventory",
           },
           "locking": {
-            "resolve": "@medusajs/medusa/locking",
+            "resolve": "@nedusa/medusa/locking",
           },
           "notification": {
             "options": {
@@ -3351,14 +3351,14 @@ describe("defineConfig", function () {
                     ],
                     "name": "Local Notification Provider",
                   },
-                  "resolve": "@medusajs/medusa/notification-local",
+                  "resolve": "@nedusa/medusa/notification-local",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/notification",
+            "resolve": "@nedusa/medusa/notification",
           },
           "order": {
-            "resolve": "@medusajs/medusa/order",
+            "resolve": "@nedusa/medusa/order",
           },
           "payment": {
             "options": {
@@ -3370,26 +3370,26 @@ describe("defineConfig", function () {
                 "webhook_secret": "overriden-webhook-secret",
               },
             },
-            "resolve": "@medusajs/medusa/payment",
+            "resolve": "@nedusa/medusa/payment",
           },
           "pricing": {
-            "resolve": "@medusajs/medusa/pricing",
+            "resolve": "@nedusa/medusa/pricing",
           },
           "product": {
-            "resolve": "@medusajs/medusa/product",
+            "resolve": "@nedusa/medusa/product",
           },
           "promotion": {
-            "resolve": "@medusajs/medusa/promotion",
+            "resolve": "@nedusa/medusa/promotion",
           },
           "rbac": {
             "disable": true,
-            "resolve": "@medusajs/medusa/rbac",
+            "resolve": "@nedusa/medusa/rbac",
           },
           "region": {
-            "resolve": "@medusajs/medusa/region",
+            "resolve": "@nedusa/medusa/region",
           },
           "sales_channel": {
-            "resolve": "@medusajs/medusa/sales-channel",
+            "resolve": "@nedusa/medusa/sales-channel",
           },
           "search": {
             "options": {
@@ -3404,27 +3404,27 @@ describe("defineConfig", function () {
                   "options": {
                     "engine": "native",
                   },
-                  "resolve": "@medusajs/medusa/search-postgres",
+                  "resolve": "@nedusa/medusa/search-postgres",
                 },
               ],
             },
-            "resolve": "@medusajs/medusa/search",
+            "resolve": "@nedusa/medusa/search",
           },
           "settings": {
-            "resolve": "@medusajs/medusa/settings",
+            "resolve": "@nedusa/medusa/settings",
           },
           "stock_location": {
-            "resolve": "@medusajs/medusa/stock-location",
+            "resolve": "@nedusa/medusa/stock-location",
           },
           "store": {
-            "resolve": "@medusajs/medusa/store",
+            "resolve": "@nedusa/medusa/store",
           },
           "tax": {
-            "resolve": "@medusajs/medusa/tax",
+            "resolve": "@nedusa/medusa/tax",
           },
           "translation": {
             "disable": true,
-            "resolve": "@medusajs/medusa/translation",
+            "resolve": "@nedusa/medusa/translation",
           },
           "user": {
             "options": {
@@ -3433,16 +3433,16 @@ describe("defineConfig", function () {
               "jwt_secret": "supersecret",
               "jwt_verify_options": undefined,
             },
-            "resolve": "@medusajs/medusa/user",
+            "resolve": "@nedusa/medusa/user",
           },
           "workflows": {
-            "resolve": "@medusajs/medusa/workflow-engine-inmemory",
+            "resolve": "@nedusa/medusa/workflow-engine-inmemory",
           },
         },
         "plugins": [
           {
             "options": {},
-            "resolve": "@medusajs/draft-order",
+            "resolve": "@nedusa/draft-order",
           },
         ],
         "projectConfig": {
@@ -3503,7 +3503,7 @@ describe("defineConfig", function () {
     process.env = { ...originalEnv }
 
     expect(config.modules!["search"]).toEqual({
-      resolve: "@medusajs/medusa/search",
+      resolve: "@nedusa/medusa/search",
       options: {
         cloud: {
           api_key: "test-api-key",
@@ -3516,7 +3516,7 @@ describe("defineConfig", function () {
             options: {
               engine: "lakebase",
             },
-            resolve: "@medusajs/medusa/search-postgres",
+            resolve: "@nedusa/medusa/search-postgres",
           },
         ],
         default_provider: "search-medusa",

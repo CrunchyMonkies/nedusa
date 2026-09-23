@@ -1,5 +1,5 @@
-import { SearchTypes } from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+import { SearchTypes } from "@nedusa/framework/types"
+import { MedusaError } from "@nedusa/framework/utils"
 import { SearchIndexRecord, SearchIndexVersionRecord } from "@types"
 import { SearchIndexState } from "../index"
 import { cleanupStaleVersions, versionPhysicalName } from "../versions"

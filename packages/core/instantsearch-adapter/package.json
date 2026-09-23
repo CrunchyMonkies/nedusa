@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/instantsearch-adapter",
+  "name": "@nedusa/instantsearch-adapter",
   "version": "2.21.1",
   "description": "Algolia InstantSearch adapter for Medusa Search",
   "main": "dist/index.js",

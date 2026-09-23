@@ -1,10 +1,10 @@
-import { reindexSearchIndexesWorkflow } from "@medusajs/core-flows"
-import { HttpTypes } from "@medusajs/framework/types"
+import { reindexSearchIndexesWorkflow } from "@nedusa/core-flows"
+import { HttpTypes } from "@nedusa/framework/types"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { MedusaError, Modules } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { MedusaError, Modules } from "@nedusa/framework/utils"
 
 /**
  * Rebuild a search index from its seed.

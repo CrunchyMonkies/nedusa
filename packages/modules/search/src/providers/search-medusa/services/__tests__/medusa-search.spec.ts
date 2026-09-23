@@ -1,4 +1,4 @@
-import { SearchTypes } from "@medusajs/framework/types"
+import { SearchTypes } from "@nedusa/framework/types"
 import { CloudServiceError } from "../../utils"
 import { MedusaSearchService } from "../medusa-search"
 

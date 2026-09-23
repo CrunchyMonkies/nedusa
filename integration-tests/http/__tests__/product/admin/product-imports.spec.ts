@@ -1,12 +1,12 @@
 import fs from "fs/promises"
 import path, { extname } from "path"
 import { csv2json, json2csv } from "json-2-csv"
-import { CommonEvents, Modules } from "@medusajs/utils"
-import { IEventBusModuleService, IFileModuleService } from "@medusajs/types"
+import { CommonEvents, Modules } from "@nedusa/utils"
+import { IEventBusModuleService, IFileModuleService } from "@nedusa/types"
 import {
   medusaIntegrationTestRunner,
   TestEventUtils,
-} from "@medusajs/test-utils"
+} from "@nedusa/test-utils"
 import {
   adminHeaders,
   createAdminUser,

@@ -8,7 +8,7 @@ import {
   MedusaModule,
   ModulesDefinition,
   RegisterModuleJoinerConfig,
-} from "@medusajs/modules-sdk"
+} from "@nedusa/modules-sdk"
 import {
   CommonTypes,
   ConfigModule,
@@ -18,16 +18,16 @@ import {
   LoadedModule,
   ModuleDefinition,
   ModuleServiceInitializeOptions,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import {
   ContainerRegistrationKeys,
   isBoolean,
   isObject,
   isPresent,
   upperCaseFirst,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 
-import type { Knex } from "@medusajs/framework/mikro-orm/knex"
+import type { Knex } from "@nedusa/framework/mikro-orm/knex"
 import { aliasTo, asValue } from "./deps/awilix"
 import { configManager } from "./config"
 import {

@@ -1,19 +1,19 @@
-import { container, MedusaAppLoader, policiesLoader } from "@medusajs/framework"
-import { asValue } from "@medusajs/framework/awilix"
-import { configLoader } from "@medusajs/framework/config"
-import { pgConnectionLoader } from "@medusajs/framework/database"
-import { featureFlagsLoader } from "@medusajs/framework/feature-flags"
-import { expressLoader } from "@medusajs/framework/http"
-import { JobLoader } from "@medusajs/framework/jobs"
-import { LinkLoader } from "@medusajs/framework/links"
-import { logger as defaultLogger } from "@medusajs/framework/logger"
-import { SubscriberLoader } from "@medusajs/framework/subscribers"
+import { container, MedusaAppLoader, policiesLoader } from "@nedusa/framework"
+import { asValue } from "@nedusa/framework/awilix"
+import { configLoader } from "@nedusa/framework/config"
+import { pgConnectionLoader } from "@nedusa/framework/database"
+import { featureFlagsLoader } from "@nedusa/framework/feature-flags"
+import { expressLoader } from "@nedusa/framework/http"
+import { JobLoader } from "@nedusa/framework/jobs"
+import { LinkLoader } from "@nedusa/framework/links"
+import { logger as defaultLogger } from "@nedusa/framework/logger"
+import { SubscriberLoader } from "@nedusa/framework/subscribers"
 import {
   ConfigModule,
   LoadedModule,
   MedusaContainer,
   PluginDetails,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   getResolvedPlugins,
@@ -21,8 +21,8 @@ import {
   mergePluginModules,
   promiseAll,
   validateModuleName,
-} from "@medusajs/framework/utils"
-import { WorkflowLoader } from "@medusajs/framework/workflows"
+} from "@nedusa/framework/utils"
+import { WorkflowLoader } from "@nedusa/framework/workflows"
 import { Express, NextFunction, Request, Response } from "express"
 import { join } from "path"
 import requestIp from "request-ip"
@@ -224,7 +224,7 @@ export default async ({
     ? () => {}
     : await loadEntrypoints(plugins, container, expressApp, rootDirectory)
 
-  const { createDefaultsWorkflow } = await import("@medusajs/core-flows")
+  const { createDefaultsWorkflow } = await import("@nedusa/core-flows")
   await createDefaultsWorkflow(container).run()
   await onApplicationStart()
 

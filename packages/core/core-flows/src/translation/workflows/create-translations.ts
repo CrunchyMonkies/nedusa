@@ -1,13 +1,13 @@
-import { CreateTranslationDTO, TranslationDTO } from "@medusajs/framework/types"
+import { CreateTranslationDTO, TranslationDTO } from "@nedusa/framework/types"
 import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { emitEventStep } from "../../common/steps/emit-event"
 import { createTranslationsStep } from "../steps"
-import { TranslationWorkflowEvents } from "@medusajs/framework/utils"
+import { TranslationWorkflowEvents } from "@nedusa/framework/utils"
 
 /**
  * The translations to create.

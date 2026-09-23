@@ -1,12 +1,12 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes, QueryContextType } from "@medusajs/framework/types"
+} from "@nedusa/framework/http"
+import { HttpTypes, QueryContextType } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   QueryContext,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   prepareInventoryQuantityFields,
   wrapVariantsWithInventoryQuantityForSalesChannel,

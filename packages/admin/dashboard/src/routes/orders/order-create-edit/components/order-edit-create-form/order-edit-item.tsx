@@ -3,9 +3,9 @@ import {
   DocumentSeries,
   ReceiptPercent,
   XCircle,
-} from "@medusajs/icons"
-import { AdminOrderLinePreview } from "@medusajs/types"
-import { Badge, Input, Text, toast, Tooltip } from "@medusajs/ui"
+} from "@nedusa/icons"
+import { AdminOrderLinePreview } from "@nedusa/types"
+import { Badge, Input, Text, toast, Tooltip } from "@nedusa/ui"
 import { useTranslation } from "react-i18next"
 
 import { ActionMenu } from "../../../../../components/common/action-menu"

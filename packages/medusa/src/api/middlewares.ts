@@ -75,7 +75,7 @@ import { adminShippingOptionTypeRoutesMiddlewares } from "./admin/shipping-optio
 import { adminIndexRoutesMiddlewares } from "./admin/index/middlewares"
 import { adminSearchIndexRoutesMiddlewares } from "./admin/search-indexes/middlewares"
 import { adminSearchRoutesMiddlewares } from "./admin/search/middlewares"
-import { setSecretApiKeyContext } from "@medusajs/framework"
+import { setSecretApiKeyContext } from "@nedusa/framework"
 import { adminLocalesRoutesMiddlewares } from "./admin/locales/middlewares"
 import { adminTranslationsRoutesMiddlewares } from "./admin/translations/middlewares"
 

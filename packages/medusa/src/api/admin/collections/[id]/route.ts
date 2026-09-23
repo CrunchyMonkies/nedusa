@@ -1,14 +1,14 @@
 import {
   deleteCollectionsWorkflow,
   updateCollectionsWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 
-import { AdditionalData, HttpTypes } from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+import { AdditionalData, HttpTypes } from "@nedusa/framework/types"
+import { MedusaError } from "@nedusa/framework/utils"
 import { refetchCollection } from "../helpers"
 import { AdminUpdateCollectionType } from "../validators"
 

@@ -1,4 +1,4 @@
-import { MedusaModule } from "@medusajs/modules-sdk"
+import { MedusaModule } from "@nedusa/modules-sdk"
 import { join } from "path"
 import { SearchIndexLoader } from "../search-index-loader"
 

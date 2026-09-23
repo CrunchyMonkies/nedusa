@@ -1,4 +1,4 @@
-import { Badge } from "@medusajs/ui"
+import { Badge } from "@nedusa/ui"
 import { TextCell } from "../../../../../components/table/table-cells/common/text-cell"
 import {
   defineCellRenderer,

@@ -1,10 +1,10 @@
-import { HttpTypes } from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+import { HttpTypes } from "@nedusa/framework/types"
+import { MedusaError } from "@nedusa/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
   refetchEntity,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<HttpTypes.SelectParams>,

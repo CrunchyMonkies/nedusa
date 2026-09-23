@@ -1,13 +1,13 @@
-import { generateResetPasswordTokenWorkflow } from "@medusajs/core-flows"
+import { generateResetPasswordTokenWorkflow } from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
+} from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   MedusaError,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 /**
  * @since 2.20.0

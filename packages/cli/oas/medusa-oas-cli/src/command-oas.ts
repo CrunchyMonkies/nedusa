@@ -15,7 +15,7 @@ import { isFile } from "./utils/fs-utils"
  * Constants
  */
 // Medusa core package directory
-const medusaPackagePath = path.dirname(require.resolve("@medusajs/medusa"))
+const medusaPackagePath = path.dirname(require.resolve("@nedusa/medusa"))
 const basePath = path.resolve(__dirname, "../")
 
 /**
@@ -199,7 +199,7 @@ async function getOASFromPaths(
 }
 
 /**
- * Sets `info.version` to the version of the installed `@medusajs/medusa`
+ * Sets `info.version` to the version of the installed `@nedusa/medusa`
  * package, so that consumers of the OAS can tell which Medusa version the
  * document describes. The version in the base OAS files is a static
  * placeholder, which is why it's overridden here.
@@ -208,7 +208,7 @@ function setMedusaVersion(oas: OpenAPIObject): void {
   let medusaVersion: string | undefined
 
   try {
-    medusaVersion = require("@medusajs/medusa/package.json").version
+    medusaVersion = require("@nedusa/medusa/package.json").version
   } catch {
     // the version stays as-is if the package can't be resolved
   }

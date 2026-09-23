@@ -1,11 +1,11 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { ContainerRegistrationKeys, Modules } from "@nedusa/framework/utils"
 import {
   beginOrderEditOrderWorkflow,
   confirmOrderEditRequestWorkflow,
   orderEditUpdateItemQuantityWorkflow,
   requestOrderEditRequestWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 
 jest.setTimeout(120000)
 

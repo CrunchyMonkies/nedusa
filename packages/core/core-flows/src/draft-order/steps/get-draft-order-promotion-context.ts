@@ -1,6 +1,6 @@
-import { Modules } from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
-import type { IOrderModuleService, OrderDTO } from "@medusajs/framework/types"
+import { Modules } from "@nedusa/framework/utils"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
+import type { IOrderModuleService, OrderDTO } from "@nedusa/framework/types"
 
 /**
  * The details of the draft order to get the promotion context for.

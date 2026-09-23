@@ -1,6 +1,6 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { IEventBusModuleService } from "@medusajs/types"
-import { composeMessage, Modules, PaymentWebhookEvents } from "@medusajs/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { IEventBusModuleService } from "@nedusa/types"
+import { composeMessage, Modules, PaymentWebhookEvents } from "@nedusa/utils"
 import path from "path"
 
 jest.setTimeout(100000)

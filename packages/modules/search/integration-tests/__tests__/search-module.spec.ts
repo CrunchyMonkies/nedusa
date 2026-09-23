@@ -1,6 +1,6 @@
-import { SearchTypes } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
+import { SearchTypes } from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
+import { moduleIntegrationTestRunner } from "@nedusa/test-utils"
 import { SearchIndex, SearchIndexSync, SearchIndexVersion } from "@models"
 import { SearchIndexSeedAction } from "@types"
 import { versionPhysicalName } from "../../src/utils/versions"
@@ -111,7 +111,7 @@ moduleIntegrationTestRunner<SearchService>({
   moduleOptions: {
     providers: [
       {
-        resolve: "@medusajs/search-postgres",
+        resolve: "@nedusa/search-postgres",
         id: "postgres",
       },
     ],

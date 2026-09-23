@@ -1,5 +1,5 @@
-import { MinusMini } from "@medusajs/icons"
-import { clx, Divider, IconButton, Text } from "@medusajs/ui"
+import { MinusMini } from "@nedusa/icons"
+import { clx, Divider, IconButton, Text } from "@nedusa/ui"
 import { Collapsible as RadixCollapsible } from "radix-ui"
 import { Fragment, ReactNode } from "react"
 import { useTranslation } from "react-i18next"

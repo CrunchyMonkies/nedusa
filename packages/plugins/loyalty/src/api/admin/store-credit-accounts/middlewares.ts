@@ -1,8 +1,8 @@
 import {
   validateAndTransformBody,
   validateAndTransformQuery,
-} from "@medusajs/framework";
-import { MiddlewareRoute } from "@medusajs/medusa";
+} from "@nedusa/framework";
+import { MiddlewareRoute } from "@nedusa/medusa";
 import {
   listStoreCreditAccountsTransformQueryConfig,
   listStoreCreditAccountTransactionsTransformQueryConfig,

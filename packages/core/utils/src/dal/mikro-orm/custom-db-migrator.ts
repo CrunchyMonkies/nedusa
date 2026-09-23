@@ -1,10 +1,10 @@
-import { Constructor } from "@medusajs/types"
-import { MikroORM, Utils } from "@medusajs/deps/mikro-orm/core"
+import { Constructor } from "@nedusa/types"
+import { MikroORM, Utils } from "@nedusa/deps/mikro-orm/core"
 import {
   Migrator as BaseMigrator,
   Migration,
   UmzugMigration,
-} from "@medusajs/deps/mikro-orm/migrations"
+} from "@nedusa/deps/mikro-orm/migrations"
 import { isFileDisabled, isFileSkipped } from "../../common/define-file-config"
 import { dynamicImport } from "../../common/dynamic-import"
 import { promiseAll } from "../../common/promise-all"

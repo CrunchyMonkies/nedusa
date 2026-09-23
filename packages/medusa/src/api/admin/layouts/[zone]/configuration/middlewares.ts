@@ -1,5 +1,5 @@
-import { validateAndTransformBody } from "@medusajs/framework"
-import { MiddlewareRoute } from "@medusajs/framework/http"
+import { validateAndTransformBody } from "@nedusa/framework"
+import { MiddlewareRoute } from "@nedusa/framework/http"
 import { AdminSetLayoutConfiguration } from "./validators"
 
 export const layoutConfigurationRoutesMiddlewares: MiddlewareRoute[] = [

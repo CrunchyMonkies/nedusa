@@ -1,11 +1,11 @@
-import { Context, OrderTypes } from "@medusajs/framework/types"
+import { Context, OrderTypes } from "@nedusa/framework/types"
 import {
   ChangeActionType,
   MathBN,
   OrderChangeType,
   ReturnStatus,
   promiseAll,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 function createReturnItems(data) {
   return data.items.map((item) => ({

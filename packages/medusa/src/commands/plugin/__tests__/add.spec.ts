@@ -13,7 +13,7 @@ jest.mock("child_process", () => ({
   execSync: (...args: any[]) => execSyncMock(...args),
 }))
 
-jest.mock("@medusajs/framework/logger", () => ({
+jest.mock("@nedusa/framework/logger", () => ({
   logger: { info: jest.fn(), error: jest.fn() },
 }))
 

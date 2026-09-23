@@ -1,8 +1,8 @@
 import type {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework";
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils";
+} from "@nedusa/framework";
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils";
 import { updateGiftCardsWorkflow } from "../../../../workflows/gift-cards/workflows/update-gift-cards";
 import { AdminGiftCardResponse, AdminUpdateGiftCardParams } from "../../../../types";
 

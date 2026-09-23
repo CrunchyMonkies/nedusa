@@ -4,8 +4,8 @@ import {
   AuthIdentityProviderService,
   AuthTypes,
   Logger,
-} from "@medusajs/framework/types"
-import { AbstractAuthModuleProvider } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { AbstractAuthModuleProvider } from "@nedusa/framework/utils"
 import {
   AuthIdentifiersRegistrationName,
   AuthProviderRegistrationPrefix,

@@ -1,4 +1,4 @@
-import { Logger } from "@medusajs/framework/types"
+import { Logger } from "@nedusa/framework/types"
 import { MemoryCachingProvider } from "../memory-cache"
 
 const loggerMock = {

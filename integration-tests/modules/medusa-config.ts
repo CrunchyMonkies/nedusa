@@ -1,6 +1,6 @@
-import { defineConfig } from "@medusajs/utils"
+import { defineConfig } from "@nedusa/utils"
 
-const { Modules } = require("@medusajs/utils")
+const { Modules } = require("@nedusa/utils")
 
 const DB_HOST = process.env.DB_HOST
 const DB_USERNAME = process.env.DB_USERNAME
@@ -12,20 +12,20 @@ process.env.LOG_LEVEL = "error"
 
 const customTaxProviderRegistration = {
   resolve: {
-    services: [require("@medusajs/tax/dist/providers/system").default],
+    services: [require("@nedusa/tax/dist/providers/system").default],
   },
   id: "system_2",
 }
 
 const customPaymentProvider = {
   resolve: {
-    services: [require("@medusajs/payment/dist/providers/system").default],
+    services: [require("@nedusa/payment/dist/providers/system").default],
   },
   id: "default_2",
 }
 
 const customFulfillmentProvider = {
-  resolve: "@medusajs/fulfillment-manual",
+  resolve: "@nedusa/fulfillment-manual",
   id: "test-provider",
 }
 
@@ -41,7 +41,7 @@ module.exports = defineConfig({
   },
   plugins: [
     {
-      resolve: "@medusajs/loyalty-plugin",
+      resolve: "@nedusa/loyalty-plugin",
       options: {},
     },
   ],
@@ -61,12 +61,12 @@ module.exports = defineConfig({
     },
     {
       key: "auth",
-      resolve: "@medusajs/auth",
+      resolve: "@nedusa/auth",
       options: {
         providers: [
           {
             id: "emailpass",
-            resolve: "@medusajs/auth-emailpass",
+            resolve: "@nedusa/auth-emailpass",
           },
         ],
       },
@@ -74,95 +74,95 @@ module.exports = defineConfig({
     {
       key: Modules.USER,
       scope: "internal",
-      resolve: "@medusajs/user",
+      resolve: "@nedusa/user",
       options: {
         jwt_secret: "test",
       },
     },
     {
       key: Modules.CACHE,
-      resolve: "@medusajs/cache-inmemory",
+      resolve: "@nedusa/cache-inmemory",
       options: { ttl: 0 }, // Cache disabled
     },
     {
       key: Modules.LOCKING,
-      resolve: "@medusajs/locking",
+      resolve: "@nedusa/locking",
     },
     {
       key: Modules.STOCK_LOCATION,
-      resolve: "@medusajs/stock-location",
+      resolve: "@nedusa/stock-location",
       options: {},
     },
     {
       key: Modules.INVENTORY,
-      resolve: "@medusajs/inventory",
+      resolve: "@nedusa/inventory",
       options: {},
     },
     {
       key: Modules.PRODUCT,
-      resolve: "@medusajs/product",
+      resolve: "@nedusa/product",
     },
     {
       key: Modules.PRICING,
-      resolve: "@medusajs/pricing",
+      resolve: "@nedusa/pricing",
     },
     {
       key: Modules.PROMOTION,
-      resolve: "@medusajs/promotion",
+      resolve: "@nedusa/promotion",
     },
     {
       key: Modules.REGION,
-      resolve: "@medusajs/region",
+      resolve: "@nedusa/region",
     },
     {
       key: Modules.CUSTOMER,
-      resolve: "@medusajs/customer",
+      resolve: "@nedusa/customer",
     },
     {
       key: Modules.SALES_CHANNEL,
-      resolve: "@medusajs/sales-channel",
+      resolve: "@nedusa/sales-channel",
     },
     {
       key: Modules.CART,
-      resolve: "@medusajs/cart",
+      resolve: "@nedusa/cart",
     },
     {
       key: Modules.WORKFLOW_ENGINE,
-      resolve: "@medusajs/workflow-engine-inmemory",
+      resolve: "@nedusa/workflow-engine-inmemory",
     },
     {
       key: Modules.API_KEY,
-      resolve: "@medusajs/api-key",
+      resolve: "@nedusa/api-key",
     },
     {
       key: Modules.STORE,
-      resolve: "@medusajs/store",
+      resolve: "@nedusa/store",
     },
     {
       key: Modules.TAX,
-      resolve: "@medusajs/tax",
+      resolve: "@nedusa/tax",
       options: {
         providers: [customTaxProviderRegistration],
       },
     },
     {
       key: Modules.CURRENCY,
-      resolve: "@medusajs/currency",
+      resolve: "@nedusa/currency",
     },
     {
       key: Modules.ORDER,
-      resolve: "@medusajs/order",
+      resolve: "@nedusa/order",
     },
     {
       key: Modules.PAYMENT,
-      resolve: "@medusajs/payment",
+      resolve: "@nedusa/payment",
       options: {
         providers: [customPaymentProvider],
       },
     },
     {
       key: Modules.FULFILLMENT,
-      resolve: "@medusajs/fulfillment",
+      resolve: "@nedusa/fulfillment",
       options: {
         providers: [
           customFulfillmentProvider,
@@ -175,7 +175,7 @@ module.exports = defineConfig({
       options: {
         providers: [
           {
-            resolve: "@medusajs/notification-local",
+            resolve: "@nedusa/notification-local",
             id: "local-notification-provider",
             options: {
               name: "Local Notification Provider",
@@ -187,7 +187,7 @@ module.exports = defineConfig({
     },
     {
       key: Modules.INDEX,
-      resolve: "@medusajs/index",
+      resolve: "@nedusa/index",
       disable: process.env.ENABLE_INDEX_MODULE !== "true",
     },
     {
@@ -196,7 +196,7 @@ module.exports = defineConfig({
     },
     {
       key: Modules.RBAC,
-      resolve: "@medusajs/rbac",
+      resolve: "@nedusa/rbac",
     },
   ],
 })

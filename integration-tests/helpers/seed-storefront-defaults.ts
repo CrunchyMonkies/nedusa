@@ -1,10 +1,10 @@
-import { createDefaultsWorkflow } from "@medusajs/core-flows"
+import { createDefaultsWorkflow } from "@nedusa/core-flows"
 import {
   IRegionModuleService,
   IStoreModuleService,
   MedusaContainer,
-} from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
 
 import { linkRegionPaymentProviders } from "./link-region-payment-providers"
 

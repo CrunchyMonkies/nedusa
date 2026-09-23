@@ -1,7 +1,7 @@
 import { EventEmitter } from "events"
 
-jest.mock("@medusajs/utils", () => {
-  const actual = jest.requireActual("@medusajs/utils")
+jest.mock("@nedusa/utils", () => {
+  const actual = jest.requireActual("@nedusa/utils")
   return {
     ...actual,
     ModulesSdkUtils: {
@@ -33,7 +33,7 @@ jest.mock("../../logger", () => ({
 }))
 jest.mock("../../deps/awilix", () => ({ asValue: (value: any) => value }))
 
-import { ModulesSdkUtils } from "@medusajs/utils"
+import { ModulesSdkUtils } from "@nedusa/utils"
 import { container } from "../../container"
 import { logger } from "../../logger"
 import { pgConnectionLoader } from "../pg-connection-loader"

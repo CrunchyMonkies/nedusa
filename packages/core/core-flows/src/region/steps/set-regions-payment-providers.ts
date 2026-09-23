@@ -1,8 +1,8 @@
-import { Link } from "@medusajs/framework/modules-sdk"
+import { Link } from "@nedusa/framework/modules-sdk"
 import {
   IPaymentModuleService,
   RemoteQueryFunction,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   LINKS,
@@ -11,8 +11,8 @@ import {
   arrayDifference,
   isDefined,
   promiseAll,
-} from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/utils"
+import { StepResponse, createStep } from "@nedusa/framework/workflows-sdk"
 
 /**
  * The data to set the payment providers available in regions.

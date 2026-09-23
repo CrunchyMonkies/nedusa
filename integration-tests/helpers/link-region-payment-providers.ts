@@ -1,5 +1,5 @@
-import { MedusaContainer } from "@medusajs/framework/types"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
+import { MedusaContainer } from "@nedusa/framework/types"
+import { ContainerRegistrationKeys, Modules } from "@nedusa/framework/utils"
 
 /**
  * Enables payment providers in a region by creating the `region_payment_provider`

@@ -1,5 +1,5 @@
-import { GlobeEurope, PencilSquare, Trash } from "@medusajs/icons"
-import { HttpTypes } from "@medusajs/types"
+import { GlobeEurope, PencilSquare, Trash } from "@nedusa/icons"
+import { HttpTypes } from "@nedusa/types"
 import { useTranslation } from "react-i18next"
 
 import { ActionMenu } from "../../../../../components/common/action-menu"

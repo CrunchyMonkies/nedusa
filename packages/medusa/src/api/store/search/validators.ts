@@ -1,4 +1,4 @@
-import { z } from "@medusajs/framework/zod"
+import { z } from "@nedusa/framework/zod"
 
 // InstantSearch sends the hits query plus one per disjunctive facet, so a
 // storefront stays well under this while a crafted payload can't fan out into

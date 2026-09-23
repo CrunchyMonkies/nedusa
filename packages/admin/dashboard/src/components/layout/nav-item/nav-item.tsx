@@ -13,8 +13,8 @@ import {
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable"
 import { CSS } from "@dnd-kit/utilities"
-import { DotsSix, Eye, EyeSlash } from "@medusajs/icons"
-import { IconButton, Kbd, Text, clx } from "@medusajs/ui"
+import { DotsSix, Eye, EyeSlash } from "@nedusa/icons"
+import { IconButton, Kbd, Text, clx } from "@nedusa/ui"
 import { Collapsible as RadixCollapsible } from "radix-ui"
 import {
   PropsWithChildren,

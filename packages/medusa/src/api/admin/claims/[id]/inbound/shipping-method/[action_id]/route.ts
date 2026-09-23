@@ -1,16 +1,16 @@
 import {
   removeClaimShippingMethodWorkflow,
   updateReturnShippingMethodWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
+} from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { defaultAdminDetailsReturnFields } from "../../../../../returns/query-config"
 
 export const POST = async (

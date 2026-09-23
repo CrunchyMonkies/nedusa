@@ -1,4 +1,4 @@
-import { asValue } from "@medusajs/deps/awilix"
+import { asValue } from "@nedusa/deps/awilix"
 import {
   ConfigModule,
   ExternalModuleDeclaration,
@@ -16,7 +16,7 @@ import {
   ModuleServiceInitializeOptions,
   RemoteQueryFunction,
   SearchTypes,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import {
   ContainerRegistrationKeys,
   createMedusaContainer,
@@ -36,7 +36,7 @@ import {
   registerFeatureFlag,
   withDbTroubleshootingLink,
   DBTroubleshootingSection,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import { Link } from "./link"
 import {
   MedusaModule,

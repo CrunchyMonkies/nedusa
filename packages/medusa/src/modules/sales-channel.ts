@@ -1,6 +1,6 @@
-import SalesChannelModule from "@medusajs/sales-channel"
+import SalesChannelModule from "@nedusa/sales-channel"
 
-export * from "@medusajs/sales-channel"
+export * from "@nedusa/sales-channel"
 
 export default SalesChannelModule
-export const discoveryPath = require.resolve("@medusajs/sales-channel")
+export const discoveryPath = require.resolve("@nedusa/sales-channel")

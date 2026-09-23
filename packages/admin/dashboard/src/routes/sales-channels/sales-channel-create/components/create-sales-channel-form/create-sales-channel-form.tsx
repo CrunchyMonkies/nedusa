@@ -7,7 +7,7 @@ import {
   Text,
   Textarea,
   toast,
-} from "@medusajs/ui"
+} from "@nedusa/ui"
 import { useForm } from "react-hook-form"
 import { useTranslation } from "react-i18next"
 import * as zod from "zod"

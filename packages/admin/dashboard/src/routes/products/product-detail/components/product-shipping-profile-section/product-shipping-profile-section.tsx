@@ -1,5 +1,5 @@
-import { PencilSquare, ShoppingBag } from "@medusajs/icons"
-import { Container, Heading } from "@medusajs/ui"
+import { PencilSquare, ShoppingBag } from "@nedusa/icons"
+import { Container, Heading } from "@nedusa/ui"
 import { useTranslation } from "react-i18next"
 
 import { SidebarLink } from "../../../../../components/common/sidebar-link/sidebar-link"

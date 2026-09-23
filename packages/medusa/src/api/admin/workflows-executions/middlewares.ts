@@ -11,9 +11,9 @@ import {
 import {
   validateAndTransformBody,
   validateAndTransformQuery,
-} from "@medusajs/framework"
-import { MiddlewareRoute } from "@medusajs/framework/http"
-import { PolicyOperation } from "@medusajs/framework/utils"
+} from "@nedusa/framework"
+import { MiddlewareRoute } from "@nedusa/framework/http"
+import { PolicyOperation } from "@nedusa/framework/utils"
 
 export const adminWorkflowsExecutionsMiddlewares: MiddlewareRoute[] = [
   {

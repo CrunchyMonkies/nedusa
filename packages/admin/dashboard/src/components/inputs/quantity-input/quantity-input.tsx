@@ -1,4 +1,4 @@
-import { clx, Input, Text } from "@medusajs/ui"
+import { clx, Input, Text } from "@nedusa/ui"
 import { ComponentPropsWithoutRef, ElementRef, forwardRef } from "react"
 
 type QuantityInputProps = Omit<

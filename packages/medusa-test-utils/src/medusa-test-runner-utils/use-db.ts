@@ -1,23 +1,23 @@
-import type { MedusaAppLoader } from "@medusajs/framework"
-import { logger } from "@medusajs/framework/logger"
+import type { MedusaAppLoader } from "@nedusa/framework"
+import { logger } from "@nedusa/framework/logger"
 import {
   ConfigModule,
   Logger,
   MedusaContainer,
   SearchTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   getResolvedPlugins,
   Modules,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { join } from "path"
 
 /**
  * Initiates the database connection
  */
 export async function initDb() {
-  const { pgConnectionLoader } = await import("@medusajs/framework")
+  const { pgConnectionLoader } = await import("@nedusa/framework")
 
   const pgConnection = await pgConnectionLoader()
 
@@ -70,7 +70,7 @@ async function loadCustomLinks(directory: string, container: MedusaContainer) {
   )
   const logger = container.resolve(ContainerRegistrationKeys.LOGGER)
 
-  const { LinkLoader } = await import("@medusajs/framework")
+  const { LinkLoader } = await import("@nedusa/framework")
   await new LinkLoader(linksSourcePaths, logger).load()
 }
 
@@ -86,7 +86,7 @@ export async function migrateSearchIndexes(
   ) as ConfigModule
 
   // Same optional peer import the runner already uses for `loadSearchIndexes`.
-  const { isSearchModuleEnabled } = require("@medusajs/medusa/loaders/search")
+  const { isSearchModuleEnabled } = require("@nedusa/medusa/loaders/search")
 
   if (!isSearchModuleEnabled(configModule)) {
     return

@@ -1,4 +1,4 @@
-import { MedusaError } from "@medusajs/framework/utils"
+import { MedusaError } from "@nedusa/framework/utils"
 import { setTimeout as delay } from "node:timers/promises"
 import { RedisLockingProvider } from "../redis-lock"
 

@@ -1,6 +1,6 @@
-import type { AuthTypes, IAuthModuleService } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+import type { AuthTypes, IAuthModuleService } from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
 
 /**
  * The ID of the request verification step.

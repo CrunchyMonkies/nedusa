@@ -2,9 +2,9 @@ import {
   BigNumberInput,
   CartLineItemDTO,
   ICartModuleService,
-} from "@medusajs/framework/types"
-import { MathBN, Modules, isDefined } from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/types"
+import { MathBN, Modules, isDefined } from "@nedusa/framework/utils"
+import { StepResponse, createStep } from "@nedusa/framework/workflows-sdk"
 import {
   findMatchingLineItem,
   lineItemFieldsForMerging,

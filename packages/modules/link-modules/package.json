@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/link-modules",
+  "name": "@nedusa/link-modules",
   "version": "2.21.1",
   "description": "Medusa Default Link Modules Package and Definitions",
   "main": "dist/index.js",
@@ -36,11 +36,11 @@
     "build:prod": "cross-env NODE_ENV=production pnpm run build"
   },
   "devDependencies": {
-    "@medusajs/framework": "2.21.1",
-    "@medusajs/test-utils": "2.21.1",
-    "@medusajs/types": "2.21.1"
+    "@nedusa/framework": "2.21.1",
+    "@nedusa/test-utils": "2.21.1",
+    "@nedusa/types": "2.21.1"
   },
   "peerDependencies": {
-    "@medusajs/framework": "2.21.1"
+    "@nedusa/framework": "2.21.1"
   }
 }

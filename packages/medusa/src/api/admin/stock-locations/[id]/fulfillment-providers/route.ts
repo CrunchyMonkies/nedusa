@@ -1,11 +1,11 @@
-import { batchLinksWorkflow } from "@medusajs/core-flows"
-import { HttpTypes } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+import { batchLinksWorkflow } from "@nedusa/core-flows"
+import { HttpTypes } from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
 
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import { refetchStockLocation } from "../../helpers"
 
 const buildLinks = (id, fulfillmentProviderIds: string[]) => {

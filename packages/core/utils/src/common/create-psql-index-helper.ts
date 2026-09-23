@@ -1,4 +1,4 @@
-import { Index } from "@medusajs/deps/mikro-orm/core"
+import { Index } from "@nedusa/deps/mikro-orm/core"
 
 /**
  * Create a PSQL index statement

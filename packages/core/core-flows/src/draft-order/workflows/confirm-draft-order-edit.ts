@@ -1,10 +1,10 @@
-import { ChangeActionType, OrderChangeStatus } from "@medusajs/framework/utils"
+import { ChangeActionType, OrderChangeStatus } from "@nedusa/framework/utils"
 import {
   createWorkflow,
   when,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
-import { OrderChangeDTO, OrderDTO } from "@medusajs/framework/types"
+} from "@nedusa/framework/workflows-sdk"
+import { OrderChangeDTO, OrderDTO } from "@nedusa/framework/types"
 import { useRemoteQueryStep } from "../../common"
 import {
   createOrUpdateOrderPaymentCollectionWorkflow,

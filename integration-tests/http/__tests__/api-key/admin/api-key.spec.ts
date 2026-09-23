@@ -1,5 +1,5 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { ApiKeyType } from "@medusajs/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { ApiKeyType } from "@nedusa/utils"
 import {
   adminHeaders,
   createAdminUser,

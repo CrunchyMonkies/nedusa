@@ -1,8 +1,8 @@
-import { HttpTypes } from "@medusajs/types"
-import { clx, Container, Heading, toast, usePrompt } from "@medusajs/ui"
+import { HttpTypes } from "@nedusa/types"
+import { clx, Container, Heading, toast, usePrompt } from "@nedusa/ui"
 import { useTranslation } from "react-i18next"
 
-import { Trash } from "@medusajs/icons"
+import { Trash } from "@nedusa/icons"
 import { Link, useNavigate } from "react-router-dom"
 import { ActionMenu } from "../../../../../components/common/action-menu"
 import { NoRecords } from "../../../../../components/common/empty-table-content"

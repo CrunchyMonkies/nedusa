@@ -2,9 +2,9 @@ import {
   HttpTypes,
   IFileModuleService,
   IRegionModuleService,
-} from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
+import { StepResponse, createStep } from "@nedusa/framework/workflows-sdk"
 import { normalizeForExport } from "../helpers/normalize-for-export"
 import { convertJsonToCsv } from "../utils"
 

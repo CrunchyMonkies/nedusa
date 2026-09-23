@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/loyalty-plugin",
+  "name": "@nedusa/loyalty-plugin",
   "version": "2.21.1",
   "description": "Medusa Plugin: Loyalty - Gift Cards",
   "author": "Medusa (https://medusajs.com)",
@@ -55,16 +55,16 @@
     "build:prod": "cross-env NODE_ENV=production pnpm run build:plugin"
   },
   "devDependencies": {
-    "@medusajs/admin-sdk": "2.21.1",
-    "@medusajs/cli": "2.21.1",
-    "@medusajs/dashboard": "2.21.1",
-    "@medusajs/framework": "2.21.1",
-    "@medusajs/icons": "2.21.1",
-    "@medusajs/medusa": "2.21.1",
-    "@medusajs/test-utils": "2.21.1",
-    "@medusajs/types": "2.21.1",
-    "@medusajs/ui": "4.2.5",
-    "@medusajs/ui-preset": "2.21.1",
+    "@nedusa/admin-sdk": "2.21.1",
+    "@nedusa/cli": "2.21.1",
+    "@nedusa/dashboard": "2.21.1",
+    "@nedusa/framework": "2.21.1",
+    "@nedusa/icons": "2.21.1",
+    "@nedusa/medusa": "2.21.1",
+    "@nedusa/test-utils": "2.21.1",
+    "@nedusa/types": "2.21.1",
+    "@nedusa/ui": "4.2.5",
+    "@nedusa/ui-preset": "2.21.1",
     "@swc/core": "1.5.7",
     "@types/node": "^20.0.0",
     "cross-env": "^7.0.3",
@@ -72,35 +72,35 @@
     "typescript": "^5.7.3"
   },
   "peerDependencies": {
-    "@medusajs/admin-sdk": "2.21.1",
-    "@medusajs/cli": "2.21.1",
-    "@medusajs/dashboard": "2.21.1",
-    "@medusajs/framework": "2.21.1",
-    "@medusajs/icons": "2.21.1",
-    "@medusajs/medusa": "2.21.1",
-    "@medusajs/test-utils": "2.21.1",
-    "@medusajs/ui": "4.2.5",
+    "@nedusa/admin-sdk": "2.21.1",
+    "@nedusa/cli": "2.21.1",
+    "@nedusa/dashboard": "2.21.1",
+    "@nedusa/framework": "2.21.1",
+    "@nedusa/icons": "2.21.1",
+    "@nedusa/medusa": "2.21.1",
+    "@nedusa/test-utils": "2.21.1",
+    "@nedusa/ui": "4.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.30.4 || ^7.0.0"
   },
   "peerDependenciesMeta": {
-    "@medusajs/admin-sdk": {
+    "@nedusa/admin-sdk": {
       "optional": true
     },
-    "@medusajs/cli": {
+    "@nedusa/cli": {
       "optional": true
     },
-    "@medusajs/dashboard": {
+    "@nedusa/dashboard": {
       "optional": true
     },
-    "@medusajs/icons": {
+    "@nedusa/icons": {
       "optional": true
     },
-    "@medusajs/test-utils": {
+    "@nedusa/test-utils": {
       "optional": true
     },
-    "@medusajs/ui": {
+    "@nedusa/ui": {
       "optional": true
     },
     "react": {

@@ -1,13 +1,13 @@
-import { asValue } from "@medusajs/framework/awilix"
-import { logger } from "@medusajs/framework/logger"
-import { Migrator } from "@medusajs/framework/migrations"
-import { MedusaAppOutput } from "@medusajs/framework/modules-sdk"
-import { MedusaContainer } from "@medusajs/framework/types"
+import { asValue } from "@nedusa/framework/awilix"
+import { logger } from "@nedusa/framework/logger"
+import { Migrator } from "@nedusa/framework/migrations"
+import { MedusaAppOutput } from "@nedusa/framework/modules-sdk"
+import { MedusaContainer } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   getResolvedPlugins,
   mergePluginModules,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { dbTestUtilFactory, getDatabaseURL } from "./database"
 import {
   applyEnvVarsToProcess,
@@ -161,7 +161,7 @@ class MedusaTestRunner {
   }
 
   private async setupApplication(): Promise<void> {
-    const { container, MedusaAppLoader } = await import("@medusajs/framework")
+    const { container, MedusaAppLoader } = await import("@nedusa/framework")
     const appLoader = new MedusaAppLoader({
       medusaConfigPath: this.modulesConfigPath,
       cwd: this.cwd,
@@ -198,7 +198,7 @@ class MedusaTestRunner {
     // container, so the Search Module built here is the one the test ends up with.
     // The definitions have to be registered before that, the same way the http
     // loader does it. `clearInstances` empties the registry, hence the placement.
-    const { loadSearchIndexes } = require("@medusajs/medusa/loaders/search")
+    const { loadSearchIndexes } = require("@nedusa/medusa/loaders/search")
     await loadSearchIndexes({
       plugins: await getResolvedPlugins(this.cwd, configModule, true),
       configModule,

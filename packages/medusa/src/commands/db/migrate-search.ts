@@ -1,19 +1,19 @@
 import checkbox from "@inquirer/checkbox"
-import { MedusaAppLoader } from "@medusajs/framework"
-import { LinkLoader } from "@medusajs/framework/links"
-import { MedusaModule } from "@medusajs/framework/modules-sdk"
+import { MedusaAppLoader } from "@nedusa/framework"
+import { LinkLoader } from "@nedusa/framework/links"
+import { MedusaModule } from "@nedusa/framework/modules-sdk"
 import {
   ConfigModule,
   Logger,
   MedusaContainer,
   SearchTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   getResolvedPlugins,
   mergePluginModules,
   Modules,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import boxen from "boxen"
 import chalk from "chalk"
 import { join } from "path"

@@ -1,15 +1,15 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import {
   ContainerRegistrationKeys,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
-import { createInventoryItemsWorkflow } from "@medusajs/core-flows"
+import { createInventoryItemsWorkflow } from "@nedusa/core-flows"
 import { refetchInventoryItem } from "./helpers"
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@nedusa/framework/types"
 
 export const POST = async (
   req: AuthenticatedMedusaRequest<

@@ -1,4 +1,4 @@
-import { isObject } from "@medusajs/framework/utils"
+import { isObject } from "@nedusa/framework/utils"
 import { OPERATOR_MAP } from "./query-builder"
 
 /**

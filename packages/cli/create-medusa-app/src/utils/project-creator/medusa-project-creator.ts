@@ -1,4 +1,4 @@
-import { track } from "@medusajs/telemetry"
+import { track } from "@nedusa/telemetry"
 import boxen from "boxen"
 import chalk from "chalk"
 import fs from "fs"

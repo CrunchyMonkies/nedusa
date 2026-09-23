@@ -1,7 +1,7 @@
-import { ITaxModuleService } from "@medusajs/framework/types"
+import { ITaxModuleService } from "@nedusa/framework/types"
 
-import { Modules } from "@medusajs/framework/utils"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
+import { Modules } from "@nedusa/framework/utils"
+import { moduleIntegrationTestRunner } from "@nedusa/test-utils"
 
 jest.setTimeout(30000)
 

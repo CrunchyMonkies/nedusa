@@ -1,5 +1,5 @@
 /**
- * Guards the CJS build of @medusajs/admin-bundler against esbuild rewriting
+ * Guards the CJS build of @nedusa/admin-bundler against esbuild rewriting
  * `await import("<pkg>")` into `require("<pkg>")`.
  *
  * This package is published as CommonJS (tsup `format: ["cjs"]`), but some of
@@ -78,7 +78,7 @@ if (failures.length) {
       "rewriting them, route the imports through a helper esbuild cannot analyse:",
       '  const importESM = (s) => (new Function("s", "return import(s)"))(s)',
       "",
-      "Do NOT convert this package to ESM — @medusajs/framework requires it from CJS.",
+      "Do NOT convert this package to ESM — @nedusa/framework requires it from CJS.",
     ].join("\n")
   )
   process.exit(1)

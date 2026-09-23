@@ -3,7 +3,7 @@ import {
   Context,
   IAuthVerificationProvider,
   Logger,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import { AuthVerificationProviderRegistrationPrefix } from "@types"
 
 type InjectedDependencies = {

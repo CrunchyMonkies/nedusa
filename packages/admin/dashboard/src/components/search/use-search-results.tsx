@@ -1,4 +1,4 @@
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@nedusa/types"
 import { TFunction } from "i18next"
 import { useEffect, useMemo, useState } from "react"
 import { useTranslation } from "react-i18next"

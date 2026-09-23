@@ -2,7 +2,7 @@ import {
   isDefined,
   QueryContext,
   ShippingOptionPriceType,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   createHook,
   createWorkflow,
@@ -10,13 +10,13 @@ import {
   transform,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import {
   AdditionalData,
   CalculateShippingOptionPriceDTO,
   ListShippingOptionsForCartWithPricingWorkflowInput,
   QueryContextType,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 
 import { useQueryGraphStep, validatePresenceOfStep } from "../../common"
 import { useRemoteQueryStep } from "../../common/steps/use-remote-query"
@@ -106,8 +106,8 @@ export const listShippingOptionsForCartWithPricingWorkflowId =
  * For example, you can consume the hook to add the customer Id to the context:
  *
  * ```ts
- * import { listShippingOptionsForCartWithPricingWorkflow } from "@medusajs/medusa/core-flows"
- * import { StepResponse } from "@medusajs/workflows-sdk"
+ * import { listShippingOptionsForCartWithPricingWorkflow } from "@nedusa/medusa/core-flows"
+ * import { StepResponse } from "@nedusa/workflows-sdk"
  *
  * listShippingOptionsForCartWithPricingWorkflow.hooks.setShippingOptionsContext(
  *   async ({ cart }, { container }) => {
@@ -149,8 +149,8 @@ export const listShippingOptionsForCartWithPricingWorkflowId =
  * For example, you can consume the hook to pass a negotiated carrier contract to the provider:
  *
  * ```ts
- * import { listShippingOptionsForCartWithPricingWorkflow } from "@medusajs/medusa/core-flows"
- * import { StepResponse } from "@medusajs/workflows-sdk"
+ * import { listShippingOptionsForCartWithPricingWorkflow } from "@nedusa/medusa/core-flows"
+ * import { StepResponse } from "@nedusa/workflows-sdk"
  *
  * listShippingOptionsForCartWithPricingWorkflow.hooks.setCalculatedShippingPricingContext(
  *   async ({ input }, { container }) => {

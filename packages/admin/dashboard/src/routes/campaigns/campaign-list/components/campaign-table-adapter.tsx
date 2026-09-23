@@ -1,4 +1,4 @@
-import { AdminCampaign } from "@medusajs/types"
+import { AdminCampaign } from "@nedusa/types"
 import { TFunction } from "i18next"
 import { useMemo } from "react"
 import { useTranslation } from "react-i18next"

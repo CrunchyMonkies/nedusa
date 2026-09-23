@@ -1,6 +1,6 @@
-import { SqlEntityManager } from "@medusajs/framework/mikro-orm/postgresql"
-import { IndexTypes } from "@medusajs/framework/types"
-import { toMikroORMEntity } from "@medusajs/framework/utils"
+import { SqlEntityManager } from "@nedusa/framework/mikro-orm/postgresql"
+import { IndexTypes } from "@nedusa/framework/types"
+import { toMikroORMEntity } from "@nedusa/framework/utils"
 import { IndexData, IndexRelation } from "@models"
 import {
   createIndexTestBed,

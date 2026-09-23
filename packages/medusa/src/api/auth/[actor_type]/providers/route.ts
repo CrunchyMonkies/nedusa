@@ -1,10 +1,10 @@
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
+import { MedusaRequest, MedusaResponse } from "@nedusa/framework/http"
 import {
   ConfigModule,
   HttpTypes,
   IAuthModuleService,
-} from "@medusajs/framework/types"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { ContainerRegistrationKeys, Modules } from "@nedusa/framework/utils"
 import { getAllowedAuthProvidersForActor } from "../../utils/auth-methods-per-actor"
 
 export const GET = async (

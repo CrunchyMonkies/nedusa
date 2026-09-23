@@ -1,13 +1,13 @@
-import { AdditionalData, HttpTypes } from "@medusajs/framework/types"
-import { completeOrderWorkflow } from "@medusajs/core-flows"
+import { AdditionalData, HttpTypes } from "@nedusa/framework/types"
+import { completeOrderWorkflow } from "@nedusa/core-flows"
 import {
   ContainerRegistrationKeys,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 
 export const POST = async (
   req: AuthenticatedMedusaRequest<AdditionalData, HttpTypes.AdminGetOrderParams>,

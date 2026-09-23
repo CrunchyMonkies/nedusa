@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next"
 
-import { Buildings } from "@medusajs/icons"
-import { AdminInventoryItem } from "@medusajs/types"
+import { Buildings } from "@nedusa/icons"
+import { AdminInventoryItem } from "@nedusa/types"
 
 import { ActionMenu } from "../../../../../components/common/action-menu"
 

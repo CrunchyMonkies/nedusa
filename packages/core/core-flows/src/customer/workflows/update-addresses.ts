@@ -2,7 +2,7 @@ import {
   FilterableCustomerAddressProps,
   UpdateCustomerAddressDTO,
   AdditionalData,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   WorkflowData,
   WorkflowResponse,
@@ -10,7 +10,7 @@ import {
   createWorkflow,
   parallelize,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import {
   maybeUnsetDefaultBillingAddressesStep,
   maybeUnsetDefaultShippingAddressesStep,

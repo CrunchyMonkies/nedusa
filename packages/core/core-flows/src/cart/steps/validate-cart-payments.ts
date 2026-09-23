@@ -1,11 +1,11 @@
-import type { CartWorkflowDTO } from "@medusajs/framework/types"
+import type { CartWorkflowDTO } from "@nedusa/framework/types"
 import {
   isPresent,
   MathBN,
   MedusaError,
   PaymentSessionStatus,
-} from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/utils"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
 
 import { listRegionPaymentProviderIds } from "../../payment-collection/utils/region-payment-providers"
 

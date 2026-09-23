@@ -1,11 +1,11 @@
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@nedusa/types"
 import {
   DataTableColumnAlignment,
   DataTableColumnDef,
   DataTableCommand,
   DataTableEmptyStateProps,
   DataTableFilter,
-} from "@medusajs/ui"
+} from "@nedusa/ui"
 import { ReactNode } from "react"
 
 /**

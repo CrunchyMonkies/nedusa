@@ -1,4 +1,4 @@
-import { logger } from "@medusajs/framework/logger"
+import { logger } from "@nedusa/framework/logger"
 import { execSync } from "child_process"
 import fs from "fs"
 import path from "path"

@@ -1,6 +1,6 @@
-import "@medusajs/framework/modules-sdk"
-import { SearchTypes } from "@medusajs/framework/types"
-import { defineSearchIndex, search } from "@medusajs/framework/utils"
+import "@nedusa/framework/modules-sdk"
+import { SearchTypes } from "@nedusa/framework/types"
+import { defineSearchIndex, search } from "@nedusa/framework/utils"
 
 export type TestProduct = {
   id: string

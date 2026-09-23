@@ -1,6 +1,6 @@
-import RbacModule from "@medusajs/rbac"
+import RbacModule from "@nedusa/rbac"
 
-export * from "@medusajs/rbac"
+export * from "@nedusa/rbac"
 
 export default RbacModule
-export const discoveryPath = require.resolve("@medusajs/rbac")
+export const discoveryPath = require.resolve("@nedusa/rbac")

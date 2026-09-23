@@ -1,9 +1,9 @@
-import { ICartModuleService } from "@medusajs/framework/types"
-import { BigNumber, Module, Modules } from "@medusajs/framework/utils"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
-import { CheckConstraintViolationException } from "@medusajs/framework/mikro-orm/core"
+import { ICartModuleService } from "@nedusa/framework/types"
+import { BigNumber, Module, Modules } from "@nedusa/framework/utils"
+import { moduleIntegrationTestRunner } from "@nedusa/test-utils"
+import { CheckConstraintViolationException } from "@nedusa/framework/mikro-orm/core"
 import { CartModuleService } from "@services"
-import { normalizeBigNumbers } from "@medusajs/test-utils"
+import { normalizeBigNumbers } from "@nedusa/test-utils"
 
 jest.setTimeout(50000)
 

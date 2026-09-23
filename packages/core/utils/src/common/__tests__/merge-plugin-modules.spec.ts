@@ -15,7 +15,7 @@ const PLUGIN_NAME = "medusa-plugin-hoisted-test"
  *
  * "<BASE_DIR>/node_modules" is NOT an ancestor of this file's own
  * "node_modules" chain, which is exactly the situation in a workspace monorepo:
- * `@medusajs/utils` sits in the hoisted workspace-root "node_modules" while the
+ * `@nedusa/utils` sits in the hoisted workspace-root "node_modules" while the
  * plugin lives inside the Medusa application's "node_modules".
  */
 async function createHoistedPlugin() {
@@ -51,7 +51,7 @@ afterEach(async () => {
   await fs.cleanup()
 })
 
-describe("mergePluginModules | hoisted @medusajs/utils", () => {
+describe("mergePluginModules | hoisted @nedusa/utils", () => {
   test("resolves plugin modules relative to the project directory", async () => {
     await createHoistedPlugin()
 
@@ -67,7 +67,7 @@ describe("mergePluginModules | hoisted @medusajs/utils", () => {
 
     /**
      * The plugin exposes its modules through a bare specifier, which is the
-     * specifier that used to be resolved from wherever `@medusajs/utils` was
+     * specifier that used to be resolved from wherever `@nedusa/utils` was
      * installed instead of from the project.
      */
     expect(pluginDetails.modules).toEqual([

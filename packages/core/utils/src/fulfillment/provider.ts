@@ -9,7 +9,7 @@ import {
   FulfillmentOrderDTO,
   IFulfillmentProvider,
   ValidateFulfillmentDataContext,
-} from "@medusajs/types"
+} from "@nedusa/types"
 
 /**
  * ### constructor
@@ -28,8 +28,8 @@ import {
  * #### Example
  *
  * ```ts title="src/modules/my-fulfillment/service.ts"
- * import { AbstractFulfillmentProviderService } from "@medusajs/framework/utils"
- * import { Logger } from "@medusajs/framework/types"
+ * import { AbstractFulfillmentProviderService } from "@nedusa/framework/utils"
+ * import { Logger } from "@nedusa/framework/types"
  *
  * type InjectedDependencies = {
  *   logger: Logger
@@ -111,7 +111,7 @@ export class AbstractFulfillmentProviderService
    *
    * @example
    * // other imports...
-   * import { FulfillmentOption } from "@medusajs/framework/types"
+   * import { FulfillmentOption } from "@nedusa/framework/types"
    *
    * class MyFulfillmentProviderService extends AbstractFulfillmentProviderService {
    *   // ...
@@ -257,7 +257,7 @@ export class AbstractFulfillmentProviderService
    * @returns The calculated price's details.
    *
    * @example
-   * import { CalculateShippingOptionPriceDTO } from "@medusajs/framework/types"
+   * import { CalculateShippingOptionPriceDTO } from "@nedusa/framework/types"
    * class MyFulfillmentProviderService extends AbstractFulfillmentProviderService {
    *   // ...
    *   async calculatePrice(

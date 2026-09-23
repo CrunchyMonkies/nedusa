@@ -2,9 +2,9 @@ import {
   ContainerRegistrationKeys,
   MedusaError,
   Modules,
-} from "@medusajs/framework/utils"
-import { AuthIdentityDTO, ConfigModule, MedusaContainer } from "@medusajs/types"
-import { AuthTypes } from "@medusajs/framework/types"
+} from "@nedusa/framework/utils"
+import { AuthIdentityDTO, ConfigModule, MedusaContainer } from "@nedusa/types"
+import { AuthTypes } from "@nedusa/framework/types"
 
 // The method checks for whether a verification is required for the given auth provider and identity.
 export const validateVerification = async (

@@ -1,4 +1,4 @@
-import { AdminPaymentCollection } from "@medusajs/types"
+import { AdminPaymentCollection } from "@nedusa/types"
 
 export const getTotalCaptured = (
   paymentCollections: AdminPaymentCollection[]

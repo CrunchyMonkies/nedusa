@@ -3,7 +3,7 @@ import {
   ContainerRegistrationKeys,
   Modules,
   promiseAll,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   Event,
   ILockingModule,
@@ -12,7 +12,7 @@ import {
   ModulesSdkTypes,
   RemoteQueryFunction,
   SchemaObjectEntityRepresentation,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import { IndexMetadataStatus, Orchestrator } from "@utils"
 import { setTimeout } from "timers/promises"
 export class DataSynchronizer {

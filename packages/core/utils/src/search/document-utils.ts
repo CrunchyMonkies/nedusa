@@ -1,4 +1,4 @@
-import { SearchTypes } from "@medusajs/types"
+import { SearchTypes } from "@nedusa/types"
 
 /**
  * Document projection helpers shared by search providers, so that path

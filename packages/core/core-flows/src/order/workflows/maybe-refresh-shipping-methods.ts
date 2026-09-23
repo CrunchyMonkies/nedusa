@@ -1,7 +1,7 @@
 import {
   CalculatedRMAShippingContext,
   CalculateShippingOptionPriceDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   Hook,
   WorkflowResponse,
@@ -10,8 +10,8 @@ import {
   parallelize,
   transform,
   when,
-} from "@medusajs/framework/workflows-sdk"
-import { ShippingOptionPriceType } from "@medusajs/framework/utils"
+} from "@nedusa/framework/workflows-sdk"
+import { ShippingOptionPriceType } from "@nedusa/framework/utils"
 import { calculateShippingOptionsPricesStep } from "../../fulfillment/steps"
 import {
   updateOrderChangeActionsStep,
@@ -113,8 +113,8 @@ export const maybeRefreshShippingMethodsWorkflowId =
  * You can consume this hook to return any custom context that is forwarded as-is to the fulfillment provider's `calculatePrice` method.
  *
  * ```ts
- * import { maybeRefreshShippingMethodsWorkflow } from "@medusajs/medusa/core-flows"
- * import { StepResponse } from "@medusajs/workflows-sdk"
+ * import { maybeRefreshShippingMethodsWorkflow } from "@nedusa/medusa/core-flows"
+ * import { StepResponse } from "@nedusa/workflows-sdk"
  *
  * maybeRefreshShippingMethodsWorkflow.hooks.setCalculatedShippingPricingContext(
  *   async ({ input }, { container }) => {

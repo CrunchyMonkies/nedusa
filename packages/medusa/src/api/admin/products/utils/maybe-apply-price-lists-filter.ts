@@ -1,11 +1,11 @@
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   FeatureFlag,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { NextFunction } from "express"
-import { MedusaRequest } from "@medusajs/framework/http"
+import { MedusaRequest } from "@nedusa/framework/http"
 import IndexEngineFeatureFlag from "../../../../feature-flags/index-engine"
 
 export function maybeApplyPriceListsFilter() {

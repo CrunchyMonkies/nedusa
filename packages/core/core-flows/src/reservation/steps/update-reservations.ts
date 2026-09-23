@@ -1,14 +1,14 @@
 import type {
   IInventoryService,
   InventoryTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   convertItemResponseToUpdateRequest,
   getSelectsAndRelationsFromObjectArray,
-} from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/utils"
+import { StepResponse, createStep } from "@nedusa/framework/workflows-sdk"
 
-import { Modules } from "@medusajs/framework/utils"
+import { Modules } from "@nedusa/framework/utils"
 
 /**
  * The data to update reservation items.

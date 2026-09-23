@@ -1,5 +1,5 @@
-import { validateAndTransformQuery } from "@medusajs/framework"
-import { MiddlewareRoute } from "@medusajs/framework/http"
+import { validateAndTransformQuery } from "@nedusa/framework"
+import { MiddlewareRoute } from "@nedusa/framework/http"
 import { authenticate } from "../../../utils/middlewares/authenticate-middleware"
 import { AdminGetSearchParams } from "./validators"
 

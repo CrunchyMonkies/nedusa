@@ -7,7 +7,7 @@ import {
   InputConfigWithObjectModules,
   InternalModuleDeclaration,
   MedusaCloudOptions,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import { FeatureFlag } from "../feature-flags/flag-router"
 import {
   MODULE_PACKAGE_NAMES,
@@ -143,7 +143,7 @@ export function transformModules(
        * Plugin modules are referenced by a bare specifier
        * ("<plugin>/.medusa/server/src/modules/<name>"), so they must be
        * resolved from the project directory. Otherwise the lookup starts in
-       * whichever "node_modules" directory `@medusajs/utils` was hoisted into,
+       * whichever "node_modules" directory `@nedusa/utils` was hoisted into,
        * which in a workspace monorepo does not contain the plugin.
        */
       const moduleExport = isString(resolution)
@@ -232,8 +232,8 @@ function resolvePlugins(
 ): ConfigModule["plugins"] {
   const defaultPlugins: Map<string, ConfigModule["plugins"][number]> = new Map([
     [
-      "@medusajs/draft-order",
-      { resolve: "@medusajs/draft-order", options: {} },
+      "@nedusa/draft-order",
+      { resolve: "@nedusa/draft-order", options: {} },
     ],
   ])
 
@@ -272,7 +272,7 @@ function resolveModules(
     },
     providers: [
       {
-        resolve: "@medusajs/medusa/auth-emailpass",
+        resolve: "@nedusa/medusa/auth-emailpass",
         id: "emailpass",
       },
     ],
@@ -326,7 +326,7 @@ function resolveModules(
       options: {
         providers: [
           {
-            resolve: "@medusajs/medusa/fulfillment-manual",
+            resolve: "@nedusa/medusa/fulfillment-manual",
             id: "manual",
           },
         ],
@@ -337,7 +337,7 @@ function resolveModules(
       options: {
         providers: [
           {
-            resolve: "@medusajs/medusa/notification-local",
+            resolve: "@nedusa/medusa/notification-local",
             id: "local",
             options: {
               name: "Local Notification Provider",
@@ -357,7 +357,7 @@ function resolveModules(
       options: {
         providers: [
           {
-            resolve: "@medusajs/medusa/search-postgres",
+            resolve: "@nedusa/medusa/search-postgres",
             id: "postgres",
             options: { engine: isCloud ? "lakebase" : "native" },
           },
@@ -381,7 +381,7 @@ function resolveModules(
       options: {
         providers: [
           {
-            resolve: "@medusajs/medusa/file-local",
+            resolve: "@nedusa/medusa/file-local",
             id: "local",
           },
         ],
@@ -397,7 +397,7 @@ function resolveModules(
         providers: [
           {
             id: "s3",
-            resolve: "@medusajs/medusa/file-s3",
+            resolve: "@nedusa/medusa/file-s3",
             options: {
               authentication_method: "s3-iam-role",
               file_url: process.env.S3_FILE_URL,
@@ -468,7 +468,7 @@ function resolveModules(
         providers: [
           {
             id: "caching-redis",
-            resolve: "@medusajs/medusa/caching-redis",
+            resolve: "@nedusa/medusa/caching-redis",
             is_default: true,
             options: {
               redisUrl: process.env.CACHE_REDIS_URL,

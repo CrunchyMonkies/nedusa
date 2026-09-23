@@ -1,4 +1,4 @@
-import { Logger } from "@medusajs/framework/types"
+import { Logger } from "@nedusa/framework/types"
 
 export * from "./address"
 export * from "./cart"

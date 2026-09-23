@@ -1,6 +1,6 @@
-import { PlannerActionLinkDescriptor } from "@medusajs/framework/types"
-import { MikroORM } from "@medusajs/framework/mikro-orm/core"
-import { PostgreSqlDriver } from "@medusajs/framework/mikro-orm/postgresql"
+import { PlannerActionLinkDescriptor } from "@nedusa/framework/types"
+import { MikroORM } from "@nedusa/framework/mikro-orm/core"
+import { PostgreSqlDriver } from "@nedusa/framework/mikro-orm/postgresql"
 import { MigrationsExecutionPlanner } from "../index"
 
 class TestablePlanner extends MigrationsExecutionPlanner {

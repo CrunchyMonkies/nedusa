@@ -2,15 +2,15 @@ import {
   updateOrderTaxLinesWorkflow,
   updateTaxLinesWorkflow,
   upsertTaxLinesWorkflow,
-} from "@medusajs/core-flows"
-import { StepResponse } from "@medusajs/framework/workflows-sdk"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@nedusa/core-flows"
+import { StepResponse } from "@nedusa/framework/workflows-sdk"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import {
   ICartModuleService,
   IOrderModuleService,
   ITaxModuleService,
-} from "@medusajs/types"
-import { Modules } from "@medusajs/utils"
+} from "@nedusa/types"
+import { Modules } from "@nedusa/utils"
 
 jest.setTimeout(100000)
 

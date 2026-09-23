@@ -5,7 +5,7 @@ import {
   tryConvertToBoolean,
   tryConvertToNumber,
 } from "../common"
-import { AdminCreateProduct, AdminCreateProductVariant } from "@medusajs/types"
+import { AdminCreateProduct, AdminCreateProductVariant } from "@nedusa/types"
 
 /**
  * Column processor is a function that process the CSV column

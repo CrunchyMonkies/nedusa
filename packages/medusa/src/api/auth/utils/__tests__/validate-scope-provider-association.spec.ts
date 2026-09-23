@@ -1,5 +1,5 @@
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
-import { ConfigModule } from "@medusajs/framework/types"
+import { MedusaRequest, MedusaResponse } from "@nedusa/framework/http"
+import { ConfigModule } from "@nedusa/framework/types"
 import { validateScopeProviderAssociation } from "../validate-scope-provider-association"
 
 const buildRequest = (

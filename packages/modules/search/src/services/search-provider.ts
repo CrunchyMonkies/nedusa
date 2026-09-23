@@ -1,5 +1,5 @@
-import { Constructor, SearchTypes } from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+import { Constructor, SearchTypes } from "@nedusa/framework/types"
+import { MedusaError } from "@nedusa/framework/utils"
 import { SearchProviderRegistrationPrefix } from "@types"
 
 type InjectedDependencies = {

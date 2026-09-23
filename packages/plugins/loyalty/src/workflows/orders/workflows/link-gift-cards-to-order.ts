@@ -1,13 +1,13 @@
-import { Modules } from "@medusajs/framework/utils";
+import { Modules } from "@nedusa/framework/utils";
 import {
   createLinksWorkflow,
   useQueryGraphStep,
-} from "@medusajs/medusa/core-flows";
+} from "@nedusa/medusa/core-flows";
 import {
   createWorkflow,
   transform,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk";
+} from "@nedusa/framework/workflows-sdk";
 import { PluginModule } from "../../../types";
 
 /**

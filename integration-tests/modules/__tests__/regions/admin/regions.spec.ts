@@ -1,6 +1,6 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { IRegionModuleService } from "@medusajs/types"
-import { Modules } from "@medusajs/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { IRegionModuleService } from "@nedusa/types"
+import { Modules } from "@nedusa/utils"
 import { createAdminUser } from "../../../../helpers/create-admin-user"
 
 jest.setTimeout(50000)

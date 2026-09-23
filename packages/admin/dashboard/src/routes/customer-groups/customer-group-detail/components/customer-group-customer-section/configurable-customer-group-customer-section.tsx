@@ -1,5 +1,5 @@
-import { HttpTypes } from "@medusajs/types"
-import { DataTableCommand, usePrompt } from "@medusajs/ui"
+import { HttpTypes } from "@nedusa/types"
+import { DataTableCommand, usePrompt } from "@nedusa/ui"
 import { useMemo } from "react"
 import { useTranslation } from "react-i18next"
 

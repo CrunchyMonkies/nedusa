@@ -1,11 +1,11 @@
-import { Context, ModuleJoinerConfig } from "@medusajs/framework/types"
-import { EntitySchema } from "@medusajs/framework/mikro-orm/core"
+import { Context, ModuleJoinerConfig } from "@nedusa/framework/types"
+import { EntitySchema } from "@nedusa/framework/mikro-orm/core"
 
 import {
   generateEntityId,
   mikroOrmBaseRepositoryFactory,
-} from "@medusajs/framework/utils"
-import { SqlEntityManager } from "@medusajs/framework/mikro-orm/postgresql"
+} from "@nedusa/framework/utils"
+import { SqlEntityManager } from "@nedusa/framework/mikro-orm/postgresql"
 
 export function getLinkRepository(model: EntitySchema) {
   return class LinkRepository extends mikroOrmBaseRepositoryFactory(model) {

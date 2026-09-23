@@ -4,13 +4,13 @@ import {
   InferEntityType,
   ProductCategoryTransformOptions,
   ProductTypes,
-} from "@medusajs/framework/types"
-import { DALUtils, isDefined, MedusaError } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { DALUtils, isDefined, MedusaError } from "@nedusa/framework/utils"
 import {
   LoadStrategy,
   FindOptions as MikroOptions,
-} from "@medusajs/framework/mikro-orm/core"
-import { SqlEntityManager } from "@medusajs/framework/mikro-orm/postgresql"
+} from "@nedusa/framework/mikro-orm/core"
+import { SqlEntityManager } from "@nedusa/framework/mikro-orm/postgresql"
 import { ProductCategory } from "@models"
 import { UpdateCategoryInput } from "@types"
 

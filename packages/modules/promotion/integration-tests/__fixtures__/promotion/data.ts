@@ -1,5 +1,5 @@
-import { CreatePromotionDTO } from "@medusajs/framework/types"
-import { PromotionType } from "@medusajs/framework/utils"
+import { CreatePromotionDTO } from "@nedusa/framework/types"
+import { PromotionType } from "@nedusa/framework/utils"
 
 export const defaultPromotionsData: CreatePromotionDTO[] = [
   {

@@ -1,4 +1,4 @@
-import type { ProviderWebhookPayload } from "@medusajs/framework/types"
+import type { ProviderWebhookPayload } from "@nedusa/framework/types"
 import type { StripeOptions } from "../../types"
 
 import IdealProviderService from "../../services/stripe-ideal"

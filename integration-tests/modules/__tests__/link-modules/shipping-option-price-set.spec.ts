@@ -1,9 +1,9 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import {
   IFulfillmentModuleService,
   IPricingModuleService,
-} from "@medusajs/types"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/utils"
+} from "@nedusa/types"
+import { ContainerRegistrationKeys, Modules } from "@nedusa/utils"
 import {
   adminHeaders,
   createAdminUser,

@@ -1,7 +1,7 @@
-import { MedusaModule } from "@medusajs/framework/modules-sdk"
-import { ILinkModule, ModuleJoinerConfig } from "@medusajs/framework/types"
-import { defineLink, isObject, Modules } from "@medusajs/framework/utils"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
+import { MedusaModule } from "@nedusa/framework/modules-sdk"
+import { ILinkModule, ModuleJoinerConfig } from "@nedusa/framework/types"
+import { defineLink, isObject, Modules } from "@nedusa/framework/utils"
+import { moduleIntegrationTestRunner } from "@nedusa/test-utils"
 import { MigrationsExecutionPlanner } from "../../src"
 import {
   Car,

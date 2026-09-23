@@ -1,4 +1,4 @@
-import { MedusaError } from "@medusajs/utils"
+import { MedusaError } from "@nedusa/utils"
 import { hasPermission } from "../../policies/has-permission"
 import type {
   AuthenticatedMedusaRequest,

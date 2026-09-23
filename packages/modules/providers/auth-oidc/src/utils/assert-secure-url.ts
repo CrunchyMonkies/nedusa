@@ -1,4 +1,4 @@
-import { isProduction, MedusaError } from "@medusajs/framework/utils"
+import { isProduction, MedusaError } from "@nedusa/framework/utils"
 
 /**
  * Asserts that a URL is `https`. Outside of production, `http` is allowed for

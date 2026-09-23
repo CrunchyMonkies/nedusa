@@ -16,9 +16,9 @@ import {
   updateLineItemsStepId,
   updatePaymentCollectionStepId,
   updateTaxLinesWorkflow,
-} from "@medusajs/core-flows"
-import { StepResponse } from "@medusajs/framework/workflows-sdk"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@nedusa/core-flows"
+import { StepResponse } from "@nedusa/framework/workflows-sdk"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import {
   ICartModuleService,
   ICustomerModuleService,
@@ -30,7 +30,7 @@ import {
   IRegionModuleService,
   ISalesChannelModuleService,
   IStockLocationService,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import {
   ContainerRegistrationKeys,
   Modules,
@@ -38,7 +38,7 @@ import {
   PriceListType,
   ProductStatus,
   RuleOperator,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import {
   adminHeaders,
   createAdminUser,
@@ -47,7 +47,7 @@ import {
 } from "../../../../helpers/create-admin-user"
 import { seedStorefrontDefaults } from "../../../../helpers/seed-storefront-defaults"
 import { createAuthenticatedCustomer } from "../../../helpers/create-authenticated-customer"
-import { normalizeBigNumbers } from "@medusajs/test-utils"
+import { normalizeBigNumbers } from "@nedusa/test-utils"
 
 jest.setTimeout(200000)
 

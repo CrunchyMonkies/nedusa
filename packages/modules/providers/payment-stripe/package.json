@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/payment-stripe",
+  "name": "@nedusa/payment-stripe",
   "version": "2.21.1",
   "description": "Stripe payment provider for Medusa",
   "main": "dist/index.js",
@@ -28,10 +28,10 @@
     "watch": "tsc --watch"
   },
   "devDependencies": {
-    "@medusajs/framework": "2.21.1"
+    "@nedusa/framework": "2.21.1"
   },
   "peerDependencies": {
-    "@medusajs/framework": "2.21.1"
+    "@nedusa/framework": "2.21.1"
   },
   "dependencies": {
     "stripe": "^15.5.0"

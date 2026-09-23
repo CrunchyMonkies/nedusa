@@ -1,9 +1,9 @@
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
+import { MedusaRequest, MedusaResponse } from "@nedusa/framework/http"
 import {
   AuthenticationInput,
   IAuthModuleService,
-} from "@medusajs/framework/types"
-import { MedusaError, Modules } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { MedusaError, Modules } from "@nedusa/framework/utils"
 import { generateJwtTokenWithChecks } from "../../utils/generate-jwt-token"
 
 export const GET = async (req: MedusaRequest, res: MedusaResponse) => {

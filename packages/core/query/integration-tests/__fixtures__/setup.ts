@@ -3,8 +3,8 @@ import {
   LoadedModule,
   MedusaContainer,
   RemoteQueryFunction,
-} from "@medusajs/types"
-import { extractRelationsFromGQL } from "@medusajs/utils"
+} from "@nedusa/types"
+import { extractRelationsFromGQL } from "@nedusa/utils"
 import { buildSchema } from "graphql"
 import { createQuery, RelationMap } from "../../src"
 import {

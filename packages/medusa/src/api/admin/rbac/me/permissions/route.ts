@@ -1,16 +1,16 @@
-import { resolvePermissions } from "@medusajs/framework"
+import { resolvePermissions } from "@nedusa/framework"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
+} from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   defineFileConfig,
   FeatureFlag,
   Policy,
   WILDCARD,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import RbacFeatureFlag from "../../../../../feature-flags/rbac"
 
 /**

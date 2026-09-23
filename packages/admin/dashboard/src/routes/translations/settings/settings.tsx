@@ -1,5 +1,5 @@
-import { Heading } from "@medusajs/ui"
-import { Spinner } from "@medusajs/icons"
+import { Heading } from "@nedusa/ui"
+import { Spinner } from "@nedusa/icons"
 import { RouteDrawer } from "../../../components/modals"
 import { useTranslationSettings } from "../../../hooks/api/translations"
 import { BatchTranslationSettingsForm } from "./components/batch-translation-settings-form/batch-translation-settings-form"

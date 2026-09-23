@@ -2,8 +2,8 @@ import {
   createWorkflow,
   transform,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk";
-import { createLinksWorkflow } from "@medusajs/medusa/core-flows";
+} from "@nedusa/framework/workflows-sdk";
+import { createLinksWorkflow } from "@nedusa/medusa/core-flows";
 
 import { createGiftCardsStep } from "../steps/create-gift-cards";
 import { createStoreCreditAccountsStep } from "../../store-credit/steps/create-store-credit-accounts";

@@ -1,12 +1,12 @@
 import {
   removeItemOrderEditActionWorkflow,
   updateOrderEditAddItemWorkflow,
-} from "@medusajs/core-flows"
-import { HttpTypes } from "@medusajs/framework/types"
+} from "@nedusa/core-flows"
+import { HttpTypes } from "@nedusa/framework/types"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import { AdminPostOrderEditsItemsActionReqSchemaType } from "../../../validators"
 
 export const POST = async (

@@ -1,6 +1,6 @@
-import { AuthenticatedMedusaRequest, MedusaResponse } from "@medusajs/framework"
-import { HttpTypes } from "@medusajs/types"
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+import { AuthenticatedMedusaRequest, MedusaResponse } from "@nedusa/framework"
+import { HttpTypes } from "@nedusa/types"
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils"
 
 /**
  * @since 2.12.3

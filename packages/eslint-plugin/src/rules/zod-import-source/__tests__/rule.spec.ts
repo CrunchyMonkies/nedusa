@@ -7,7 +7,7 @@ ruleTester.run("zod-import-source", rule, {
   valid: [
     // Canonical Medusa import.
     {
-      code: `import { z } from "@medusajs/framework/zod"`,
+      code: `import { z } from "@nedusa/framework/zod"`,
     },
     // Unrelated import.
     {
@@ -19,7 +19,7 @@ ruleTester.run("zod-import-source", rule, {
     },
     // Re-export from the Medusa source.
     {
-      code: `export { z } from "@medusajs/framework/zod"`,
+      code: `export { z } from "@nedusa/framework/zod"`,
     },
     // Side-effect import of something else.
     {
@@ -30,37 +30,37 @@ ruleTester.run("zod-import-source", rule, {
     // Named import.
     {
       code: `import { z } from "zod"`,
-      output: `import { z } from "@medusajs/framework/zod"`,
+      output: `import { z } from "@nedusa/framework/zod"`,
       errors: [{ messageId: "zodImportSource" }],
     },
     // Default-ish namespace import.
     {
       code: `import * as z from "zod"`,
-      output: `import * as z from "@medusajs/framework/zod"`,
+      output: `import * as z from "@nedusa/framework/zod"`,
       errors: [{ messageId: "zodImportSource" }],
     },
     // Single-quoted — quote style preserved.
     {
       code: `import { z } from 'zod'`,
-      output: `import { z } from '@medusajs/framework/zod'`,
+      output: `import { z } from '@nedusa/framework/zod'`,
       errors: [{ messageId: "zodImportSource" }],
     },
     // Side-effect import of bare zod.
     {
       code: `import "zod"`,
-      output: `import "@medusajs/framework/zod"`,
+      output: `import "@nedusa/framework/zod"`,
       errors: [{ messageId: "zodImportSource" }],
     },
     // Named re-export.
     {
       code: `export { z } from "zod"`,
-      output: `export { z } from "@medusajs/framework/zod"`,
+      output: `export { z } from "@nedusa/framework/zod"`,
       errors: [{ messageId: "zodImportSource" }],
     },
     // Wildcard re-export.
     {
       code: `export * from "zod"`,
-      output: `export * from "@medusajs/framework/zod"`,
+      output: `export * from "@nedusa/framework/zod"`,
       errors: [{ messageId: "zodImportSource" }],
     },
   ],

@@ -1,9 +1,9 @@
-import type { SubscriberArgs, SubscriberConfig } from "@medusajs/framework";
-import { AdminOrder } from "@medusajs/framework/types";
+import type { SubscriberArgs, SubscriberConfig } from "@nedusa/framework";
+import { AdminOrder } from "@nedusa/framework/types";
 import {
   ContainerRegistrationKeys,
   OrderWorkflowEvents,
-} from "@medusajs/framework/utils";
+} from "@nedusa/framework/utils";
 
 import { createGiftCardsWorkflow } from "../workflows/gift-cards/workflows/create-gift-cards";
 

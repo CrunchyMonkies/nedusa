@@ -4,7 +4,7 @@ import {
   retryExecution,
   stringifyCircular,
   withDbTroubleshootingLink,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import { asValue } from "../deps/awilix"
 import { configManager } from "../config"
 import { container } from "../container"

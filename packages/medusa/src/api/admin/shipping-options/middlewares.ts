@@ -1,9 +1,9 @@
 import {
   validateAndTransformBody,
   validateAndTransformQuery,
-} from "@medusajs/framework"
-import { maybeApplyLinkFilter, MiddlewareRoute } from "@medusajs/framework/http"
-import { PolicyOperation } from "@medusajs/framework/utils"
+} from "@nedusa/framework"
+import { maybeApplyLinkFilter, MiddlewareRoute } from "@nedusa/framework/http"
+import { PolicyOperation } from "@nedusa/framework/utils"
 import { DEFAULT_BATCH_ENDPOINTS_SIZE_LIMIT } from "../../../utils/middlewares"
 import { createBatchBody } from "../../utils/validators"
 import {

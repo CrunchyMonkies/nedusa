@@ -1,4 +1,4 @@
-import { kebabCase } from "@medusajs/framework/utils"
+import { kebabCase } from "@nedusa/framework/utils"
 
 export const productCategoriesData = [
   {

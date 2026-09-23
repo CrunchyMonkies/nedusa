@@ -1,10 +1,10 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import {
   adminHeaders,
   createAdminUser,
 } from "../../../helpers/create-admin-user"
-import { Modules } from "@medusajs/utils"
-import { updateRefundReasonsWorkflow } from "@medusajs/core-flows"
+import { Modules } from "@nedusa/utils"
+import { updateRefundReasonsWorkflow } from "@nedusa/core-flows"
 
 jest.setTimeout(30000)
 

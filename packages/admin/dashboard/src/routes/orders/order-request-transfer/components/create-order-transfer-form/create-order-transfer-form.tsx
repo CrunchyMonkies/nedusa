@@ -1,7 +1,7 @@
 import * as zod from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { HttpTypes } from "@medusajs/types"
-import { Button, Input, RadioGroup, toast } from "@medusajs/ui"
+import { HttpTypes } from "@nedusa/types"
+import { Button, Input, RadioGroup, toast } from "@nedusa/ui"
 import { useForm } from "react-hook-form"
 import { useTranslation } from "react-i18next"
 

@@ -1,4 +1,4 @@
-import { MedusaContainer } from "@medusajs/framework/types"
+import { MedusaContainer } from "@nedusa/framework/types"
 import {
   buildPriceListRules,
   buildPriceSetPricesForCore,
@@ -6,7 +6,7 @@ import {
   isPresent,
   MedusaError,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 export const fetchPriceList = async (
   id: string,

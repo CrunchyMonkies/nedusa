@@ -1,4 +1,4 @@
-import { Context, EventBusTypes } from "@medusajs/types"
+import { Context, EventBusTypes } from "@nedusa/types"
 
 /**
  * Helper function to compose and normalize a Message to be emitted by EventBus Module

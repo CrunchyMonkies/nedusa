@@ -1,5 +1,5 @@
-import { ArrowsPointingOut, CircleSliders } from "@medusajs/icons"
-import { clx } from "@medusajs/ui"
+import { ArrowsPointingOut, CircleSliders } from "@nedusa/icons"
+import { clx } from "@nedusa/ui"
 import { useEffect, useRef } from "react"
 
 export interface TieredPriceControlsProps {

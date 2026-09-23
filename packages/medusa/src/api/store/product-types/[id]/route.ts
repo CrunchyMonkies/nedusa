@@ -1,12 +1,12 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { StoreProductTypeResponse } from "@medusajs/framework/types"
+} from "@nedusa/framework/http"
+import { StoreProductTypeResponse } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   MedusaError,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 import { StoreProductTypeParamsType } from "../validators"
 import { publishedProductsContext } from "../../utils/published-products-context"

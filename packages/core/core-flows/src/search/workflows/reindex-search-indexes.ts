@@ -3,7 +3,7 @@ import {
   createWorkflow,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { reindexSearchIndexesStep } from "../steps/reindex-search-indexes"
 import { validateSearchIndexesExistStep } from "../steps/validate-search-indexes-exist"
 

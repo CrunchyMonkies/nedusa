@@ -1,6 +1,6 @@
-import { updateTaxLinesWorkflow } from "@medusajs/core-flows"
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
+import { updateTaxLinesWorkflow } from "@nedusa/core-flows"
+import { MedusaRequest, MedusaResponse } from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
 import { refetchCart } from "../../helpers"
 
 export const POST = async (

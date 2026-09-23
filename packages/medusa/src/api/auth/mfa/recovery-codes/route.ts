@@ -1,9 +1,9 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { IAuthModuleService } from "@medusajs/framework/types"
-import { AuthEvents, MedusaError, Modules } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { IAuthModuleService } from "@nedusa/framework/types"
+import { AuthEvents, MedusaError, Modules } from "@nedusa/framework/utils"
 import { AuthMfaGenerateRecoveryCodesRequestType } from "../../validators"
 
 /**

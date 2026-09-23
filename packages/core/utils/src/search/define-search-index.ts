@@ -1,4 +1,4 @@
-import { SearchTypes } from "@medusajs/types"
+import { SearchTypes } from "@nedusa/types"
 import {
   getCallerFilePath,
   isFileDisabled,
@@ -43,7 +43,7 @@ export function defineSearchIndex<
  *
  * The input type advertises `toFields()` structurally, so normalization
  * duck-types on it rather than checking for our own class — a schema built by
- * a duplicated copy of @medusajs/utils, or any object honoring the contract,
+ * a duplicated copy of @nedusa/utils, or any object honoring the contract,
  * still normalizes.
  */
 function normalizeFields(

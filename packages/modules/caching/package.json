@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/caching",
+  "name": "@nedusa/caching",
   "version": "2.21.1",
   "description": "Caching Module for Medusa",
   "main": "dist/index.js",
@@ -31,12 +31,12 @@
     "test:integration": "jest --passWithNoTests --forceExit --testPathPattern=\"integration-tests/__tests__/.*\\.ts\""
   },
   "devDependencies": {
-    "@medusajs/framework": "2.21.1",
-    "@medusajs/test-utils": "2.21.1",
+    "@nedusa/framework": "2.21.1",
+    "@nedusa/test-utils": "2.21.1",
     "awilix": "^8.0.1"
   },
   "peerDependencies": {
-    "@medusajs/framework": "2.21.1",
+    "@nedusa/framework": "2.21.1",
     "awilix": "^8.0.1"
   },
   "dependencies": {

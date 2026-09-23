@@ -1,5 +1,5 @@
-import { HttpTypes } from "@medusajs/types"
-import { createDataTableColumnHelper, StatusBadge } from "@medusajs/ui"
+import { HttpTypes } from "@nedusa/types"
+import { createDataTableColumnHelper, StatusBadge } from "@nedusa/ui"
 import { useTranslation } from "react-i18next"
 import { useMemo } from "react"
 

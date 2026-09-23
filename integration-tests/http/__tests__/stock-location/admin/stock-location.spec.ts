@@ -1,10 +1,10 @@
-import { Modules } from "@medusajs/utils"
+import { Modules } from "@nedusa/utils"
 import {
   adminHeaders,
   createAdminUser,
 } from "../../../../helpers/create-admin-user"
 
-const { medusaIntegrationTestRunner } = require("@medusajs/test-utils")
+const { medusaIntegrationTestRunner } = require("@nedusa/test-utils")
 
 jest.setTimeout(30000)
 

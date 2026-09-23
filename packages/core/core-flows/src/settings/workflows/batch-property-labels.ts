@@ -2,7 +2,7 @@ import {
   BatchWorkflowInput,
   BatchWorkflowOutput,
   SettingsTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   WorkflowData,
   WorkflowResponse,
@@ -10,7 +10,7 @@ import {
   parallelize,
   transform,
   when,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { createPropertyLabelsWorkflow } from "./create-property-label"
 import { deletePropertyLabelsWorkflow } from "./delete-property-labels"
 import { updatePropertyLabelsWorkflow } from "./update-property-label"

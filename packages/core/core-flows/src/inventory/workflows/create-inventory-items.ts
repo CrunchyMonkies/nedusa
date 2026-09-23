@@ -3,11 +3,11 @@ import {
   WorkflowResponse,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { createInventoryItemsStep } from "../steps"
 
-import type { InventoryTypes } from "@medusajs/framework/types"
-import { InventoryItemWorkflowEvents } from "@medusajs/framework/utils"
+import type { InventoryTypes } from "@nedusa/framework/types"
+import { InventoryItemWorkflowEvents } from "@nedusa/framework/utils"
 import { emitEventStep } from "../../common"
 import { createInventoryLevelsWorkflow } from "./create-inventory-levels"
 

@@ -2,7 +2,7 @@ import {
   FindParams,
   HttpTypes,
   SelectParams,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import { Client } from "../client.js"
 import { ClientHeaders } from "../types.js"
 

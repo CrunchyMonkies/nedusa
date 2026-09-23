@@ -1,4 +1,4 @@
-import { DALUtils } from "@medusajs/framework/utils"
+import { DALUtils } from "@nedusa/framework/utils"
 import { Return } from "@models"
 import { setFindMethods } from "../utils/base-repository-find"
 

@@ -1,10 +1,10 @@
-import { Logger, MedusaContainer } from "@medusajs/types"
+import { Logger, MedusaContainer } from "@nedusa/types"
 import {
   ContainerRegistrationKeys,
   dynamicImport,
   promiseAll,
   readDirRecursive,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import { Dirent } from "fs"
 import { access } from "fs/promises"
 import { join, parse } from "path"

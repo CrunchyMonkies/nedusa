@@ -79,7 +79,7 @@ let customized = false
  *
  * @example
  * ```tsx
- * import { defineSearchEntity } from "@medusajs/dashboard/lib"
+ * import { defineSearchEntity } from "@nedusa/dashboard/lib"
  *
  * defineSearchEntity("organization", {
  *   groupLabel: "Organizations",

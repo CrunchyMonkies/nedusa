@@ -4,14 +4,14 @@ import {
   InferEntityType,
   OrderChangeActionDTO,
   OrderDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ChangeActionType,
   createRawPropertiesFromBigNumber,
   decorateCartTotals,
   isDefined,
   MathBN,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { OrderCreditLine, OrderItem, OrderShippingMethod } from "@models"
 import { calculateOrderChange } from "./calculate-order-change"
 

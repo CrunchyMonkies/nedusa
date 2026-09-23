@@ -1,6 +1,6 @@
-import GithubAuthProvider from "@medusajs/auth-github"
+import GithubAuthProvider from "@nedusa/auth-github"
 
-export * from "@medusajs/auth-github"
+export * from "@nedusa/auth-github"
 
 export default GithubAuthProvider
-export const discoveryPath = require.resolve("@medusajs/auth-github")
+export const discoveryPath = require.resolve("@nedusa/auth-github")

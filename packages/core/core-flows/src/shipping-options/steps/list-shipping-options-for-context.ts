@@ -2,9 +2,9 @@ import {
   FindConfig,
   IFulfillmentModuleService,
   ShippingOptionDTO,
-} from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
+import { StepResponse, createStep } from "@nedusa/framework/workflows-sdk"
 
 /**
  * The data to retrieve the list of shipping options.

@@ -1,8 +1,8 @@
 import type {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework";
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils";
+} from "@nedusa/framework";
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils";
 import { IStoreCreditModuleService, PluginModule, StoreStoreCreditAccountResponse } from "../../../../types";
 
 export const GET = async (

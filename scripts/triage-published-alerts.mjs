@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Triage Dependabot alerts: keep only those whose vulnerable package is in the
-// PRODUCTION dependency closure of a published (@medusajs/*, private!==true) package.
+// PRODUCTION dependency closure of a published (@nedusa/*, private!==true) package.
 // Everything else in the root yarn.lock (integration-tests, build tooling like
 // redoc, devDependencies) is auto-dismissed as "not_used".
 //
@@ -107,7 +107,7 @@ if (DISMISS) {
     execSync(
       `gh api --method PATCH "/repos/${REPO}/dependabot/alerts/${a.number}" ` +
       `-f state=dismissed -f dismissed_reason=not_used ` +
-      `-f dismissed_comment="Not in the production dependency tree of any published @medusajs package (auto-triaged)."`,
+      `-f dismissed_comment="Not in the production dependency tree of any published @nedusa package (auto-triaged)."`,
       { stdio: "inherit" }
     )
   }

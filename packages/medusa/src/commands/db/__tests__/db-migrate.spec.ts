@@ -1,4 +1,4 @@
-import { MedusaContainer } from "@medusajs/types"
+import { MedusaContainer } from "@nedusa/types"
 import { initializeContainer } from "../../../loaders"
 import main from "../migrate"
 
@@ -8,7 +8,7 @@ jest.mock("../../../loaders", () => ({
   initializeContainer: jest.fn(),
 }))
 
-jest.mock("@medusajs/framework", () => ({
+jest.mock("@nedusa/framework", () => ({
   MEDUSA_CLI_PATH: "/mock/cli",
   MedusaAppLoader: jest.fn().mockImplementation(() => ({
     runModulesMigrations: jest.fn().mockResolvedValue(undefined),
@@ -18,13 +18,13 @@ jest.mock("@medusajs/framework", () => ({
   })),
 }))
 
-jest.mock("@medusajs/framework/links", () => ({
+jest.mock("@nedusa/framework/links", () => ({
   LinkLoader: jest.fn().mockImplementation(() => ({
     load: jest.fn().mockResolvedValue(undefined),
   })),
 }))
 
-jest.mock("@medusajs/framework/utils", () => ({
+jest.mock("@nedusa/framework/utils", () => ({
   ContainerRegistrationKeys: {
     LOGGER: "logger",
     CONFIG_MODULE: "configModule",
@@ -220,7 +220,7 @@ describe("db:migrate – main", () => {
         buildContainer({ logger: mockLogger })
       )
 
-      const { MedusaAppLoader } = require("@medusajs/framework")
+      const { MedusaAppLoader } = require("@nedusa/framework")
       const migrationError = new Error("migration failed")
       MedusaAppLoader.mockImplementation(() => ({
         runModulesMigrations: jest.fn().mockRejectedValue(migrationError),

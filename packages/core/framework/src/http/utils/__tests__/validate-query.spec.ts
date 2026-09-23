@@ -1,5 +1,5 @@
-import { z } from "@medusajs/deps/zod"
-import { QueryConfig } from "@medusajs/types"
+import { z } from "@nedusa/deps/zod"
+import { QueryConfig } from "@nedusa/types"
 
 import { MedusaRequest, MedusaResponse } from "../../types"
 import { validateAndTransformQuery } from "../validate-query"

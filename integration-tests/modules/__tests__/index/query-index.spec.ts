@@ -1,14 +1,14 @@
-import CustomerModule from "@medusajs/customer"
-import ProductModule from "@medusajs/product"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { RemoteQueryFunction } from "@medusajs/types"
+import CustomerModule from "@nedusa/customer"
+import ProductModule from "@nedusa/product"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { RemoteQueryFunction } from "@nedusa/types"
 import {
   ContainerRegistrationKeys,
   defaultCurrencies,
   defineLink,
   Modules,
   promiseAll,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import {
   adminHeaders,
   createAdminUser,

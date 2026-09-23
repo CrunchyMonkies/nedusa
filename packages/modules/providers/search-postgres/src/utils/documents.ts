@@ -1,4 +1,4 @@
-import { SearchTypes } from "@medusajs/framework/types"
+import { SearchTypes } from "@nedusa/framework/types"
 import {
   extractPrimaryKeyFilter,
   MedusaError,
@@ -7,11 +7,11 @@ import {
   searchValueToBoolean,
   searchValueToNumber,
   setDocumentPath,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { IndexPlan, PlannedField, weightLabel } from "./plan"
 
 // Path flattening, projection and primary-key extraction live in
-// @medusajs/utils so every provider collapses documents identically.
+// @nedusa/utils so every provider collapses documents identically.
 export { extractPrimaryKeyFilter, projectDocument }
 
 function fail(message: string): never {

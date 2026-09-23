@@ -7,7 +7,7 @@ import {
   AdminPaymentCollection,
   AdminRefund,
   AdminRefundReason,
-} from "@medusajs/types"
+} from "@nedusa/types"
 
 const DEFAULT_PROPERTIES = [
   "id",

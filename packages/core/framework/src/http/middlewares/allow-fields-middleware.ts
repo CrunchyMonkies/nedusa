@@ -11,7 +11,7 @@ import { MedusaRequest, MedusaResponse } from "../types"
  * @param fields - The fields and relations to allow. Accepts both single fields and arrays of fields.
  *
  * @example
- * import { allowFields, defineMiddlewares } from "@medusajs/framework/http"
+ * import { allowFields, defineMiddlewares } from "@nedusa/framework/http"
  *
  * export default defineMiddlewares({
  *   routes: [

@@ -2,8 +2,8 @@ import {
   WorkflowData,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
-import type { WorkflowTypes } from "@medusajs/framework/types"
+} from "@nedusa/framework/workflows-sdk"
+import type { WorkflowTypes } from "@nedusa/framework/types"
 import { exportProductsStep } from "../steps"
 import { useQueryGraphStep } from "../../common"
 import { notifyOnFailureStep, sendNotificationsStep } from "../../notification"

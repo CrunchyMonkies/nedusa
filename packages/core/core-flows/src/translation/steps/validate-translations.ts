@@ -2,9 +2,9 @@ import {
   ContainerRegistrationKeys,
   MedusaError,
   MedusaErrorTypes,
-} from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
-import { CreateTranslationDTO, UpdateTranslationDataDTO, UpdateTranslationDTO } from "@medusajs/types"
+} from "@nedusa/framework/utils"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
+import { CreateTranslationDTO, UpdateTranslationDataDTO, UpdateTranslationDTO } from "@nedusa/types"
 
 export const validateTranslationsStepId = "validate-translations"
 

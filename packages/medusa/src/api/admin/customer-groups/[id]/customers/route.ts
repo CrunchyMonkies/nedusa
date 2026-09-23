@@ -1,10 +1,10 @@
-import { linkCustomersToCustomerGroupWorkflow } from "@medusajs/core-flows"
+import { linkCustomersToCustomerGroupWorkflow } from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@nedusa/framework/types"
 import { refetchCustomerGroup } from "../../helpers"
 
 export const POST = async (

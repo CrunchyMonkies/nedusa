@@ -1,4 +1,4 @@
-import { ContainerRegistrationKeys, Modules } from "@medusajs/utils"
+import { ContainerRegistrationKeys, Modules } from "@nedusa/utils"
 import { NextFunction } from "express"
 import { sign } from "jsonwebtoken"
 import { authenticate, AuthType } from "../authenticate-middleware"

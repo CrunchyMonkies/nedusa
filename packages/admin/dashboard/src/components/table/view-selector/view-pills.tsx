@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
-import { Badge, usePrompt, toast, DropdownMenu } from "@medusajs/ui"
-import { Trash, PencilSquare, ArrowUturnLeft } from "@medusajs/icons"
+import { Badge, usePrompt, toast, DropdownMenu } from "@nedusa/ui"
+import { Trash, PencilSquare, ArrowUturnLeft } from "@nedusa/icons"
 import {
   useViewConfigurations,
   useViewConfiguration,

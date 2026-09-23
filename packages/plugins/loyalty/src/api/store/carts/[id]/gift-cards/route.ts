@@ -1,9 +1,9 @@
 import type {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework";
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils";
-import { HttpTypes } from "@medusajs/framework/types";
+} from "@nedusa/framework";
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils";
+import { HttpTypes } from "@nedusa/framework/types";
 import { addGiftCardToCartWorkflow } from "../../../../../workflows/carts/workflows/add-gift-card-to-cart";
 import { removeGiftCardFromCartWorkflow } from "../../../../../workflows/carts/workflows/remove-gift-cart-from-cart";
 import { StoreAddGiftCardToCart, StoreRemoveGiftCardFromCart } from "../../../../../types";

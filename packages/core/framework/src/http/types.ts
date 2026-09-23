@@ -3,14 +3,14 @@ import type {
   ZodObject,
   ZodOptional,
   ZodRawShape,
-} from "@medusajs/deps/zod"
+} from "@nedusa/deps/zod"
 import type { NextFunction, Request, Response } from "express"
 
 import {
   FindConfig,
   MedusaPricingContext,
   RequestQueryFields,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import { MedusaContainer } from "../container"
 import { PolicyAction } from "./middlewares/check-permissions"
 import { RestrictedFields } from "./utils/restricted-fields"

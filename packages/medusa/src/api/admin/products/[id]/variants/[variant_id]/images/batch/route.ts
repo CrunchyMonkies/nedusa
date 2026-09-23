@@ -1,9 +1,9 @@
-import { batchVariantImagesWorkflow } from "@medusajs/core-flows"
+import { batchVariantImagesWorkflow } from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
+} from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
 
 /**
  * @since 2.11.2

@@ -7,14 +7,14 @@ import {
   LineItemTaxLineDTO,
   ProductDTO,
   ProductVariantDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   isDefined,
   isPresent,
   MathBN,
   MedusaError,
   PriceListType,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 interface PrepareItemLineItemInput {
   title?: string

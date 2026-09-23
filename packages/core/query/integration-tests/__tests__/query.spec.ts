@@ -1,4 +1,4 @@
-import { QueryContext } from "@medusajs/utils"
+import { QueryContext } from "@nedusa/utils"
 import { integrationData } from "../__fixtures__/data"
 import { setup, TestModules } from "../__fixtures__/setup"
 

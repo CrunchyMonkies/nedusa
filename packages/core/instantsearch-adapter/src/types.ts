@@ -1,6 +1,6 @@
 /**
  * Wire types for Medusa Search HTTP requests and InstantSearch's search client.
- * Kept local so the adapter has no runtime dependency on `@medusajs/types`.
+ * Kept local so the adapter has no runtime dependency on `@nedusa/types`.
  */
 
 export type SearchFilterValue = string | number | boolean | null

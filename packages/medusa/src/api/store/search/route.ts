@@ -2,15 +2,15 @@ import {
   ConfiguredStoreSearch,
   MedusaResponse,
   MedusaStoreRequest,
-} from "@medusajs/framework/http"
-import { HttpTypes, Logger, SearchTypes } from "@medusajs/framework/types"
+} from "@nedusa/framework/http"
+import { HttpTypes, Logger, SearchTypes } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   MedusaError,
   Modules,
   ProductStatus,
   isPresent,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 const PRODUCT_ENTITY = "product"
 const STATUS_FIELD = "status"

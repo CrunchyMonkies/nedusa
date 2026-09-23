@@ -3,8 +3,8 @@ import {
   PosthogAnalyticsServiceOptions,
   ProviderIdentifyAnalyticsEventDTO,
   ProviderTrackAnalyticsEventDTO,
-} from "@medusajs/framework/types"
-import { AbstractAnalyticsProviderService } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { AbstractAnalyticsProviderService } from "@nedusa/framework/utils"
 import { PostHog } from "posthog-node"
 
 type InjectedDependencies = {

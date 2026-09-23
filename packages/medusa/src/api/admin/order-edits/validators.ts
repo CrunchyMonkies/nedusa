@@ -1,4 +1,4 @@
-import { z } from "@medusajs/framework/zod"
+import { z } from "@nedusa/framework/zod"
 
 export const AdminPostOrderEditsReqSchema = z.object({
   order_id: z.string(),

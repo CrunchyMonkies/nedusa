@@ -1,5 +1,5 @@
-import { Container, Text } from "@medusajs/ui";
-import { CreditCard, MinusMini } from "@medusajs/icons";
+import { Container, Text } from "@nedusa/ui";
+import { CreditCard, MinusMini } from "@nedusa/icons";
 
 import { AdminStoreCreditAccount } from "../../../../../types";
 import DisplayId from "../../../../components/display-id";

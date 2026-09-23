@@ -1,10 +1,10 @@
-import { deleteSearchIndexWorkflow } from "@medusajs/core-flows"
+import { deleteSearchIndexWorkflow } from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
-import { MedusaError, Modules } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
+import { MedusaError, Modules } from "@nedusa/framework/utils"
 
 /**
  * Delete a search index and everything built for it.

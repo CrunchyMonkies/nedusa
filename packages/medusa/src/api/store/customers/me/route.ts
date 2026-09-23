@@ -1,11 +1,11 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import { refetchCustomer } from "../helpers"
-import { MedusaError } from "@medusajs/framework/utils"
-import { updateCustomersWorkflow } from "@medusajs/core-flows"
-import { HttpTypes } from "@medusajs/framework/types"
+import { MedusaError } from "@nedusa/framework/utils"
+import { updateCustomersWorkflow } from "@nedusa/core-flows"
+import { HttpTypes } from "@nedusa/framework/types"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<HttpTypes.StoreGetCustomerParams>,

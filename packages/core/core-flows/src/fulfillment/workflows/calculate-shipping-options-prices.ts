@@ -1,4 +1,4 @@
-import type { FulfillmentWorkflow } from "@medusajs/framework/types"
+import type { FulfillmentWorkflow } from "@nedusa/framework/types"
 import {
   Hook,
   createHook,
@@ -6,7 +6,7 @@ import {
   transform,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { calculateShippingOptionsPricesStep } from "../steps"
 import { useQueryGraphStep } from "../../common"
 import { cartFieldsForCalculateShippingOptionsPrices } from "../../cart/utils/fields"
@@ -67,8 +67,8 @@ type SetCalculatedShippingPricingContextHook = Hook<
  * For example, you can consume the hook to pass a negotiated carrier contract to the provider:
  *
  * ```ts
- * import { calculateShippingOptionsPricesWorkflow } from "@medusajs/medusa/core-flows"
- * import { StepResponse } from "@medusajs/workflows-sdk"
+ * import { calculateShippingOptionsPricesWorkflow } from "@nedusa/medusa/core-flows"
+ * import { StepResponse } from "@nedusa/workflows-sdk"
  *
  * calculateShippingOptionsPricesWorkflow.hooks.setCalculatedShippingPricingContext(
  *   async ({ input }, { container }) => {

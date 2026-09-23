@@ -1,10 +1,10 @@
 import {
   MedusaResponse,
   AuthenticatedMedusaRequest,
-} from "@medusajs/framework/http"
-import type { HttpTypes } from "@medusajs/framework/types"
+} from "@nedusa/framework/http"
+import type { HttpTypes } from "@nedusa/framework/types"
 import type { AdminImportProductsType } from "../validators"
-import { importProductsAsChunksWorkflow } from "@medusajs/core-flows"
+import { importProductsAsChunksWorkflow } from "@nedusa/core-flows"
 
 /**
  * @since 2.8.5

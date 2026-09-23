@@ -5,24 +5,24 @@ type MessageIds = "useFrameworkEntrypoint" | "noInternalImport"
 
 /**
  * Deprecated standalone packages whose contents moved into
- * `@medusajs/framework/*` subpaths. Importing them still works today but is
+ * `@nedusa/framework/*` subpaths. Importing them still works today but is
  * discouraged — the framework entry points are the supported surface.
  */
 const OLD_PACKAGE_REWRITES: Record<string, string> = {
-  "@medusajs/utils": "@medusajs/framework/utils",
-  "@medusajs/types": "@medusajs/framework/types",
-  "@medusajs/workflows-sdk": "@medusajs/framework/workflows-sdk",
-  "@medusajs/modules-sdk": "@medusajs/framework/modules-sdk",
-  "@medusajs/orchestration": "@medusajs/framework/orchestration",
+  "@nedusa/utils": "@nedusa/framework/utils",
+  "@nedusa/types": "@nedusa/framework/types",
+  "@nedusa/workflows-sdk": "@nedusa/framework/workflows-sdk",
+  "@nedusa/modules-sdk": "@nedusa/framework/modules-sdk",
+  "@nedusa/orchestration": "@nedusa/framework/orchestration",
 }
 
 /**
- * Deep import into a `@medusajs/*` package's compiled build output, e.g.
- * `@medusajs/medusa/dist/...` or `@medusajs/framework/dist/...`. Requires a
+ * Deep import into a `@nedusa/*` package's compiled build output, e.g.
+ * `@nedusa/medusa/dist/...` or `@nedusa/framework/dist/...`. Requires a
  * path segment that is exactly `dist` so package names like
- * `@medusajs/some-dist-thing` aren't matched.
+ * `@nedusa/some-dist-thing` aren't matched.
  */
-const MEDUSA_DIST_IMPORT = /^@medusajs\/[^/]+\/(?:[^/]+\/)*dist(?:\/|$)/
+const MEDUSA_DIST_IMPORT = /^@nedusa\/[^/]+\/(?:[^/]+\/)*dist(?:\/|$)/
 
 function check(
   context: Parameters<Parameters<typeof createRule>[0]["create"]>[0],
@@ -65,13 +65,13 @@ export const rule = createRule<[], MessageIds>({
     type: "suggestion",
     docs: {
       description:
-        "Use the public `@medusajs/framework/*` entry points; don't import from a package's internal `dist/` build output or from deprecated standalone packages.",
+        "Use the public `@nedusa/framework/*` entry points; don't import from a package's internal `dist/` build output or from deprecated standalone packages.",
     },
     messages: {
       useFrameworkEntrypoint:
         "Import from `{{ replacement }}` instead of the deprecated `{{ source }}` package.",
       noInternalImport:
-        "Don't import from internal build output `{{ source }}`. Use a public `@medusajs/framework/*` entry point instead.",
+        "Don't import from internal build output `{{ source }}`. Use a public `@nedusa/framework/*` entry point instead.",
     },
     fixable: "code",
     schema: [],

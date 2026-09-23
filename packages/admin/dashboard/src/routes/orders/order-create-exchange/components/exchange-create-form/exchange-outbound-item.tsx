@@ -1,6 +1,6 @@
-import { ReceiptPercent, XCircle } from "@medusajs/icons"
-import { AdminOrderLineItem, HttpTypes } from "@medusajs/types"
-import { Input, Text, Tooltip } from "@medusajs/ui"
+import { ReceiptPercent, XCircle } from "@nedusa/icons"
+import { AdminOrderLineItem, HttpTypes } from "@nedusa/types"
+import { Input, Text, Tooltip } from "@nedusa/ui"
 import { UseFormReturn } from "react-hook-form"
 import { useTranslation } from "react-i18next"
 

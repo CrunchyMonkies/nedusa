@@ -1,5 +1,5 @@
-import { Logger } from "@medusajs/types"
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+import { Logger } from "@nedusa/types"
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils"
 import { initializeContainer } from "../../loaders"
 import { dbCreate } from "./create"
 import { migrate } from "./migrate"

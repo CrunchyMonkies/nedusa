@@ -1,14 +1,14 @@
 import {
   ContainerRegistrationKeys,
   promiseAll,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   StepResponse,
   WorkflowResponse,
   createStep,
   createWorkflow,
-} from "@medusajs/framework/workflows-sdk"
-import { ExecArgs } from "@medusajs/types"
+} from "@nedusa/framework/workflows-sdk"
+import { ExecArgs } from "@nedusa/types"
 
 type InventoryLevelMismatch = {
   id: string

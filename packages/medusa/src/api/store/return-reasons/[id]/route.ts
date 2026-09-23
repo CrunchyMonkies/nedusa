@@ -1,9 +1,9 @@
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
+import { MedusaRequest, MedusaResponse } from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 export const GET = async (
   req: MedusaRequest<HttpTypes.StoreReturnReasonParams>,

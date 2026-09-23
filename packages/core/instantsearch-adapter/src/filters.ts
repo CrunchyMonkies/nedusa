@@ -57,7 +57,7 @@ export function parseFacetFilter(facetFilter: string): {
   const separator = facetFilter.indexOf(":")
   if (separator <= 0) {
     throw new Error(
-      `@medusajs/instantsearch-adapter: invalid facet filter "${facetFilter}"`
+      `@nedusa/instantsearch-adapter: invalid facet filter "${facetFilter}"`
     )
   }
 
@@ -91,7 +91,7 @@ function parseNumericFilter(numericFilter: string): SearchFilters {
   }
 
   throw new Error(
-    `@medusajs/instantsearch-adapter: invalid numeric filter "${numericFilter}"`
+    `@nedusa/instantsearch-adapter: invalid numeric filter "${numericFilter}"`
   )
 }
 

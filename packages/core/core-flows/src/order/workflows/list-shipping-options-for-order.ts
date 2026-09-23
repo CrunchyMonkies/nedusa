@@ -3,8 +3,8 @@ import {
   transform,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
-import type { ListShippingOptionsForOrderWorkflowInput } from "@medusajs/framework/types"
+} from "@nedusa/framework/workflows-sdk"
+import type { ListShippingOptionsForOrderWorkflowInput } from "@nedusa/framework/types"
 
 import { useQueryGraphStep, validatePresenceOfStep } from "../../common"
 import { salesChannelStockLocationCacheTags } from "../../common/utils/fields"

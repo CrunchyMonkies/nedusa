@@ -1,5 +1,5 @@
-import { CreateRefundReasonDTO, RefundReasonDTO, } from "@medusajs/framework/types"
-import { createWorkflow, WorkflowData, WorkflowResponse, } from "@medusajs/framework/workflows-sdk"
+import { CreateRefundReasonDTO, RefundReasonDTO, } from "@nedusa/framework/types"
+import { createWorkflow, WorkflowData, WorkflowResponse, } from "@nedusa/framework/workflows-sdk"
 import { createRefundReasonStep } from "../steps/create-refund-reasons"
 
 /**

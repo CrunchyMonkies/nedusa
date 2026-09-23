@@ -3,7 +3,7 @@ import {
   Context,
   FindConfig,
   IModuleService,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import {
   LoyaltyPluginOptions,
   ModuleCreateGiftCard,

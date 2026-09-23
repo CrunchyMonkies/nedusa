@@ -5,13 +5,13 @@ import {
   IAuthModuleService,
   MedusaContainer,
   ProjectConfigOptions,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   FeatureFlag,
   generateJwtToken,
   Modules,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { type Secret } from "jsonwebtoken"
 import RbacFeatureFlag from "../../../feature-flags/rbac"
 import { validateVerification } from "./validate-verification"

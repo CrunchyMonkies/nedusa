@@ -1,4 +1,4 @@
-import { Migration } from "@medusajs/framework/mikro-orm/migrations"
+import { Migration } from "@nedusa/framework/mikro-orm/migrations"
 
 /**
  * Enables portable search extensions and creates the catalog table.

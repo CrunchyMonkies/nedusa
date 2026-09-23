@@ -1,12 +1,12 @@
-import { logger } from "@medusajs/framework/logger"
-import { CustomDBMigrator } from "@medusajs/framework/utils"
+import { logger } from "@nedusa/framework/logger"
+import { CustomDBMigrator } from "@nedusa/framework/utils"
 
 import {
   defineConfig,
   MikroORM,
   Options,
   SqlEntityManager,
-} from "@medusajs/framework/mikro-orm/postgresql"
+} from "@nedusa/framework/mikro-orm/postgresql"
 import {
   createDatabase,
   createPostgresDatabaseTemplate,
@@ -16,7 +16,7 @@ import {
   formatError,
   restorePostgresDatabaseFromTemplate,
 } from "./medusa-test-runner-utils"
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils"
 
 const DB_HOST = process.env.DB_HOST ?? "localhost"
 const DB_USERNAME = process.env.DB_USERNAME ?? ""
@@ -460,7 +460,7 @@ async function unregisterFrameworkPgConnection(pgConnection: any) {
     return
   }
 
-  const { container } = await import("@medusajs/framework")
+  const { container } = await import("@nedusa/framework")
 
   if (!container.hasRegistration(ContainerRegistrationKeys.PG_CONNECTION)) {
     return

@@ -1,4 +1,4 @@
-import { ChangeActionType, OrderChangeStatus } from "@medusajs/framework/utils"
+import { ChangeActionType, OrderChangeStatus } from "@nedusa/framework/utils"
 import {
   createHook,
   createWorkflow,
@@ -6,12 +6,12 @@ import {
   when,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import type {
   OrderChangeDTO,
   OrderDTO,
   PromotionDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   getActionsToComputeFromPromotionsStep,
   prepareAdjustmentsFromPromotionActionsStep,

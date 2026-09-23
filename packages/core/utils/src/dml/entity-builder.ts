@@ -2,7 +2,7 @@ import {
   DMLSchema,
   IDmlEntityConfig,
   RelationshipOptions,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import { DmlEntity, DMLEntitySchemaBuilder } from "./entity"
 import { createBigNumberProperties } from "./helpers/entity-builder/create-big-number-properties"
 import { createDefaultProperties } from "./helpers/entity-builder/create-default-properties"
@@ -113,7 +113,7 @@ export class EntityBuilder {
    * @param {Schema} schema - The schema of the data model's properties.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const MyCustom = model.define("my_custom", {
    *   id: model.id(),
@@ -142,7 +142,7 @@ export class EntityBuilder {
    * primary key.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const User = model.define("User", {
    *   id: model.id().primaryKey(),
@@ -161,7 +161,7 @@ export class EntityBuilder {
    * This method defines a string property.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const MyCustom = model.define("my_custom", {
    *   name: model.text(),
@@ -180,7 +180,7 @@ export class EntityBuilder {
    * This method defines a boolean property.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const MyCustom = model.define("my_custom", {
    *   hasAccount: model.boolean(),
@@ -199,7 +199,7 @@ export class EntityBuilder {
    * This method defines a number property.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const MyCustom = model.define("my_custom", {
    *   age: model.number(),
@@ -218,7 +218,7 @@ export class EntityBuilder {
    * This method defines a number property that expects large numbers, such as prices.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const MyCustom = model.define("my_custom", {
    *   price: model.bigNumber(),
@@ -245,7 +245,7 @@ export class EntityBuilder {
    * @since 2.1.2
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const MyCustom = model.define("tax", {
    *   tax_rate: model.float(),
@@ -264,7 +264,7 @@ export class EntityBuilder {
    * This method defines an autoincrement property.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const MyCustom = model.define("my_custom", {
    *   serial_id: model.autoincrement(),
@@ -284,7 +284,7 @@ export class EntityBuilder {
    * This method defines an array of strings property.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const MyCustom = model.define("my_custom", {
    *   names: model.array(),
@@ -303,7 +303,7 @@ export class EntityBuilder {
    * This method defines a timestamp property.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const MyCustom = model.define("my_custom", {
    *   date_of_birth: model.dateTime(),
@@ -330,7 +330,7 @@ export class EntityBuilder {
    * value in a `text[]` column.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const MyCustom = model.define("my_custom", {
    *   metadata: model.json(),
@@ -354,7 +354,7 @@ export class EntityBuilder {
    * @param {Values[]} values - An array of possible values.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const MyCustom = model.define("my_custom", {
    *   color: model.enum(["black", "white"]),
@@ -386,7 +386,7 @@ export class EntityBuilder {
    * @param {RelationshipOptions} options - The relationship's options.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const User = model.define("user", {
    *   id: model.id(),
@@ -436,7 +436,7 @@ export class EntityBuilder {
    * @param {RelationshipOptions} options - The relationship's options.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const Product = model.define("product", {
    *   id: model.id(),
@@ -470,7 +470,7 @@ export class EntityBuilder {
    * @param {RelationshipOptions} options - The relationship's options.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const Store = model.define("store", {
    *   id: model.id(),
@@ -497,7 +497,7 @@ export class EntityBuilder {
    * @param {RelationshipOptions} options - The relationship's options.
    *
    * @example
-   * import { model } from "@medusajs/framework/utils"
+   * import { model } from "@nedusa/framework/utils"
    *
    * const Order = model.define("order", {
    *   id: model.id(),

@@ -6,11 +6,11 @@ import {
   ICacheService,
   Logger,
   OidcAuthProviderOptions,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   AbstractAuthModuleProvider,
   MedusaError,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { OidcEngine } from "../engine"
 import { assertSecureUrl } from "../utils"
 

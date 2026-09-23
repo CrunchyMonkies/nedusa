@@ -3,15 +3,15 @@ import type {
   OrderDTO,
   OrderPreviewDTO,
   OrderWorkflow,
-} from "@medusajs/framework/types"
-import { ChangeActionType, MedusaError } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { ChangeActionType, MedusaError } from "@nedusa/framework/utils"
 import {
   WorkflowData,
   WorkflowResponse,
   createStep,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 
 import { useQueryGraphStep } from "../../../common"
 import { findOrCreateCustomerStep } from "../../../cart"

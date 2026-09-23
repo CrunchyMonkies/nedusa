@@ -1,5 +1,5 @@
-import { validateAndTransformBody } from "@medusajs/framework"
-import { authenticate, MiddlewareRoute } from "@medusajs/framework/http"
+import { validateAndTransformBody } from "@nedusa/framework"
+import { authenticate, MiddlewareRoute } from "@nedusa/framework/http"
 import { StoreSearch } from "./validators"
 
 export const storeSearchRoutesMiddlewares: MiddlewareRoute[] = [

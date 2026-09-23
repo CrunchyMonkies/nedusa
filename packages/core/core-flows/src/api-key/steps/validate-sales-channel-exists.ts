@@ -1,10 +1,10 @@
-import type { ISalesChannelModuleService } from "@medusajs/framework/types"
+import type { ISalesChannelModuleService } from "@nedusa/framework/types"
 import {
   MedusaError,
   Modules,
   arrayDifference,
-} from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/utils"
+import { StepResponse, createStep } from "@nedusa/framework/workflows-sdk"
 
 /**
  * The data to validate that the sales channels exist.

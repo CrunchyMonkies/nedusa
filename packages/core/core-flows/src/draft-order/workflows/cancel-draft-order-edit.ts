@@ -2,15 +2,15 @@ import {
   ChangeActionType,
   OrderChangeStatus,
   PromotionActions,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   createWorkflow,
   parallelize,
   transform,
   when,
   WorkflowData,
-} from "@medusajs/framework/workflows-sdk"
-import type { OrderChangeDTO, OrderDTO } from "@medusajs/framework/types"
+} from "@nedusa/framework/workflows-sdk"
+import type { OrderChangeDTO, OrderDTO } from "@nedusa/framework/types"
 import { useRemoteQueryStep } from "../../common"
 import { deleteOrderChangesStep, deleteOrderShippingMethods } from "../../order"
 import { restoreDraftOrderShippingMethodsStep } from "../steps/restore-draft-order-shipping-methods"

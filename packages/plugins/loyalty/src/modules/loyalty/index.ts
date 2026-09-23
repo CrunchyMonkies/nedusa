@@ -1,4 +1,4 @@
-import { Module } from "@medusajs/framework/utils";
+import { Module } from "@nedusa/framework/utils";
 import { PluginModule } from "../../types";
 import LoyaltyModuleService from "./service";
 

@@ -1,4 +1,4 @@
-import { SearchSchema } from "@medusajs/types"
+import { SearchSchema } from "@nedusa/types"
 import { BooleanProperty } from "./properties/boolean"
 import { DateProperty } from "./properties/date"
 import { FloatProperty } from "./properties/float"
@@ -75,7 +75,7 @@ export class SearchBuilder {
  * Singleton used to define search index field schemas:
  *
  * ```ts
- * import { defineSearchIndex, search } from "@medusajs/framework/utils"
+ * import { defineSearchIndex, search } from "@nedusa/framework/utils"
  *
  * defineSearchIndex({
  *   name: "product",

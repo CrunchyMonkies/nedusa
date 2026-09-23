@@ -1,5 +1,5 @@
-import { dynamicImport, PolicyResource } from "@medusajs/framework/utils"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { dynamicImport, PolicyResource } from "@nedusa/framework/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import { readdir } from "fs/promises"
 import { isObject } from "lodash"
 import { join } from "path"

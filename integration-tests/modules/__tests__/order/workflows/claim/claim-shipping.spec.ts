@@ -5,14 +5,14 @@ import {
   orderClaimAddNewItemWorkflow,
   orderClaimRequestItemReturnWorkflow,
   updateClaimAddItemWorkflow,
-} from "@medusajs/core-flows"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { IFulfillmentModuleService, OrderDTO } from "@medusajs/types"
+} from "@nedusa/core-flows"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { IFulfillmentModuleService, OrderDTO } from "@nedusa/types"
 import {
   ContainerRegistrationKeys,
   Modules,
   remoteQueryObjectFromString,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import { createOrderFixture, prepareDataFixtures } from "../__fixtures__"
 jest.setTimeout(50000)
 

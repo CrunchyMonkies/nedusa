@@ -1,5 +1,5 @@
-import { ILockingProvider } from "@medusajs/framework/types"
-import { isDefined } from "@medusajs/framework/utils"
+import { ILockingProvider } from "@nedusa/framework/types"
+import { isDefined } from "@nedusa/framework/utils"
 import { randomUUID } from "node:crypto"
 
 type LockInfo = {

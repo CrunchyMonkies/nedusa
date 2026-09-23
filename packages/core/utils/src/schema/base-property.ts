@@ -1,4 +1,4 @@
-import { SchemaPropertyMetadata, SchemaPropertyType } from "@medusajs/types"
+import { SchemaPropertyMetadata, SchemaPropertyType } from "@nedusa/types"
 
 /**
  * Shared parse/type plumbing for schema properties used by DML, the search

@@ -2,7 +2,7 @@ import {
   Context,
   CreateOrderChangeActionDTO,
   OrderTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ChangeActionType,
   OrderChangeType,
@@ -11,7 +11,7 @@ import {
   isString,
   promiseAll,
   toMikroORMEntity,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { OrderExchange, OrderExchangeItem, Return, ReturnItem } from "@models"
 
 function createExchangeAndReturnEntities(em, data, order) {

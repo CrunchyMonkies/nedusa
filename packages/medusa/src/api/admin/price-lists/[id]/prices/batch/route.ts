@@ -1,16 +1,16 @@
-import { promiseAll } from "@medusajs/framework/utils"
+import { promiseAll } from "@nedusa/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import { listPrices } from "../../../queries"
 import { adminPriceListPriceQueryFields } from "../../../query-config"
-import { BatchMethodRequest, HttpTypes } from "@medusajs/framework/types"
+import { BatchMethodRequest, HttpTypes } from "@nedusa/framework/types"
 import {
   AdminCreatePriceListPriceType,
   AdminUpdatePriceListPriceType,
 } from "../../../validators"
-import { batchPriceListPricesWorkflow } from "@medusajs/core-flows"
+import { batchPriceListPricesWorkflow } from "@nedusa/core-flows"
 
 export const POST = async (
   req: AuthenticatedMedusaRequest<

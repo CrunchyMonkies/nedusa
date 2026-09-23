@@ -1,5 +1,5 @@
-import { JoinerArgument, RemoteJoinerQuery } from "@medusajs/types"
-import { isObject } from "@medusajs/utils"
+import { JoinerArgument, RemoteJoinerQuery } from "@nedusa/types"
+import { isObject } from "@nedusa/utils"
 import { GraphCatalog } from "../catalog"
 import { getNestedItems } from "../helpers"
 import {

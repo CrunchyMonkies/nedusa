@@ -1,5 +1,5 @@
-import { Compiler } from "@medusajs/framework/build-tools"
-import { logger } from "@medusajs/framework/logger"
+import { Compiler } from "@nedusa/framework/build-tools"
+import { logger } from "@nedusa/framework/logger"
 import * as swcCore from "@swc/core"
 import { execFile } from "child_process"
 import path from "path"

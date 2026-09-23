@@ -5,7 +5,7 @@ import {
   CustomFieldModel,
   InjectionZone,
   NestedRoutePosition,
-} from "@medusajs/admin-shared"
+} from "@nedusa/admin-shared"
 import {
   LayoutDefinition,
   SectionWidgetMap,

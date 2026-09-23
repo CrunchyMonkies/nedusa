@@ -3,8 +3,8 @@ import {
   Logger,
   ProviderIdentifyAnalyticsEventDTO,
   ProviderTrackAnalyticsEventDTO,
-} from "@medusajs/framework/types"
-import { AbstractAnalyticsProviderService } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { AbstractAnalyticsProviderService } from "@nedusa/framework/utils"
 
 type InjectedDependencies = {
   logger: Logger

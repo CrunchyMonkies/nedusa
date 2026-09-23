@@ -1,6 +1,6 @@
-import { Modules } from "@medusajs/utils"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
-import { SettingsTypes } from "@medusajs/types"
+import { Modules } from "@nedusa/utils"
+import { moduleIntegrationTestRunner } from "@nedusa/test-utils"
+import { SettingsTypes } from "@nedusa/types"
 import { getTestJoinerConfigs } from "../__fixtures__/joiner-configs"
 import {
   getEntityOverrideRegistry,
@@ -15,7 +15,7 @@ moduleIntegrationTestRunner<SettingsTypes.ISettingsModuleService>({
   moduleName: Modules.SETTINGS,
   hooks: {
     beforeModuleInit: async () => {
-      const { MedusaModule } = await import("@medusajs/framework/modules-sdk")
+      const { MedusaModule } = await import("@nedusa/framework/modules-sdk")
 
       for (const config of getTestJoinerConfigs()) {
         if (config.serviceName && !config.isReadOnlyLink) {

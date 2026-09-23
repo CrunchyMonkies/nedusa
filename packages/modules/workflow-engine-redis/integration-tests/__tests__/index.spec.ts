@@ -1,4 +1,4 @@
-import { asValue } from "@medusajs/framework/awilix"
+import { asValue } from "@nedusa/framework/awilix"
 import {
   DistributedTransactionType,
   TransactionState,
@@ -6,13 +6,13 @@ import {
   TransactionStepTimeoutError,
   TransactionTimeoutError,
   WorkflowManager,
-} from "@medusajs/framework/orchestration"
+} from "@nedusa/framework/orchestration"
 import {
   IWorkflowEngineService,
   Logger,
   MedusaContainer,
   RemoteQueryFunction,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   Module,
@@ -20,14 +20,14 @@ import {
   promiseAll,
   TransactionHandlerType,
   TransactionStepState,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   createStep,
   createWorkflow,
   StepResponse,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@nedusa/framework/workflows-sdk"
+import { moduleIntegrationTestRunner } from "@nedusa/test-utils"
 import { setTimeout as setTimeoutSync } from "timers"
 import { setTimeout } from "timers/promises"
 import { ulid } from "ulid"

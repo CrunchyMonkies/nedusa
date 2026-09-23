@@ -1,10 +1,10 @@
-import { RemoteQueryFunction } from "@medusajs/framework/types"
+import { RemoteQueryFunction } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { NextFunction } from "express"
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
+import { MedusaRequest, MedusaResponse } from "@nedusa/framework/http"
 
 /**
  * If a publishable key (PK) is passed in the header of the request, we attach

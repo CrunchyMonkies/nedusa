@@ -1,12 +1,12 @@
 import type {
   IProductModuleService,
   ProductTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   Modules,
   getSelectsAndRelationsFromObjectArray,
-} from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/utils"
+import { StepResponse, createStep } from "@nedusa/framework/workflows-sdk"
 
 /**
  * The data to identify and update the product collections.

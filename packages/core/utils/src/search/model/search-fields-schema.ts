@@ -3,7 +3,7 @@ import {
   SearchFieldsSchemaLike,
   SearchPropertyMetadata,
   SearchSchema,
-} from "@medusajs/types"
+} from "@nedusa/types"
 
 const IsSearchFieldsSchema = Symbol.for("isSearchFieldsSchema")
 

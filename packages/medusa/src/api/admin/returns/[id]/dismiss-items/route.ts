@@ -1,13 +1,13 @@
-import { dismissItemReturnRequestWorkflow } from "@medusajs/core-flows"
+import { dismissItemReturnRequestWorkflow } from "@nedusa/core-flows"
 import {
   ContainerRegistrationKeys,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
+} from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
 
 export const POST = async (
   req: AuthenticatedMedusaRequest<

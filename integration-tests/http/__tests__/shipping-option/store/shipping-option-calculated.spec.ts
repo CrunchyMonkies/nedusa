@@ -1,15 +1,15 @@
 import {
   calculateShippingOptionsPricesWorkflow,
   listShippingOptionsForCartWithPricingWorkflow,
-} from "@medusajs/core-flows"
-import { StepResponse } from "@medusajs/framework/workflows-sdk"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@nedusa/core-flows"
+import { StepResponse } from "@nedusa/framework/workflows-sdk"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import {
   createAdminUser,
   generatePublishableKey,
   generateStoreHeaders,
 } from "../../../../helpers/create-admin-user"
-import { ProductStatus } from "@medusajs/utils"
+import { ProductStatus } from "@nedusa/utils"
 
 jest.setTimeout(50000)
 

@@ -1,5 +1,5 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { MedusaContainer } from "@medusajs/types"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { MedusaContainer } from "@nedusa/types"
 import {
   ClaimReason,
   ClaimType,
@@ -7,7 +7,7 @@ import {
   Modules,
   ProductStatus,
   RuleOperator,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import {
   adminHeaders,
   createAdminUser,

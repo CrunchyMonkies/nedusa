@@ -1,4 +1,4 @@
-import { isDefined, isPresent } from "@medusajs/framework/utils"
+import { isDefined, isPresent } from "@nedusa/framework/utils"
 import {
   createHook,
   createWorkflow,
@@ -7,8 +7,8 @@ import {
   when,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
-import { AdditionalData } from "@medusajs/types"
+} from "@nedusa/framework/workflows-sdk"
+import { AdditionalData } from "@nedusa/types"
 import { useQueryGraphStep } from "../../common"
 import { acquireLockStep, releaseLockStep } from "../../locking"
 import { removeShippingMethodFromCartStep, validateCartStep } from "../steps"

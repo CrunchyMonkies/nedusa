@@ -1,4 +1,4 @@
-import { MedusaContainer, SearchTypes } from "@medusajs/types"
+import { MedusaContainer, SearchTypes } from "@nedusa/types"
 import checkbox from "@inquirer/checkbox"
 import { migrateSearchIndexes } from "../migrate-search"
 
@@ -10,7 +10,7 @@ jest.mock("../../../loaders", () => ({
   initializeContainer: jest.fn(),
 }))
 
-jest.mock("@medusajs/framework", () => ({
+jest.mock("@nedusa/framework", () => ({
   MedusaAppLoader: jest.fn().mockImplementation(() => ({
     load: jest.fn().mockResolvedValue({
       onApplicationPrepareShutdown: jest.fn().mockResolvedValue(undefined),
@@ -19,17 +19,17 @@ jest.mock("@medusajs/framework", () => ({
   })),
 }))
 
-jest.mock("@medusajs/framework/links", () => ({
+jest.mock("@nedusa/framework/links", () => ({
   LinkLoader: jest.fn().mockImplementation(() => ({
     load: jest.fn().mockResolvedValue(undefined),
   })),
 }))
 
-jest.mock("@medusajs/framework/modules-sdk", () => ({
+jest.mock("@nedusa/framework/modules-sdk", () => ({
   MedusaModule: { clearInstances: jest.fn() },
 }))
 
-jest.mock("@medusajs/framework/utils", () => ({
+jest.mock("@nedusa/framework/utils", () => ({
   ContainerRegistrationKeys: {
     LOGGER: "logger",
     CONFIG_MODULE: "configModule",

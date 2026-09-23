@@ -1,4 +1,4 @@
-import { defineJoinerConfig, Modules } from "@medusajs/framework/utils"
+import { defineJoinerConfig, Modules } from "@nedusa/framework/utils"
 import { AuthIdentity, ProviderIdentity } from "@models"
 
 export const joinerConfig = defineJoinerConfig(Modules.AUTH, {

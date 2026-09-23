@@ -1,6 +1,6 @@
-import { PencilSquare, Trash } from "@medusajs/icons"
-import { AdminPromotion } from "@medusajs/types"
-import { usePrompt } from "@medusajs/ui"
+import { PencilSquare, Trash } from "@nedusa/icons"
+import { AdminPromotion } from "@nedusa/types"
+import { usePrompt } from "@nedusa/ui"
 import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router-dom"
 

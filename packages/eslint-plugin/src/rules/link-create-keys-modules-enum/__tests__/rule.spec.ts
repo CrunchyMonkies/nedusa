@@ -8,7 +8,7 @@ ruleTester.run("link-create-keys-modules-enum", rule, {
     // Canonical: computed key using the Modules enum.
     {
       code: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         await link.create({
           [Modules.PRODUCT]: { product_id: "1" },
           [Modules.ORDER]: { order_id: "2" },
@@ -73,7 +73,7 @@ ruleTester.run("link-create-keys-modules-enum", rule, {
     // Array of objects, all enum-form.
     {
       code: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         await link.create([
           { [Modules.PRODUCT]: { product_id: "1" }, blog: { post_id: "2" } },
         ])
@@ -90,74 +90,74 @@ ruleTester.run("link-create-keys-modules-enum", rule, {
           data: { key: "product", enumMember: "PRODUCT" },
         },
       ],
-      output: `import { Modules } from "@medusajs/framework/utils"
+      output: `import { Modules } from "@nedusa/framework/utils"
 await link.create({ [Modules.PRODUCT]: { product_id: "1" } })`,
     },
     // String-literal key.
     {
       code: `await link.create({ "product": { product_id: "1" } })`,
       errors: [{ messageId: "preferEnumKey" }],
-      output: `import { Modules } from "@medusajs/framework/utils"
+      output: `import { Modules } from "@nedusa/framework/utils"
 await link.create({ [Modules.PRODUCT]: { product_id: "1" } })`,
     },
     // Existing framework/utils import → append `Modules` to specifier list.
     {
       code: `
-        import { defineLink } from "@medusajs/framework/utils"
+        import { defineLink } from "@nedusa/framework/utils"
         await link.create({ product: { product_id: "1" } })
       `,
       errors: [{ messageId: "preferEnumKey" }],
       output: `
-        import { defineLink, Modules } from "@medusajs/framework/utils"
+        import { defineLink, Modules } from "@nedusa/framework/utils"
         await link.create({ [Modules.PRODUCT]: { product_id: "1" } })
       `,
     },
     // Modules already imported → reuse local binding, no second import added.
     {
       code: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         await link.create({ product: { id: "1" } })
       `,
       errors: [{ messageId: "preferEnumKey" }],
       output: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         await link.create({ [Modules.PRODUCT]: { id: "1" } })
       `,
     },
     // Aliased Modules import.
     {
       code: `
-        import { Modules as M } from "@medusajs/framework/utils"
+        import { Modules as M } from "@nedusa/framework/utils"
         await link.create({ order: { id: "1" } })
       `,
       errors: [{ messageId: "preferEnumKey" }],
       output: `
-        import { Modules as M } from "@medusajs/framework/utils"
+        import { Modules as M } from "@nedusa/framework/utils"
         await link.create({ [M.ORDER]: { id: "1" } })
       `,
     },
     // link.dismiss with snake_case enum value.
     {
       code: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         await link.dismiss({ sales_channel: { id: "x" } })
       `,
       errors: [{ messageId: "preferEnumKey" }],
       output: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         await link.dismiss({ [Modules.SALES_CHANNEL]: { id: "x" } })
       `,
     },
     // Receiver resolved from the container under an unrelated name.
     {
       code: `
-        import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
+        import { ContainerRegistrationKeys, Modules } from "@nedusa/framework/utils"
         const l = container.resolve(ContainerRegistrationKeys.LINK)
         await l.create({ product: { id: "1" } })
       `,
       errors: [{ messageId: "preferEnumKey" }],
       output: `
-        import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
+        import { ContainerRegistrationKeys, Modules } from "@nedusa/framework/utils"
         const l = container.resolve(ContainerRegistrationKeys.LINK)
         await l.create({ [Modules.PRODUCT]: { id: "1" } })
       `,
@@ -165,13 +165,13 @@ await link.create({ [Modules.PRODUCT]: { product_id: "1" } })`,
     // Receiver typed as `Link`.
     {
       code: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         const svc: Link = getIt()
         await svc.create({ order: { id: "1" } })
       `,
       errors: [{ messageId: "preferEnumKey" }],
       output: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         const svc: Link = getIt()
         await svc.create({ [Modules.ORDER]: { id: "1" } })
       `,
@@ -179,19 +179,19 @@ await link.create({ [Modules.PRODUCT]: { product_id: "1" } })`,
     // `remoteLink` receiver.
     {
       code: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         await remoteLink.create({ product: { id: "1" } })
       `,
       errors: [{ messageId: "preferEnumKey" }],
       output: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         await remoteLink.create({ [Modules.PRODUCT]: { id: "1" } })
       `,
     },
     // `this.link_` receiver inside a service.
     {
       code: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         class Svc {
           async run() {
             await this.link_.create({ product: { id: "1" } })
@@ -200,7 +200,7 @@ await link.create({ [Modules.PRODUCT]: { product_id: "1" } })`,
       `,
       errors: [{ messageId: "preferEnumKey" }],
       output: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         class Svc {
           async run() {
             await this.link_.create({ [Modules.PRODUCT]: { id: "1" } })
@@ -211,16 +211,16 @@ await link.create({ [Modules.PRODUCT]: { product_id: "1" } })`,
     // Workflow step: createRemoteLinkStep.
     {
       code: `
-        import { Modules } from "@medusajs/framework/utils"
-        import { createRemoteLinkStep } from "@medusajs/medusa/core-flows"
+        import { Modules } from "@nedusa/framework/utils"
+        import { createRemoteLinkStep } from "@nedusa/medusa/core-flows"
         createRemoteLinkStep([
           { product: { product_id: "1" }, blog: { post_id: "2" } },
         ])
       `,
       errors: [{ messageId: "preferEnumKey" }],
       output: `
-        import { Modules } from "@medusajs/framework/utils"
-        import { createRemoteLinkStep } from "@medusajs/medusa/core-flows"
+        import { Modules } from "@nedusa/framework/utils"
+        import { createRemoteLinkStep } from "@nedusa/medusa/core-flows"
         createRemoteLinkStep([
           { [Modules.PRODUCT]: { product_id: "1" }, blog: { post_id: "2" } },
         ])
@@ -229,33 +229,33 @@ await link.create({ [Modules.PRODUCT]: { product_id: "1" } })`,
     // Workflow step alias.
     {
       code: `
-        import { Modules } from "@medusajs/framework/utils"
-        import { dismissRemoteLinkStep as drls } from "@medusajs/medusa/core-flows"
+        import { Modules } from "@nedusa/framework/utils"
+        import { dismissRemoteLinkStep as drls } from "@nedusa/medusa/core-flows"
         drls({ order: { id: "1" } })
       `,
       errors: [{ messageId: "preferEnumKey" }],
       output: `
-        import { Modules } from "@medusajs/framework/utils"
-        import { dismissRemoteLinkStep as drls } from "@medusajs/medusa/core-flows"
+        import { Modules } from "@nedusa/framework/utils"
+        import { dismissRemoteLinkStep as drls } from "@nedusa/medusa/core-flows"
         drls({ [Modules.ORDER]: { id: "1" } })
       `,
     },
     // Shorthand property.
     {
       code: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         await link.create({ product })
       `,
       errors: [{ messageId: "preferEnumKey" }],
       output: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         await link.create({ [Modules.PRODUCT]: product })
       `,
     },
     // Multiple violations in one call.
     {
       code: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         await link.create({
           product: { id: "1" },
           order: { id: "2" },
@@ -273,7 +273,7 @@ await link.create({ [Modules.PRODUCT]: { product_id: "1" } })`,
         },
       ],
       output: `
-        import { Modules } from "@medusajs/framework/utils"
+        import { Modules } from "@nedusa/framework/utils"
         await link.create({
           [Modules.PRODUCT]: { id: "1" },
           [Modules.ORDER]: { id: "2" },

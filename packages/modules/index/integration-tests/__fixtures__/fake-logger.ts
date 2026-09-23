@@ -1,4 +1,4 @@
-import { Logger } from "@medusajs/framework/types"
+import { Logger } from "@nedusa/framework/types"
 
 /**
  * In-memory logger that records every log entry. Errors are collected

@@ -1,18 +1,18 @@
 import {
   deleteReturnReasonsWorkflow,
   updateReturnReasonsWorkflow,
-} from "@medusajs/core-flows"
-import { AdminReturnReasonResponse, HttpTypes } from "@medusajs/framework/types"
+} from "@nedusa/core-flows"
+import { AdminReturnReasonResponse, HttpTypes } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   MedusaError,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
   refetchEntity,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<HttpTypes.AdminReturnReasonParams>,

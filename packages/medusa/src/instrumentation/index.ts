@@ -3,15 +3,15 @@ import {
   MedusaRequest,
   MedusaResponse,
   Query,
-} from "@medusajs/framework"
-import { ApiLoader, getHttpResponseFromError } from "@medusajs/framework/http"
-import { Span, SpanStatusCode } from "@medusajs/framework/opentelemetry/api"
-import type { NodeSDKConfiguration } from "@medusajs/framework/opentelemetry/sdk-node"
-import type { SpanExporter } from "@medusajs/framework/opentelemetry/sdk-trace-node"
-import { TransactionOrchestrator } from "@medusajs/framework/orchestration"
-import { Tracer } from "@medusajs/framework/telemetry"
-import { ICachingModuleService } from "@medusajs/framework/types"
-import { camelToSnakeCase, FeatureFlag } from "@medusajs/framework/utils"
+} from "@nedusa/framework"
+import { ApiLoader, getHttpResponseFromError } from "@nedusa/framework/http"
+import { Span, SpanStatusCode } from "@nedusa/framework/opentelemetry/api"
+import type { NodeSDKConfiguration } from "@nedusa/framework/opentelemetry/sdk-node"
+import type { SpanExporter } from "@nedusa/framework/opentelemetry/sdk-trace-node"
+import { TransactionOrchestrator } from "@nedusa/framework/orchestration"
+import { Tracer } from "@nedusa/framework/telemetry"
+import { ICachingModuleService } from "@nedusa/framework/types"
+import { camelToSnakeCase, FeatureFlag } from "@nedusa/framework/utils"
 import CacheModule from "../modules/caching"
 
 const EXCLUDED_RESOURCES = [".vite", "virtual:"]
@@ -72,7 +72,7 @@ function onResponseFinished(res: any): Promise<void> | void {
  */
 export function instrumentHttpLayer() {
   const startCommand = require("../commands/start")
-  const HTTPTracer = new Tracer("@medusajs/http", "2.0.0")
+  const HTTPTracer = new Tracer("@nedusa/http", "2.0.0")
 
   startCommand.traceRequestHandler = async (
     requestHandler,
@@ -171,7 +171,7 @@ export function instrumentHttpLayer() {
  * Instrument the queries made using the remote query
  */
 export function instrumentRemoteQuery() {
-  const QueryTracer = new Tracer("@medusajs/query", "2.0.0")
+  const QueryTracer = new Tracer("@nedusa/query", "2.0.0")
 
   Query.instrument.graphQuery(async function (queryFn, queryOptions) {
     return await QueryTracer.trace(
@@ -262,7 +262,7 @@ export function instrumentRemoteQuery() {
  */
 export function instrumentWorkflows() {
   const WorkflowsTracer = new Tracer(
-    "@medusajs/framework/workflows-sdk",
+    "@nedusa/framework/workflows-sdk",
     "2.0.0"
   )
 
@@ -306,7 +306,7 @@ export function instrumentCache() {
     return
   }
 
-  const CacheTracer = new Tracer("@medusajs/caching", "2.0.0")
+  const CacheTracer = new Tracer("@nedusa/caching", "2.0.0")
   const cacheModule_ = CacheModule as unknown as {
     service: ICachingModuleService & {
       traceGet: (
@@ -446,16 +446,16 @@ export function registerOtel(
   const {
     Resource,
     resourceFromAttributes,
-  } = require("@medusajs/framework/opentelemetry/resources")
-  const { NodeSDK } = require("@medusajs/framework/opentelemetry/sdk-node")
+  } = require("@nedusa/framework/opentelemetry/resources")
+  const { NodeSDK } = require("@nedusa/framework/opentelemetry/sdk-node")
   const {
     SimpleSpanProcessor,
-  } = require("@medusajs/framework/opentelemetry/sdk-trace-node")
+  } = require("@nedusa/framework/opentelemetry/sdk-trace-node")
 
   if (instrument.db) {
     const {
       PgInstrumentation,
-    } = require("@medusajs/framework/opentelemetry/instrumentation-pg")
+    } = require("@nedusa/framework/opentelemetry/instrumentation-pg")
     instrumentations.push(new PgInstrumentation())
   }
   if (instrument.http) {

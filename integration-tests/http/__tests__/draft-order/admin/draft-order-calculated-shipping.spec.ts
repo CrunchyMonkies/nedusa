@@ -1,7 +1,7 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { HttpTypes } from "@medusajs/types"
-import { ModuleRegistrationName, ProductStatus } from "@medusajs/utils"
-import { fetchShippingOptionForDraftOrderWorkflow } from "@medusajs/core-flows"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { HttpTypes } from "@nedusa/types"
+import { ModuleRegistrationName, ProductStatus } from "@nedusa/utils"
+import { fetchShippingOptionForDraftOrderWorkflow } from "@nedusa/core-flows"
 import {
   adminHeaders,
   createAdminUser,

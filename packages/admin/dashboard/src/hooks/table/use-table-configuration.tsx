@@ -1,7 +1,7 @@
 import { useState, useMemo, useCallback, useEffect } from "react"
 import { useSearchParams } from "react-router-dom"
-import { HttpTypes } from "@medusajs/types"
-import { DataTableFilter } from "@medusajs/ui"
+import { HttpTypes } from "@nedusa/types"
+import { DataTableFilter } from "@nedusa/ui"
 import {
   useViewConfigurations,
   useViewConfiguration,

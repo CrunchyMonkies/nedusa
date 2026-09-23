@@ -1,5 +1,5 @@
-import { Channels, Trash } from "@medusajs/icons"
-import { HttpTypes } from "@medusajs/types"
+import { Channels, Trash } from "@nedusa/icons"
+import { HttpTypes } from "@nedusa/types"
 import {
   Badge,
   Container,
@@ -8,7 +8,7 @@ import {
   Skeleton,
   Text,
   toast,
-} from "@medusajs/ui"
+} from "@nedusa/ui"
 import { Link, useNavigate } from "react-router-dom"
 import { useRegion } from "../../hooks/api/regions"
 import { getFullDate } from "../../lib/utils/date-utils"

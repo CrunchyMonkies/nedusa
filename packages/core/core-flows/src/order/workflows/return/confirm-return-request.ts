@@ -5,7 +5,7 @@ import {
   OrderPreviewDTO,
   OrderReturnItemDTO,
   ReturnDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ChangeActionType,
   MedusaError,
@@ -13,7 +13,7 @@ import {
   OrderChangeStatus,
   OrderWorkflowEvents,
   ReturnStatus,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   WorkflowResponse,
   createStep,
@@ -21,7 +21,7 @@ import {
   parallelize,
   transform,
   when,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import {
   createRemoteLinkStep,
   emitEventStep,

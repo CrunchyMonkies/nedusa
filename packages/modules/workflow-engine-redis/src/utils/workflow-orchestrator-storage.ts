@@ -1,4 +1,4 @@
-import { raw } from "@medusajs/framework/mikro-orm/core"
+import { raw } from "@nedusa/framework/mikro-orm/core"
 import {
   DistributedTransactionType,
   IDistributedSchedulerStorage,
@@ -13,8 +13,8 @@ import {
   TransactionOptions,
   TransactionStep,
   TransactionStepError,
-} from "@medusajs/framework/orchestration"
-import { Logger, ModulesSdkTypes } from "@medusajs/framework/types"
+} from "@nedusa/framework/orchestration"
+import { Logger, ModulesSdkTypes } from "@nedusa/framework/types"
 import {
   isDefined,
   isPresent,
@@ -22,7 +22,7 @@ import {
   promiseAll,
   TransactionState,
   TransactionStepState,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { WorkflowOrchestratorService } from "@services"
 import {
   Queue,

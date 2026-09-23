@@ -2,14 +2,14 @@ import {
   getOrderDetailWorkflow,
   updateDraftOrderWorkflow,
   deleteDraftOrdersWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils"
 
 export const GET = async (
   req: MedusaRequest<HttpTypes.AdminDraftOrderParams>,

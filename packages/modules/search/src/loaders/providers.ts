@@ -1,6 +1,6 @@
-import { asFunction, asValue, Lifetime } from "@medusajs/framework/awilix"
-import { moduleProviderLoader } from "@medusajs/framework/modules-sdk"
-import { LoaderOptions } from "@medusajs/framework/types"
+import { asFunction, asValue, Lifetime } from "@nedusa/framework/awilix"
+import { moduleProviderLoader } from "@nedusa/framework/modules-sdk"
+import { LoaderOptions } from "@nedusa/framework/types"
 import { SearchProviderService } from "@services"
 import {
   SearchModuleOptions,

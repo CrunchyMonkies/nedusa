@@ -1,6 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod"
-import { AdminPromotion } from "@medusajs/types"
-import { Button, CurrencyInput, Input, RadioGroup, Text } from "@medusajs/ui"
+import { AdminPromotion } from "@nedusa/types"
+import { Button, CurrencyInput, Input, RadioGroup, Text } from "@nedusa/ui"
 import { useForm, useWatch } from "react-hook-form"
 import { Trans, useTranslation } from "react-i18next"
 import { useEffect } from "react"

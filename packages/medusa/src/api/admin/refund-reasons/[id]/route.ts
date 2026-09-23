@@ -1,13 +1,13 @@
 import {
   deleteRefundReasonsWorkflow,
   updateRefundReasonsWorkflow,
-} from "@medusajs/core-flows"
-import { HttpTypes, RefundReasonResponse } from "@medusajs/framework/types"
+} from "@nedusa/core-flows"
+import { HttpTypes, RefundReasonResponse } from "@nedusa/framework/types"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
   refetchEntity,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<HttpTypes.AdminRefundReasonParams>,

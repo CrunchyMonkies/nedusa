@@ -1,4 +1,4 @@
-import { MedusaService } from "@medusajs/framework/utils"
+import { MedusaService } from "@nedusa/framework/utils"
 import { LoyaltyPluginOptions } from "../../types"
 import GiftCard from "./models/gift-card"
 

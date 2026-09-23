@@ -1,6 +1,6 @@
 import createHttpError from "http-errors"
 
-import { MedusaError } from "@medusajs/utils"
+import { MedusaError } from "@nedusa/utils"
 import { errorHandler, getHttpResponseFromError } from "../error-handler"
 
 describe("getHttpResponseFromError", () => {

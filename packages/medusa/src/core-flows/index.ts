@@ -1,1 +1,1 @@
-export * from "@medusajs/core-flows"
+export * from "@nedusa/core-flows"

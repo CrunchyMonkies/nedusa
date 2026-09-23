@@ -1,7 +1,7 @@
 import {
   AdminReturnReasonListParams,
   AdminReturnReasonListResponse,
-} from "@medusajs/types"
+} from "@nedusa/types"
 
 import { returnReasonsQueryKeys } from "../../../hooks/api/return-reasons"
 import { sdk } from "../../../lib/client"

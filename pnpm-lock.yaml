@@ -47,247 +47,247 @@ importers:
       '@faker-js/faker':
         specifier: ^9.2.0
         version: 9.9.0
-      '@medusajs/admin-bundler':
+      '@nedusa/admin-bundler':
         specifier: workspace:*
         version: link:packages/admin/admin-bundler
-      '@medusajs/admin-sdk':
+      '@nedusa/admin-sdk':
         specifier: workspace:*
         version: link:packages/admin/admin-sdk
-      '@medusajs/admin-shared':
+      '@nedusa/admin-shared':
         specifier: workspace:*
         version: link:packages/admin/admin-shared
-      '@medusajs/admin-vite-plugin':
+      '@nedusa/admin-vite-plugin':
         specifier: workspace:*
         version: link:packages/admin/admin-vite-plugin
-      '@medusajs/analytics':
+      '@nedusa/analytics':
         specifier: workspace:*
         version: link:packages/modules/analytics
-      '@medusajs/analytics-local':
+      '@nedusa/analytics-local':
         specifier: workspace:*
         version: link:packages/modules/providers/analytics-local
-      '@medusajs/analytics-posthog':
+      '@nedusa/analytics-posthog':
         specifier: workspace:*
         version: link:packages/modules/providers/analytics-posthog
-      '@medusajs/api-key':
+      '@nedusa/api-key':
         specifier: workspace:*
         version: link:packages/modules/api-key
-      '@medusajs/auth':
+      '@nedusa/auth':
         specifier: workspace:*
         version: link:packages/modules/auth
-      '@medusajs/auth-emailpass':
+      '@nedusa/auth-emailpass':
         specifier: workspace:*
         version: link:packages/modules/providers/auth-emailpass
-      '@medusajs/auth-github':
+      '@nedusa/auth-github':
         specifier: workspace:*
         version: link:packages/modules/providers/auth-github
-      '@medusajs/auth-google':
+      '@nedusa/auth-google':
         specifier: workspace:*
         version: link:packages/modules/providers/auth-google
-      '@medusajs/auth-oidc':
+      '@nedusa/auth-oidc':
         specifier: workspace:*
         version: link:packages/modules/providers/auth-oidc
-      '@medusajs/cache-inmemory':
+      '@nedusa/cache-inmemory':
         specifier: workspace:*
         version: link:packages/modules/cache-inmemory
-      '@medusajs/cache-redis':
+      '@nedusa/cache-redis':
         specifier: workspace:*
         version: link:packages/modules/cache-redis
-      '@medusajs/caching':
+      '@nedusa/caching':
         specifier: workspace:*
         version: link:packages/modules/caching
-      '@medusajs/caching-redis':
+      '@nedusa/caching-redis':
         specifier: workspace:*
         version: link:packages/modules/providers/caching-redis
-      '@medusajs/cart':
+      '@nedusa/cart':
         specifier: workspace:*
         version: link:packages/modules/cart
-      '@medusajs/cli':
+      '@nedusa/cli':
         specifier: workspace:*
         version: link:packages/cli/medusa-cli
-      '@medusajs/core-flows':
+      '@nedusa/core-flows':
         specifier: workspace:*
         version: link:packages/core/core-flows
-      '@medusajs/currency':
+      '@nedusa/currency':
         specifier: workspace:*
         version: link:packages/modules/currency
-      '@medusajs/customer':
+      '@nedusa/customer':
         specifier: workspace:*
         version: link:packages/modules/customer
-      '@medusajs/dashboard':
+      '@nedusa/dashboard':
         specifier: workspace:*
         version: link:packages/admin/dashboard
-      '@medusajs/deps':
+      '@nedusa/deps':
         specifier: workspace:*
         version: link:packages/deps
-      '@medusajs/draft-order':
+      '@nedusa/draft-order':
         specifier: workspace:*
         version: link:packages/plugins/draft-order
-      '@medusajs/eslint-plugin':
+      '@nedusa/eslint-plugin':
         specifier: workspace:^
         version: link:packages/eslint-plugin
-      '@medusajs/event-bus-local':
+      '@nedusa/event-bus-local':
         specifier: workspace:*
         version: link:packages/modules/event-bus-local
-      '@medusajs/event-bus-redis':
+      '@nedusa/event-bus-redis':
         specifier: workspace:*
         version: link:packages/modules/event-bus-redis
-      '@medusajs/file':
+      '@nedusa/file':
         specifier: workspace:*
         version: link:packages/modules/file
-      '@medusajs/file-local':
+      '@nedusa/file-local':
         specifier: workspace:*
         version: link:packages/modules/providers/file-local
-      '@medusajs/file-s3':
+      '@nedusa/file-s3':
         specifier: workspace:*
         version: link:packages/modules/providers/file-s3
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: workspace:*
         version: link:packages/core/framework
-      '@medusajs/fulfillment':
+      '@nedusa/fulfillment':
         specifier: workspace:*
         version: link:packages/modules/fulfillment
-      '@medusajs/fulfillment-manual':
+      '@nedusa/fulfillment-manual':
         specifier: workspace:*
         version: link:packages/modules/providers/fulfillment-manual
-      '@medusajs/http-types-generator':
+      '@nedusa/http-types-generator':
         specifier: workspace:*
         version: link:packages/cli/http-types-generator
-      '@medusajs/icons':
+      '@nedusa/icons':
         specifier: workspace:*
         version: link:packages/design-system/icons
-      '@medusajs/index':
+      '@nedusa/index':
         specifier: workspace:*
         version: link:packages/modules/index
-      '@medusajs/instantsearch-adapter':
+      '@nedusa/instantsearch-adapter':
         specifier: workspace:*
         version: link:packages/core/instantsearch-adapter
-      '@medusajs/inventory':
+      '@nedusa/inventory':
         specifier: workspace:*
         version: link:packages/modules/inventory
-      '@medusajs/js-sdk':
+      '@nedusa/js-sdk':
         specifier: workspace:*
         version: link:packages/core/js-sdk
-      '@medusajs/link-modules':
+      '@nedusa/link-modules':
         specifier: workspace:*
         version: link:packages/modules/link-modules
-      '@medusajs/locking':
+      '@nedusa/locking':
         specifier: workspace:*
         version: link:packages/modules/locking
-      '@medusajs/locking-postgres':
+      '@nedusa/locking-postgres':
         specifier: workspace:*
         version: link:packages/modules/providers/locking-postgres
-      '@medusajs/locking-redis':
+      '@nedusa/locking-redis':
         specifier: workspace:*
         version: link:packages/modules/providers/locking-redis
-      '@medusajs/loyalty-plugin':
+      '@nedusa/loyalty-plugin':
         specifier: workspace:*
         version: link:packages/plugins/loyalty
-      '@medusajs/medusa':
+      '@nedusa/medusa':
         specifier: workspace:*
         version: link:packages/medusa
-      '@medusajs/medusa-oas-cli':
+      '@nedusa/medusa-oas-cli':
         specifier: workspace:*
         version: link:packages/cli/oas/medusa-oas-cli
-      '@medusajs/modules-sdk':
+      '@nedusa/modules-sdk':
         specifier: workspace:*
         version: link:packages/core/modules-sdk
-      '@medusajs/notification':
+      '@nedusa/notification':
         specifier: workspace:*
         version: link:packages/modules/notification
-      '@medusajs/notification-local':
+      '@nedusa/notification-local':
         specifier: workspace:*
         version: link:packages/modules/providers/notification-local
-      '@medusajs/notification-sendgrid':
+      '@nedusa/notification-sendgrid':
         specifier: workspace:*
         version: link:packages/modules/providers/notification-sendgrid
-      '@medusajs/oas-github-ci':
+      '@nedusa/oas-github-ci':
         specifier: workspace:*
         version: link:packages/cli/oas/oas-github-ci
-      '@medusajs/orchestration':
+      '@nedusa/orchestration':
         specifier: workspace:*
         version: link:packages/core/orchestration
-      '@medusajs/order':
+      '@nedusa/order':
         specifier: workspace:*
         version: link:packages/modules/order
-      '@medusajs/payment':
+      '@nedusa/payment':
         specifier: workspace:*
         version: link:packages/modules/payment
-      '@medusajs/payment-stripe':
+      '@nedusa/payment-stripe':
         specifier: workspace:*
         version: link:packages/modules/providers/payment-stripe
-      '@medusajs/pricing':
+      '@nedusa/pricing':
         specifier: workspace:*
         version: link:packages/modules/pricing
-      '@medusajs/product':
+      '@nedusa/product':
         specifier: workspace:*
         version: link:packages/modules/product
-      '@medusajs/promotion':
+      '@nedusa/promotion':
         specifier: workspace:*
         version: link:packages/modules/promotion
-      '@medusajs/query':
+      '@nedusa/query':
         specifier: workspace:*
         version: link:packages/core/query
-      '@medusajs/rbac':
+      '@nedusa/rbac':
         specifier: workspace:*
         version: link:packages/modules/rbac
-      '@medusajs/region':
+      '@nedusa/region':
         specifier: workspace:*
         version: link:packages/modules/region
-      '@medusajs/sales-channel':
+      '@nedusa/sales-channel':
         specifier: workspace:*
         version: link:packages/modules/sales-channel
-      '@medusajs/search':
+      '@nedusa/search':
         specifier: workspace:*
         version: link:packages/modules/search
-      '@medusajs/search-postgres':
+      '@nedusa/search-postgres':
         specifier: workspace:*
         version: link:packages/modules/providers/search-postgres
-      '@medusajs/settings':
+      '@nedusa/settings':
         specifier: workspace:*
         version: link:packages/modules/settings
-      '@medusajs/stock-location':
+      '@nedusa/stock-location':
         specifier: workspace:*
         version: link:packages/modules/stock-location
-      '@medusajs/store':
+      '@nedusa/store':
         specifier: workspace:*
         version: link:packages/modules/store
-      '@medusajs/tax':
+      '@nedusa/tax':
         specifier: workspace:*
         version: link:packages/modules/tax
-      '@medusajs/telemetry':
+      '@nedusa/telemetry':
         specifier: workspace:*
         version: link:packages/medusa-telemetry
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: workspace:*
         version: link:packages/medusa-test-utils
-      '@medusajs/toolbox':
+      '@nedusa/toolbox':
         specifier: workspace:*
         version: link:packages/design-system/toolbox
-      '@medusajs/translation':
+      '@nedusa/translation':
         specifier: workspace:*
         version: link:packages/modules/translation
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: workspace:*
         version: link:packages/core/types
-      '@medusajs/ui':
+      '@nedusa/ui':
         specifier: workspace:*
         version: link:packages/design-system/ui
-      '@medusajs/ui-preset':
+      '@nedusa/ui-preset':
         specifier: workspace:*
         version: link:packages/design-system/ui-preset
-      '@medusajs/user':
+      '@nedusa/user':
         specifier: workspace:*
         version: link:packages/modules/user
-      '@medusajs/utils':
+      '@nedusa/utils':
         specifier: workspace:*
         version: link:packages/core/utils
-      '@medusajs/workflow-engine-inmemory':
+      '@nedusa/workflow-engine-inmemory':
         specifier: workspace:*
         version: link:packages/modules/workflow-engine-inmemory
-      '@medusajs/workflow-engine-redis':
+      '@nedusa/workflow-engine-redis':
         specifier: workspace:*
         version: link:packages/modules/workflow-engine-redis
-      '@medusajs/workflows-sdk':
+      '@nedusa/workflows-sdk':
         specifier: workspace:*
         version: link:packages/core/workflows-sdk
       '@rollup/plugin-node-resolve':
@@ -611,82 +611,82 @@ importers:
 
   integration-tests/http:
     dependencies:
-      '@medusajs/api-key':
+      '@nedusa/api-key':
         specifier: workspace:^
         version: link:../../packages/modules/api-key
-      '@medusajs/auth':
+      '@nedusa/auth':
         specifier: workspace:*
         version: link:../../packages/modules/auth
-      '@medusajs/cache-inmemory':
+      '@nedusa/cache-inmemory':
         specifier: workspace:*
         version: link:../../packages/modules/cache-inmemory
-      '@medusajs/core-flows':
+      '@nedusa/core-flows':
         specifier: workspace:*
         version: link:../../packages/core/core-flows
-      '@medusajs/customer':
+      '@nedusa/customer':
         specifier: workspace:^
         version: link:../../packages/modules/customer
-      '@medusajs/event-bus-local':
+      '@nedusa/event-bus-local':
         specifier: workspace:*
         version: link:../../packages/modules/event-bus-local
-      '@medusajs/event-bus-redis':
+      '@nedusa/event-bus-redis':
         specifier: workspace:*
         version: link:../../packages/modules/event-bus-redis
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: workspace:*
         version: link:../../packages/core/framework
-      '@medusajs/fulfillment':
+      '@nedusa/fulfillment':
         specifier: workspace:^
         version: link:../../packages/modules/fulfillment
-      '@medusajs/fulfillment-manual':
+      '@nedusa/fulfillment-manual':
         specifier: workspace:^
         version: link:../../packages/modules/providers/fulfillment-manual
-      '@medusajs/inventory':
+      '@nedusa/inventory':
         specifier: workspace:^
         version: link:../../packages/modules/inventory
-      '@medusajs/loyalty-plugin':
+      '@nedusa/loyalty-plugin':
         specifier: workspace:^
         version: link:../../packages/plugins/loyalty
-      '@medusajs/medusa':
+      '@nedusa/medusa':
         specifier: workspace:*
         version: link:../../packages/medusa
-      '@medusajs/modules-sdk':
+      '@nedusa/modules-sdk':
         specifier: workspace:^
         version: link:../../packages/core/modules-sdk
-      '@medusajs/pricing':
+      '@nedusa/pricing':
         specifier: workspace:^
         version: link:../../packages/modules/pricing
-      '@medusajs/product':
+      '@nedusa/product':
         specifier: workspace:^
         version: link:../../packages/modules/product
-      '@medusajs/promotion':
+      '@nedusa/promotion':
         specifier: workspace:^
         version: link:../../packages/modules/promotion
-      '@medusajs/region':
+      '@nedusa/region':
         specifier: workspace:^
         version: link:../../packages/modules/region
-      '@medusajs/stock-location':
+      '@nedusa/stock-location':
         specifier: workspace:^
         version: link:../../packages/modules/stock-location
-      '@medusajs/store':
+      '@nedusa/store':
         specifier: workspace:^
         version: link:../../packages/modules/store
-      '@medusajs/tax':
+      '@nedusa/tax':
         specifier: workspace:^
         version: link:../../packages/modules/tax
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: workspace:*
         version: link:../../packages/medusa-test-utils
-      '@medusajs/translation':
+      '@nedusa/translation':
         specifier: workspace:*
         version: link:../../packages/modules/translation
-      '@medusajs/user':
+      '@nedusa/user':
         specifier: workspace:^
         version: link:../../packages/modules/user
-      '@medusajs/utils':
+      '@nedusa/utils':
         specifier: workspace:^
         version: link:../../packages/core/utils
-      '@medusajs/workflow-engine-inmemory':
+      '@nedusa/workflow-engine-inmemory':
         specifier: workspace:*
         version: link:../../packages/modules/workflow-engine-inmemory
       form-data:
@@ -699,7 +699,7 @@ importers:
         specifier: 8.16.3
         version: 8.16.3
     devDependencies:
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: workspace:^
         version: link:../../packages/core/types
       '@swc/core':
@@ -720,88 +720,88 @@ importers:
 
   integration-tests/modules:
     dependencies:
-      '@medusajs/api-key':
+      '@nedusa/api-key':
         specifier: workspace:^
         version: link:../../packages/modules/api-key
-      '@medusajs/auth':
+      '@nedusa/auth':
         specifier: workspace:*
         version: link:../../packages/modules/auth
-      '@medusajs/cache-inmemory':
+      '@nedusa/cache-inmemory':
         specifier: workspace:*
         version: link:../../packages/modules/cache-inmemory
-      '@medusajs/caching':
+      '@nedusa/caching':
         specifier: workspace:*
         version: link:../../packages/modules/caching
-      '@medusajs/core-flows':
+      '@nedusa/core-flows':
         specifier: workspace:^
         version: link:../../packages/core/core-flows
-      '@medusajs/currency':
+      '@nedusa/currency':
         specifier: workspace:^
         version: link:../../packages/modules/currency
-      '@medusajs/customer':
+      '@nedusa/customer':
         specifier: workspace:^
         version: link:../../packages/modules/customer
-      '@medusajs/event-bus-local':
+      '@nedusa/event-bus-local':
         specifier: workspace:*
         version: link:../../packages/modules/event-bus-local
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: workspace:*
         version: link:../../packages/core/framework
-      '@medusajs/fulfillment':
+      '@nedusa/fulfillment':
         specifier: workspace:^
         version: link:../../packages/modules/fulfillment
-      '@medusajs/fulfillment-manual':
+      '@nedusa/fulfillment-manual':
         specifier: workspace:^
         version: link:../../packages/modules/providers/fulfillment-manual
-      '@medusajs/inventory':
+      '@nedusa/inventory':
         specifier: workspace:^
         version: link:../../packages/modules/inventory
-      '@medusajs/link-modules':
+      '@nedusa/link-modules':
         specifier: workspace:^
         version: link:../../packages/modules/link-modules
-      '@medusajs/loyalty-plugin':
+      '@nedusa/loyalty-plugin':
         specifier: workspace:^
         version: link:../../packages/plugins/loyalty
-      '@medusajs/medusa':
+      '@nedusa/medusa':
         specifier: workspace:*
         version: link:../../packages/medusa
-      '@medusajs/modules-sdk':
+      '@nedusa/modules-sdk':
         specifier: workspace:^
         version: link:../../packages/core/modules-sdk
-      '@medusajs/payment':
+      '@nedusa/payment':
         specifier: workspace:^
         version: link:../../packages/modules/payment
-      '@medusajs/pricing':
+      '@nedusa/pricing':
         specifier: workspace:^
         version: link:../../packages/modules/pricing
-      '@medusajs/product':
+      '@nedusa/product':
         specifier: workspace:^
         version: link:../../packages/modules/product
-      '@medusajs/promotion':
+      '@nedusa/promotion':
         specifier: workspace:^
         version: link:../../packages/modules/promotion
-      '@medusajs/region':
+      '@nedusa/region':
         specifier: workspace:^
         version: link:../../packages/modules/region
-      '@medusajs/stock-location':
+      '@nedusa/stock-location':
         specifier: workspace:^
         version: link:../../packages/modules/stock-location
-      '@medusajs/store':
+      '@nedusa/store':
         specifier: workspace:^
         version: link:../../packages/modules/store
-      '@medusajs/tax':
+      '@nedusa/tax':
         specifier: workspace:^
         version: link:../../packages/modules/tax
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: workspace:*
         version: link:../../packages/medusa-test-utils
-      '@medusajs/user':
+      '@nedusa/user':
         specifier: workspace:^
         version: link:../../packages/modules/user
-      '@medusajs/utils':
+      '@nedusa/utils':
         specifier: workspace:^
         version: link:../../packages/core/utils
-      '@medusajs/workflow-engine-inmemory':
+      '@nedusa/workflow-engine-inmemory':
         specifier: workspace:*
         version: link:../../packages/modules/workflow-engine-inmemory
       faker:
@@ -817,7 +817,7 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
     devDependencies:
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: workspace:^
         version: link:../../packages/core/types
       '@swc/core':
@@ -835,13 +835,13 @@ importers:
 
   packages/admin/admin-bundler:
     dependencies:
-      '@medusajs/admin-shared':
+      '@nedusa/admin-shared':
         specifier: 2.21.1
         version: link:../admin-shared
-      '@medusajs/admin-vite-plugin':
+      '@nedusa/admin-vite-plugin':
         specifier: 2.21.1
         version: link:../admin-vite-plugin
-      '@medusajs/dashboard':
+      '@nedusa/dashboard':
         specifier: 2.21.1
         version: link:../dashboard
       '@vitejs/plugin-react':
@@ -875,13 +875,13 @@ importers:
         specifier: ^7.3.6
         version: 7.3.6(@types/node@20.19.43)(jiti@1.21.7)(yaml@2.9.1)
     devDependencies:
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: 2.21.1
         version: link:../../core/types
 
   packages/admin/admin-sdk:
     dependencies:
-      '@medusajs/admin-shared':
+      '@nedusa/admin-shared':
         specifier: 2.21.1
         version: link:../admin-shared
       zod:
@@ -901,7 +901,7 @@ importers:
       '@babel/types':
         specifier: 7.25.6
         version: 7.25.6
-      '@medusajs/admin-shared':
+      '@nedusa/admin-shared':
         specifier: 2.21.1
         version: link:../admin-shared
       fdir:
@@ -944,16 +944,16 @@ importers:
       '@hookform/resolvers':
         specifier: 5.5.7
         version: 5.5.7(@sinclair/typebox@0.34.52)(@standard-schema/spec@1.1.0)(ajv@8.20.0)(react-hook-form@7.83.0(react@18.3.1))(zod@4.2.0)
-      '@medusajs/admin-shared':
+      '@nedusa/admin-shared':
         specifier: 2.21.1
         version: link:../admin-shared
-      '@medusajs/icons':
+      '@nedusa/icons':
         specifier: 2.21.1
         version: link:../../design-system/icons
-      '@medusajs/js-sdk':
+      '@nedusa/js-sdk':
         specifier: 2.21.1
         version: link:../../core/js-sdk
-      '@medusajs/ui':
+      '@nedusa/ui':
         specifier: 4.2.5
         version: link:../../design-system/ui
       '@radix-ui/react-dialog':
@@ -1044,13 +1044,13 @@ importers:
         specifier: 4.2.0
         version: 4.2.0
     devDependencies:
-      '@medusajs/admin-vite-plugin':
+      '@nedusa/admin-vite-plugin':
         specifier: 2.21.1
         version: link:../admin-vite-plugin
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: 2.21.1
         version: link:../../core/types
-      '@medusajs/ui-preset':
+      '@nedusa/ui-preset':
         specifier: 2.21.1
         version: link:../../design-system/ui-preset
       '@types/qrcode':
@@ -1068,10 +1068,10 @@ importers:
 
   packages/cli/create-medusa-app:
     dependencies:
-      '@medusajs/deps':
+      '@nedusa/deps':
         specifier: 2.21.1
         version: link:../../deps
-      '@medusajs/telemetry':
+      '@nedusa/telemetry':
         specifier: 2.21.1
         version: link:../../medusa-telemetry
       boxen:
@@ -1147,13 +1147,13 @@ importers:
 
   packages/cli/medusa-cli:
     dependencies:
-      '@medusajs/deps':
+      '@nedusa/deps':
         specifier: 2.21.1
         version: link:../../deps
-      '@medusajs/telemetry':
+      '@nedusa/telemetry':
         specifier: 2.21.1
         version: link:../../medusa-telemetry
-      '@medusajs/utils':
+      '@nedusa/utils':
         specifier: 2.21.1
         version: link:../../core/utils
       '@types/express':
@@ -1219,10 +1219,10 @@ importers:
 
   packages/cli/oas/medusa-oas-cli:
     dependencies:
-      '@medusajs/medusa':
+      '@nedusa/medusa':
         specifier: 2.21.1
         version: link:../../../medusa
-      '@medusajs/utils':
+      '@nedusa/utils':
         specifier: 2.21.1
         version: link:../../../core/utils
       '@readme/json-schema-ref-parser':
@@ -1253,13 +1253,13 @@ importers:
         specifier: ^17.7.2
         version: 17.7.3
     devDependencies:
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: 2.21.1
         version: link:../../../core/types
 
   packages/cli/oas/oas-github-ci:
     dependencies:
-      '@medusajs/medusa-oas-cli':
+      '@nedusa/medusa-oas-cli':
         specifier: 2.21.1
         version: link:../medusa-oas-cli
       execa:
@@ -1278,7 +1278,7 @@ importers:
         specifier: ^5.5.11
         version: 5.6.0
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../framework
 
@@ -1290,25 +1290,25 @@ importers:
       '@jercle/yargonaut':
         specifier: ^1.1.5
         version: 1.1.5
-      '@medusajs/deps':
+      '@nedusa/deps':
         specifier: 2.21.1
         version: link:../../deps
-      '@medusajs/modules-sdk':
+      '@nedusa/modules-sdk':
         specifier: 2.21.1
         version: link:../modules-sdk
-      '@medusajs/orchestration':
+      '@nedusa/orchestration':
         specifier: 2.21.1
         version: link:../orchestration
-      '@medusajs/telemetry':
+      '@nedusa/telemetry':
         specifier: 2.21.1
         version: link:../../medusa-telemetry
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: 2.21.1
         version: link:../types
-      '@medusajs/utils':
+      '@nedusa/utils':
         specifier: 2.21.1
         version: link:../utils
-      '@medusajs/workflows-sdk':
+      '@nedusa/workflows-sdk':
         specifier: 2.21.1
         version: link:../workflows-sdk
       '@types/express':
@@ -1366,7 +1366,7 @@ importers:
         specifier: 5.0.0
         version: 5.0.0(zod@4.2.0)
     devDependencies:
-      '@medusajs/cli':
+      '@nedusa/cli':
         specifier: 2.21.1
         version: link:../../cli/medusa-cli
 
@@ -1381,52 +1381,52 @@ importers:
         specifier: ^6.15.2
         version: 6.16.0
     devDependencies:
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: 2.21.1
         version: link:../types
 
   packages/core/modules-sdk:
     dependencies:
-      '@medusajs/deps':
+      '@nedusa/deps':
         specifier: 2.21.1
         version: link:../../deps
-      '@medusajs/query':
+      '@nedusa/query':
         specifier: 2.21.1
         version: link:../query
-      '@medusajs/utils':
+      '@nedusa/utils':
         specifier: 2.21.1
         version: link:../utils
     devDependencies:
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: 2.21.1
         version: link:../types
 
   packages/core/orchestration:
     dependencies:
-      '@medusajs/deps':
+      '@nedusa/deps':
         specifier: 2.21.1
         version: link:../../deps
-      '@medusajs/utils':
+      '@nedusa/utils':
         specifier: 2.21.1
         version: link:../utils
       ulid:
         specifier: ^2.3.0
         version: 2.4.0
     devDependencies:
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: 2.21.1
         version: link:../types
 
   packages/core/query:
     dependencies:
-      '@medusajs/deps':
+      '@nedusa/deps':
         specifier: 2.21.1
         version: link:../../deps
-      '@medusajs/utils':
+      '@nedusa/utils':
         specifier: 2.21.1
         version: link:../utils
     devDependencies:
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: 2.21.1
         version: link:../types
 
@@ -1442,7 +1442,7 @@ importers:
         specifier: ^7.3.6
         version: 7.3.6(@types/node@20.19.43)(jiti@1.21.7)(yaml@2.9.1)
     devDependencies:
-      '@medusajs/deps':
+      '@nedusa/deps':
         specifier: 2.21.1
         version: link:../../deps
 
@@ -1460,7 +1460,7 @@ importers:
       '@graphql-tools/schema':
         specifier: ^10.0.6
         version: 10.1.1(graphql@16.14.2)
-      '@medusajs/deps':
+      '@nedusa/deps':
         specifier: 2.21.1
         version: link:../../deps
       '@types/pluralize':
@@ -1491,7 +1491,7 @@ importers:
         specifier: ^2.3.0
         version: 2.4.0
     devDependencies:
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: 2.21.1
         version: link:../types
       express:
@@ -1500,23 +1500,23 @@ importers:
 
   packages/core/workflows-sdk:
     dependencies:
-      '@medusajs/deps':
+      '@nedusa/deps':
         specifier: 2.21.1
         version: link:../../deps
-      '@medusajs/modules-sdk':
+      '@nedusa/modules-sdk':
         specifier: 2.21.1
         version: link:../modules-sdk
-      '@medusajs/orchestration':
+      '@nedusa/orchestration':
         specifier: 2.21.1
         version: link:../orchestration
-      '@medusajs/utils':
+      '@nedusa/utils':
         specifier: 2.21.1
         version: link:../utils
       ulid:
         specifier: ^2.3.0
         version: 2.4.0
     devDependencies:
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: 2.21.1
         version: link:../types
 
@@ -1564,7 +1564,7 @@ importers:
 
   packages/design-system/icons:
     devDependencies:
-      '@medusajs/toolbox':
+      '@nedusa/toolbox':
         specifier: 2.21.1
         version: link:../toolbox
       react:
@@ -1618,7 +1618,7 @@ importers:
       '@dnd-kit/utilities':
         specifier: ^3.2.2
         version: 3.2.2(react@18.3.1)
-      '@medusajs/icons':
+      '@nedusa/icons':
         specifier: 2.21.1
         version: link:../icons
       '@radix-ui/react-dialog':
@@ -1667,7 +1667,7 @@ importers:
         specifier: ^2.2.1
         version: 2.6.1
     devDependencies:
-      '@medusajs/ui-preset':
+      '@nedusa/ui-preset':
         specifier: 2.21.1
         version: link:../ui-preset
       react:
@@ -1686,7 +1686,7 @@ importers:
         specifier: ^1.0.6
         version: 1.0.7(tailwindcss@3.4.19(yaml@2.9.1))
     devDependencies:
-      '@medusajs/toolbox':
+      '@nedusa/toolbox':
         specifier: 2.21.1
         version: link:../toolbox
       tailwindcss:
@@ -1729,169 +1729,169 @@ importers:
       '@inquirer/input':
         specifier: ^2.2.9
         version: 2.3.0
-      '@medusajs/admin-bundler':
+      '@nedusa/admin-bundler':
         specifier: 2.21.1
         version: link:../admin/admin-bundler
-      '@medusajs/analytics':
+      '@nedusa/analytics':
         specifier: 2.21.1
         version: link:../modules/analytics
-      '@medusajs/analytics-local':
+      '@nedusa/analytics-local':
         specifier: 2.21.1
         version: link:../modules/providers/analytics-local
-      '@medusajs/analytics-posthog':
+      '@nedusa/analytics-posthog':
         specifier: 2.21.1
         version: link:../modules/providers/analytics-posthog
-      '@medusajs/api-key':
+      '@nedusa/api-key':
         specifier: 2.21.1
         version: link:../modules/api-key
-      '@medusajs/auth':
+      '@nedusa/auth':
         specifier: 2.21.1
         version: link:../modules/auth
-      '@medusajs/auth-emailpass':
+      '@nedusa/auth-emailpass':
         specifier: 2.21.1
         version: link:../modules/providers/auth-emailpass
-      '@medusajs/auth-github':
+      '@nedusa/auth-github':
         specifier: 2.21.1
         version: link:../modules/providers/auth-github
-      '@medusajs/auth-google':
+      '@nedusa/auth-google':
         specifier: 2.21.1
         version: link:../modules/providers/auth-google
-      '@medusajs/auth-oidc':
+      '@nedusa/auth-oidc':
         specifier: 2.21.1
         version: link:../modules/providers/auth-oidc
-      '@medusajs/cache-inmemory':
+      '@nedusa/cache-inmemory':
         specifier: 2.21.1
         version: link:../modules/cache-inmemory
-      '@medusajs/cache-redis':
+      '@nedusa/cache-redis':
         specifier: 2.21.1
         version: link:../modules/cache-redis
-      '@medusajs/caching':
+      '@nedusa/caching':
         specifier: 2.21.1
         version: link:../modules/caching
-      '@medusajs/caching-redis':
+      '@nedusa/caching-redis':
         specifier: 2.21.1
         version: link:../modules/providers/caching-redis
-      '@medusajs/cart':
+      '@nedusa/cart':
         specifier: 2.21.1
         version: link:../modules/cart
-      '@medusajs/core-flows':
+      '@nedusa/core-flows':
         specifier: 2.21.1
         version: link:../core/core-flows
-      '@medusajs/currency':
+      '@nedusa/currency':
         specifier: 2.21.1
         version: link:../modules/currency
-      '@medusajs/customer':
+      '@nedusa/customer':
         specifier: 2.21.1
         version: link:../modules/customer
-      '@medusajs/draft-order':
+      '@nedusa/draft-order':
         specifier: 2.21.1
         version: link:../plugins/draft-order
-      '@medusajs/event-bus-local':
+      '@nedusa/event-bus-local':
         specifier: 2.21.1
         version: link:../modules/event-bus-local
-      '@medusajs/event-bus-redis':
+      '@nedusa/event-bus-redis':
         specifier: 2.21.1
         version: link:../modules/event-bus-redis
-      '@medusajs/file':
+      '@nedusa/file':
         specifier: 2.21.1
         version: link:../modules/file
-      '@medusajs/file-local':
+      '@nedusa/file-local':
         specifier: 2.21.1
         version: link:../modules/providers/file-local
-      '@medusajs/file-s3':
+      '@nedusa/file-s3':
         specifier: 2.21.1
         version: link:../modules/providers/file-s3
-      '@medusajs/fulfillment':
+      '@nedusa/fulfillment':
         specifier: 2.21.1
         version: link:../modules/fulfillment
-      '@medusajs/fulfillment-manual':
+      '@nedusa/fulfillment-manual':
         specifier: 2.21.1
         version: link:../modules/providers/fulfillment-manual
-      '@medusajs/index':
+      '@nedusa/index':
         specifier: 2.21.1
         version: link:../modules/index
-      '@medusajs/inventory':
+      '@nedusa/inventory':
         specifier: 2.21.1
         version: link:../modules/inventory
-      '@medusajs/link-modules':
+      '@nedusa/link-modules':
         specifier: 2.21.1
         version: link:../modules/link-modules
-      '@medusajs/locking':
+      '@nedusa/locking':
         specifier: 2.21.1
         version: link:../modules/locking
-      '@medusajs/locking-postgres':
+      '@nedusa/locking-postgres':
         specifier: 2.21.1
         version: link:../modules/providers/locking-postgres
-      '@medusajs/locking-redis':
+      '@nedusa/locking-redis':
         specifier: 2.21.1
         version: link:../modules/providers/locking-redis
-      '@medusajs/notification':
+      '@nedusa/notification':
         specifier: 2.21.1
         version: link:../modules/notification
-      '@medusajs/notification-local':
+      '@nedusa/notification-local':
         specifier: 2.21.1
         version: link:../modules/providers/notification-local
-      '@medusajs/notification-sendgrid':
+      '@nedusa/notification-sendgrid':
         specifier: 2.21.1
         version: link:../modules/providers/notification-sendgrid
-      '@medusajs/order':
+      '@nedusa/order':
         specifier: 2.21.1
         version: link:../modules/order
-      '@medusajs/payment':
+      '@nedusa/payment':
         specifier: 2.21.1
         version: link:../modules/payment
-      '@medusajs/payment-stripe':
+      '@nedusa/payment-stripe':
         specifier: 2.21.1
         version: link:../modules/providers/payment-stripe
-      '@medusajs/pricing':
+      '@nedusa/pricing':
         specifier: 2.21.1
         version: link:../modules/pricing
-      '@medusajs/product':
+      '@nedusa/product':
         specifier: 2.21.1
         version: link:../modules/product
-      '@medusajs/promotion':
+      '@nedusa/promotion':
         specifier: 2.21.1
         version: link:../modules/promotion
-      '@medusajs/rbac':
+      '@nedusa/rbac':
         specifier: 2.21.1
         version: link:../modules/rbac
-      '@medusajs/region':
+      '@nedusa/region':
         specifier: 2.21.1
         version: link:../modules/region
-      '@medusajs/sales-channel':
+      '@nedusa/sales-channel':
         specifier: 2.21.1
         version: link:../modules/sales-channel
-      '@medusajs/search':
+      '@nedusa/search':
         specifier: 2.21.1
         version: link:../modules/search
-      '@medusajs/search-postgres':
+      '@nedusa/search-postgres':
         specifier: 2.21.1
         version: link:../modules/providers/search-postgres
-      '@medusajs/settings':
+      '@nedusa/settings':
         specifier: 2.21.1
         version: link:../modules/settings
-      '@medusajs/stock-location':
+      '@nedusa/stock-location':
         specifier: 2.21.1
         version: link:../modules/stock-location
-      '@medusajs/store':
+      '@nedusa/store':
         specifier: 2.21.1
         version: link:../modules/store
-      '@medusajs/tax':
+      '@nedusa/tax':
         specifier: 2.21.1
         version: link:../modules/tax
-      '@medusajs/telemetry':
+      '@nedusa/telemetry':
         specifier: 2.21.1
         version: link:../medusa-telemetry
-      '@medusajs/translation':
+      '@nedusa/translation':
         specifier: 2.21.1
         version: link:../modules/translation
-      '@medusajs/user':
+      '@nedusa/user':
         specifier: 2.21.1
         version: link:../modules/user
-      '@medusajs/workflow-engine-inmemory':
+      '@nedusa/workflow-engine-inmemory':
         specifier: 2.21.1
         version: link:../modules/workflow-engine-inmemory
-      '@medusajs/workflow-engine-redis':
+      '@nedusa/workflow-engine-redis':
         specifier: 2.21.1
         version: link:../modules/workflow-engine-redis
       '@swc/core':
@@ -1946,7 +1946,7 @@ importers:
         specifier: ^1.0.0-pre.53
         version: 1.0.0-pre.53
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../core/framework
 
@@ -1982,7 +1982,7 @@ importers:
 
   packages/medusa-test-utils:
     dependencies:
-      '@medusajs/medusa':
+      '@nedusa/medusa':
         specifier: 2.21.1
         version: link:../medusa
       '@types/express':
@@ -2001,28 +2001,28 @@ importers:
         specifier: ^2.3.0
         version: 2.4.0
     devDependencies:
-      '@medusajs/core-flows':
+      '@nedusa/core-flows':
         specifier: 2.21.1
         version: link:../core/core-flows
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../core/framework
 
   packages/modules/analytics:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/api-key:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
@@ -2050,16 +2050,16 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/cache-inmemory:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
 
@@ -2069,7 +2069,7 @@ importers:
         specifier: ^5.4.1
         version: 5.11.1(supports-color@10.2.2)
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
 
@@ -2085,10 +2085,10 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
       awilix:
@@ -2097,34 +2097,34 @@ importers:
 
   packages/modules/cart:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/currency:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/customer:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/event-bus-local:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
 
@@ -2137,88 +2137,88 @@ importers:
         specifier: ^5.4.1
         version: 5.11.1(supports-color@10.2.2)
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: 2.21.1
         version: link:../../core/types
-      '@medusajs/utils':
+      '@nedusa/utils':
         specifier: 2.21.1
         version: link:../../core/utils
 
   packages/modules/file:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/fulfillment:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/index:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/inventory:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/link-modules:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: 2.21.1
         version: link:../../core/types
 
   packages/modules/locking:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/notification:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/order:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
@@ -2228,49 +2228,49 @@ importers:
         specifier: 19.1.0
         version: 19.1.0(@types/node@20.19.43)
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/pricing:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/product:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/promotion:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/providers/analytics-local:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
 
   packages/modules/providers/analytics-posthog:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
       posthog-node:
@@ -2283,13 +2283,13 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
 
   packages/modules/providers/auth-github:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
 
@@ -2302,7 +2302,7 @@ importers:
         specifier: ^3.1.0
         version: 3.2.2(supports-color@10.2.2)
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
 
@@ -2312,7 +2312,7 @@ importers:
         specifier: ^5.7.1
         version: 5.7.1
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
 
@@ -2325,13 +2325,13 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
 
   packages/modules/providers/file-local:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
 
@@ -2350,19 +2350,19 @@ importers:
         specifier: ^2.3.0
         version: 2.4.0
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
 
   packages/modules/providers/fulfillment-manual:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
 
   packages/modules/providers/locking-postgres:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
 
@@ -2372,13 +2372,13 @@ importers:
         specifier: ^5.4.1
         version: 5.11.1(supports-color@10.2.2)
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
 
   packages/modules/providers/notification-local:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
 
@@ -2388,7 +2388,7 @@ importers:
         specifier: ^8.1.6
         version: 8.1.6(debug@4.4.3(supports-color@5.5.0))(supports-color@5.5.0)
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
 
@@ -2398,97 +2398,97 @@ importers:
         specifier: ^15.5.0
         version: 15.12.0
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
 
   packages/modules/providers/search-postgres:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../../medusa-test-utils
 
   packages/modules/rbac:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/region:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/sales-channel:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/search:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/settings:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/stock-location:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/store:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/tax:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
   packages/modules/translation:
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
@@ -2498,10 +2498,10 @@ importers:
         specifier: ^9.0.2
         version: 9.0.3
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
@@ -2514,10 +2514,10 @@ importers:
         specifier: ^2.3.0
         version: 2.4.0
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
@@ -2533,10 +2533,10 @@ importers:
         specifier: ^2.3.0
         version: 2.4.0
     devDependencies:
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
 
@@ -2551,7 +2551,7 @@ importers:
       '@hookform/resolvers':
         specifier: 5.5.7
         version: 5.5.7(@sinclair/typebox@0.34.52)(@standard-schema/spec@1.1.0)(ajv@8.20.0)(react-hook-form@7.83.0(react@18.3.1))(zod@4.2.0)
-      '@medusajs/js-sdk':
+      '@nedusa/js-sdk':
         specifier: 2.21.1
         version: link:../../core/js-sdk
       '@tanstack/react-query':
@@ -2591,31 +2591,31 @@ importers:
         specifier: 4.2.0
         version: 4.2.0
     devDependencies:
-      '@medusajs/admin-sdk':
+      '@nedusa/admin-sdk':
         specifier: 2.21.1
         version: link:../../admin/admin-sdk
-      '@medusajs/cli':
+      '@nedusa/cli':
         specifier: 2.21.1
         version: link:../../cli/medusa-cli
-      '@medusajs/dashboard':
+      '@nedusa/dashboard':
         specifier: 2.21.1
         version: link:../../admin/dashboard
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/icons':
+      '@nedusa/icons':
         specifier: 2.21.1
         version: link:../../design-system/icons
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: 2.21.1
         version: link:../../core/types
-      '@medusajs/ui':
+      '@nedusa/ui':
         specifier: 4.2.5
         version: link:../../design-system/ui
-      '@medusajs/ui-preset':
+      '@nedusa/ui-preset':
         specifier: 2.21.1
         version: link:../../design-system/ui-preset
 
@@ -2631,34 +2631,34 @@ importers:
         specifier: ^6.30.4 || ^7.0.0
         version: 7.18.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
-      '@medusajs/admin-sdk':
+      '@nedusa/admin-sdk':
         specifier: 2.21.1
         version: link:../../admin/admin-sdk
-      '@medusajs/cli':
+      '@nedusa/cli':
         specifier: 2.21.1
         version: link:../../cli/medusa-cli
-      '@medusajs/dashboard':
+      '@nedusa/dashboard':
         specifier: 2.21.1
         version: link:../../admin/dashboard
-      '@medusajs/framework':
+      '@nedusa/framework':
         specifier: 2.21.1
         version: link:../../core/framework
-      '@medusajs/icons':
+      '@nedusa/icons':
         specifier: 2.21.1
         version: link:../../design-system/icons
-      '@medusajs/medusa':
+      '@nedusa/medusa':
         specifier: 2.21.1
         version: link:../../medusa
-      '@medusajs/test-utils':
+      '@nedusa/test-utils':
         specifier: 2.21.1
         version: link:../../medusa-test-utils
-      '@medusajs/types':
+      '@nedusa/types':
         specifier: 2.21.1
         version: link:../../core/types
-      '@medusajs/ui':
+      '@nedusa/ui':
         specifier: 4.2.5
         version: link:../../design-system/ui
-      '@medusajs/ui-preset':
+      '@nedusa/ui-preset':
         specifier: 2.21.1
         version: link:../../design-system/ui-preset
       '@swc/core':

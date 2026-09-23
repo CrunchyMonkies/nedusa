@@ -1,5 +1,5 @@
-import { CrossModuleJoinSpec } from "@medusajs/types"
-import { composeTableName } from "@medusajs/utils"
+import { CrossModuleJoinSpec } from "@nedusa/types"
+import { composeTableName } from "@nedusa/utils"
 import { GraphCatalog } from "../catalog"
 import { resolveFieldAliasEntry } from "../helpers"
 import { InternalJoinerServiceConfig } from "../types"

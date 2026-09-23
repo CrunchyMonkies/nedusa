@@ -1,5 +1,5 @@
-import { ArrowPath } from "@medusajs/icons"
-import { HttpTypes } from "@medusajs/types"
+import { ArrowPath } from "@nedusa/icons"
+import { HttpTypes } from "@nedusa/types"
 import { useMemo } from "react"
 import { useTranslation } from "react-i18next"
 

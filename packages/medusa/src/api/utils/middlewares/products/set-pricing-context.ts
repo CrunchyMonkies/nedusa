@@ -2,9 +2,9 @@ import {
   AuthenticatedMedusaRequest,
   refetchEntities,
   refetchEntity,
-} from "@medusajs/framework/http"
-import { MedusaPricingContext } from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { MedusaPricingContext } from "@nedusa/framework/types"
+import { MedusaError } from "@nedusa/framework/utils"
 import { NextFunction } from "express"
 import { DEFAULT_PRICE_FIELD_PATHS } from "./constants"
 

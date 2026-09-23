@@ -5,9 +5,9 @@ import {
   getAssignableRolesWorkflow,
   removeUserRolesWorkflow,
   updateRbacRolesWorkflow,
-} from "@medusajs/core-flows"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@nedusa/core-flows"
+import { ContainerRegistrationKeys, Modules } from "@nedusa/framework/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import {
   adminHeaders,
   createAdminUser,

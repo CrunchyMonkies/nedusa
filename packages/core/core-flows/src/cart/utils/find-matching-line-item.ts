@@ -1,5 +1,5 @@
-import { BigNumberInput, CartLineItemDTO } from "@medusajs/framework/types"
-import { deepEqualObj, isPresent } from "@medusajs/framework/utils"
+import { BigNumberInput, CartLineItemDTO } from "@nedusa/framework/types"
+import { deepEqualObj, isPresent } from "@nedusa/framework/utils"
 
 /**
  * The properties of a new line item that determine whether it can be merged

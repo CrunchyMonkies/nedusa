@@ -19,7 +19,7 @@ export function resolveSearchUrl(
   }
   if (!baseUrl) {
     throw new Error(
-      "@medusajs/instantsearch-adapter: `baseUrl` is required when `path` is relative"
+      "@nedusa/instantsearch-adapter: `baseUrl` is required when `path` is relative"
     )
   }
   const origin = baseUrl.replace(/\/$/, "")
@@ -51,7 +51,7 @@ function extractResults(payload: unknown): SearchResult[] {
   }
 
   throw new Error(
-    "@medusajs/instantsearch-adapter: unexpected search response shape. Expected `{ results: SearchResult[] }`, an array of results, or a single SearchResult."
+    "@nedusa/instantsearch-adapter: unexpected search response shape. Expected `{ results: SearchResult[] }`, an array of results, or a single SearchResult."
   )
 }
 
@@ -62,7 +62,7 @@ export function unwrapSearchResults(
   const results = extractResults(payload)
   if (results.length !== expected) {
     throw new Error(
-      `@medusajs/instantsearch-adapter: expected ${expected} search result(s), received ${results.length}`
+      `@nedusa/instantsearch-adapter: expected ${expected} search result(s), received ${results.length}`
     )
   }
   return results
@@ -114,12 +114,12 @@ export function assertAdapterTransport(
   }
 
   if (!options.path) {
-    throw new Error("@medusajs/instantsearch-adapter: provide `path`")
+    throw new Error("@nedusa/instantsearch-adapter: provide `path`")
   }
 
   if (!options.sdk && !options.baseUrl && !isAbsoluteUrl(options.path)) {
     throw new Error(
-      "@medusajs/instantsearch-adapter: provide `sdk`, `requester`, or `baseUrl`"
+      "@nedusa/instantsearch-adapter: provide `sdk`, `requester`, or `baseUrl`"
     )
   }
 }
@@ -133,7 +133,7 @@ export function createSearchRequester(
 
   const path = options.path
   if (!path) {
-    throw new Error("@medusajs/instantsearch-adapter: provide `path`")
+    throw new Error("@nedusa/instantsearch-adapter: provide `path`")
   }
 
   const batch = options.batch !== false

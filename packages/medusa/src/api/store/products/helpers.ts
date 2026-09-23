@@ -1,16 +1,16 @@
-import { refetchEntity } from "@medusajs/framework/http"
+import { refetchEntity } from "@nedusa/framework/http"
 import {
   HttpTypes,
   ItemTaxLineDTO,
   MedusaContainer,
   TaxableItemDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   applyTranslationsToTaxLines,
   calculateAmountsWithTax,
   FeatureFlag,
   Modules,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { StoreRequestWithContext } from "../types"
 import TranslationFeatureFlag from "../../../feature-flags/translation"
 

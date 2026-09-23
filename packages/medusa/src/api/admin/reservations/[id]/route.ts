@@ -1,14 +1,14 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { MedusaError } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { MedusaError } from "@nedusa/framework/utils"
 import {
   deleteReservationsWorkflow,
   updateReservationsWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 import { refetchReservation } from "../helpers"
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@nedusa/framework/types"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<

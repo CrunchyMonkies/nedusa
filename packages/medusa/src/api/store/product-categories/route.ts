@@ -1,12 +1,12 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import {
   StoreProductCategoryListParams,
   StoreProductCategoryListResponse,
-} from "@medusajs/framework/types"
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils"
 import { publishedProductsContext } from "../utils/published-products-context"
 
 export const GET = async (

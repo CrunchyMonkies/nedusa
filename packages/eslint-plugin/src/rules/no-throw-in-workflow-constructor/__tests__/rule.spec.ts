@@ -8,7 +8,7 @@ ruleTester.run("no-throw-in-workflow-constructor", rule, {
     // No throw in the constructor at all.
     {
       code: `
-        import { createWorkflow } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", (input) => {
           return input
         })
@@ -18,7 +18,7 @@ ruleTester.run("no-throw-in-workflow-constructor", rule, {
     // compensation of previously executed steps.
     {
       code: `
-        import { createWorkflow, createStep } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow, createStep } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", (input) => {
           const step = createStep("s", () => {
             if (!input) {
@@ -34,7 +34,7 @@ ruleTester.run("no-throw-in-workflow-constructor", rule, {
     // covered by no-throw-in-transform — not this rule's concern.
     {
       code: `
-        import { createWorkflow, transform } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow, transform } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", (input) => {
           const value = transform({ input }, (data) => {
             if (!data.input) {
@@ -49,7 +49,7 @@ ruleTester.run("no-throw-in-workflow-constructor", rule, {
     // throw inside a createStep nested inside a when().then() callback is fine.
     {
       code: `
-        import { createWorkflow, createStep, when } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow, createStep, when } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", (input) => {
           when({ input }, (data) => data.input.foo).then(() => {
             const step = createStep("s", () => {
@@ -78,7 +78,7 @@ ruleTester.run("no-throw-in-workflow-constructor", rule, {
     // throw outside any workflow constructor.
     {
       code: `
-        import { createWorkflow } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow } from "@nedusa/framework/workflows-sdk"
         function helper(x) {
           if (!x) {
             throw new Error("missing x")
@@ -93,7 +93,7 @@ ruleTester.run("no-throw-in-workflow-constructor", rule, {
     // Arrow constructor with direct throw.
     {
       code: `
-        import { createWorkflow } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", (input) => {
           if (!input) {
             throw new Error("missing input")
@@ -106,7 +106,7 @@ ruleTester.run("no-throw-in-workflow-constructor", rule, {
     // Function-expression constructor with direct throw.
     {
       code: `
-        import { createWorkflow } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", function (input) {
           if (!input) {
             throw new Error("missing input")
@@ -119,7 +119,7 @@ ruleTester.run("no-throw-in-workflow-constructor", rule, {
     // Aliased createWorkflow import binding.
     {
       code: `
-        import { createWorkflow as cw } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow as cw } from "@nedusa/framework/workflows-sdk"
         cw("my-workflow", (input) => {
           if (!input) {
             throw new Error("missing input")
@@ -132,7 +132,7 @@ ruleTester.run("no-throw-in-workflow-constructor", rule, {
     // Unconditional throw.
     {
       code: `
-        import { createWorkflow } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", (input) => {
           throw new Error("not implemented")
         })
@@ -142,7 +142,7 @@ ruleTester.run("no-throw-in-workflow-constructor", rule, {
     // Multiple throws — each flagged.
     {
       code: `
-        import { createWorkflow } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", (input) => {
           if (!input.a) { throw new Error("a") }
           if (!input.b) { throw new Error("b") }
@@ -158,7 +158,7 @@ ruleTester.run("no-throw-in-workflow-constructor", rule, {
     // callback runs at workflow-definition time, just like the constructor.
     {
       code: `
-        import { createWorkflow, when } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow, when } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", (input) => {
           when({ input }, (data) => data.input.foo).then(() => {
             if (!input) {
@@ -173,7 +173,7 @@ ruleTester.run("no-throw-in-workflow-constructor", rule, {
     // Aliased `when` import is tracked too.
     {
       code: `
-        import { createWorkflow, when as w } from "@medusajs/framework/workflows-sdk"
+        import { createWorkflow, when as w } from "@nedusa/framework/workflows-sdk"
         createWorkflow("my-workflow", (input) => {
           w({ input }, (data) => data.input.foo).then(() => {
             if (!input) {

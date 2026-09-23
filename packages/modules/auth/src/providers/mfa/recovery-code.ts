@@ -2,7 +2,7 @@ import {
   Context, 
   ModulesSdkTypes, 
   RecoveryCodeAuthMfaProvider
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import { AuthMfaRecoveryCode } from "@models"
 import {
   generateRecoveryCode,

@@ -16,7 +16,7 @@ import {
   QueryContextType,
   SearchResultSet,
   SearchTypes,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import {
   MedusaError,
   applyTranslations,
@@ -27,7 +27,7 @@ import {
   remoteQueryObjectFromString,
   unflattenObjectKeys,
   isString,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import { RelationMap, RemoteJoiner } from "../joiner"
 import { queryCacheDecoratorOptions } from "./cache"
 import { ModuleDataFetcher } from "./module-data-fetcher"

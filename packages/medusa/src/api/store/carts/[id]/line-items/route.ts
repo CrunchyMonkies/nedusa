@@ -1,8 +1,8 @@
-import { addToCartWorkflowId } from "@medusajs/core-flows"
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
-import { AdditionalData } from "@medusajs/types"
-import { Modules } from "@medusajs/utils"
+import { addToCartWorkflowId } from "@nedusa/core-flows"
+import { MedusaRequest, MedusaResponse } from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
+import { AdditionalData } from "@nedusa/types"
+import { Modules } from "@nedusa/utils"
 import { refetchCart } from "../../helpers"
 
 export const POST = async (

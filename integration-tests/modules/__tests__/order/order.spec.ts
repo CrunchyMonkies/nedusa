@@ -1,17 +1,17 @@
 import {
   createOrderChangeWorkflow,
   createOrderWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 import {
   medusaIntegrationTestRunner,
   normalizeBigNumbers,
-} from "@medusajs/test-utils"
+} from "@nedusa/test-utils"
 import {
   CreateOrderLineItemDTO,
   IOrderModuleService,
   OrderDTO,
-} from "@medusajs/types"
-import { Modules, ProductStatus } from "@medusajs/utils"
+} from "@nedusa/types"
+import { Modules, ProductStatus } from "@nedusa/utils"
 import {
   adminHeaders,
   createAdminUser,

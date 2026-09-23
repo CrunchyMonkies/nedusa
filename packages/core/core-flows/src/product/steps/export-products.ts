@@ -2,9 +2,9 @@ import {
   ContainerRegistrationKeys,
   deduplicate,
   Modules,
-} from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
-import { WorkflowTypes } from "@medusajs/framework/types"
+} from "@nedusa/framework/utils"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
+import { WorkflowTypes } from "@nedusa/framework/types"
 import { normalizeForExport } from "../helpers/normalize-for-export"
 import { appendProductExportKeys } from "../helpers/product-export-keys"
 import { json2csv } from "json-2-csv"

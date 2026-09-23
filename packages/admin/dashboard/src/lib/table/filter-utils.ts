@@ -1,5 +1,5 @@
-import { HttpTypes } from "@medusajs/types"
-import { createDataTableFilterHelper, DataTableFilter } from "@medusajs/ui"
+import { HttpTypes } from "@nedusa/types"
+import { createDataTableFilterHelper, DataTableFilter } from "@nedusa/ui"
 import {
   DataTableFilterOption,
   DataTableFilterType,

@@ -1,5 +1,5 @@
-import { RemoteJoinerQuery } from "@medusajs/types"
-import { isObject } from "@medusajs/utils"
+import { RemoteJoinerQuery } from "@nedusa/types"
+import { isObject } from "@nedusa/utils"
 import { GraphCatalog } from "../catalog"
 import { InternalJoinerServiceConfig, ResidualOrderBy } from "../types"
 import { resolveChain, resolvePathHops } from "./build-chain"

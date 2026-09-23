@@ -1,7 +1,7 @@
 import {
   OidcAuthProviderOptions,
   OidcClaimMappings,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 
 export type { OidcClaimMappings }
 

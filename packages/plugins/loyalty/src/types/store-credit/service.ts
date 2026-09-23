@@ -1,10 +1,10 @@
-import { RestoreReturn } from "@medusajs/framework/types";
+import { RestoreReturn } from "@nedusa/framework/types";
 import {
   BaseFilterable,
   Context,
   FindConfig,
   IModuleService,
-} from "@medusajs/types";
+} from "@nedusa/types";
 import {
   ModuleAccountStats,
   ModuleAccountTransaction,

@@ -2,8 +2,8 @@ import {
   ModuleJoinerConfig,
   RemoteJoinerOptions,
   RemoteJoinerQuery,
-} from "@medusajs/types"
-import { MedusaError } from "@medusajs/utils"
+} from "@nedusa/types"
+import { MedusaError } from "@nedusa/utils"
 import { GraphCatalog } from "./catalog"
 import { compileQuery } from "./compile"
 import { executePlan } from "./execute"

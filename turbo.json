@@ -7,7 +7,7 @@
       "outputs": ["dist/**", ".medusa/**"]
     },
     "build:plugin": {
-      "dependsOn": ["^build", "@medusajs/medusa#build"],
+      "dependsOn": ["^build", "@nedusa/medusa#build"],
       "outputs": [".medusa/**"]
     },
     "test": { "outputs": [] },

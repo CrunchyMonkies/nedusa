@@ -1,4 +1,4 @@
-import { Spinner } from "@medusajs/icons"
+import { Spinner } from "@nedusa/icons"
 
 /**
  * Rendered by the root route while react-router resolves loaders on the initial

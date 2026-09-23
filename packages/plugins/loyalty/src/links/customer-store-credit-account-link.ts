@@ -1,5 +1,5 @@
-import { defineLink } from "@medusajs/framework/utils";
-import CustomerModule from "@medusajs/medusa/customer";
+import { defineLink } from "@nedusa/framework/utils";
+import CustomerModule from "@nedusa/medusa/customer";
 import StoreCreditModule from "../modules/store-credit";
 
 defineLink(

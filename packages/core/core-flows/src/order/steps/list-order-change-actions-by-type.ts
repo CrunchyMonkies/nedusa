@@ -1,6 +1,6 @@
-import { IOrderModuleService } from "@medusajs/framework/types"
-import { ChangeActionType, Modules } from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+import { IOrderModuleService } from "@nedusa/framework/types"
+import { ChangeActionType, Modules } from "@nedusa/framework/utils"
+import { StepResponse, createStep } from "@nedusa/framework/workflows-sdk"
 
 /**
  * This step lists order change actions filtered by action type.

@@ -1,6 +1,6 @@
 /**
  * The flat-config plugin namespace under which all of this plugin's rules
- * are exposed to consumers (e.g. `"@medusajs/no-async-workflow-constructor"`).
+ * are exposed to consumers (e.g. `"@nedusa/no-async-workflow-constructor"`).
  *
  * Consumers register the plugin under this key:
  *   plugins: { [PLUGIN_NAMESPACE]: plugin }
@@ -9,7 +9,7 @@
  * names (e.g. `"no-async-workflow-constructor"`) — ESLint joins the plugin
  * key with the bare rule key to form the fully-qualified id.
  */
-export const PLUGIN_NAMESPACE = "@medusajs"
+export const PLUGIN_NAMESPACE = "@nedusa"
 
 /** The npm package name; also used as `meta.name` on the plugin object. */
 export const PLUGIN_NAME = `${PLUGIN_NAMESPACE}/eslint-plugin`
@@ -18,12 +18,12 @@ export const PLUGIN_NAME = `${PLUGIN_NAMESPACE}/eslint-plugin`
 export const ruleId = (name: string): string => `${PLUGIN_NAMESPACE}/${name}`
 
 /** Public entry-point sources that rules inspect imports from. */
-export const FRAMEWORK_UTILS_SOURCE = "@medusajs/framework/utils"
-export const WORKFLOWS_SDK_SOURCE = "@medusajs/framework/workflows-sdk"
-export const FRAMEWORK_TYPES_SOURCE = "@medusajs/framework/types"
-export const FRAMEWORK_HTTP_SOURCE = "@medusajs/framework/http"
-export const LEGACY_TYPES_SOURCE = "@medusajs/types"
-export const ADMIN_SDK_SOURCE = "@medusajs/admin-sdk"
+export const FRAMEWORK_UTILS_SOURCE = "@nedusa/framework/utils"
+export const WORKFLOWS_SDK_SOURCE = "@nedusa/framework/workflows-sdk"
+export const FRAMEWORK_TYPES_SOURCE = "@nedusa/framework/types"
+export const FRAMEWORK_HTTP_SOURCE = "@nedusa/framework/http"
+export const LEGACY_TYPES_SOURCE = "@nedusa/types"
+export const ADMIN_SDK_SOURCE = "@nedusa/admin-sdk"
 
 /** All sources that expose Medusa type declarations. */
 export const TYPES_SOURCES: ReadonlySet<string> = new Set([
@@ -33,12 +33,12 @@ export const TYPES_SOURCES: ReadonlySet<string> = new Set([
 
 /**
  * First Medusa version that ships the `allowFields` middleware from
- * `@medusajs/framework/http`. Rules quote it in their messages because the
+ * `@nedusa/framework/http`. Rules quote it in their messages because the
  * plugin version and the project's Medusa version can differ.
  */
 export const ALLOW_FIELDS_MIN_MEDUSA_VERSION = "2.21.0"
 
-/** The name of the `Modules` enum as imported from `@medusajs/framework/utils`. */
+/** The name of the `Modules` enum as imported from `@nedusa/framework/utils`. */
 export const MODULES_ENUM = "Modules"
 
 /**

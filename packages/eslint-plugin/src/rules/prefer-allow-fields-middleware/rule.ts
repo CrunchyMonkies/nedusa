@@ -14,10 +14,10 @@ export const rule = createRule<[], MessageIds>({
     type: "suggestion",
     docs: {
       description:
-        "Middlewares that add allowed fields should use the `allowFields` middleware from `@medusajs/framework/http` instead of writing to `req.allowed`.",
+        "Middlewares that add allowed fields should use the `allowFields` middleware from `@nedusa/framework/http` instead of writing to `req.allowed`.",
     },
     messages: {
-      preferAllowFields: `Use the \`allowFields\` middleware from \`@medusajs/framework/http\` instead of writing to \`req.allowed\`, for example \`middlewares: [allowFields("brand")]\`. \`allowFields\` requires Medusa v${ALLOW_FIELDS_MIN_MEDUSA_VERSION} or later, so keep this middleware if the project runs an earlier version.`,
+      preferAllowFields: `Use the \`allowFields\` middleware from \`@nedusa/framework/http\` instead of writing to \`req.allowed\`, for example \`middlewares: [allowFields("brand")]\`. \`allowFields\` requires Medusa v${ALLOW_FIELDS_MIN_MEDUSA_VERSION} or later, so keep this middleware if the project runs an earlier version.`,
     },
     schema: [],
   },

@@ -1,4 +1,4 @@
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@nedusa/types"
 import { useProducts } from "../../../../../hooks/api/products"
 import {
   createTableAdapter,

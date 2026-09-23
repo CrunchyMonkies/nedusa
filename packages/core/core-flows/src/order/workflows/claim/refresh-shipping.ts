@@ -1,11 +1,11 @@
-import { ChangeActionType, OrderChangeStatus } from "@medusajs/framework/utils"
+import { ChangeActionType, OrderChangeStatus } from "@nedusa/framework/utils"
 import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
   transform,
   when,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 
 import { maybeRefreshShippingMethodsWorkflow } from "../maybe-refresh-shipping-methods"
 import { useQueryGraphStep } from "../../../common"

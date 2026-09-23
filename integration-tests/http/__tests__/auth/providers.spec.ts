@@ -1,6 +1,6 @@
-import { IAuthModuleService, UserDTO } from "@medusajs/framework/types"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { IAuthModuleService, UserDTO } from "@nedusa/framework/types"
+import { ContainerRegistrationKeys, Modules } from "@nedusa/framework/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import jwt from "jsonwebtoken"
 import {
   adminHeaders,

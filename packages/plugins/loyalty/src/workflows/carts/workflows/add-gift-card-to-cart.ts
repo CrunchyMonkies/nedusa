@@ -1,11 +1,11 @@
-import { CreateCartCreditLineDTO } from "@medusajs/framework/types";
-import { MathBN, MedusaError, Modules } from "@medusajs/framework/utils";
+import { CreateCartCreditLineDTO } from "@nedusa/framework/types";
+import { MathBN, MedusaError, Modules } from "@nedusa/framework/utils";
 import {
   createCartCreditLinesWorkflow,
   createLinksWorkflow,
   refreshCartItemsWorkflow,
   useQueryGraphStep,
-} from "@medusajs/medusa/core-flows";
+} from "@nedusa/medusa/core-flows";
 import {
   createHook,
   createStep,
@@ -13,7 +13,7 @@ import {
   StepResponse,
   transform,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk";
+} from "@nedusa/framework/workflows-sdk";
 import { PluginModule } from "../../../types";
 import { PluginCartDTO } from "../../../types/cart";
 import { ModuleGiftCard } from "../../../types/loyalty";
@@ -222,7 +222,7 @@ export interface AddGiftCardToCartWorkflowInput {
  * the workflow execution.
  *
  * @example
- * import { addGiftCardToCartWorkflow } from "@medusajs/loyalty-plugin/workflows";
+ * import { addGiftCardToCartWorkflow } from "@nedusa/loyalty-plugin/workflows";
  *
  * addGiftCardToCartWorkflow.hooks.validate(
  *   async ({ input, cart, giftCards }, { container }) => {

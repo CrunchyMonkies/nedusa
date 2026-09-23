@@ -1,4 +1,4 @@
-import { Event, SearchTypes } from "@medusajs/framework/types"
+import { Event, SearchTypes } from "@nedusa/framework/types"
 import {
   SearchEventRoutes,
   SearchIndexes,

@@ -14,8 +14,8 @@
     "test": "jest --passWithNoTests src"
   },
   "dependencies": {
-    "@medusajs/deps": "2.21.1",
-    "@medusajs/telemetry": "2.21.1",
+    "@nedusa/deps": "2.21.1",
+    "@nedusa/telemetry": "2.21.1",
     "boxen": "^5.0.1",
     "chalk": "^4.1.2",
     "commander": "^11.0.0",

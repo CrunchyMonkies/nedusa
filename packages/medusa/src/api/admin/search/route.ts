@@ -1,17 +1,17 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import {
   HttpTypes,
   RemoteQueryFunction,
   SearchTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   Modules,
   promiseAll,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { searchWithGraphFallback } from "./fallback-search"
 import { AdminGetSearchParamsType } from "./validators"
 

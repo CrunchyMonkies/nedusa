@@ -1,12 +1,12 @@
-import { MedusaAppLoader, Migrator } from "@medusajs/framework"
-import { LinkLoader } from "@medusajs/framework/links"
+import { MedusaAppLoader, Migrator } from "@nedusa/framework"
+import { LinkLoader } from "@nedusa/framework/links"
 import {
   ContainerRegistrationKeys,
   getResolvedPlugins,
   MedusaError,
   mergePluginModules,
-} from "@medusajs/framework/utils"
-import { Logger } from "@medusajs/framework/types"
+} from "@nedusa/framework/utils"
+import { Logger } from "@nedusa/framework/types"
 import { join } from "path"
 import { initializeContainer } from "../../loaders"
 import { ensureDbExists } from "../utils"

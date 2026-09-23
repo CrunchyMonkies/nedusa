@@ -1,30 +1,30 @@
-import { MedusaContainer } from "@medusajs/framework"
-import { asFunction } from "@medusajs/framework/awilix"
+import { MedusaContainer } from "@nedusa/framework"
+import { asFunction } from "@nedusa/framework/awilix"
 import {
   DistributedTransactionType,
   TransactionState,
   WorkflowManager,
-} from "@medusajs/framework/orchestration"
+} from "@nedusa/framework/orchestration"
 import {
   Context,
   IWorkflowEngineService,
   Logger,
   RemoteQueryFunction,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   Module,
   Modules,
   promiseAll,
   TransactionHandlerType,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   createStep,
   createWorkflow,
   StepResponse,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@nedusa/framework/workflows-sdk"
+import { moduleIntegrationTestRunner } from "@nedusa/test-utils"
 import { WorkflowsModuleService } from "@services"
 import { setTimeout as setTimeoutSync } from "timers"
 import { setTimeout as setTimeoutPromise } from "timers/promises"

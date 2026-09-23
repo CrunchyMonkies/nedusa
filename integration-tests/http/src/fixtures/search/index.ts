@@ -1,11 +1,11 @@
-import "@medusajs/modules-sdk"
+import "@nedusa/modules-sdk"
 import {
   defineSearchIndex,
   graphConsume,
   graphSeed,
   ProductEvents,
   search,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 
 const BATCH_SIZE = 100
 

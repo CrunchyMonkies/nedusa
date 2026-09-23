@@ -1,4 +1,4 @@
-import { AdminCampaign } from "@medusajs/types"
+import { AdminCampaign } from "@nedusa/types"
 import { isAfter, isBefore } from "date-fns"
 
 export function campaignStatus(campaign: AdminCampaign) {

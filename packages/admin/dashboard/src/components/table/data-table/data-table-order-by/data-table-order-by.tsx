@@ -1,5 +1,5 @@
-import { DescendingSorting } from "@medusajs/icons"
-import { DropdownMenu, IconButton } from "@medusajs/ui"
+import { DescendingSorting } from "@nedusa/icons"
+import { DropdownMenu, IconButton } from "@nedusa/ui"
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { useSearchParams } from "react-router-dom"

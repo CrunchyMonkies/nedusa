@@ -1,6 +1,6 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { IStoreModuleService } from "@medusajs/types"
-import { Modules } from "@medusajs/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { IStoreModuleService } from "@nedusa/types"
+import { Modules } from "@nedusa/utils"
 import qs from "qs"
 import {
   adminHeaders,

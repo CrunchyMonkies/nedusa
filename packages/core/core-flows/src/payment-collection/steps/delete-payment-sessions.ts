@@ -2,13 +2,13 @@ import {
   IPaymentModuleService,
   Logger,
   PaymentSessionDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   Modules,
   promiseAll,
-} from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/utils"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
 
 /**
  * The data to delete payment sessions.

@@ -4,13 +4,13 @@ import {
   ModuleDefinition,
   ModuleExports,
   ModuleResolution,
-} from "@medusajs/types"
+} from "@nedusa/types"
 
 import {
   isObject,
   isString,
   normalizeImportPathWithSource,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import { ModulesDefinition } from "../definitions"
 import { MODULE_SCOPE } from "../types"
 

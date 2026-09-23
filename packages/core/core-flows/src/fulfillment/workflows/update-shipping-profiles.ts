@@ -1,9 +1,9 @@
-import type { FulfillmentWorkflow } from "@medusajs/framework/types"
+import type { FulfillmentWorkflow } from "@nedusa/framework/types"
 import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { updateShippingProfilesStep } from "../steps/update-shipping-profiles"
 
 /**

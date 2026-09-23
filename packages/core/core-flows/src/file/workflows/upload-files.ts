@@ -1,9 +1,9 @@
-import type { FileDTO } from "@medusajs/framework/types"
+import type { FileDTO } from "@nedusa/framework/types"
 import {
   createWorkflow,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { uploadFilesStep } from "../steps"
 
 /**

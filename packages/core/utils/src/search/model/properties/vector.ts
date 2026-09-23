@@ -1,4 +1,4 @@
-import { SearchPropertyMetadata } from "@medusajs/types"
+import { SearchPropertyMetadata } from "@nedusa/types"
 import { BaseSearchProperty } from "./base"
 
 // Extends the core base directly: a vector is matched by similarity, so

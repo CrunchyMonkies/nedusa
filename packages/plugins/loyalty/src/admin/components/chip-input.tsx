@@ -1,5 +1,5 @@
-import { XMarkMini } from "@medusajs/icons";
-import { Badge, clx } from "@medusajs/ui";
+import { XMarkMini } from "@nedusa/icons";
+import { Badge, clx } from "@nedusa/ui";
 import { AnimatePresence, motion } from "motion/react";
 import {
   FocusEvent,

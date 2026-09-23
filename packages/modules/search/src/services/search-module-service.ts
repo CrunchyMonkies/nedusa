@@ -7,14 +7,14 @@ import {
   ModulesSdkTypes,
   RemoteQueryFunction,
   SearchTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   MedusaError,
   MedusaService,
   Modules,
   promiseAll,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   SearchEventRoutes,
   SearchIndexContext,

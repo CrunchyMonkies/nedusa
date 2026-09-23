@@ -1,9 +1,9 @@
 import {
   beginDraftOrderEditWorkflow,
   cancelDraftOrderEditWorkflow,
-} from "@medusajs/core-flows"
-import { AuthenticatedMedusaRequest, MedusaResponse } from "@medusajs/framework"
-import { HttpTypes } from "@medusajs/types"
+} from "@nedusa/core-flows"
+import { AuthenticatedMedusaRequest, MedusaResponse } from "@nedusa/framework"
+import { HttpTypes } from "@nedusa/types"
 
 export const POST = async (
   req: AuthenticatedMedusaRequest,

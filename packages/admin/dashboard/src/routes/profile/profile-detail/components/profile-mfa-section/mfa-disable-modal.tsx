@@ -1,5 +1,5 @@
-import { Button, FocusModal, Heading, Hint, OtpInput, Text } from "@medusajs/ui"
-import type { AuthTypes } from "@medusajs/types"
+import { Button, FocusModal, Heading, Hint, OtpInput, Text } from "@nedusa/ui"
+import type { AuthTypes } from "@nedusa/types"
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { useDisableAuthMfa } from "../../../../../hooks/api"

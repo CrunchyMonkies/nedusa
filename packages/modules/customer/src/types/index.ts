@@ -1,4 +1,4 @@
-import { Logger } from "@medusajs/framework/types"
+import { Logger } from "@nedusa/framework/types"
 
 export * as ServiceTypes from "./services"
 export * from "./services"

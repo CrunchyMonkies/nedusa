@@ -1,6 +1,6 @@
-import { Channels, PencilSquare } from "@medusajs/icons"
-import { HttpTypes } from "@medusajs/types"
-import { Container, Heading, Text } from "@medusajs/ui"
+import { Channels, PencilSquare } from "@nedusa/icons"
+import { HttpTypes } from "@nedusa/types"
+import { Container, Heading, Text } from "@nedusa/ui"
 import { useTranslation } from "react-i18next"
 
 import { ActionMenu } from "../../../../../components/common/action-menu"

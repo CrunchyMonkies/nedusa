@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/stock-location",
+  "name": "@nedusa/stock-location",
   "version": "2.21.1",
   "description": "Stock Location Module for Medusa",
   "main": "dist/index.js",
@@ -26,11 +26,11 @@
   "author": "Medusa",
   "license": "MIT",
   "devDependencies": {
-    "@medusajs/framework": "2.21.1",
-    "@medusajs/test-utils": "2.21.1"
+    "@nedusa/framework": "2.21.1",
+    "@nedusa/test-utils": "2.21.1"
   },
   "peerDependencies": {
-    "@medusajs/framework": "2.21.1"
+    "@nedusa/framework": "2.21.1"
   },
   "scripts": {
     "watch": "tsc --build --watch",

@@ -1,5 +1,5 @@
-import "@medusajs/types"
-import "@medusajs/utils"
+import "@nedusa/types"
+import "@nedusa/utils"
 import "../types/container"
 
-export * from "@medusajs/utils"
+export * from "@nedusa/utils"

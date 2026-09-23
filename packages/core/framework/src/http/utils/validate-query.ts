@@ -1,10 +1,10 @@
-import { z } from "@medusajs/deps/zod"
-import { BaseEntity, QueryConfig, RequestQueryFields } from "@medusajs/types"
+import { z } from "@nedusa/deps/zod"
+import { BaseEntity, QueryConfig, RequestQueryFields } from "@nedusa/types"
 import {
   isDefined,
   MedusaError,
   removeUndefinedProperties,
-} from "@medusajs/utils"
+} from "@nedusa/utils"
 import { NextFunction } from "express"
 
 import { zodValidator } from "../../zod/zod-helpers"

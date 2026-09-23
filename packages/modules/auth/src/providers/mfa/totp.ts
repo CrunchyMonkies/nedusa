@@ -4,8 +4,8 @@ import {
   Context,
   DAL,
   ModulesSdkTypes,
-} from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { MedusaError } from "@nedusa/framework/utils"
 import { AuthMfaFactor } from "@models"
 import { TotpMfaProviderOptions } from "@types"
 import { decryptSecret, encryptSecret } from "../../utils/mfa"

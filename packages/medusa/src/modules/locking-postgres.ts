@@ -1,6 +1,6 @@
-import PostgresLockingProvider from "@medusajs/locking-postgres"
+import PostgresLockingProvider from "@nedusa/locking-postgres"
 
-export * from "@medusajs/locking-postgres"
+export * from "@nedusa/locking-postgres"
 
 export default PostgresLockingProvider
-export const discoveryPath = require.resolve("@medusajs/locking-postgres")
+export const discoveryPath = require.resolve("@nedusa/locking-postgres")

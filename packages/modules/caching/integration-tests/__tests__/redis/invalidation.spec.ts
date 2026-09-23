@@ -1,7 +1,7 @@
-import { MedusaModule } from "@medusajs/framework/modules-sdk"
-import { ICachingModuleService } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
+import { MedusaModule } from "@nedusa/framework/modules-sdk"
+import { ICachingModuleService } from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
+import { moduleIntegrationTestRunner } from "@nedusa/test-utils"
 import { setTimeout } from "timers/promises"
 import { EventBusServiceMock } from "../../__fixtures__/event-bus-mock"
 

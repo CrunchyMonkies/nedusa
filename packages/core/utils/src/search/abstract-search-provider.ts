@@ -1,4 +1,4 @@
-import { SearchTypes } from "@medusajs/types"
+import { SearchTypes } from "@nedusa/types"
 
 /**
  * An abstract class for search providers. Extend this class to create a search
@@ -21,8 +21,8 @@ import { SearchTypes } from "@medusajs/types"
  * #### Example
  *
  * ```ts
- * import { Logger } from "@medusajs/framework/types"
- * import { AbstractSearchProviderService } from "@medusajs/framework/utils"
+ * import { Logger } from "@nedusa/framework/types"
+ * import { AbstractSearchProviderService } from "@nedusa/framework/utils"
  *
  * type InjectedDependencies = {
  *   logger: Logger

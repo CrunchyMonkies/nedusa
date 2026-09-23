@@ -1,8 +1,8 @@
-import { AdminInventoryLevel } from "@medusajs/types"
-import { PencilSquare, Trash } from "@medusajs/icons"
+import { AdminInventoryLevel } from "@nedusa/types"
+import { PencilSquare, Trash } from "@nedusa/icons"
 
 import { useMemo } from "react"
-import { createDataTableColumnHelper, toast, usePrompt } from "@medusajs/ui"
+import { createDataTableColumnHelper, toast, usePrompt } from "@nedusa/ui"
 import { useTranslation } from "react-i18next"
 import { PlaceholderCell } from "../../../../../components/table/table-cells/common/placeholder-cell"
 import {

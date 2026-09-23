@@ -1,4 +1,4 @@
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@nedusa/types"
 import { UIMatch } from "react-router-dom"
 
 import { useRbacRole } from "../../../hooks/api/rbac-roles"

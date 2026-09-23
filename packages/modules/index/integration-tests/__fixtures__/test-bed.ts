@@ -1,11 +1,11 @@
-import { asValue } from "@medusajs/framework/awilix"
+import { asValue } from "@nedusa/framework/awilix"
 import {
   defineConfig,
   MikroORM,
   SqlEntityManager,
-} from "@medusajs/framework/mikro-orm/postgresql"
-import { MedusaModule } from "@medusajs/framework/modules-sdk"
-import { MedusaContainer } from "@medusajs/framework/types"
+} from "@nedusa/framework/mikro-orm/postgresql"
+import { MedusaModule } from "@nedusa/framework/modules-sdk"
+import { MedusaContainer } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   createMedusaContainer,
@@ -13,8 +13,8 @@ import {
   Modules,
   ModulesSdkUtils,
   toMikroOrmEntities,
-} from "@medusajs/framework/utils"
-import { TestDatabaseUtils } from "@medusajs/test-utils"
+} from "@nedusa/framework/utils"
+import { TestDatabaseUtils } from "@nedusa/test-utils"
 import { IndexData, IndexMetadata, IndexRelation, IndexSync } from "@models"
 import { IndexModuleService } from "@services"
 import * as fs from "fs"

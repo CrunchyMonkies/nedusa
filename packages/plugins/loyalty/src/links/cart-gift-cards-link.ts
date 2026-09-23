@@ -1,5 +1,5 @@
-import { defineLink } from "@medusajs/framework/utils";
-import CartModule from "@medusajs/medusa/cart";
+import { defineLink } from "@nedusa/framework/utils";
+import CartModule from "@nedusa/medusa/cart";
 import LoyaltyModule from "../modules/loyalty";
 
 export default defineLink(

@@ -1,9 +1,9 @@
-import { MedusaContainer } from "@medusajs/framework";
-import { createContainer } from "@medusajs/framework/awilix";
+import { MedusaContainer } from "@nedusa/framework";
+import { createContainer } from "@nedusa/framework/awilix";
 import {
   createWorkflow,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk";
+} from "@nedusa/framework/workflows-sdk";
 import { validateCartGiftCardStep } from "../add-gift-card-to-cart";
 import { validateGiftCardsNotExpiredStep } from "../confirm-cart-credit-lines";
 

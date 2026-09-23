@@ -6,10 +6,10 @@ import {
   declineOrderChangeWorkflowId,
   deleteOrderChangeWorkflow,
   deleteOrderChangeWorkflowId,
-} from "@medusajs/core-flows"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { IOrderModuleService, OrderChangeDTO, OrderDTO } from "@medusajs/types"
-import { Modules } from "@medusajs/utils"
+} from "@nedusa/core-flows"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { IOrderModuleService, OrderChangeDTO, OrderDTO } from "@nedusa/types"
+import { Modules } from "@nedusa/utils"
 import { createOrderFixture, prepareDataFixtures } from "./__fixtures__"
 
 jest.setTimeout(50000)

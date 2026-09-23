@@ -1,4 +1,4 @@
-import { MedusaContainer, ModuleProvider } from "@medusajs/types"
+import { MedusaContainer, ModuleProvider } from "@nedusa/types"
 import {
   dynamicImport,
   isFileSkipped,
@@ -7,8 +7,8 @@ import {
   normalizeImportPathWithSource,
   promiseAll,
   resolveFromProject,
-} from "@medusajs/utils"
-import { asFunction, Lifetime } from "@medusajs/deps/awilix"
+} from "@nedusa/utils"
+import { asFunction, Lifetime } from "@nedusa/deps/awilix"
 
 export async function moduleProviderLoader({
   container,
@@ -50,7 +50,7 @@ export async function loadModuleProvider(
       /**
        * Providers shipped by a plugin are referenced by a bare specifier
        * ("<plugin>/providers/<name>"), so they must be resolved from the
-       * project directory rather than from wherever `@medusajs/modules-sdk`
+       * project directory rather than from wherever `@nedusa/modules-sdk`
        * was hoisted to.
        */
       loadedProvider = await dynamicImport(resolveFromProject(normalizedPath))

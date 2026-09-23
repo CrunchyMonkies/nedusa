@@ -1,6 +1,6 @@
-import { ContainerLike } from "@medusajs/framework"
-import { Logger } from "@medusajs/framework/types"
-import { FlowCancelOptions } from "@medusajs/framework/workflows-sdk"
+import { ContainerLike } from "@nedusa/framework"
+import { Logger } from "@nedusa/framework/types"
+import { FlowCancelOptions } from "@nedusa/framework/workflows-sdk"
 
 export type InitializeModuleInjectableDependencies = {
   logger?: Logger

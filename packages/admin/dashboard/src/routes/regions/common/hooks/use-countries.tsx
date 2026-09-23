@@ -1,4 +1,4 @@
-import { RegionCountryDTO } from "@medusajs/types"
+import { RegionCountryDTO } from "@nedusa/types"
 import { StaticCountry } from "../../../../lib/data/countries"
 import { jsonResponse } from "../../../../lib/json-response"
 

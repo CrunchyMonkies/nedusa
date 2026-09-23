@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next"
-import { createDataTableFilterHelper } from "@medusajs/ui"
-import { HttpTypes } from "@medusajs/types"
+import { createDataTableFilterHelper } from "@nedusa/ui"
+import { HttpTypes } from "@nedusa/types"
 import { useDataTableDateFilters } from "../../../components/data-table/helpers/general/use-data-table-date-filters.tsx"
 import { useMemo } from "react"
 

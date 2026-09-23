@@ -1,6 +1,6 @@
-import { processPaymentWorkflow } from "@medusajs/core-flows"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { Modules, PaymentActions, ProductStatus } from "@medusajs/utils"
+import { processPaymentWorkflow } from "@nedusa/core-flows"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { Modules, PaymentActions, ProductStatus } from "@nedusa/utils"
 import { setTimeout } from "timers/promises"
 import {
   createAdminUser,

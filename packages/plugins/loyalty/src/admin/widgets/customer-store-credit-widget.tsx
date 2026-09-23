@@ -1,5 +1,5 @@
-import { defineWidgetConfig } from "@medusajs/admin-sdk";
-import { Button, Container } from "@medusajs/ui";
+import { defineWidgetConfig } from "@nedusa/admin-sdk";
+import { Button, Container } from "@nedusa/ui";
 import { Link, useParams } from "react-router-dom";
 import { Header } from "../components/header";
 import { NoRecords } from "../components/no-records";

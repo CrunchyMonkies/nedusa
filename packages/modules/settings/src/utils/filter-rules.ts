@@ -1,4 +1,4 @@
-import { RelationshipFilterConfig } from "@medusajs/framework/types"
+import { RelationshipFilterConfig } from "@nedusa/framework/types"
 import { ColumnDataType } from "./render-mode-mapper"
 
 /**

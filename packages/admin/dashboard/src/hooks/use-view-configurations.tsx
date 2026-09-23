@@ -1,7 +1,7 @@
 import { useMemo } from "react"
-import { toast } from "@medusajs/ui"
-import { FetchError } from "@medusajs/js-sdk"
-import { HttpTypes } from "@medusajs/types"
+import { toast } from "@nedusa/ui"
+import { FetchError } from "@nedusa/js-sdk"
+import { HttpTypes } from "@nedusa/types"
 import { useFeatureFlag } from "../providers/feature-flag-provider"
 import {
   useViewConfigurations as useViewConfigurationsBase,

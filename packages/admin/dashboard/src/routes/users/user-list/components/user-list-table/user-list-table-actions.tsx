@@ -1,5 +1,5 @@
-import { PencilSquare } from "@medusajs/icons"
-import { HttpTypes } from "@medusajs/types"
+import { PencilSquare } from "@nedusa/icons"
+import { HttpTypes } from "@nedusa/types"
 import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router-dom"
 

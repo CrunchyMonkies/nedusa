@@ -1,4 +1,4 @@
-import { SearchTypes } from "@medusajs/types"
+import { SearchTypes } from "@nedusa/types"
 import { MedusaModule } from "../medusa-module"
 
 const definition = (name: string): SearchTypes.SearchIndexDefinition => ({

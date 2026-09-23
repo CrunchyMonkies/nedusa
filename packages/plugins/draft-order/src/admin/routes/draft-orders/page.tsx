@@ -1,12 +1,12 @@
-import { defineRouteConfig } from "@medusajs/admin-sdk"
-import { LayoutComposer } from "@medusajs/dashboard/components"
-import type { HttpTypes } from "@medusajs/types"
+import { defineRouteConfig } from "@nedusa/admin-sdk"
+import { LayoutComposer } from "@nedusa/dashboard/components"
+import type { HttpTypes } from "@nedusa/types"
 import {
   Container,
   createDataTableColumnHelper,
   DataTableFilter,
   Tooltip,
-} from "@medusajs/ui"
+} from "@nedusa/ui"
 import { keepPreviousData } from "@tanstack/react-query"
 import { useMemo } from "react"
 

@@ -1,6 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod"
-import { MagnifyingGlass, XMark } from "@medusajs/icons"
-import { HttpTypes } from "@medusajs/types"
+import { MagnifyingGlass, XMark } from "@nedusa/icons"
+import { HttpTypes } from "@nedusa/types"
 import {
   Button,
   DatePicker,
@@ -10,7 +10,7 @@ import {
   Text,
   clx,
   toast,
-} from "@medusajs/ui"
+} from "@nedusa/ui"
 import { useFieldArray, useForm } from "react-hook-form"
 import { useTranslation } from "react-i18next"
 import { z } from "zod"

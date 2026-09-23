@@ -5,7 +5,7 @@ import { glob } from "glob"
 
 const CODEMOD: Codemod = {
   name: "replace-zod-imports",
-  description: "Replace all zod imports with @medusajs/framework/zod imports",
+  description: "Replace all zod imports with @nedusa/framework/zod imports",
   run: replaceZodImports,
 }
 
@@ -14,37 +14,37 @@ export default CODEMOD
 // Replacement patterns for zod imports
 // Order matters: more specific patterns must come before general ones
 const REPLACEMENTS = [
-  // Default import with identifier "zod": import zod from "zod" -> import { z as zod } from "@medusajs/framework/zod"
+  // Default import with identifier "zod": import zod from "zod" -> import { z as zod } from "@nedusa/framework/zod"
   {
     pattern: /import\s+zod\s+from\s+['"]zod['"]/g,
-    replacement: `import { z as zod } from "@medusajs/framework/zod"`,
+    replacement: `import { z as zod } from "@nedusa/framework/zod"`,
   },
-  // Default import with identifier "z": import z from "zod" -> import { z } from "@medusajs/framework/zod"
+  // Default import with identifier "z": import z from "zod" -> import { z } from "@nedusa/framework/zod"
   {
     pattern: /import\s+z\s+from\s+['"]zod['"]/g,
-    replacement: `import { z } from "@medusajs/framework/zod"`,
+    replacement: `import { z } from "@nedusa/framework/zod"`,
   },
-  // Namespace import with other identifier: import * as something from "zod" -> import { z as something } from "@medusajs/framework/zod"
+  // Namespace import with other identifier: import * as something from "zod" -> import { z as something } from "@nedusa/framework/zod"
   {
     pattern: /import\s+\*\s+as\s+(\w+)\s+from\s+['"]zod['"]/g,
-    replacement: `import { z as $1 } from "@medusajs/framework/zod"`,
+    replacement: `import { z as $1 } from "@nedusa/framework/zod"`,
   },
   // Named/type imports: import { z } from "zod" or import type { ZodSchema } from "zod"
   {
     pattern: /from\s+['"]zod['"]/g,
-    replacement: `from "@medusajs/framework/zod"`,
+    replacement: `from "@nedusa/framework/zod"`,
   },
   // CommonJS require: require("zod")
   {
     pattern: /require\s*\(\s*['"]zod['"]\s*\)/g,
-    replacement: `require("@medusajs/framework/zod")`,
+    replacement: `require("@nedusa/framework/zod")`,
   },
 ]
 
 const ZOD_IMPORT_PATTERN = /from\s+['"]zod['"]|require\s*\(\s*['"]zod['"]\s*\)/
 
 /**
- * Replace all zod imports with @medusajs/framework/zod imports
+ * Replace all zod imports with @nedusa/framework/zod imports
  */
 async function replaceZodImports(
   options: CodemodOptions

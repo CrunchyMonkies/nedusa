@@ -1,13 +1,13 @@
-import { createCartWorkflow } from "@medusajs/core-flows"
+import { createCartWorkflow } from "@nedusa/core-flows"
 import {
   AdditionalData,
   CreateCartWorkflowInputDTO,
   HttpTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import { refetchCart } from "./helpers"
 
 export const POST = async (

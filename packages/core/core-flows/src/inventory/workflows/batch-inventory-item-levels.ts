@@ -4,14 +4,14 @@ import {
   transform,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import {
   BatchWorkflowInput,
   BatchWorkflowOutput,
   InventoryLevelDTO,
   InventoryTypes,
-} from "@medusajs/framework/types"
-import { InventoryLevelWorkflowEvents } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { InventoryLevelWorkflowEvents } from "@nedusa/framework/utils"
 import { emitEventStep } from "../../common"
 import { createInventoryLevelsStep, updateInventoryLevelsStep } from "../steps"
 import { deleteInventoryLevelsWorkflow } from "./delete-inventory-levels"

@@ -1,7 +1,7 @@
 import {
   Modules,
   ProductCollectionWorkflowEvents,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   WorkflowData,
   WorkflowResponse,
@@ -9,7 +9,7 @@ import {
   createWorkflow,
   parallelize,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { emitEventStep, removeRemoteLinkStep } from "../../common"
 import { deleteCollectionsStep } from "../steps"
 

@@ -1,14 +1,14 @@
-import { MedusaError } from "@medusajs/framework/utils";
+import { MedusaError } from "@nedusa/framework/utils";
 import {
   createLinksWorkflow,
   useQueryGraphStep,
-} from "@medusajs/medusa/core-flows";
+} from "@nedusa/medusa/core-flows";
 import {
   createStep,
   createWorkflow,
   transform,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk";
+} from "@nedusa/framework/workflows-sdk";
 import {
   GiftCardStatus,
   ModuleGiftCard,

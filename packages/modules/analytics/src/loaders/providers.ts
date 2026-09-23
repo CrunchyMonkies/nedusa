@@ -1,10 +1,10 @@
-import { moduleProviderLoader } from "@medusajs/framework/modules-sdk"
+import { moduleProviderLoader } from "@nedusa/framework/modules-sdk"
 import {
   LoaderOptions,
   ModuleProvider,
   ModulesSdkTypes,
-} from "@medusajs/framework/types"
-import { asFunction, asValue, Lifetime } from "@medusajs/framework/awilix"
+} from "@nedusa/framework/types"
+import { asFunction, asValue, Lifetime } from "@nedusa/framework/awilix"
 import ProviderService, {
   AnalyticsProviderIdentifierRegistrationName,
   AnalyticsProviderRegistrationPrefix,

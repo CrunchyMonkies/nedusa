@@ -1,5 +1,5 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { ContainerRegistrationKeys, Modules } from "@nedusa/framework/utils"
 
 jest.setTimeout(120000)
 

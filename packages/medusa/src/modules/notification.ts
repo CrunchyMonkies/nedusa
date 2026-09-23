@@ -1,6 +1,6 @@
-import NotificationModule from "@medusajs/notification"
+import NotificationModule from "@nedusa/notification"
 
-export * from "@medusajs/notification"
+export * from "@nedusa/notification"
 
 export default NotificationModule
-export const discoveryPath = require.resolve("@medusajs/notification")
+export const discoveryPath = require.resolve("@nedusa/notification")

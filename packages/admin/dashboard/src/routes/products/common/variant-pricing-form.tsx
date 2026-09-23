@@ -1,5 +1,5 @@
-import { HttpTypes } from "@medusajs/types"
-import { Tooltip } from "@medusajs/ui"
+import { HttpTypes } from "@nedusa/types"
+import { Tooltip } from "@nedusa/ui"
 import { useMemo } from "react"
 import { UseFormReturn, useWatch } from "react-hook-form"
 import { useTranslation } from "react-i18next"

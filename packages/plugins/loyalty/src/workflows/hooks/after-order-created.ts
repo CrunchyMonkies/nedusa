@@ -1,5 +1,5 @@
-import { StepResponse } from "@medusajs/framework/workflows-sdk"
-import { completeCartWorkflow } from "@medusajs/medusa/core-flows"
+import { StepResponse } from "@nedusa/framework/workflows-sdk"
+import { completeCartWorkflow } from "@nedusa/medusa/core-flows"
 import { cloneCartGiftCardsToOrderWorkflow } from "../orders/workflows/link-gift-cards-to-order"
 ;(completeCartWorkflow.hooks as any).orderCreated(
   async (data: { order_id: string; cart_id: string }, stepContext) => {

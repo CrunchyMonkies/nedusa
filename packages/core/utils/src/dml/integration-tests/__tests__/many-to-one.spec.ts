@@ -1,9 +1,9 @@
-import { EntityConstructor } from "@medusajs/types"
-import { MetadataStorage, MikroORM } from "@medusajs/deps/mikro-orm/core"
+import { EntityConstructor } from "@nedusa/types"
+import { MetadataStorage, MikroORM } from "@nedusa/deps/mikro-orm/core"
 import {
   defineConfig,
   SqlEntityManager,
-} from "@medusajs/deps/mikro-orm/postgresql"
+} from "@nedusa/deps/mikro-orm/postgresql"
 import { join } from "path"
 import { createDatabase, dropDatabase } from "pg-god"
 import { FileSystem } from "../../../common"

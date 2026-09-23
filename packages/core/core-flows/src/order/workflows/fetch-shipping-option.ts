@@ -4,15 +4,15 @@ import {
   CalculatedRMAShippingContext,
   CalculateShippingOptionPriceDTO,
   ShippingOptionDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   createHook,
   createWorkflow,
   transform,
   when,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
-import { BigNumber, ShippingOptionPriceType } from "@medusajs/framework/utils"
+} from "@nedusa/framework/workflows-sdk"
+import { BigNumber, ShippingOptionPriceType } from "@nedusa/framework/utils"
 import { calculateShippingOptionsPricesStep } from "../../fulfillment/steps"
 import { useQueryGraphStep, useRemoteQueryStep } from "../../common"
 import {
@@ -139,8 +139,8 @@ export const fetchShippingOptionsForOrderWorkflowId = "fetch-shipping-option"
  * You can consume the `setPricingContext` hook to add the `location_id` context to the prices calculation:
  *
  * ```ts
- * import { fetchShippingOptionForOrderWorkflow } from "@medusajs/medusa/core-flows";
- * import { StepResponse } from "@medusajs/workflows-sdk";
+ * import { fetchShippingOptionForOrderWorkflow } from "@nedusa/medusa/core-flows";
+ * import { StepResponse } from "@nedusa/workflows-sdk";
  *
  * fetchShippingOptionForOrderWorkflow.hooks.setPricingContext((
  *   { shipping_option_id, currency_code, order_id, context, additional_data }, { container }
@@ -163,8 +163,8 @@ export const fetchShippingOptionsForOrderWorkflowId = "fetch-shipping-option"
  * You can consume this hook to return any custom context that is forwarded as-is to the fulfillment provider's `calculatePrice` method.
  *
  * ```ts
- * import { fetchShippingOptionForOrderWorkflow } from "@medusajs/medusa/core-flows"
- * import { StepResponse } from "@medusajs/workflows-sdk"
+ * import { fetchShippingOptionForOrderWorkflow } from "@nedusa/medusa/core-flows"
+ * import { StepResponse } from "@nedusa/workflows-sdk"
  *
  * fetchShippingOptionForOrderWorkflow.hooks.setCalculatedShippingPricingContext(
  *   async ({ input }, { container }) => {

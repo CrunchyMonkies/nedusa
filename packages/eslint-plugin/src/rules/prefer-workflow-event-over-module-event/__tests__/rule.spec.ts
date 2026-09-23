@@ -8,7 +8,7 @@ ruleTester.run("prefer-workflow-event-over-module-event", rule, {
     // Workflow enum member in `config.event` — the desired form.
     {
       code: `
-        import { ProductCategoryWorkflowEvents } from "@medusajs/framework/utils"
+        import { ProductCategoryWorkflowEvents } from "@nedusa/framework/utils"
         export const config = {
           event: ProductCategoryWorkflowEvents.DELETED,
         }
@@ -30,14 +30,14 @@ ruleTester.run("prefer-workflow-event-over-module-event", rule, {
     // data-model segment) is NOT an internal service event — not flagged.
     {
       code: `
-        import { AuthEvents } from "@medusajs/framework/utils"
+        import { AuthEvents } from "@nedusa/framework/utils"
         export const config = { event: AuthEvents.MFA_ENABLED }
       `,
     },
     // Not a subscriber config
     {
       code: `
-        import { ProductEvents } from "@medusajs/framework/utils"
+        import { ProductEvents } from "@nedusa/framework/utils"
         emitEvent(ProductEvents.PRODUCT_CATEGORY_DELETED)
       `,
     },
@@ -64,7 +64,7 @@ ruleTester.run("prefer-workflow-event-over-module-event", rule, {
     // Named import — rewrite the access and add the workflow enum import.
     {
       code: `
-import { ProductEvents } from "@medusajs/framework/utils"
+import { ProductEvents } from "@nedusa/framework/utils"
 export const config = {
   event: ProductEvents.PRODUCT_CATEGORY_DELETED,
 }
@@ -79,7 +79,7 @@ export const config = {
         },
       ],
       output: `
-import { ProductEvents, ProductCategoryWorkflowEvents } from "@medusajs/framework/utils"
+import { ProductEvents, ProductCategoryWorkflowEvents } from "@nedusa/framework/utils"
 export const config = {
   event: ProductCategoryWorkflowEvents.DELETED,
 }
@@ -88,36 +88,36 @@ export const config = {
     // Aliased named import — append after the last specifier, rewrite the usage.
     {
       code: `
-import { ProductEvents as PE } from "@medusajs/framework/utils"
+import { ProductEvents as PE } from "@nedusa/framework/utils"
 export const config = { event: PE.PRODUCT_CATEGORY_DELETED }
       `,
       errors: [{ messageId: "preferWorkflowEvent" }],
       output: `
-import { ProductEvents as PE, ProductCategoryWorkflowEvents } from "@medusajs/framework/utils"
+import { ProductEvents as PE, ProductCategoryWorkflowEvents } from "@nedusa/framework/utils"
 export const config = { event: ProductCategoryWorkflowEvents.DELETED }
       `,
     },
     // Namespace import — keep the namespace prefix, no import change.
     {
       code: `
-import * as utils from "@medusajs/framework/utils"
+import * as utils from "@nedusa/framework/utils"
 export const config = { event: utils.ProductEvents.PRODUCT_CATEGORY_DELETED }
       `,
       errors: [{ messageId: "preferWorkflowEvent" }],
       output: `
-import * as utils from "@medusajs/framework/utils"
+import * as utils from "@nedusa/framework/utils"
 export const config = { event: utils.ProductCategoryWorkflowEvents.DELETED }
       `,
     },
     // Computed member access is normalized to dot access.
     {
       code: `
-import { ProductEvents } from "@medusajs/framework/utils"
+import { ProductEvents } from "@nedusa/framework/utils"
 export const config = { event: ProductEvents["PRODUCT_CATEGORY_DELETED"] }
       `,
       errors: [{ messageId: "preferWorkflowEvent" }],
       output: `
-import { ProductEvents, ProductCategoryWorkflowEvents } from "@medusajs/framework/utils"
+import { ProductEvents, ProductCategoryWorkflowEvents } from "@nedusa/framework/utils"
 export const config = { event: ProductCategoryWorkflowEvents.DELETED }
       `,
     },
@@ -134,13 +134,13 @@ export const config = { event: ProductCategoryWorkflowEvents.DELETED }
           },
         },
       ],
-      output: `import { ProductCategoryWorkflowEvents } from "@medusajs/framework/utils"
+      output: `import { ProductCategoryWorkflowEvents } from "@nedusa/framework/utils"
 export const config = { event: ProductCategoryWorkflowEvents.DELETED }`,
     },
     // A different module enum with a workflow equivalent.
     {
       code: `
-import { UserEvents } from "@medusajs/framework/utils"
+import { UserEvents } from "@nedusa/framework/utils"
 export const config = { event: UserEvents.USER_CREATED }
       `,
       errors: [
@@ -153,32 +153,32 @@ export const config = { event: UserEvents.USER_CREATED }
         },
       ],
       output: `
-import { UserEvents, UserWorkflowEvents } from "@medusajs/framework/utils"
+import { UserEvents, UserWorkflowEvents } from "@nedusa/framework/utils"
 export const config = { event: UserWorkflowEvents.CREATED }
       `,
     },
     // Internal event inside an array — only that entry is flagged and fixed.
     {
       code: `
-import { ProductEvents } from "@medusajs/framework/utils"
+import { ProductEvents } from "@nedusa/framework/utils"
 export const config = { event: ["order.placed", ProductEvents.PRODUCT_CATEGORY_DELETED] }
       `,
       errors: [{ messageId: "preferWorkflowEvent" }],
       output: `
-import { ProductEvents, ProductCategoryWorkflowEvents } from "@medusajs/framework/utils"
+import { ProductEvents, ProductCategoryWorkflowEvents } from "@nedusa/framework/utils"
 export const config = { event: ["order.placed", ProductCategoryWorkflowEvents.DELETED] }
       `,
     },
     // `config` declared separately and exported by specifier.
     {
       code: `
-import { ProductEvents } from "@medusajs/framework/utils"
+import { ProductEvents } from "@nedusa/framework/utils"
 const config = { event: ProductEvents.PRODUCT_CATEGORY_DELETED }
 export { config }
       `,
       errors: [{ messageId: "preferWorkflowEvent" }],
       output: `
-import { ProductEvents, ProductCategoryWorkflowEvents } from "@medusajs/framework/utils"
+import { ProductEvents, ProductCategoryWorkflowEvents } from "@nedusa/framework/utils"
 const config = { event: ProductCategoryWorkflowEvents.DELETED }
 export { config }
       `,
@@ -186,7 +186,7 @@ export { config }
     // Internal service event with NO workflow equivalent (enum form) — warn, no fix.
     {
       code: `
-import { FulfillmentEvents } from "@medusajs/framework/utils"
+import { FulfillmentEvents } from "@nedusa/framework/utils"
 export const config = { event: FulfillmentEvents.FULFILLMENT_SET_CREATED }
       `,
       errors: [

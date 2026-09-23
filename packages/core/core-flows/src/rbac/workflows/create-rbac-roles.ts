@@ -4,7 +4,7 @@ import {
   when,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import {
   createRbacRoleParentsStep,
   createRbacRolePoliciesStep,

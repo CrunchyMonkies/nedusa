@@ -1,5 +1,5 @@
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework"
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+import { MedusaRequest, MedusaResponse } from "@nedusa/framework"
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils"
 
 export const GET = async (req: MedusaRequest, res: MedusaResponse) => {
   const config = req.scope.resolve(ContainerRegistrationKeys.CONFIG_MODULE)

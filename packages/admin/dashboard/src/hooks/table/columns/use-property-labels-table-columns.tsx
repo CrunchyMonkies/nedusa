@@ -1,9 +1,9 @@
-import { HttpTypes } from "@medusajs/types"
-import { createDataTableColumnHelper } from "@medusajs/ui"
+import { HttpTypes } from "@nedusa/types"
+import { createDataTableColumnHelper } from "@nedusa/ui"
 import { useMemo } from "react"
 import { useTranslation } from "react-i18next"
 import { DataTableStatusCell } from "../../../components/data-table/components/data-table-status-cell/data-table-status-cell"
-import { PencilSquare } from "@medusajs/icons"
+import { PencilSquare } from "@nedusa/icons"
 import { useNavigate, useSearchParams } from "react-router-dom"
 
 const columnHelper = createDataTableColumnHelper<HttpTypes.AdminEntityInfo>()

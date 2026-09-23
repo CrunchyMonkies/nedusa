@@ -1,5 +1,5 @@
-import { raw } from "@medusajs/deps/mikro-orm/core"
-import { Knex } from "@medusajs/deps/mikro-orm/knex"
+import { raw } from "@nedusa/deps/mikro-orm/core"
+import { Knex } from "@nedusa/deps/mikro-orm/knex"
 import { isObject, MedusaError } from "../../../common"
 import {
   buildLinkCorrelationSql,

@@ -1,6 +1,6 @@
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
-import { Modules } from "@medusajs/framework/utils"
-import { IAuthModuleService } from "@medusajs/framework/types"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
+import { Modules } from "@nedusa/framework/utils"
+import { IAuthModuleService } from "@nedusa/framework/types"
 
 export const deleteAuthIdentityStepId = "delete-auth-identity"
 

@@ -374,7 +374,7 @@ export function adaptFacetSearchRequest(
 
   if (!params.facetName) {
     throw new Error(
-      "@medusajs/instantsearch-adapter: searchForFacetValues requires params.facetName"
+      "@nedusa/instantsearch-adapter: searchForFacetValues requires params.facetName"
     )
   }
 

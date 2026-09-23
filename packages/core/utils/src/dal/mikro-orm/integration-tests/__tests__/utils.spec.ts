@@ -1,8 +1,8 @@
-import { MikroORM } from "@medusajs/deps/mikro-orm/core"
+import { MikroORM } from "@nedusa/deps/mikro-orm/core"
 import {
   defineConfig,
   SqlEntityManager,
-} from "@medusajs/deps/mikro-orm/postgresql"
+} from "@nedusa/deps/mikro-orm/postgresql"
 import { dropDatabase } from "pg-god"
 import { mikroOrmUpdateDeletedAtRecursively } from "../../utils"
 import { getDatabaseURL, pgGodCredentials } from "../__fixtures__/database"
@@ -22,8 +22,8 @@ jest.setTimeout(30000)
 
 const dbName = "mikroorm-utils-integration-1"
 
-jest.mock("@medusajs/deps/mikro-orm/core", () => ({
-  ...jest.requireActual("@medusajs/deps/mikro-orm/core"),
+jest.mock("@nedusa/deps/mikro-orm/core", () => ({
+  ...jest.requireActual("@nedusa/deps/mikro-orm/core"),
   wrap: jest.fn().mockImplementation((entity) => ({
     ...entity,
     init: jest.fn().mockResolvedValue(entity),

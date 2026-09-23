@@ -1,5 +1,5 @@
-import { HttpTypes } from "@medusajs/types"
-import { StatusBadge } from "@medusajs/ui"
+import { HttpTypes } from "@nedusa/types"
+import { StatusBadge } from "@nedusa/ui"
 
 import { ListSummary } from "../../../components/common/list-summary"
 import { PlaceholderCell } from "../../../components/table/table-cells/common/placeholder-cell"

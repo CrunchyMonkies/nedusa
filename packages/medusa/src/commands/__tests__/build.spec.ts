@@ -11,7 +11,7 @@ const container = {
 }
 
 jest.mock(
-  "@medusajs/framework/utils",
+  "@nedusa/framework/utils",
   () => ({
     ContainerRegistrationKeys: { LOGGER: "logger" },
   }),
@@ -31,7 +31,7 @@ jest.mock("../utils/lint-project", () => ({
 }))
 
 jest.mock(
-  "@medusajs/framework/build-tools",
+  "@nedusa/framework/build-tools",
   () => ({
     Compiler: jest.fn().mockImplementation(() => ({
       loadTSConfigFile: jest.fn(() => Promise.resolve(null)),

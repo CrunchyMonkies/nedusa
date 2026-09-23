@@ -1,10 +1,10 @@
 import type {
   IInventoryService,
   InventoryTypes,
-} from "@medusajs/framework/types"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/types"
+import { StepResponse, createStep } from "@nedusa/framework/workflows-sdk"
 
-import { Modules } from "@medusajs/framework/utils"
+import { Modules } from "@nedusa/framework/utils"
 
 /**
  * The data to create the inventory levels.

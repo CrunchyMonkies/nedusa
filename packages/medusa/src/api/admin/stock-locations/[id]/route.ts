@@ -1,15 +1,15 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 
 import {
   deleteStockLocationsWorkflow,
   updateStockLocationsWorkflow,
-} from "@medusajs/core-flows"
-import { MedusaError } from "@medusajs/framework/utils"
+} from "@nedusa/core-flows"
+import { MedusaError } from "@nedusa/framework/utils"
 import { refetchStockLocation } from "../helpers"
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@nedusa/framework/types"
 
 export const POST = async (
   req: AuthenticatedMedusaRequest<

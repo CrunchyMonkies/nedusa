@@ -1,9 +1,9 @@
-import { Logger, SearchTypes } from "@medusajs/framework/types"
+import { Logger, SearchTypes } from "@nedusa/framework/types"
 import {
   AbstractSearchProviderService,
   MedusaError,
   promiseAll,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   assertIndexSupported,
   assertQuerySupported,

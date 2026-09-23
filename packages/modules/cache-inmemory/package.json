@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/cache-inmemory",
+  "name": "@nedusa/cache-inmemory",
   "version": "2.21.1",
   "description": "In-memory Cache Module for Medusa",
   "main": "dist/index.js",
@@ -26,7 +26,7 @@
   "author": "Medusa",
   "license": "MIT",
   "devDependencies": {
-    "@medusajs/framework": "2.21.1"
+    "@nedusa/framework": "2.21.1"
   },
   "scripts": {
     "watch": "tsc --build --watch",
@@ -34,6 +34,6 @@
     "test": "jest --passWithNoTests"
   },
   "peerDependencies": {
-    "@medusajs/framework": "2.21.1"
+    "@nedusa/framework": "2.21.1"
   }
 }

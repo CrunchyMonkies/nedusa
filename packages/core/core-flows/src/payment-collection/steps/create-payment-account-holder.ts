@@ -1,9 +1,9 @@
 import {
   CreateAccountHolderDTO,
   IPaymentModuleService,
-} from "@medusajs/framework/types"
-import { isPresent, Modules } from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/types"
+import { isPresent, Modules } from "@nedusa/framework/utils"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
 
 export const createPaymentAccountHolderStepId = "create-payment-account-holder"
 /**

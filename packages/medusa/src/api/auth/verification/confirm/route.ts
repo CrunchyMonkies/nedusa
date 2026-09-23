@@ -2,9 +2,9 @@ import {
   AuthenticatedMedusaRequest,
   MedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { IAuthModuleService } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { IAuthModuleService } from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
 import { VerificationConfirmRequestType } from "../../validators"
 
 /**

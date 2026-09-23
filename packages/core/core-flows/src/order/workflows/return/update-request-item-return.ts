@@ -5,19 +5,19 @@ import {
   OrderPreviewDTO,
   OrderWorkflow,
   ReturnDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   ChangeActionType,
   OrderChangeStatus,
   isDefined,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   WorkflowData,
   WorkflowResponse,
   createStep,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { useRemoteQueryStep } from "../../../common"
 import {
   previewOrderChangeStep,

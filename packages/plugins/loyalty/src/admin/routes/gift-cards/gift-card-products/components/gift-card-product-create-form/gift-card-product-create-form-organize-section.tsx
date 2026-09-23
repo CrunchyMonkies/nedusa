@@ -1,4 +1,4 @@
-import { Button, Text } from "@medusajs/ui";
+import { Button, Text } from "@nedusa/ui";
 import { UseFormReturn, useFieldArray } from "react-hook-form";
 import { Form } from "../../../../../components/form";
 import { IconAvatar } from "../../../../../components/icon-avatar";

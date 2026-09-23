@@ -11,7 +11,7 @@ ruleTester.run("prefer-allow-fields-middleware", rule, {
         import {
           allowFields,
           defineMiddlewares,
-        } from "@medusajs/framework/http"
+        } from "@nedusa/framework/http"
         export default defineMiddlewares({
           routes: [
             {

@@ -1,8 +1,8 @@
-import { validateAndTransformQuery } from "@medusajs/framework"
+import { validateAndTransformQuery } from "@nedusa/framework"
 import {
   MiddlewareRoute,
   validateAndTransformBody,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import { authenticate } from "../../../utils/middlewares/authenticate-middleware"
 import * as QueryConfig from "./query-config"
 import {

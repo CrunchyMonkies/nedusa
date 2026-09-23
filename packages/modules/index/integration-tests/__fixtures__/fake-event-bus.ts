@@ -3,7 +3,7 @@ import {
   IEventBusModuleService,
   Message,
   Subscriber,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 
 /**
  * In-memory event bus. Events are dispatched synchronously to the

@@ -8,7 +8,7 @@ import {
   SelectParams,
   StoreCustomer,
   StoreOrderLineItem,
-} from "@medusajs/framework/types";
+} from "@nedusa/framework/types";
 import {
   GiftCardStatus,
   ModuleCreateGiftCard,

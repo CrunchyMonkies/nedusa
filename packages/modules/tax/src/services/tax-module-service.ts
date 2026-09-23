@@ -8,7 +8,7 @@ import {
   ModulesSdkTypes,
   TaxRegionDTO,
   TaxTypes,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   EmitEvents,
   InjectManager,
@@ -18,7 +18,7 @@ import {
   MedusaContext,
   MedusaError,
   ModulesSdkUtils,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { TaxProvider, TaxRate, TaxRateRule, TaxRegion } from "@models"
 import { TaxProviderService } from "@services"
 

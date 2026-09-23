@@ -1,4 +1,4 @@
-import { z } from "@medusajs/framework/zod"
+import { z } from "@nedusa/framework/zod"
 import { createSelectParams } from "../../utils/validators"
 
 export type AdminGetPaymentCollectionParamsType = z.infer<

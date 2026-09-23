@@ -4,8 +4,8 @@ import {
   RemoteQueryFilters,
   RemoteQueryGraph,
   RemoteQueryInput,
-} from "@medusajs/types"
-import { isObject, isString, QueryContext } from "@medusajs/utils"
+} from "@nedusa/types"
+import { isObject, isString, QueryContext } from "@nedusa/utils"
 
 const FIELDS = "__fields"
 const ARGUMENTS = "__args"

@@ -1,6 +1,6 @@
-import { defineRouteConfig } from "@medusajs/admin-sdk"
-import { LayoutComposer } from "@medusajs/dashboard/components"
-import { Toaster } from "@medusajs/ui"
+import { defineRouteConfig } from "@nedusa/admin-sdk"
+import { LayoutComposer } from "@nedusa/dashboard/components"
+import { Toaster } from "@nedusa/ui"
 import { GiftCardProductsTable } from "./components/gift-card-products-table/gift-card-products-table"
 
 const GiftCardProductsPage = () => {

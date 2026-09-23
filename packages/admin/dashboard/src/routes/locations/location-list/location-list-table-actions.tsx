@@ -1,7 +1,7 @@
-import { PencilSquare, Trash } from "@medusajs/icons"
-import { FetchError } from "@medusajs/js-sdk"
-import { HttpTypes } from "@medusajs/types"
-import { toast, usePrompt } from "@medusajs/ui"
+import { PencilSquare, Trash } from "@nedusa/icons"
+import { FetchError } from "@nedusa/js-sdk"
+import { HttpTypes } from "@nedusa/types"
+import { toast, usePrompt } from "@nedusa/ui"
 import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router-dom"
 

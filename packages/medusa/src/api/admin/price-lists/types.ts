@@ -1,4 +1,4 @@
-import { PriceListStatus, PriceListType } from "@medusajs/framework/types"
+import { PriceListStatus, PriceListType } from "@nedusa/framework/types"
 
 export type AdminPriceListRemoteQueryDTO = {
   id: string

@@ -1,6 +1,6 @@
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
 
-import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
+import { ContainerRegistrationKeys, Modules } from "@nedusa/framework/utils"
 
 /**
  * The data to associate locations with sales channels.

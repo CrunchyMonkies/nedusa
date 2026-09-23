@@ -1,4 +1,4 @@
-import { ConfigModule } from "@medusajs/framework/types"
+import { ConfigModule } from "@nedusa/framework/types"
 import {
   getAllowedAuthProvidersForActor,
   isAuthProviderAllowedForActor,

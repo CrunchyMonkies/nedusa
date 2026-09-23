@@ -1,5 +1,5 @@
-import { ModuleJoinerConfig } from "@medusajs/types"
-import { defineJoinerConfig } from "@medusajs/utils"
+import { ModuleJoinerConfig } from "@nedusa/types"
+import { defineJoinerConfig } from "@nedusa/utils"
 
 const customModuleJoinerConfig = defineJoinerConfig("custom_user", {
   schema: `

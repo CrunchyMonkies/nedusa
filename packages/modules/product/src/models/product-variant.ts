@@ -1,4 +1,4 @@
-import { model } from "@medusajs/framework/utils"
+import { model } from "@nedusa/framework/utils"
 import { Product, ProductImage, ProductOptionValue } from "@models"
 import ProductVariantProductImage from "./product-variant-product-image"
 

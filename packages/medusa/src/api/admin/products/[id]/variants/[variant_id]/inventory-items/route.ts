@@ -1,11 +1,11 @@
-import { createLinksWorkflow } from "@medusajs/core-flows"
-import { Modules } from "@medusajs/framework/utils"
+import { createLinksWorkflow } from "@nedusa/core-flows"
+import { Modules } from "@nedusa/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import { refetchVariant } from "../../../../helpers"
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@nedusa/framework/types"
 
 export const POST = async (
   req: AuthenticatedMedusaRequest<

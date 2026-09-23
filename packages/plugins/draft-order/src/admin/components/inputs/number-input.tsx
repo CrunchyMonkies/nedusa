@@ -1,5 +1,5 @@
-import { Minus, Plus } from "@medusajs/icons"
-import { clx } from "@medusajs/ui"
+import { Minus, Plus } from "@nedusa/icons"
+import { clx } from "@nedusa/ui"
 import { forwardRef, InputHTMLAttributes } from "react"
 
 type InputProps = Omit<

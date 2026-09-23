@@ -1,9 +1,9 @@
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@nedusa/types"
 import {
   Button,
   createDataTableColumnHelper,
   DataTableRowSelectionState,
-} from "@medusajs/ui"
+} from "@nedusa/ui"
 import { useEffect, useMemo, useState } from "react"
 import { UseFormReturn } from "react-hook-form"
 import { useTranslation } from "react-i18next"

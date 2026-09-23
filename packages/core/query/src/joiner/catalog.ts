@@ -2,8 +2,8 @@ import {
   JoinerRelationship,
   JoinerServiceConfigAlias,
   ModuleJoinerConfig,
-} from "@medusajs/types"
-import { isDefined, isString } from "@medusajs/utils"
+} from "@nedusa/types"
+import { isDefined, isString } from "@nedusa/utils"
 import {
   ComputedJoinerRelationship,
   InternalJoinerServiceConfig,

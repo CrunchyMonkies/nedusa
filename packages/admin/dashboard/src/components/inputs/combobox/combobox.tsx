@@ -14,8 +14,8 @@ import {
   PlusMini,
   TrianglesMini,
   XMarkMini,
-} from "@medusajs/icons"
-import { Badge, clx, Text } from "@medusajs/ui"
+} from "@nedusa/icons"
+import { Badge, clx, Text } from "@nedusa/ui"
 import { matchSorter } from "match-sorter"
 import {
   ComponentPropsWithoutRef,

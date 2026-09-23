@@ -1,15 +1,15 @@
 import {
   deleteProductsWorkflow,
   updateProductsWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import { remapKeysForProduct, remapProductResponse } from "../helpers"
-import { MedusaError } from "@medusajs/framework/utils"
-import { AdditionalData, HttpTypes } from "@medusajs/framework/types"
-import { refetchEntity } from "@medusajs/framework/http"
+import { MedusaError } from "@nedusa/framework/utils"
+import { AdditionalData, HttpTypes } from "@nedusa/framework/types"
+import { refetchEntity } from "@nedusa/framework/http"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<HttpTypes.AdminGetProductParams>,

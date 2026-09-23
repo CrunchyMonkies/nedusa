@@ -1,6 +1,6 @@
-import { SearchIndexLoader } from "@medusajs/framework/search"
-import { ConfigModule, Logger, PluginDetails } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+import { SearchIndexLoader } from "@nedusa/framework/search"
+import { ConfigModule, Logger, PluginDetails } from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
 import { join } from "path"
 
 /**

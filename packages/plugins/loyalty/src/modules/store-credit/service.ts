@@ -1,4 +1,4 @@
-/* eslint-disable @medusajs/use-inject-manager-on-public-methods */
+/* eslint-disable @nedusa/use-inject-manager-on-public-methods */
 import {
   BigNumberValue,
   Context,
@@ -7,7 +7,7 @@ import {
   InferEntityType,
   ModulesSdkTypes,
   SoftDeleteReturn,
-} from "@medusajs/framework/types";
+} from "@nedusa/framework/types";
 import {
   InjectManager,
   InjectTransactionManager,
@@ -16,8 +16,8 @@ import {
   MedusaContext,
   MedusaError,
   MedusaService,
-} from "@medusajs/framework/utils";
-import { SqlEntityManager } from "@medusajs/framework/mikro-orm/postgresql";
+} from "@nedusa/framework/utils";
+import { SqlEntityManager } from "@nedusa/framework/mikro-orm/postgresql";
 import {
   IStoreCreditModuleService,
   ModuleAccountStats,

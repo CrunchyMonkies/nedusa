@@ -1,5 +1,5 @@
-import { HttpTypes } from "@medusajs/types"
-import { createDataTableFilterHelper, type DataTableFilter } from "@medusajs/ui"
+import { HttpTypes } from "@nedusa/types"
+import { createDataTableFilterHelper, type DataTableFilter } from "@nedusa/ui"
 import { useMemo } from "react"
 import { useTranslation } from "react-i18next"
 import { useDataTableDateFilters } from "../general/use-data-table-date-filters"

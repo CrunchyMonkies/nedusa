@@ -1,9 +1,9 @@
-import { FindConfig } from "@medusajs/framework/types"
+import { FindConfig } from "@nedusa/framework/types"
 import {
   ProductsQueryContextKey,
   ProductStatus,
   PublishedProductsContextKey,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 const PRODUCTS_RELATION = "products"
 

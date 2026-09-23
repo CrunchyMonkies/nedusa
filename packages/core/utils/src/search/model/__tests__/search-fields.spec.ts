@@ -1,4 +1,4 @@
-import { SearchTypes } from "@medusajs/types"
+import { SearchTypes } from "@nedusa/types"
 import { defineSearchIndex } from "../../define-search-index"
 import { search } from "../index-builder"
 import { SearchFieldsSchema } from "../search-fields-schema"

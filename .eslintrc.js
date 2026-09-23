@@ -1,5 +1,5 @@
 const path = require("path")
-const medusa = require("@medusajs/eslint-plugin")
+const medusa = require("@nedusa/eslint-plugin")
 
 // ---------------------------------------------------------------------------
 // Scope definitions
@@ -8,7 +8,7 @@ const medusa = require("@medusajs/eslint-plugin")
 // @typescript-eslint formatting rules) historically ran only on a curated set
 // of packages (the `.eslintignore` allowlist) plus root/integration-tests.
 //
-// We now also run `@medusajs/eslint-plugin` (Medusa convention rules) over all
+// We now also run `@nedusa/eslint-plugin` (Medusa convention rules) over all
 // of the framework's own packages. Those packages must get the Medusa rules
 // WITHOUT suddenly being subjected to the full style/prettier lint.
 //
@@ -72,7 +72,7 @@ module.exports = {
   // generated overrides. `react-hooks`/`@typescript-eslint` are registered (not
   // enabled globally) so their disable-directives in now-linted packages don't
   // error "rule not found".
-  plugins: ["prettier", "@medusajs", "@typescript-eslint", "react-hooks"],
+  plugins: ["prettier", "@nedusa", "@typescript-eslint", "react-hooks"],
   env: {
     es6: true,
     node: true,

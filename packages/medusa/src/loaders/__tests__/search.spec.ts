@@ -2,7 +2,7 @@ import { isSearchModuleEnabled, loadSearchIndexes } from "../search"
 
 const load = jest.fn()
 
-jest.mock("@medusajs/framework/search", () => ({
+jest.mock("@nedusa/framework/search", () => ({
   SearchIndexLoader: jest.fn().mockImplementation(() => ({ load })),
 }))
 
@@ -54,7 +54,7 @@ describe("loadSearchIndexes", () => {
   })
 
   it("loads the 'search' folder of every plugin when the module is configured", async () => {
-    const { SearchIndexLoader } = require("@medusajs/framework/search")
+    const { SearchIndexLoader } = require("@nedusa/framework/search")
 
     await loadSearchIndexes({
       plugins,

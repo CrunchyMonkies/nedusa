@@ -1,10 +1,10 @@
-import { SubscriberLoader } from "@medusajs/framework/subscribers"
+import { SubscriberLoader } from "@nedusa/framework/subscribers"
 import {
   IEventBusModuleService,
   Logger,
   MedusaContainer,
-} from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
 import { ResourceRegistry } from "../resource-registry"
 import { CONFIG, FileChangeAction } from "../types"
 import { BaseReloader } from "./base"

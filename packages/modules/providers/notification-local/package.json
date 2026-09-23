@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/notification-local",
+  "name": "@nedusa/notification-local",
   "version": "2.21.1",
   "description": "Local (logging) notification provider for Medusa, useful for testing purposes and log audits",
   "main": "dist/index.js",
@@ -29,10 +29,10 @@
     "watch": "tsc --watch"
   },
   "devDependencies": {
-    "@medusajs/framework": "2.21.1"
+    "@nedusa/framework": "2.21.1"
   },
   "peerDependencies": {
-    "@medusajs/framework": "2.21.1"
+    "@nedusa/framework": "2.21.1"
   },
   "keywords": [
     "medusa-provider",

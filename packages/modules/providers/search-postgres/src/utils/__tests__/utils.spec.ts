@@ -14,7 +14,7 @@ import {
   toWhereClause,
   weightLabel,
 } from "../index"
-import { SearchTypes } from "@medusajs/framework/types"
+import { SearchTypes } from "@nedusa/framework/types"
 
 const baseDefinition = (
   overrides: Partial<SearchTypes.ResolvedSearchIndexDefinition> = {}

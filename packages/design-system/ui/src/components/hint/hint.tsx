@@ -1,4 +1,4 @@
-import { ExclamationCircleSolid } from "@medusajs/icons"
+import { ExclamationCircleSolid } from "@nedusa/icons"
 import { VariantProps, cva } from "cva"
 import * as React from "react"
 

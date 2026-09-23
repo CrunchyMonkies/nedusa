@@ -1,6 +1,6 @@
-import { medusaIntegrationTestRunner, TestEventUtils } from "@medusajs/test-utils"
-import { SearchTypes } from "@medusajs/types"
-import { Modules, ProductEvents } from "@medusajs/utils"
+import { medusaIntegrationTestRunner, TestEventUtils } from "@nedusa/test-utils"
+import { SearchTypes } from "@nedusa/types"
+import { Modules, ProductEvents } from "@nedusa/utils"
 import {
   adminHeaders,
   createAdminUser,

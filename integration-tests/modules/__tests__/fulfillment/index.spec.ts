@@ -1,6 +1,6 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { IFulfillmentModuleService, StockLocationDTO } from "@medusajs/types"
-import { Modules } from "@medusajs/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { IFulfillmentModuleService, StockLocationDTO } from "@nedusa/types"
+import { Modules } from "@nedusa/utils"
 import { createAdminUser } from "../../../helpers/create-admin-user"
 import {
   generateCreateFulfillmentData,

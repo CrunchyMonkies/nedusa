@@ -6,7 +6,7 @@ import {
   IconButton,
   Kbd,
   Text,
-} from "@medusajs/ui"
+} from "@nedusa/ui"
 import { Command } from "cmdk"
 import { Dialog as RadixDialog } from "radix-ui"
 import {
@@ -30,7 +30,7 @@ import {
   Plus,
   Spinner,
   TriangleDownMini,
-} from "@medusajs/icons"
+} from "@nedusa/icons"
 import { matchSorter } from "match-sorter"
 
 import { resolveSearchEntityGroupLabel } from "../../lib/search/search-entities"

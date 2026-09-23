@@ -1,6 +1,6 @@
-import { SearchTypes } from "@medusajs/framework/types"
+import { SearchTypes } from "@nedusa/framework/types"
 import { SearchIndexContext } from "@types"
-import { MedusaError } from "@medusajs/framework/utils"
+import { MedusaError } from "@nedusa/framework/utils"
 import { ActiveIndexVersionCache } from "../active-version-cache"
 import { resolveActiveDefinition, withActiveIndexRetry } from "../index"
 

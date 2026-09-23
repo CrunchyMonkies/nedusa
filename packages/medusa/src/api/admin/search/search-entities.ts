@@ -1,4 +1,4 @@
-import { ApiKeyType } from "@medusajs/framework/utils"
+import { ApiKeyType } from "@nedusa/framework/utils"
 
 /**
  * One entity the admin global search can query when the Search Module is off.

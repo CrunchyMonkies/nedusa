@@ -119,7 +119,7 @@ Stop at the first failure — later gates assume earlier ones hold.
 ```bash
 # 1. workspace is sane, and nothing resolves upstream from the registry
 pnpm install --frozen-lockfile
-grep -cE "^  '?@medusajs/" pnpm-lock.yaml      # MUST be 0
+grep -cE "^  '?@nedusa/" pnpm-lock.yaml      # MUST be 0
 
 # 2. everything compiles
 pnpm build
@@ -171,6 +171,36 @@ codemods needed extending, what broke, how long it took. Three of these and you 
 able to predict the cost of the next one.
 
 ---
+
+## What a release actually costs
+
+Measured with `pnpm sync:report` over one real upstream cycle, **v2.20.0 → v2.21.1**
+(2,005 changed files):
+
+| Bucket | Files | What it means |
+| --- | --- | --- |
+| docs site (`www/`) | 1,481 | free — not ported |
+| domain (`packages/modules`, `packages/core`) | 180 | usually merges clean |
+| build / workspace / CI | 95 | re-run `yarn-to-pnpm` |
+| other | 117 | mostly changelogs |
+| routes (`packages/medusa/src/api`) | 51 | re-run route + middleware codemods |
+| tests | 33 | carried across |
+| **workflows (`core-flows`)** | **21** | codemod, then check determinism by hand |
+| **REPLACED — triage by hand** | **27** | no automatic path |
+
+**Three quarters of a release is documentation the fork does not port.** The genuinely
+expensive surface is the bottom two rows: ~48 files touching code nedusa has replaced or
+must re-verify. That is the number to plan against — it says a release port is days of
+work once the codemods exist, not weeks.
+
+The 27 "REPLACED" files in this sample are all under `framework/src/http` — upstream was
+actively changing the router, `types.ts`, `get-query-config.ts` and the field-filtering
+middleware in that cycle. That is the layer nedusa rewrites, so every one of them needs a
+human decision about whether the behaviour change matters. Expect this bucket to stay
+non-empty; it is the standing tax of the fork.
+
+Re-run `pnpm sync:report <from> <to>` at the start of every port and record the numbers in
+the release report. Three of those and the estimate stops being a guess.
 
 ## Keeping the cost down
 

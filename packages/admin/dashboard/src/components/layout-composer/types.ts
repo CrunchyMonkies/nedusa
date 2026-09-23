@@ -3,7 +3,7 @@ import type {
   LayoutSection,
   Layouts,
   SectionNameFor,
-} from "@medusajs/admin-shared"
+} from "@nedusa/admin-shared"
 
 export type { LayoutSection, Layouts, SectionNameFor }
 

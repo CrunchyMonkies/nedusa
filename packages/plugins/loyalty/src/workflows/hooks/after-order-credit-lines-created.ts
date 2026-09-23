@@ -1,5 +1,5 @@
-import { StepResponse } from "@medusajs/framework/workflows-sdk"
-import { createOrderCreditLinesWorkflow } from "@medusajs/medusa/core-flows"
+import { StepResponse } from "@nedusa/framework/workflows-sdk"
+import { createOrderCreditLinesWorkflow } from "@nedusa/medusa/core-flows"
 import { refundCreditLinesWorkflow } from "../orders/workflows/refund-credit-lines"
 
 ;(createOrderCreditLinesWorkflow.hooks as any).creditLinesCreated(

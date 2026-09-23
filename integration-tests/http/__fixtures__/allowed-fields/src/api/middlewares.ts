@@ -1,4 +1,4 @@
-import { allowFields, defineMiddlewares } from "@medusajs/framework/http"
+import { allowFields, defineMiddlewares } from "@nedusa/framework/http"
 
 export default defineMiddlewares({
   routes: [

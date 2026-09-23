@@ -1,10 +1,10 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
-import { createAndLinkProductOptionsToProductWorkflow } from "@medusajs/core-flows"
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
+import { createAndLinkProductOptionsToProductWorkflow } from "@nedusa/core-flows"
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils"
 import { remapKeysForProduct, remapProductResponse } from "../../../helpers"
 
 /**

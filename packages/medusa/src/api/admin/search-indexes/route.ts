@@ -1,9 +1,9 @@
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@nedusa/framework/types"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { Modules } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { Modules } from "@nedusa/framework/utils"
 
 /**
  * List registered search indexes, their status, and the fields each stores.

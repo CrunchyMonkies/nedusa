@@ -1,5 +1,5 @@
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+import { MedusaRequest, MedusaResponse } from "@nedusa/framework/http"
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils"
 
 export const AUTHENTICATE = false
 

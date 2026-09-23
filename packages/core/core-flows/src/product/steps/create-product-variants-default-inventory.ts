@@ -1,16 +1,16 @@
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
 import {
   arrayDifference,
   ContainerRegistrationKeys,
   deduplicate,
   Modules,
-} from "@medusajs/framework/utils"
-import type { RemoteQueryFunction } from "@medusajs/framework/types"
+} from "@nedusa/framework/utils"
+import type { RemoteQueryFunction } from "@nedusa/framework/types"
 import {
   IInventoryService,
   IProductModuleService,
   LinkDefinition,
-} from "@medusajs/types"
+} from "@nedusa/types"
 import { createDefaultInventoryItem } from "../utils/create-default-inventory-item"
 
 export const createProductVariantsDefaultInventoryStepId =

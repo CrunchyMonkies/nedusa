@@ -8,7 +8,7 @@ import {
   ModuleJoinerConfig,
   RestoreReturn,
   SoftDeleteReturn,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   CommonEvents,
   EmitEvents,
@@ -22,7 +22,7 @@ import {
   moduleEventBuilderFactory,
   Modules,
   ModulesSdkUtils,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { LinkService } from "@services"
 
 type InjectedDependencies = {

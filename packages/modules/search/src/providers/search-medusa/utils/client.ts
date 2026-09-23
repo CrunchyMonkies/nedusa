@@ -1,4 +1,4 @@
-import { MedusaError } from "@medusajs/framework/utils"
+import { MedusaError } from "@nedusa/framework/utils"
 import { parseRetryAfter } from "../../../utils/rate-limit"
 import type {
   IndexCreateParams,

@@ -3,11 +3,11 @@ import {
   OrderClaimDTO,
   OrderWorkflow,
   ReturnDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   MedusaError,
   ReservationItemWorkflowEvents,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   WorkflowData,
   createStep,
@@ -15,7 +15,7 @@ import {
   parallelize,
   transform,
   when,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { emitEventStep, useRemoteQueryStep } from "../../../common"
 import { deleteReservationsByLineItemsStep } from "../../../reservation/steps/delete-reservations-by-line-items"
 import { cancelOrderClaimStep } from "../../steps"

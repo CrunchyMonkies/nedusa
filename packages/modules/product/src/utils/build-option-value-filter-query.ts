@@ -1,5 +1,5 @@
-import { Context, DAL } from "@medusajs/framework/types"
-import { raw, SqlEntityManager } from "@medusajs/framework/mikro-orm/postgresql"
+import { Context, DAL } from "@nedusa/framework/types"
+import { raw, SqlEntityManager } from "@nedusa/framework/mikro-orm/postgresql"
 
 /**
  * Builds a query filter to find products that have variants matching

@@ -11,9 +11,9 @@ import {
   SquaresPlus,
   Tag,
   Users,
-} from "@medusajs/icons"
-import { CORE_LAYOUT_IDS } from "@medusajs/admin-shared"
-import { Avatar, clx, Divider, DropdownMenu, Text } from "@medusajs/ui"
+} from "@nedusa/icons"
+import { CORE_LAYOUT_IDS } from "@nedusa/admin-shared"
+import { Avatar, clx, Divider, DropdownMenu, Text } from "@nedusa/ui"
 import { useTranslation } from "react-i18next"
 
 import { useStore } from "../../../hooks/api/store"

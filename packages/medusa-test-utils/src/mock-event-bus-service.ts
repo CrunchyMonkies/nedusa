@@ -3,7 +3,7 @@ import {
   IEventBusModuleService,
   Message,
   Subscriber,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 
 export default class EventBusService implements IEventBusModuleService {
   async emit<T>(

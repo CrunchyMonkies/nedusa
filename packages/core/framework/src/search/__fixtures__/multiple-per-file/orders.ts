@@ -1,4 +1,4 @@
-import { defineSearchIndex, search } from "@medusajs/utils"
+import { defineSearchIndex, search } from "@nedusa/utils"
 
 // Two indexes out of one file: they share a caller path, so nothing may key off
 // the file alone.

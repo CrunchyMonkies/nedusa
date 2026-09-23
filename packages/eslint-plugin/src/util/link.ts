@@ -178,7 +178,7 @@ export function isLinkReceiver(
 }
 
 /**
- * Records local names bound to `defineLink` from `@medusajs/framework/utils`
+ * Records local names bound to `defineLink` from `@nedusa/framework/utils`
  * (honors `import { defineLink as dl }`).
  *
  * Call from an `ImportDeclaration` visitor.

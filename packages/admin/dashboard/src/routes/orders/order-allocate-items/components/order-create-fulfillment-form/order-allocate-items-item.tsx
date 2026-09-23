@@ -1,13 +1,13 @@
 import { useMemo, useState } from "react"
 import { useTranslation } from "react-i18next"
-import { AdminInventoryItem } from "@medusajs/types"
+import { AdminInventoryItem } from "@nedusa/types"
 import {
   Component,
   ExclamationCircleSolid,
   TriangleDownMini,
-} from "@medusajs/icons"
+} from "@nedusa/icons"
 import { UseFormReturn, useWatch } from "react-hook-form"
-import { Input, Text, clx } from "@medusajs/ui"
+import { Input, Text, clx } from "@nedusa/ui"
 import * as zod from "zod"
 
 import { Thumbnail } from "../../../../../components/common/thumbnail"

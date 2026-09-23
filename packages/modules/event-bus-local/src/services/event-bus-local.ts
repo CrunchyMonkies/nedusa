@@ -6,8 +6,8 @@ import {
   MedusaContainer,
   Message,
   Subscriber,
-} from "@medusajs/framework/types"
-import { AbstractEventBusModuleService } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { AbstractEventBusModuleService } from "@nedusa/framework/utils"
 import { EventEmitter } from "events"
 import { setTimeout } from "timers/promises"
 

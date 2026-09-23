@@ -1,4 +1,4 @@
-import { CartDTO } from "@medusajs/framework/types";
+import { CartDTO } from "@nedusa/framework/types";
 
 export type PluginCartDTO = CartDTO & {
   /**

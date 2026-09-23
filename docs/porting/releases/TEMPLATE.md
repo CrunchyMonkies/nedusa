@@ -40,7 +40,7 @@ and explain why; that debt is re-paid every release.
 | Gate | Result |
 | --- | --- |
 | `pnpm install --frozen-lockfile` | |
-| zero `@medusajs/*` from the registry | |
+| zero `@nedusa/*` from the registry | |
 | `pnpm build` | |
 | `pnpm parity:check` (route table) | |
 | `pnpm oas:diff` (response shapes) | |

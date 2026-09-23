@@ -1,12 +1,12 @@
-import { IPromotionModuleService } from "@medusajs/framework/types"
+import { IPromotionModuleService } from "@nedusa/framework/types"
 import {
   ApplicationMethodType,
   CampaignBudgetType,
   Module,
   Modules,
   PromotionType,
-} from "@medusajs/framework/utils"
-import { SuiteOptions, moduleIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@nedusa/framework/utils"
+import { SuiteOptions, moduleIntegrationTestRunner } from "@nedusa/test-utils"
 import { PromotionModuleService } from "@services"
 import { createCampaigns } from "../../../__fixtures__/campaigns"
 import {

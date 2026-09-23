@@ -1,4 +1,4 @@
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@nedusa/types"
 
 /**
  * The path a quantity column reads its unit of measure from. The unit does not

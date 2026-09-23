@@ -1,6 +1,6 @@
-import { defineRouteConfig } from "@medusajs/admin-sdk"
-import { LayoutComposer } from "@medusajs/dashboard/components"
-import { Toaster } from "@medusajs/ui"
+import { defineRouteConfig } from "@nedusa/admin-sdk"
+import { LayoutComposer } from "@nedusa/dashboard/components"
+import { Toaster } from "@nedusa/ui"
 import StoreCreditIcon from "../../components/icons/store-credit-icon"
 import { StoreCreditAccountsTable } from "./components/store-credit-accounts-table/table"
 

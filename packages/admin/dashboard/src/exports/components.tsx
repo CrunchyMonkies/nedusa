@@ -1,5 +1,5 @@
 /**
- * Public component exports for `@medusajs/dashboard/components`.
+ * Public component exports for `@nedusa/dashboard/components`.
  */
 
 import {

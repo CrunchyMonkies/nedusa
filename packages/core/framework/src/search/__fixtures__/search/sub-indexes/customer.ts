@@ -1,4 +1,4 @@
-import { defineSearchIndex, search } from "@medusajs/utils"
+import { defineSearchIndex, search } from "@nedusa/utils"
 
 export const customerIndex = defineSearchIndex({
   name: "customer",

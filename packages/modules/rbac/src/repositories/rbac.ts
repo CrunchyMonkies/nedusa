@@ -1,6 +1,6 @@
-import { SqlEntityManager } from "@medusajs/framework/mikro-orm/postgresql"
-import { Context } from "@medusajs/framework/types"
-import { MikroOrmBase } from "@medusajs/framework/utils"
+import { SqlEntityManager } from "@nedusa/framework/mikro-orm/postgresql"
+import { Context } from "@nedusa/framework/types"
+import { MikroOrmBase } from "@nedusa/framework/utils"
 
 export class RbacRepository extends MikroOrmBase {
   constructor() {

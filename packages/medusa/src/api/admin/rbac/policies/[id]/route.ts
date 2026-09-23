@@ -1,17 +1,17 @@
 import {
   deleteRbacPoliciesWorkflow,
   updateRbacPoliciesWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import {
   ContainerRegistrationKeys,
   defineFileConfig,
   FeatureFlag,
   MedusaError,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 import RbacFeatureFlag from "../../../../../feature-flags/rbac"
 import { AdminUpdateRbacPolicyType } from "../validators"

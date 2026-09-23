@@ -1,11 +1,11 @@
-import { ITaxModuleService } from "@medusajs/types"
+import { ITaxModuleService } from "@nedusa/types"
 
 import {
   createTaxRateRulesStepId,
   updateTaxRatesWorkflow,
-} from "@medusajs/core-flows"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { Modules } from "@medusajs/utils"
+} from "@nedusa/core-flows"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { Modules } from "@nedusa/utils"
 import { createAdminUser } from "../../../../helpers/create-admin-user"
 
 jest.setTimeout(50000)

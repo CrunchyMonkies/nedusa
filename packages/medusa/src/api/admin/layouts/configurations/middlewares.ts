@@ -1,5 +1,5 @@
-import { validateAndTransformQuery } from "@medusajs/framework"
-import { MiddlewareRoute } from "@medusajs/framework/http"
+import { validateAndTransformQuery } from "@nedusa/framework"
+import { MiddlewareRoute } from "@nedusa/framework/http"
 import * as QueryConfig from "./query-config"
 import { AdminGetLayoutConfigurationsParams } from "./validators"
 

@@ -2,8 +2,8 @@ import {
   AuthenticationInput,
   Logger,
   OidcAuthProviderOptions,
-} from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+} from "@nedusa/framework/types"
+import { MedusaError } from "@nedusa/framework/utils"
 import { OidcAuthService } from "../../src/services/oidc"
 
 const ISSUER = "https://idp.example.com"

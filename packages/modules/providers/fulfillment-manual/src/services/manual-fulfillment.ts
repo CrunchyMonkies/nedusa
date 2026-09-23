@@ -1,11 +1,11 @@
-import { AbstractFulfillmentProviderService } from "@medusajs/framework/utils"
+import { AbstractFulfillmentProviderService } from "@nedusa/framework/utils"
 import {
   CalculatedShippingOptionPrice,
   CalculateShippingOptionPriceContext,
   CreateFulfillmentResult,
   FulfillmentOption,
   ValidateFulfillmentDataContext,
-} from "@medusajs/types"
+} from "@nedusa/types"
 
 // TODO rework type and DTO's
 

@@ -1,6 +1,6 @@
-import type { IAuthModuleService } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+import type { IAuthModuleService } from "@nedusa/framework/types"
+import { Modules } from "@nedusa/framework/utils"
+import { createStep, StepResponse } from "@nedusa/framework/workflows-sdk"
 
 /**
  * Input for the create password reset token step.

@@ -1,5 +1,5 @@
-import { MedusaError, promiseAll } from "@medusajs/framework/utils"
-import { ILockingProvider, Logger } from "@medusajs/types"
+import { MedusaError, promiseAll } from "@nedusa/framework/utils"
+import { ILockingProvider, Logger } from "@nedusa/types"
 import { RedisCacheModuleOptions } from "@types"
 import { Redis } from "ioredis"
 import { randomUUID } from "node:crypto"

@@ -2,13 +2,13 @@ import {
   FilterablePaymentCollectionProps,
   IPaymentModuleService,
   PaymentCollectionUpdatableFields,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   Modules,
   getSelectsAndRelationsFromObjectArray,
   isPresent,
-} from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/utils"
+import { StepResponse, createStep } from "@nedusa/framework/workflows-sdk"
 
 /**
  * The data to update a payment collection.

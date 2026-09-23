@@ -1,5 +1,5 @@
-import { InformationCircleSolid } from "@medusajs/icons";
-import { Button, Heading, Text, Tooltip } from "@medusajs/ui";
+import { InformationCircleSolid } from "@nedusa/icons";
+import { Button, Heading, Text, Tooltip } from "@nedusa/ui";
 import React from "react";
 import { Link, LinkProps } from "react-router-dom";
 import { ActionMenu, ActionMenuProps } from "./action-menu";

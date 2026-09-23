@@ -1,4 +1,4 @@
-import { ILockingModule } from "@medusajs/framework/types"
+import { ILockingModule } from "@nedusa/framework/types"
 
 /**
  * In-memory locking module. Acquiring a key that is already held throws,

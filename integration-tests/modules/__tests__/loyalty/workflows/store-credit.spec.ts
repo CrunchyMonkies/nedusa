@@ -1,13 +1,13 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
 import {
   createStoreCreditAccountsWorkflow,
   creditAccountsWorkflow,
   debitAccountsWorkflow,
-} from "@medusajs/loyalty-plugin/workflows"
+} from "@nedusa/loyalty-plugin/workflows"
 import {
   IStoreCreditModuleService,
   PluginModule,
-} from "@medusajs/loyalty-plugin/types"
+} from "@nedusa/loyalty-plugin/types"
 import {
   adminHeaders,
   createAdminUser,

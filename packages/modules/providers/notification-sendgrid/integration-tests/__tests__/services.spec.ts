@@ -9,7 +9,7 @@ jest.mock("@sendgrid/mail", () => ({
   },
 }))
 
-jest.mock("@medusajs/framework/utils", () => ({
+jest.mock("@nedusa/framework/utils", () => ({
   AbstractNotificationProviderService: class {},
   MedusaError: class MedusaError extends Error {
     static Types = {

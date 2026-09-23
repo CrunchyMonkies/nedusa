@@ -1,6 +1,6 @@
 import { jest } from "@jest/globals"
-import { MedusaContainer } from "@medusajs/types"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/utils"
+import { MedusaContainer } from "@nedusa/types"
+import { ContainerRegistrationKeys, Modules } from "@nedusa/utils"
 import path from "path"
 import { logger } from "../../logger"
 import { MigrationScriptsMigrator } from "../run-migration-scripts"

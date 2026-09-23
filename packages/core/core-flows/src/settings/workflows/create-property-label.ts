@@ -1,9 +1,9 @@
-import { SettingsTypes } from "@medusajs/framework/types"
+import { SettingsTypes } from "@nedusa/framework/types"
 import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { createPropertyLabelsStep } from "../steps"
 
 export interface CreatePropertyLabelsWorkflowInput {

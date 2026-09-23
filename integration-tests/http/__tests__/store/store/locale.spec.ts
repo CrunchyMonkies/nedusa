@@ -1,6 +1,6 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { MedusaContainer } from "@medusajs/types"
-import { Modules } from "@medusajs/utils"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { MedusaContainer } from "@nedusa/types"
+import { Modules } from "@nedusa/utils"
 import {
   generatePublishableKey,
   generateStoreHeaders,

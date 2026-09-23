@@ -5,12 +5,12 @@ import {
   OnInit,
   PrimaryKey,
   Property,
-} from "@medusajs/deps/mikro-orm/core"
+} from "@nedusa/deps/mikro-orm/core"
 import {
   defineConfig,
   SqlEntityManager,
-} from "@medusajs/deps/mikro-orm/postgresql"
-import { FindConfig } from "@medusajs/types"
+} from "@nedusa/deps/mikro-orm/postgresql"
+import { FindConfig } from "@nedusa/types"
 import { dropDatabase } from "pg-god"
 import { buildQuery } from "../../../../modules-sdk/build-query"
 import { mikroOrmBaseRepositoryFactory } from "../../mikro-orm-repository"

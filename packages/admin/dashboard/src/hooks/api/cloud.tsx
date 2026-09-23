@@ -1,4 +1,4 @@
-import { FetchError } from "@medusajs/js-sdk"
+import { FetchError } from "@nedusa/js-sdk"
 import {
   UseMutationOptions,
   UseQueryOptions,

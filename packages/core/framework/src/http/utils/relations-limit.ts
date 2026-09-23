@@ -1,4 +1,4 @@
-import { MedusaError } from "@medusajs/utils"
+import { MedusaError } from "@nedusa/utils"
 
 export const getRelationsDepth = (field: string): number => {
   const isStarField = field.startsWith("*") || field.endsWith(".*")

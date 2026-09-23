@@ -15,7 +15,7 @@ import {
   UpdateStockLocationInput,
   UpsertStockLocationAddressInput,
   UpsertStockLocationInput,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   EmitEvents,
   InjectManager,
@@ -25,7 +25,7 @@ import {
   MedusaService,
   Modules,
   promiseAll,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { joinerConfig } from "../joiner-config"
 import { StockLocation, StockLocationAddress } from "../models"
 

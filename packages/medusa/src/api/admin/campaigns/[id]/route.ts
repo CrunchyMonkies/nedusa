@@ -1,15 +1,15 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import {
   deleteCampaignsWorkflow,
   updateCampaignsWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 
 import { refetchCampaign } from "../helpers"
-import { MedusaError } from "@medusajs/framework/utils"
-import { AdditionalData, HttpTypes } from "@medusajs/framework/types"
+import { MedusaError } from "@nedusa/framework/utils"
+import { AdditionalData, HttpTypes } from "@nedusa/framework/types"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<HttpTypes.AdminGetCampaignParams>,

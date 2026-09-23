@@ -1,10 +1,10 @@
-import { createStep, StepResponse, WorkflowData } from "@medusajs/framework/workflows-sdk";
+import { createStep, StepResponse, WorkflowData } from "@nedusa/framework/workflows-sdk";
 import {
   IStoreCreditModuleService,
   ModuleCreateStoreCreditAccount,
   PluginModule,
 } from "../../../types";
-import { isPresent } from "@medusajs/framework/utils";
+import { isPresent } from "@nedusa/framework/utils";
 
 import { generateCode } from "../../../utils/code-generator";
 

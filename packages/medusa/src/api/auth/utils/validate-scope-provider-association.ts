@@ -2,12 +2,12 @@ import {
   MedusaNextFunction,
   MedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { ConfigModule } from "@medusajs/framework/types"
+} from "@nedusa/framework/http"
+import { ConfigModule } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   MedusaError,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { isAuthProviderAllowedForActor } from "./auth-methods-per-actor"
 
 /**

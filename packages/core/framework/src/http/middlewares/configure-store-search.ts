@@ -1,4 +1,4 @@
-import { SearchTypes } from "@medusajs/types"
+import { SearchTypes } from "@nedusa/types"
 import { NextFunction, RequestHandler } from "express"
 import { MedusaRequest, MedusaResponse, MedusaStoreRequest } from "../types"
 
@@ -46,7 +46,7 @@ export type ConfiguredStoreSearch = {
  * @param config - The indexes to expose and the constraints to apply to them.
  *
  * @example
- * import { configureStoreSearch, defineMiddlewares } from "@medusajs/framework/http"
+ * import { configureStoreSearch, defineMiddlewares } from "@nedusa/framework/http"
  *
  * export default defineMiddlewares({
  *   routes: [

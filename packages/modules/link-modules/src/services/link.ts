@@ -1,11 +1,11 @@
-import { Context, FindConfig } from "@medusajs/framework/types"
+import { Context, FindConfig } from "@nedusa/framework/types"
 import {
   InjectManager,
   InjectTransactionManager,
   MedusaContext,
   MikroOrmBaseRepository,
   ModulesSdkUtils,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 type InjectedDependencies = {
   linkRepository: MikroOrmBaseRepository

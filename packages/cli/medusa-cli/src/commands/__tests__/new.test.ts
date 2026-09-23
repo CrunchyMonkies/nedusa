@@ -1,13 +1,13 @@
 const mockQuery = jest.fn()
 const mockEnd = jest.fn()
 
-jest.mock("@medusajs/deps/pg", () => ({
+jest.mock("@nedusa/deps/pg", () => ({
   Pool: jest.fn(() => ({ query: mockQuery, end: mockEnd })),
 }))
 
-jest.mock("@medusajs/telemetry", () => ({ track: jest.fn() }))
+jest.mock("@nedusa/telemetry", () => ({ track: jest.fn() }))
 
-jest.mock("@medusajs/utils", () => ({
+jest.mock("@nedusa/utils", () => ({
   getNodeVersion: jest.fn(() => 20),
   MIN_SUPPORTED_NODE_VERSION: 20,
 }))
@@ -25,7 +25,7 @@ jest.mock("../../reporter", () => ({
   },
 }))
 
-import { Pool } from "@medusajs/deps/pg"
+import { Pool } from "@nedusa/deps/pg"
 import reporter from "../../reporter"
 import { createDatabase, setupDB } from "../new"
 

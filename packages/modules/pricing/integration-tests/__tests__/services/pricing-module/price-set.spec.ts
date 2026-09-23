@@ -1,17 +1,17 @@
 import {
   CreatePriceSetDTO,
   IPricingModuleService,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   CommonEvents,
   composeMessage,
   Modules,
   PricingEvents,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import {
   MockEventBusService,
   moduleIntegrationTestRunner,
-} from "@medusajs/test-utils"
+} from "@nedusa/test-utils"
 import { seedPriceData } from "../../../__fixtures__/seed-price-data"
 
 jest.setTimeout(30000)

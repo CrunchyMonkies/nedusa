@@ -1,12 +1,12 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@nedusa/framework/http"
 import {
   ContainerRegistrationKeys,
   defineFileConfig,
   FeatureFlag,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 import RbacFeatureFlag from "../../../../../../feature-flags/rbac"
 

@@ -1,6 +1,6 @@
-import { PencilSquare, Trash } from "@medusajs/icons"
-import { AdminCampaign } from "@medusajs/types"
-import { toast, usePrompt } from "@medusajs/ui"
+import { PencilSquare, Trash } from "@nedusa/icons"
+import { AdminCampaign } from "@nedusa/types"
+import { toast, usePrompt } from "@nedusa/ui"
 import { useTranslation } from "react-i18next"
 
 import { ActionMenu } from "../../../../components/common/action-menu"

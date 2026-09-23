@@ -1,4 +1,4 @@
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@nedusa/types"
 
 export type AdminOrderPreviewLineItem = HttpTypes.AdminOrderLineItem & {
   actions?: HttpTypes.AdminOrderChangeAction[]

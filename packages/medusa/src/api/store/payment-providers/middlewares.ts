@@ -1,5 +1,5 @@
-import { MiddlewareRoute } from "@medusajs/framework/http"
-import { validateAndTransformQuery } from "@medusajs/framework"
+import { MiddlewareRoute } from "@nedusa/framework/http"
+import { validateAndTransformQuery } from "@nedusa/framework"
 import * as queryConfig from "./query-config"
 import { StoreGetPaymentProvidersParams } from "./validators"
 

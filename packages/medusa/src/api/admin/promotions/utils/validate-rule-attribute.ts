@@ -1,11 +1,11 @@
-import { MedusaError } from "@medusajs/framework/utils"
+import { MedusaError } from "@nedusa/framework/utils"
 import { getRuleAttributesMap } from "./rule-attributes-map"
 import {
   ApplicationMethodTargetTypeValues,
   ApplicationMethodTypeValues,
   PromotionTypeValues,
   RuleTypeValues,
-} from "@medusajs/types"
+} from "@nedusa/types"
 
 export function validateRuleAttribute(attributes: {
   promotionType: PromotionTypeValues | undefined

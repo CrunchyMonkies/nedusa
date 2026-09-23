@@ -1,5 +1,5 @@
-import { PencilSquare, Trash } from "@medusajs/icons"
-import { AdminCampaignResponse } from "@medusajs/types"
+import { PencilSquare, Trash } from "@nedusa/icons"
+import { AdminCampaignResponse } from "@nedusa/types"
 import {
   Badge,
   Container,
@@ -8,7 +8,7 @@ import {
   Text,
   toast,
   usePrompt,
-} from "@medusajs/ui"
+} from "@nedusa/ui"
 import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router-dom"
 import { ActionMenu } from "../../../../../components/common/action-menu"

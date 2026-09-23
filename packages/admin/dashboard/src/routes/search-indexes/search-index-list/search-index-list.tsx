@@ -1,6 +1,6 @@
-import { CORE_LAYOUT_IDS } from "@medusajs/admin-shared"
-import { Spinner } from "@medusajs/icons"
-import { HttpTypes } from "@medusajs/types"
+import { CORE_LAYOUT_IDS } from "@nedusa/admin-shared"
+import { Spinner } from "@nedusa/icons"
+import { HttpTypes } from "@nedusa/types"
 import {
   Badge,
   Button,
@@ -11,7 +11,7 @@ import {
   Tooltip,
   toast,
   usePrompt,
-} from "@medusajs/ui"
+} from "@nedusa/ui"
 import { useEffect, useState } from "react"
 import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router-dom"

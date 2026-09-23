@@ -1,13 +1,13 @@
 import {
   getOrderDetailWorkflow,
   updateOrderWorkflow,
-} from "@medusajs/core-flows"
+} from "@nedusa/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { AdminOrder, HttpTypes } from "@medusajs/framework/types"
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+} from "@nedusa/framework/http"
+import { AdminOrder, HttpTypes } from "@nedusa/framework/types"
+import { ContainerRegistrationKeys } from "@nedusa/framework/utils"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<

@@ -2,18 +2,18 @@ import {
   CalculatedShippingOptionPrice,
   CalculateShippingOptionPriceDTO,
   ShippingOptionDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   createHook,
   createWorkflow,
   transform,
   when,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import {
   QueryContext,
   ShippingOptionPriceType,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 import { calculateShippingOptionsPricesStep } from "../../fulfillment/steps"
 import { useQueryGraphStep } from "../../common"
 import { previewOrderChangeStep } from "../../order"

@@ -1,6 +1,6 @@
-import { createAndCompleteReturnOrderWorkflow } from "@medusajs/core-flows"
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
+import { createAndCompleteReturnOrderWorkflow } from "@nedusa/core-flows"
+import { MedusaRequest, MedusaResponse } from "@nedusa/framework/http"
+import { HttpTypes } from "@nedusa/framework/types"
 
 /**
  * This API route is intentionally unauthenticated as the order ID is a UUID that requires brute forcing to

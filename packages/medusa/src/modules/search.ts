@@ -1,6 +1,6 @@
-import SearchModule from "@medusajs/search"
+import SearchModule from "@nedusa/search"
 
-export * from "@medusajs/search"
+export * from "@nedusa/search"
 
 export default SearchModule
-export const discoveryPath = require.resolve("@medusajs/search")
+export const discoveryPath = require.resolve("@nedusa/search")

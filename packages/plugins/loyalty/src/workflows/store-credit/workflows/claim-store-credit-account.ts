@@ -1,13 +1,13 @@
-import { isPresent, MathBN, MedusaError } from "@medusajs/framework/utils";
-import { useQueryGraphStep } from "@medusajs/medusa/core-flows";
+import { isPresent, MathBN, MedusaError } from "@nedusa/framework/utils";
+import { useQueryGraphStep } from "@nedusa/medusa/core-flows";
 import {
   createStep,
   createWorkflow,
   transform,
   when,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk";
-import { CustomerDTO } from "@medusajs/framework/types";
+} from "@nedusa/framework/workflows-sdk";
+import { CustomerDTO } from "@nedusa/framework/types";
 
 import { ModuleStoreCreditAccount } from "../../../types";
 import { debitAccountStep } from "../steps/debit-account";

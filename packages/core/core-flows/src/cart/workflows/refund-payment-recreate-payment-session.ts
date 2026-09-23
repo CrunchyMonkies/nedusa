@@ -1,12 +1,12 @@
 import type {
   BigNumberInput,
   PaymentSessionDTO,
-} from "@medusajs/framework/types"
+} from "@nedusa/framework/types"
 import {
   createWorkflow,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@nedusa/framework/workflows-sdk"
 import { createPaymentSessionsWorkflow } from "../../payment-collection/workflows/create-payment-session"
 import { refundPaymentsWorkflow } from "../../payment/workflows/refund-payments"
 

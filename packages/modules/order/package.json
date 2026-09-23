@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/order",
+  "name": "@nedusa/order",
   "version": "2.21.1",
   "description": "Medusa Order module",
   "main": "dist/index.js",
@@ -39,10 +39,10 @@
     "orm:cache:clear": "MIKRO_ORM_CLI_CONFIG=./mikro-orm.config.dev.ts MIKRO_ORM_ALLOW_GLOBAL_CLI=true medusa-mikro-orm cache:clear"
   },
   "devDependencies": {
-    "@medusajs/framework": "2.21.1",
-    "@medusajs/test-utils": "2.21.1"
+    "@nedusa/framework": "2.21.1",
+    "@nedusa/test-utils": "2.21.1"
   },
   "peerDependencies": {
-    "@medusajs/framework": "2.21.1"
+    "@nedusa/framework": "2.21.1"
   }
 }

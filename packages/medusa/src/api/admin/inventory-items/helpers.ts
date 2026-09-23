@@ -1,8 +1,8 @@
-import { MedusaContainer } from "@medusajs/framework/types"
+import { MedusaContainer } from "@nedusa/framework/types"
 import {
   ContainerRegistrationKeys,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@nedusa/framework/utils"
 
 export const refetchInventoryItem = async (
   inventoryItemId: string,

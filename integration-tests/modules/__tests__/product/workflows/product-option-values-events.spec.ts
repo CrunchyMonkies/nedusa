@@ -1,10 +1,10 @@
 import {
   deleteProductOptionValuesWorkflow,
   updateProductOptionValuesWorkflow,
-} from "@medusajs/core-flows"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { IEventBusModuleService, IProductModuleService } from "@medusajs/types"
-import { Modules, ProductOptionValueWorkflowEvents } from "@medusajs/utils"
+} from "@nedusa/core-flows"
+import { medusaIntegrationTestRunner } from "@nedusa/test-utils"
+import { IEventBusModuleService, IProductModuleService } from "@nedusa/types"
+import { Modules, ProductOptionValueWorkflowEvents } from "@nedusa/utils"
 
 jest.setTimeout(50000)
 

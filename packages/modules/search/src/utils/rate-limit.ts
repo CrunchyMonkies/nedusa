@@ -1,4 +1,4 @@
-import { Logger } from "@medusajs/framework/types"
+import { Logger } from "@nedusa/framework/types"
 
 // Seeding is background work with nothing waiting on it, so it can afford to
 // sit out a rate limit rather than fail the run.

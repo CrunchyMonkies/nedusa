@@ -1,6 +1,6 @@
-import { defineWidgetConfig } from "@medusajs/admin-sdk";
-import { Gift, TriangleRightMini } from "@medusajs/icons";
-import { Container, StatusBadge } from "@medusajs/ui";
+import { defineWidgetConfig } from "@nedusa/admin-sdk";
+import { Gift, TriangleRightMini } from "@nedusa/icons";
+import { Container, StatusBadge } from "@nedusa/ui";
 import { useParams } from "react-router-dom";
 import { AdminGiftCard } from "../../types";
 import { Header } from "../components/header";

@@ -1,8 +1,8 @@
-import { MiddlewareRoute } from "@medusajs/framework/http"
+import { MiddlewareRoute } from "@nedusa/framework/http"
 import {
   validateAndTransformBody,
   validateAndTransformQuery,
-} from "@medusajs/framework"
+} from "@nedusa/framework"
 import * as queryConfig from "./query-config"
 import {
   StoreCreatePaymentCollection,

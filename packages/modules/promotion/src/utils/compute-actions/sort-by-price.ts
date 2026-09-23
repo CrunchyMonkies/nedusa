@@ -1,8 +1,8 @@
-import { MathBN } from "@medusajs/framework/utils"
+import { MathBN } from "@nedusa/framework/utils"
 import {
     ComputeActionItemLine,
     ComputeActionShippingLine,
-} from "@medusajs/types"
+} from "@nedusa/types"
 
 export function sortLineItemByPriceAscending(
   a: ComputeActionItemLine,

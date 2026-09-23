@@ -1,7 +1,7 @@
-import { MedusaContainer } from "@medusajs/framework"
-import { asFunction, createContainer } from "@medusajs/framework/awilix"
-import { Modules } from "@medusajs/framework/utils"
-import { createWorkflow, WorkflowResponse } from "@medusajs/workflows-sdk"
+import { MedusaContainer } from "@nedusa/framework"
+import { asFunction, createContainer } from "@nedusa/framework/awilix"
+import { Modules } from "@nedusa/framework/utils"
+import { createWorkflow, WorkflowResponse } from "@nedusa/workflows-sdk"
 import { processProductOptionsForImportStep } from "../process-product-options-for-import"
 
 const buildContainer = (
