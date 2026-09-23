@@ -17,6 +17,7 @@ packages:
   - "packages/modules/providers/*"
   - "packages/plugins/*"
   - "packages/core/*"
+  - "packages/nest/*"
   - "packages/cli/*"
   - "packages/cli/oas/*"
   - "packages/*"

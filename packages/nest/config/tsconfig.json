@@ -1,0 +1,9 @@
+{
+  "extends": "../../../_tsconfig.base.json",
+  "compilerOptions": {
+    // ESM, because this package imports @nestjs/common, which is ESM-only in Nest 12.
+    // Every packages/nest/* module inherits that constraint. See ADR-012.
+    "module": "Node16",
+    "moduleResolution": "Node16"
+  }
+}

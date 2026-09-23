@@ -1,0 +1,22 @@
+{
+  "name": "@nedusa/nest-config",
+  "version": "2.21.1",
+  "private": true,
+  "type": "module",
+  "description": "Medusa configuration as a NestJS module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && tsc --build && node scripts/stage-fixtures.mjs",
+    "watch": "tsc --build --watch",
+    "test": "node --test \"dist/__tests__/**/*.test.js\""
+  },
+  "dependencies": {
+    "@nedusa/framework": "2.21.1",
+    "@nestjs/common": "^12.0.4"
+  },
+  "devDependencies": {
+    "@nedusa/types": "2.21.1",
+    "@nestjs/testing": "^12.0.4"
+  }
+}
